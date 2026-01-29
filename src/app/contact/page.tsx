@@ -38,18 +38,18 @@ export default function ContactUs() {
   return (
     <section
       ref={ref}
-      className="relative py-20 px-6 overflow-hidden bg-gradient-to-br from-blue-50 to-orange-50"
+      className="relative py-20 px-6 mt-16 overflow-hidden bg-gradient-to-br from-blue-50 to-orange-50"
     >
       {/* Translucent joyful background */}
       <div className="absolute inset-0 z-0">
         <Image
-          src="/images/IMG_9647.jpg"
+          src="/images/IMG_2491.jpg"
           alt="Happy child swinging joyfully in a colorful therapy space"
           fill
-          className="object-cover brightness-95 opacity-70"
+          className="object-cover brightness-56 opacity-100"
           priority
         />
-        <div className="absolute inset-0 bg-gradient-to-t from-blue-900/40 via-transparent to-orange-900/30 backdrop-blur-[1px]" />
+        <div className="absolute inset-0  backdrop-blur-[2px]" />
       </div>
 
       <div className="relative z-10 max-w-6xl mx-auto text-center">
@@ -59,14 +59,14 @@ export default function ContactUs() {
           transition={{ duration: 0.8 }}
           className="text-4xl md:text-5xl font-extrabold text-blue-800 mb-6 drop-shadow-md"
         >
-          Get in Touch with Arukah Health 🌈
+          Get in Touch with Arukah Health
         </motion.h2>
 
         <motion.p
           initial={{ opacity: 0, y: 50 }}
           animate={inView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.8, delay: 0.2 }}
-          className="text-xl text-gray-700 mb-12 max-w-3xl mx-auto"
+          className="text-xl text-black mb-12 max-w-3xl mx-auto"
         >
           We are here to answer your questions, discuss your childs needs, or
           help you start their joyful movement journey. Reach out today lets

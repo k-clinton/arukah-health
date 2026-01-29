@@ -33,7 +33,7 @@ Every exercise plan is uniquely designed to reflect the child's physical needs, 
 
 Ongoing Progress Monitoring & Evaluation
 We track each child's journey with regular assessments and feedback loops—ensuring care remains responsive, measurable, and goal-driven.`,
-    imageUrl: "/images/watertheraphy1.jpg",
+    imageUrl: "/images/IMG_9647.jpg",
     color: "orange",
   },
   {
