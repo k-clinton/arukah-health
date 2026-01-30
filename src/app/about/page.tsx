@@ -1,214 +1,390 @@
-// src/components/AboutPageContent.tsx
 "use client";
 
 import { motion } from "framer-motion";
 import Image from "next/image";
 
-const floatingVariants = {
-  animate: {
-    y: [0, -20, 0],
-    transition: { duration: 7, repeat: Infinity, ease: "easeInOut" },
-  },
+const fadeInUp = {
+  hidden: { opacity: 0, y: 40 },
+  visible: { opacity: 1, y: 0, transition: { duration: 0.8 } },
 };
 
-export default function AboutPageContent() {
+export default function AboutUsPage() {
   return (
-    <div className="max-w-6xl mx-auto px-6 space-y-24">
-      {/* Hero / Intro Section */}
-      <motion.section
-        initial={{ opacity: 0, y: 50 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 1 }}
-        className="text-center"
-      >
-        <h1 className="text-5xl md:text-7xl font-extrabold text-blue-800 mb-8 drop-shadow-lg">
-          About Arukah Health
-        </h1>
-        <p className="text-xl md:text-2xl text-gray-700 max-w-4xl mx-auto leading-relaxed">
-          A movement of hope, science, and soul—where every childs step is
-          sacred, and every story matters.
-        </p>
+    <div className="pt-20 pb-24 mt-40">
+      {/* SECTION 1: HERO / Our Story */}
+      <section className="max-w-7xl mx-auto px-6 lg:px-8">
+        <div className="grid lg:grid-cols-2 gap-12 items-center">
+          <motion.div
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true }}
+            variants={fadeInUp}
+            className="order-2 lg:order-1"
+          >
+            <h1 className="text-4xl md:text-5xl font-serif font-bold text-blue-700 mb-8">
+              Our Story
+            </h1>
+            <div className="prose prose-lg text-gray-700 text-2xl leading-relaxed space-y-6">
+              <p>
+                Arukah Health is more than an exercise clinic. We are a movement
+                of hope, science, and soul where every step is sacred, and every
+                child’s story matters.
+              </p>
+              <p>
+                We understand that nurturing children with neuro-developmental
+                challenges can be a walk through seasons of uncertainty,
+                burnout, pain, and quiet resilience. And oftentimes, care can be
+                intricate and complex, with no single fix or simple path
+                forward.
+              </p>
+              <p>
+                With us, care and support looks different it is more embodied,
+                more inclusive, more human. We create a space where exercise is
+                not just movement, but medicine. Where children feel seen, not
+                just defined by their challenges. Where parents feel equipped,
+                not overwhelmed. Where families can reclaim wellness, strength,
+                mobility, and joy with dignity and hope.
+              </p>
+            </div>
+          </motion.div>
 
-        {/* Floating elements */}
-        <motion.div
-          variants={floatingVariants}
-          animate="animate"
-          className="absolute top-20 left-10 w-16 h-16 bg-orange-300 rounded-full opacity-60 blur-lg hidden md:block"
-        />
-        <motion.div
-          variants={floatingVariants}
-          animate="animate"
-          transition={{ delay: 2, duration: 9 }}
-          className="absolute bottom-40 right-20 w-20 h-20 bg-blue-300 rounded-full opacity-50 blur-xl hidden md:block"
-        />
-      </motion.section>
-
-      {/* Our Story Section */}
-      <section className="grid md:grid-cols-2 gap-12 items-center">
-        <motion.div
-          initial={{ opacity: 0, x: -80 }}
-          whileInView={{ opacity: 1, x: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 1 }}
-        >
-          <h2 className="text-4xl font-bold text-orange-600 mb-6">Our Story</h2>
-          <div className="prose prose-lg text-gray-800 space-y-6">
-            <p>
-              Arukah Health is more than an exercise clinic. We are a movement
-              of hope, science, and soul—where every step is sacred, and every
-              child’s story matters.
-            </p>
-            <p>
-              We understand that nurturing children with neuro-developmental
-              challenges can be a walk through seasons of uncertainty, burnout,
-              pain, and quiet resilience. And oftentimes, care can be
-              intricate/complex, with no single fix or simple path forward. With
-              us, care and support looks different—it is more embodied, more
-              inclusive, more human.
-            </p>
-            <p>
-              We create a space where exercise is not just movement, but
-              medicine. Where children feel seen, not just defined by their
-              challenges. Where parents feel equipped, not overwhelmed. Where
-              families can reclaim wellness, strength, mobility, and joy with
-              dignity and hope.
-            </p>
-            <p>
-              Arukah Health is built on the belief that movement is medicine.
-              For us, movement is more than biomechanics—it’s a language of
-              healing, play, and growth. Every stretch, step, and breath is an
-              opportunity to restore what challenges may have taken away and to
-              open new pathways of strength, confidence, and joy.
-            </p>
-            <p>
-              Our care is rooted in compassion and clinical excellence, honoring
-              the full humanity of the children and families we serve. We meet
-              each child where they are—physically, emotionally, and
-              developmentally—crafting therapeutic exercise experiences that are
-              inclusive, intentional, and transformative.
-            </p>
-            {/* ... continue with the rest of the story paragraphs ... */}
-            <p className="font-semibold text-blue-700 italic">
-              Movement with us; this is where science meets soul. Thank you for
-              being part of this story. Whether you’re here to learn, move,
-              teach, or heal, you belong.
-            </p>
-          </div>
-        </motion.div>
-
-        <motion.div
-          initial={{ opacity: 0, scale: 0.9 }}
-          whileInView={{ opacity: 1, scale: 1 }}
-          viewport={{ once: true }}
-          transition={{ duration: 1, delay: 0.3 }}
-          className="space-y-6"
-        >
-          <div className="relative rounded-3xl overflow-hidden shadow-2xl border-4 border-orange-300/50">
+          <motion.div
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true }}
+            variants={fadeInUp}
+            className="order-1 lg:order-2 rounded-2xl overflow-hidden shadow-xl"
+          >
             <Image
               src="/images/IMG_2491.jpg"
-              alt="Diverse group of children joyfully playing outdoors in inclusive activities"
-              width={800}
-              height={533}
+              alt="Therapist and child sharing a joyful high-five moment in therapy"
+              width={2160}
+              height={1216}
               className="w-full h-auto object-cover"
+              priority
             />
-          </div>
-          <div className="relative rounded-3xl overflow-hidden shadow-2xl border-4 border-blue-300/50">
-            <Image
-              src="/images/IMG_2492.jpg"
-              alt="Therapist supporting a young child on a balance beam in a colorful therapy room"
-              width={1500}
-              height={1000}
-              className="w-full h-auto object-cover"
-            />
-          </div>
-        </motion.div>
+          </motion.div>
+        </div>
       </section>
 
-      {/* Vision & Mission */}
-      <section className="grid md:grid-cols-2 gap-12">
-        <motion.div
-          initial={{ opacity: 0, y: 60 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          className="bg-white/80 backdrop-blur-md p-10 rounded-3xl shadow-xl border-4 border-blue-300/50"
-        >
-          <h2 className="text-4xl font-bold text-blue-700 mb-6">Our Vision</h2>
-          <p className="text-xl text-gray-800 leading-relaxed">
-            To be East Africa’s leading provider of pediatric movement-centered
-            care—where exercise therapy shines as a beacon of hope, empowering
-            every child with neuro-developmental challenges to grow in strength,
-            joy, and lifelong independence.
-          </p>
-        </motion.div>
+      {/* SECTION 2: PHILOSOPHY – Movement Is Medicine */}
+      <section className="mt-24 bg-blue-50/40 py-20">
+        <div className="max-w-7xl mx-auto px-6 lg:px-8">
+          <div className="grid lg:grid-cols-2 gap-12 items-center">
+            <motion.div
+              initial="hidden"
+              whileInView="visible"
+              viewport={{ once: true }}
+              variants={fadeInUp}
+              className="order-2 lg:order-1"
+            >
+              <h2 className="text-4xl md:text-5xl font-serif font-bold text-blue-700 mb-8">
+                Movement Is Medicine
+              </h2>
+              <div className="prose prose-lg text-gray-700 leading-relaxed space-y-6">
+                <p>
+                  Arukah Health is built on the belief that movement is
+                  medicine. For us, movement is more than biomechanics—it’s a
+                  language of healing, play, and growth.
+                </p>
+                <p>
+                  Every stretch, step, and breath is an opportunity to restore
+                  what challenges may have taken away and to open new pathways
+                  of strength, confidence, and joy.
+                </p>
+                <p>
+                  Our care is rooted in compassion and clinical excellence,
+                  honoring the full humanity of the children and families we
+                  serve. We meet each child where they are—physically,
+                  emotionally, and developmentally—crafting therapeutic exercise
+                  experiences that are inclusive, intentional, and
+                  transformative.
+                </p>
+              </div>
+            </motion.div>
 
-        <motion.div
-          initial={{ opacity: 0, y: 60 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ delay: 0.2 }}
-          className="bg-white/80 backdrop-blur-md p-10 rounded-3xl shadow-xl border-4 border-orange-300/50"
-        >
-          <h2 className="text-4xl font-bold text-orange-600 mb-6">
-            Our Mission
-          </h2>
-          <p className="text-xl text-gray-800 leading-relaxed">
-            To deliver inclusive, evidence-based pediatric exercise therapy that
-            enhances function, builds confidence, and nurtures independence in
-            children with neurodevelopmental challenges—blending clinical
-            excellence with compassionate care to transform lives through
-            personalized movement.
-          </p>
-        </motion.div>
+            <motion.div
+              initial="hidden"
+              whileInView="visible"
+              viewport={{ once: true }}
+              variants={fadeInUp}
+              className="order-1 lg:order-2 rounded-2xl overflow-hidden shadow-xl"
+            >
+              <Image
+                src="/images/IMG-20250822-WA0000.jpg"
+                alt="Therapist gently guiding a smiling child in supportive movement exercise"
+                width={1920}
+                height={1200}
+                className="w-full h-auto object-cover"
+              />
+            </motion.div>
+          </div>
+        </div>
       </section>
 
-      {/* Core Values */}
-      <section>
-        <h2 className="text-5xl font-extrabold text-center text-purple-700 mb-12 drop-shadow-md">
-          Our Core Values
+      {/* SECTION 3: PROGRAM APPROACH – Three Image Grid */}
+      <section className="max-w-7xl mx-auto px-6 lg:px-8 py-20">
+        <h2 className="text-4xl md:text-5xl font-serif font-bold text-center text-blue-700 mb-12">
+          Our Program Approach
         </h2>
+
+        <div className="prose prose-lg text-medium text-gray-700 text-center max-w-4xl mx-auto mb-16 leading-relaxed">
+          <p>
+            Our programs blend clinical rigor with cultural sensitivity,
+            emotional warmth, and playful joy.
+          </p>
+          <p>
+            We partner with families to co-create care plans that reflect each
+            child’s unique needs and aspirations. We train caregivers, empower
+            communities, and walk alongside families through challenges and
+            milestones—ensuring that every step forward is safe, supported, and
+            deeply attuned to the journey toward wellness.
+          </p>
+          <p>
+            Through years of clinical experience and continuous learning, we’ve
+            developed an approach that combines the latest research in pediatric
+            exercise physiology with time-tested therapeutic practices. This is
+            more than therapy—it’s a reclamation, a celebration, and a return to
+            embodied hope for every child and family we serve.
+          </p>
+        </div>
+
         <div className="grid md:grid-cols-3 gap-8">
           {[
             {
-              title: "Teamwork & Collaborations",
-              desc: "We thrive through shared wisdom, open communication, and collective care—building strong partnerships within our team and with the families we serve.",
-              image: "/images/IMG_2491.jpg",
+              src: "/images/IMG_2182.jpg",
+              alt: "Therapist guiding child in gentle interactive play therapy",
             },
             {
-              title: "Commitment",
-              desc: "Our smiles, words, affirmations, and follow-up throughout each child's movement journey reflects our unwavering dedication to delivering compassionate, consistent care.",
-              image: "/images/IMG_2493.jpg",
+              src: "/images/IMG_2183.jpg",
+              alt: "Caregiver actively participating in child's therapy session",
             },
             {
-              title: "Respect & Compassion",
-              desc: "We honor each child's journey with empathy, dignity, and personalized care—creating safe spaces for healing through movement and relationship.",
-              image: "/images/IMG_2494.jpg",
+              src: "/images/IMG_2184.jpg",
+              alt: "Joyful child making heart shape during playful movement activity",
             },
-          ].map((value, index) => (
+          ].map((img, i) => (
             <motion.div
-              key={index}
-              initial={{ opacity: 0, y: 80 }}
-              whileInView={{ opacity: 1, y: 0 }}
+              key={i}
+              initial="hidden"
+              whileInView="visible"
               viewport={{ once: true }}
-              transition={{ delay: index * 0.2, duration: 0.8 }}
-              className="bg-white/90 backdrop-blur-md rounded-3xl overflow-hidden shadow-2xl border-4 border-orange-300/40 hover:border-blue-400/70 hover:scale-105 transition-all duration-300"
+              variants={fadeInUp}
+              className="rounded-2xl overflow-hidden shadow-lg bg-white"
             >
-              <div className="relative h-56">
+              <div className="relative aspect-[4/3]">
                 <Image
-                  src={value.image}
-                  alt={value.title}
+                  src={img.src}
+                  alt={img.alt}
                   fill
                   className="object-cover"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent" />
-              </div>
-              <div className="p-8">
-                <h3 className="text-2xl font-bold text-blue-700 mb-4">
-                  {value.title}
-                </h3>
-                <p className="text-gray-700">{value.desc}</p>
               </div>
             </motion.div>
           ))}
+        </div>
+      </section>
+
+      {/* SECTION 4: FEATURE – Childlike Background */}
+      <section className="py-24 relative overflow-hidden">
+        <div className="absolute inset-0 opacity-20 pointer-events-none">
+          <Image
+            src="/images/IMG_2182.jpg"
+            alt="Soft pastel dreamy clouds background"
+            fill
+            className="object-cover"
+          />
+        </div>
+
+        <div className="relative max-w-5xl mx-auto px-6 text-center">
+          <motion.div
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true }}
+            variants={fadeInUp}
+            className="bg-white/80 backdrop-blur-md rounded-3xl p-12 shadow-xl border border-gray-100"
+          >
+            <h2 className="text-4xl md:text-5xl font-serif font-bold text-blue-700 mb-10">
+              Movement with us
+            </h2>
+            <div className="prose prose-xl text-gray-800 leading-relaxed space-y-6 max-w-4xl mx-auto">
+              <p className="italic font-medium">
+                this is where science meets soul.
+              </p>
+              <p>
+                Where evidence-based exercise therapy is delivered with
+                tenderness.
+              </p>
+              <p>
+                Where every child is seen, every parent supported, and every
+                family empowered to move—not just physically, but towards
+                wholeness.
+              </p>
+              <p>
+                Arukah Health is more than a brand—it’s a living, breathing
+                reflection of everything we believe in: clinical excellence,
+                emotional safety, cultural sensitivity, and the power of
+                movement to transform lives.
+              </p>
+              <p className="font-semibold">
+                Every session, every program, every playful activity is crafted
+                with intention—because wholeness deserves that kind of care.
+              </p>
+            </div>
+          </motion.div>
+        </div>
+      </section>
+
+      {/* SECTION 5: VISION & MISSION */}
+      <section className="max-w-7xl mx-auto px-6 lg:px-8 py-20">
+        <div className="grid md:grid-cols-2 gap-12">
+          <motion.div
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true }}
+            variants={fadeInUp}
+            className="bg-white rounded-2xl p-10 shadow-lg border border-blue-100"
+          >
+            <h3 className="text-3xl font-serif font-bold text-blue-700 mb-6">
+              Our Vision
+            </h3>
+            <p className="text-lg text-gray-700 leading-relaxed">
+              To be East Africa’s leading provider of pediatric
+              movement-centered care—where exercise therapy shines as a beacon
+              of hope, empowering every child with neuro-developmental
+              challenges to grow in strength, joy, and lifelong independence.
+            </p>
+          </motion.div>
+
+          <motion.div
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true }}
+            variants={fadeInUp}
+            className="bg-white rounded-2xl p-10 shadow-lg border border-blue-100"
+          >
+            <h3 className="text-3xl font-serif font-bold text-blue-700 mb-6">
+              Our Mission
+            </h3>
+            <p className="text-lg text-gray-700 leading-relaxed">
+              To deliver inclusive, evidence-based pediatric exercise therapy
+              that enhances function, builds confidence, and nurtures
+              independence in children with neurodevelopmental
+              challenges—blending clinical excellence with compassionate care to
+              transform lives through personalized movement.
+            </p>
+          </motion.div>
+        </div>
+      </section>
+
+      {/* SECTION 6: CORE VALUES */}
+      <section className="bg-gray-50 py-20">
+        <div className="max-w-7xl mx-auto px-6 lg:px-8">
+          <h2 className="text-4xl md:text-5xl font-serif font-bold text-center text-blue-700 mb-16">
+            Our Core Values
+          </h2>
+
+          <div className="grid md:grid-cols-3 gap-10">
+            {[
+              {
+                title: "Teamwork & Collaboration",
+                desc: "We thrive through shared wisdom, open communication, and collective care—building strong partnerships within our team and with the families we serve.",
+              },
+              {
+                title: "Commitment",
+                desc: "Our smiles, words, affirmations, and follow-up throughout each child's movement journey reflect our unwavering dedication to delivering compassionate, consistent care.",
+              },
+              {
+                title: "Respect & Compassion",
+                desc: "We honor each child's journey with empathy, dignity, and personalized care—creating safe spaces for healing through movement and relationship.",
+              },
+            ].map((value, i) => (
+              <motion.div
+                key={i}
+                initial="hidden"
+                whileInView="visible"
+                viewport={{ once: true }}
+                variants={fadeInUp}
+                className="bg-white rounded-2xl p-8 shadow-md border border-gray-100 text-center"
+              >
+                <h3 className="text-2xl font-serif font-bold text-blue-600 mb-4">
+                  {value.title}
+                </h3>
+                <p className="text-gray-700">{value.desc}</p>
+              </motion.div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* SECTION 7: FOUNDER SECTION (Placeholder) */}
+      <section className="max-w-7xl mx-auto px-6 lg:px-8 py-20">
+        <div className="grid lg:grid-cols-2 gap-12 items-center">
+          <motion.div
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true }}
+            variants={fadeInUp}
+            className="rounded-2xl overflow-hidden shadow-xl order-2 lg:order-1"
+          >
+            <Image
+              src="/images/IMG_2182.jpg"
+              alt="Founder portrait – warm, approachable professional in natural setting"
+              width={2560}
+              height={1707}
+              className="w-full h-auto object-cover"
+            />
+          </motion.div>
+
+          <motion.div
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true }}
+            variants={fadeInUp}
+            className="order-1 lg:order-2"
+          >
+            <h2 className="text-4xl md:text-5xl font-serif font-bold text-blue-700 mb-8">
+              Meet the Founder
+            </h2>
+            <div className="prose prose-lg text-gray-700 leading-relaxed space-y-6">
+              <p>
+                [Founder name] founded Arukah Health with a deep passion for
+                helping children with neuro-developmental challenges discover
+                their potential through joyful, purposeful movement.
+              </p>
+              <p>
+                With years of clinical experience in pediatric therapy and a
+                heart for families navigating uncertainty, [he/she/they] created
+                a space where science, compassion, and hope converge.
+              </p>
+              <p>
+                “I believe every child deserves to be seen, celebrated, and
+                supported on their unique journey toward strength and
+                independence.”
+              </p>
+              {/* Add real bio, credentials, photo credit, etc. when ready */}
+            </div>
+          </motion.div>
+        </div>
+      </section>
+
+      {/* FINAL SECTION: CLOSING MESSAGE */}
+      <section className="bg-blue-50 py-20 text-center">
+        <div className="max-w-4xl mx-auto px-6">
+          <motion.div
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true }}
+            variants={fadeInUp}
+            className="space-y-8"
+          >
+            <h2 className="text-3xl md:text-4xl font-serif font-bold text-blue-700">
+              Thank you for being part of this story.
+            </h2>
+            <p className="text-xl text-gray-700 leading-relaxed">
+              Whether you’re here to learn, move, teach, or heal — you belong.
+            </p>
+          </motion.div>
         </div>
       </section>
     </div>
