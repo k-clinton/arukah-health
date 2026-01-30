@@ -52,11 +52,9 @@ export default function ContactPage() {
   return (
     <>
       {/* Hero */}
-      <section className="bg-orange-300 text-white mt-20 py-20">
+      <section className="bg-[#FFB347] text-white mt-20 py-20">
         <div className="max-w-7xl mx-auto px-4 text-center">
-          <h1 className="font-['Playfair_Display'] text-4xl md:text-6xl font-bold">
-            Get in Touch
-          </h1>
+          <h1 className=" text-4xl md:text-6xl font-bold">Get in Touch</h1>
           <p className="mt-4 text-lg text-[black] max-w-2xl mx-auto">
             We’re here when you’re ready to talk no pressure, just support.
           </p>
@@ -190,7 +188,7 @@ export default function ContactPage() {
                   <p className="text-gray-700">
                     Mon–Fri: 8 AM – 6 PM
                     <br />
-                    Saturday: 9 AM – 2 PM
+                    Saturday: 9 AM – 1 PM
                     <br />
                   </p>
                 </div>

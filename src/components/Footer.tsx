@@ -28,11 +28,6 @@ const Footer = () => {
               </p>
             </div>
 
-            <p className="text-gray-300 text-sm leading-relaxed">
-              Professional Exercise Therapy grounded in clinical expertise and
-              compassion—supporting recovery, resilience, and lifelong wellness.
-            </p>
-
             {/* Contact Info */}
             <div className="space-y-3">
               <div className="flex items-center gap-3">
@@ -160,9 +155,6 @@ const Footer = () => {
                   <div>
                     <div className="font-medium text-gray-300">
                       Ngong Road, Nairobi
-                    </div>
-                    <div className="text-sm text-gray-400 mt-1">
-                      Emergency consultations available by phone
                     </div>
                   </div>
                 </div>

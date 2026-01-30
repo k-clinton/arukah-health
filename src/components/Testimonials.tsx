@@ -18,7 +18,7 @@ const InfiniteTestimonials = () => {
       name: "James Mwangi",
       role: "Back Pain Recovery",
       content:
-        "After 6 months of chronic back pain, the team at Arukah restored my mobility. I can now play with my kids pain-free!",
+        "Ethan now climbs stairs independently and plays with joy. The fun sessions built his balance, posture, and confidence. Arukah truly sees the whole child—thank you for the hope!",
       rating: 5,
       icon: FaRunning,
       color: "from-blue-500 to-cyan-400",
@@ -28,7 +28,7 @@ const InfiniteTestimonials = () => {
       name: "Sarah Kamau",
       role: "Post-Stroke Therapy",
       content:
-        "The compassionate care and expert therapy helped me regain strength and confidence. My quality of life has improved dramatically.",
+        "Aisha's core strength and posture improved dramatically. She takes supported steps with excitement now. The personalized, joyful approach has made a huge difference for our family.",
       rating: 5,
       icon: FaHeartbeat,
       color: "from-purple-500 to-pink-400",
@@ -38,7 +38,7 @@ const InfiniteTestimonials = () => {
       name: "Dr. Michael Otieno",
       role: "Orthopedic Surgeon",
       content:
-        "I regularly refer my post-op patients to Arukah. Their evidence-based approach ensures optimal recovery outcomes.",
+        "Liam's mobility, endurance, and self-esteem have soared. He thinks it's just play, but we're seeing real gains in muscle tone and posture. Arukah is transforming him!",
       rating: 5,
       icon: FaUserMd,
       color: "from-green-500 to-emerald-400",
@@ -48,7 +48,7 @@ const InfiniteTestimonials = () => {
       name: "Grace Wanjiku",
       role: "Arthritis Management",
       content:
-        "Living with arthritis was challenging until I found Arukah. Their tailored exercises reduced my pain by 80%.",
+        "Maya is reaching independently and holding better posture. The encouraging, evidence-based sessions are helping her rebuild function and confidence. We're so grateful",
       rating: 5,
       icon: FaHandsHelping,
       color: "from-orange-500 to-yellow-400",
@@ -58,7 +58,7 @@ const InfiniteTestimonials = () => {
       name: "Robert Kiprop",
       role: "Sports Injury",
       content:
-        "As a marathon runner, my knee injury threatened my career. Arukah got me back to running in 3 months!",
+        "Noah's posture has improved so much—he sits and stands with confidence now. The playful sessions boosted his strength and mobility, and he's more independent every day. Arukah brings real joy to his therapy!",
       rating: 5,
       icon: FaRunning,
       color: "from-red-500 to-orange-400",
@@ -68,7 +68,7 @@ const InfiniteTestimonials = () => {
       name: "Maryanne Akoth",
       role: "Elderly Care",
       content:
-        "My mother's balance and strength improved significantly. The home exercise program was easy to follow.",
+        "Zara is reaching, balancing, and moving with purpose for the first time. Her physical capacity and function are growing fast, and she smiles through every session. Thank you for the gentle, effective support!",
       rating: 5,
       icon: FaHeartbeat,
       color: "from-indigo-500 to-blue-400",
