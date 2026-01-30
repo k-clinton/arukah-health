@@ -94,7 +94,7 @@ export default function Hero() {
             className="relative rounded-2xl shadow-2xl overflow-hidden h-64"
           >
             <Image
-              src="/images/IMG_2182.jpg"
+              src="/images/IMG_2198.JPG"
               alt="Children engaged in fun therapy activities with specialist"
               fill
               className="object-cover"
@@ -114,7 +114,7 @@ export default function Hero() {
             className="relative rounded-2xl shadow-2xl overflow-hidden h-64"
           >
             <Image
-              src="/images/IMG_9647.jpg"
+              src="/images/IMG_2412.jpg"
               alt="Kids participating in dynamic movement exercises with guide"
               fill
               className="object-cover"
@@ -134,7 +134,7 @@ export default function Hero() {
             className="relative rounded-2xl shadow-2xl overflow-hidden h-64"
           >
             <Image
-              src="/images/IMG_9647.jpg"
+              src="/images/IMG_9598.jpg"
               alt="Child supported in playful physical therapy session"
               fill
               className="object-cover"

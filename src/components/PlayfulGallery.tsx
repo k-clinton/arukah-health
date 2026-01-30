@@ -10,38 +10,38 @@ const PlayfulGallery = () => {
   const galleryImages = [
     {
       id: 1,
-      src: "/images/IMG-20250916-WA0000.jpg",
+      src: "/images/IMG_9611.jpg",
       alt: "Kids painting together",
-      title: "Creative Painting",
-      emoji: "🎨",
+      title: "",
+      emoji: "",
     },
     {
       id: 2,
-      src: "/images/IMG_9652.jpg",
+      src: "/images/IMG_9642.jpg",
       alt: "Child playing with blocks",
-      title: "Building Blocks",
-      emoji: "🧱",
+      title: "",
+      emoji: "",
     },
     {
       id: 3,
-      src: "/images/IMG_2182.jpg",
+      src: "/images/IMG_2325.jpg",
       alt: "Kids reading books",
-      title: "Story Time",
-      emoji: "📚",
+      title: "",
+      emoji: "",
     },
     {
       id: 4,
-      src: "/images/IMG_9611.jpg",
+      src: "/images/IMG_2182.jpg",
       alt: "Children dancing",
-      title: "Dance Party",
-      emoji: "💃",
+      title: "",
+      emoji: "",
     },
     {
       id: 5,
-      src: "/images/IMG_9647.jpg",
+      src: "/images/IMG_9761.jpg",
       alt: "Kids with musical instruments",
-      title: "Music Band",
-      emoji: "🎵",
+      title: "",
+      emoji: "",
     },
   ];
 
@@ -51,7 +51,7 @@ const PlayfulGallery = () => {
       <div className="text-center mb-12">
         <h2 className="text-4xl md:text-5xl font-bold text-gray-800 mb-4">
           Our{" "}
-          <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-500 to-purple-600">
+          <span className="text-transparent bg-clip-text bg-gradient-to-r from-orange-500 to-amber-600">
             Wonderful
           </span>{" "}
           World
@@ -63,7 +63,7 @@ const PlayfulGallery = () => {
 
         {/* Decorative border */}
         <div className="flex justify-center mt-6 space-x-2">
-          {["⭐", "🌈", "✨", "🎈", "🌟"].map((emoji, i) => (
+          {["⭐", , "✨", "🎈", "🌟"].map((emoji, i) => (
             <span
               key={i}
               className="text-2xl animate-bounce"
@@ -184,27 +184,6 @@ const PlayfulGallery = () => {
               }`}
               aria-label={`Go to image ${index + 1}`}
             />
-          ))}
-        </div>
-
-        {/* Fun Stats */}
-        <div className="mt-12 grid grid-cols-2 md:grid-cols-4 gap-6 max-w-3xl mx-auto">
-          {[
-            { label: "Happy Kids", value: "500+", emoji: "😊" },
-            { label: "Activities", value: "50+", emoji: "🎯" },
-            { label: "Creative Hours", value: "10k+", emoji: "⏰" },
-            { label: "Smiles Generated", value: "∞", emoji: "😄" },
-          ].map((stat, index) => (
-            <div
-              key={index}
-              className="bg-gradient-to-br from-white to-blue-50 rounded-2xl p-6 text-center shadow-lg hover:shadow-xl transition-shadow duration-300 border border-blue-100"
-            >
-              <div className="text-4xl mb-2">{stat.emoji}</div>
-              <div className="text-3xl font-bold text-gray-800">
-                {stat.value}
-              </div>
-              <div className="text-gray-600 mt-1">{stat.label}</div>
-            </div>
           ))}
         </div>
       </div>
