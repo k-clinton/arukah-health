@@ -16,7 +16,7 @@ const imageVariants = {
 
 export default function Hero() {
   return (
-    <section className="relative min-h-screen flex items-center justify-center pt-40 pb-20 md:pt-32 overflow-hidden bg-gradient-to-br from-[#4793FF]/10 via-purple-50 to-[#FFB347]/10">
+    <section className="relative min-h-screen flex items-center justify-center pb-20 md:pt-32 overflow-hidden bg-gradient-to-br from-[#4793FF]/10 via-purple-50 to-[#FFB347]/10">
       {/* Floating playful elements (gold accents) */}
       <motion.div
         className="absolute top-20 left-10 w-16 h-16 bg-[#EAB308] rounded-full opacity-60 blur-md"

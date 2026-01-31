@@ -362,7 +362,6 @@ export default function AboutUsPage() {
                 supported on their unique journey toward strength and
                 independence.”
               </p>
-              {/* Add real bio, credentials, photo credit, etc. when ready */}
             </div>
           </motion.div>
         </div>

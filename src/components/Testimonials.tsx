@@ -179,54 +179,6 @@ const InfiniteTestimonials = () => {
             </motion.div>
           </div>
         </div>
-
-        {/* Stats Section Below */}
-        <div className="mt-16 grid grid-cols-2 md:grid-cols-4 gap-6 max-w-4xl mx-auto">
-          {[
-            {
-              value: "98%",
-              label: "Patient Satisfaction",
-              color: "text-blue-600",
-            },
-            {
-              value: "5,000+",
-              label: "Lives Transformed",
-              color: "text-purple-600",
-            },
-            {
-              value: "15+",
-              label: "Years Experience",
-              color: "text-green-600",
-            },
-            {
-              value: "24/7",
-              label: "Support Available",
-              color: "text-cyan-600",
-            },
-          ].map((stat, index) => (
-            <div
-              key={index}
-              className="text-center bg-white p-6 rounded-2xl shadow-lg hover:shadow-xl transition-shadow duration-300 border border-gray-100"
-            >
-              <div
-                className={`text-4xl md:text-5xl font-bold ${stat.color} mb-2`}
-              >
-                {stat.value}
-              </div>
-              <div className="text-gray-600 font-medium">{stat.label}</div>
-            </div>
-          ))}
-        </div>
-
-        {/* CTA */}
-        <div className="text-center mt-12">
-          <button className="bg-gradient-to-r from-blue-600 to-purple-600 text-white font-bold text-lg px-8 py-4 rounded-full hover:from-blue-700 hover:to-purple-700 transform hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-xl">
-            Share Your Success Story
-          </button>
-          <p className="text-gray-500 mt-4">
-            Join our community of transformed lives
-          </p>
-        </div>
       </div>
     </section>
   );
