@@ -11,7 +11,7 @@ const HeroExtro = () => {
             'url("https://i.pinimg.com/1200x/a9/d8/20/a9d8209ebf3d4e8eb0bd787d9fe76dc5.jpg")',
         }}
       >
-        <div className="absolute inset-0 bg-gradient-to-r from-blue-900/70 to-purple-900/50 mix-blend-multiply"></div>
+        <div className="absolute inset-0 bg-white mix-blend-multiply"></div>
       </div>
 
       {/* Content Container */}
@@ -19,14 +19,11 @@ const HeroExtro = () => {
         {/* Playful Title */}
         <h1 className="text-4xl md:text-6xl font-bold text-white mb-4 leading-tight drop-shadow-lg">
           Let’s Create{" "}
-          <span className="text-yellow-300 animate-pulse inline-block">
-            Magical
-          </span>{" "}
-          Moments
+          <span className="text-orange-300  inline-block">Magical</span> Moments
         </h1>
 
         {/* Subtitle */}
-        <p className="text-xl md:text-2xl text-blue-100 mb-8 max-w-2xl mx-auto drop-shadow-md">
+        <p className="text-xl md:text-2xl text-blue-200 mb-8 max-w-2xl mx-auto drop-shadow-md">
           Join us in redefining what’s possible. Start your child’s personalized
           exercise therapy today Move towards mobility, confidence, independence
           and joy.
@@ -35,7 +32,7 @@ const HeroExtro = () => {
         {/* CTA Button */}
         <Link
           href="/contact"
-          className="inline-flex items-center justify-center gap-2 bg-gradient-to-r from-yellow-400 to-orange-500 hover:from-yellow-500 hover:to-orange-600 text-gray-900 font-bold text-xl md:text-2xl py-4 px-10 rounded-full shadow-2xl hover:scale-105 transform transition-all duration-300 hover:shadow-2xl hover:shadow-yellow-300/50 border-4 border-white/30"
+          className="inline-flex items-center justify-center gap-2 bg-orange hover:from-yellow-500 hover:to-orange-600 text-gray-900 font-bold text-xl md:text-2xl py-4 px-10 rounded-full shadow-2xl hover:scale-105 transform transition-all duration-300 hover:shadow-2xl hover:shadow-yellow-300/50 border-4 border-white/30"
         >
           <span>Start the Adventure!</span>
           <span className="text-2xl animate-bounce ">🚀</span>
