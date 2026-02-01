@@ -32,7 +32,7 @@ const HeroExtro = () => {
         <div className="mt-16 flex justify-center space-x-8">
           <div className="w-16 h-16 bg-blue-400/30 rounded-full  animate-pulse"></div>
           <div className="w-20 h-20 bg-pink-400/30 rounded-full blur-sm animate-pulse delay-300"></div>
-          <div className="w-16 h-16 bg-green-400/30 rounded-full animate-pulse delay-700"></div>
+          <div className="w-16 h-16 bg-orange-400/30 rounded-full animate-pulse delay-700"></div>
         </div>
       </div>
 
