@@ -1,67 +1,53 @@
 "use client";
-import { motion } from "framer-motion";
+
+import { motion, Variants } from "framer-motion";
 import Link from "next/link";
 import Image from "next/image";
 
-const floatingVariants = {
+const floatingVariants: Variants = {
   animate: {
     y: [0, -15, 0],
     transition: { duration: 6, repeat: Infinity, ease: "easeInOut" },
   },
 };
-
-const imageVariants = {
-  hover: { scale: 1.08, rotate: 2 },
-};
-
 export default function Hero() {
   return (
-    <section className="relative min-h-screen flex items-center justify-center pb-20 md:pt-32 overflow-hidden bg-white">
-      {/* Floating playful elements (gold accents) */}
+    <section className="relative min-h-screen flex items-center justify-center pt-32 pb-20 bg-white overflow-hidden">
+      {/* Subtle floating accents (optional – remove if you want ultra-clean) */}
       <motion.div
-        className="absolute top-20 left-10 w-16 h-16 bg-[#EAB308] rounded-full opacity-60 blur-md"
+        className="absolute top-24 left-16 w-20 h-20 bg-[#EAB308] rounded-full opacity-50 blur-xl"
         variants={floatingVariants}
         animate="animate"
       />
       <motion.div
-        className="absolute bottom-32 right-20 w-20 h-20 bg-[#FFB347]/40 rounded-full opacity-50 blur-lg"
+        className="absolute bottom-40 right-20 w-24 h-24 bg-[#4793FF]/20 rounded-full opacity-40 blur-2xl"
         variants={floatingVariants}
         animate="animate"
-        transition={{ delay: 1, duration: 8 }}
-      />
-      <motion.div
-        className="absolute top-1/3 left-1/4 w-12 h-12 bg-[#4793FF]/30 rounded-full opacity-70"
-        variants={floatingVariants}
-        animate="animate"
-        transition={{ delay: 2, duration: 7 }}
-      />
-      <motion.div
-        className="absolute bottom-20 left-1/3 w-10 h-10 bg-[#EAB308]/50 rounded-full opacity-60"
-        variants={floatingVariants}
-        animate="animate"
-        transition={{ delay: 3 }}
+        transition={{ delay: 2, duration: 9 }}
       />
 
-      <div className="relative z-10 max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-12 items-center">
-        {/* Left: Content */}
+      <div className="relative z-10 max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-16 items-center">
+        {/* Left: Text Content */}
         <motion.div
-          initial={{ opacity: 0, x: -80 }}
+          initial={{ opacity: 0, x: -60 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 1, ease: "easeOut" }}
           className="text-center md:text-left"
         >
-          <h1 className="text-5xl md:text-7xl font-serif font-bold text-blue-700 mb-6 leading-tight">
+          <h1 className="text-5xl md:text-7xl font-serif font-extrabold text-[#4793FF] mb-8 leading-tight">
             Exercise Is{" "}
-            <span className="p-2 text-white bg-red-500 rounded-lg">Love</span>
+            <span className="inline-block px-5 py-2 bg-[#EAB308] text-white rounded-xl shadow-lg font-serif font-bold tracking-wide">
+              Love
+            </span>
           </h1>
 
-          <p className="text-xl md:text-3xl font-serif text-gray-800 mb-8 max-w-xl">
+          <p className="text-xl md:text-3xl font-serif text-gray-800 mb-10 max-w-xl">
             Redefining Recovery, Reclaiming milestones, Reshaping beliefs, and
             Transforming lives through the power of movement.
           </p>
 
-          <div className="mb-10">
-            <h2 className="text-3xl md:text-4xl font-serif font-bold text-[#FFB347] mb-4">
+          <div className="mb-12">
+            <h2 className="text-3xl md:text-4xl font-serif font-bold text-[#FFB347] mb-5">
               THERAPY THROUGH MOTION
             </h2>
             <p className="text-lg md:text-xl text-gray-700 leading-relaxed">
@@ -74,93 +60,31 @@ export default function Hero() {
 
           <Link
             href="/about"
-            className="inline-block bg-[#FFB347] hover:bg-orange-400 text-white font-bold py-5 px-12 rounded-full text-xl shadow-xl transform hover:scale-105 transition duration-300"
+            className="inline-block bg-[#FFB347] hover:bg-[#FFB347]/90 text-white font-bold py-5 px-14 rounded-full text-xl shadow-lg transform hover:scale-105 transition duration-300"
           >
             KNOW MORE →
           </Link>
         </motion.div>
 
-        {/* Right: Image Grid (kept the same structure + animations) */}
+        {/* Right: Single Hero Image with irregular border */}
         <motion.div
-          initial={{ opacity: 0, scale: 0.9 }}
+          initial={{ opacity: 0, scale: 0.95 }}
           animate={{ opacity: 1, scale: 1 }}
-          transition={{ duration: 1.2, delay: 0.3 }}
-          className="grid grid-cols-2 gap-6"
+          transition={{ duration: 1.3, delay: 0.4 }}
+          className="relative rounded-3xl overflow-hidden shadow-2xl aspect-[4/5] md:aspect-auto"
         >
-          <motion.div
-            variants={imageVariants}
-            whileHover="hover"
-            animate={{ y: [0, -8, 0] }}
-            transition={{ repeat: Infinity, duration: 5, ease: "easeInOut" }}
-            className="relative rounded-2xl shadow-2xl overflow-hidden h-64"
-          >
+          <div className="absolute inset-0 clip-path-hero">
             <Image
-              src="/images/IMG_2198.JPG"
-              alt="Children engaged in fun therapy activities with specialist"
+              src="/images/IMG_2412.JPG"
+              alt="Child joyfully engaged in supportive movement therapy"
               fill
               className="object-cover"
+              priority
             />
-          </motion.div>
+          </div>
 
-          <motion.div
-            variants={imageVariants}
-            whileHover="hover"
-            animate={{ y: [0, -10, 0] }}
-            transition={{
-              repeat: Infinity,
-              duration: 6,
-              ease: "easeInOut",
-              delay: 1,
-            }}
-            className="relative rounded-2xl shadow-2xl overflow-hidden h-64"
-          >
-            <Image
-              src="/images/IMG_2412.jpg"
-              alt="Kids participating in dynamic movement exercises with guide"
-              fill
-              className="object-cover"
-            />
-          </motion.div>
-
-          <motion.div
-            variants={imageVariants}
-            whileHover="hover"
-            animate={{ y: [0, -12, 0] }}
-            transition={{
-              repeat: Infinity,
-              duration: 7,
-              ease: "easeInOut",
-              delay: 0.5,
-            }}
-            className="relative rounded-2xl shadow-2xl overflow-hidden h-64"
-          >
-            <Image
-              src="/images/IMG_9598.jpg"
-              alt="Child supported in playful physical therapy session"
-              fill
-              className="object-cover"
-            />
-          </motion.div>
-
-          <motion.div
-            variants={imageVariants}
-            whileHover="hover"
-            animate={{ y: [0, -9, 0] }}
-            transition={{
-              repeat: Infinity,
-              duration: 5.5,
-              ease: "easeInOut",
-              delay: 1.5,
-            }}
-            className="relative rounded-2xl shadow-2xl overflow-hidden h-64"
-          >
-            <Image
-              src="/images/IMG_2182.jpg"
-              alt="Group of children in joyful movement and play therapy"
-              fill
-              className="object-cover"
-            />
-          </motion.div>
+          {/* Optional subtle overlay gradient for depth */}
+          <div className="absolute inset-0 bg-gradient-to-t from-black/20 via-transparent to-transparent pointer-events-none" />
         </motion.div>
       </div>
     </section>
