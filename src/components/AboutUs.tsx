@@ -25,13 +25,13 @@ const pillars: Pillar[] = [
     ],
     fullContent: `We blend science with soul—delivering exercise therapy that's grounded in research, tailored to each child, and guided by real-time data. No cookie-cutter plans. Just care that works.
 
-Scientific and Data-Driven Practice
+**Scientific and Data-Driven Practice**
 Our care is grounded in evidence-based practice, guided by the latest research and informed by real-time data in exercise physiology, rehabilitation, and wellness science - allowing us to deliver care that's not only compassionate, but consistently results-driven.
 
-Custom-Tailored Treatments
+**Custom-Tailored Treatments**
 Every exercise plan is uniquely designed to reflect the child's physical needs, emotional & sensory comfort, and personal goals—no one-size-fits-all care here.
 
-Ongoing Progress Monitoring & Evaluation
+**Ongoing Progress Monitoring & Evaluation**
 We track each child's journey with regular assessments and feedback loops—ensuring care remains responsive, measurable, and goal-driven.`,
     imageUrl: "/images/IMG_9647.jpg",
     color: "orange",
@@ -46,13 +46,13 @@ We track each child's journey with regular assessments and feedback loops—ensu
     ],
     fullContent: `We create spaces where movement feels safe, joyful, and real—offering sessions that are playful yet purposeful, guided by emotionally intelligent specialists, and supported with steady, compassionate care from day one.
 
-Fun & Interactive Sessions
+ **Fun & Interactive Sessions**
 Our sessions are engaging, playful, and emotionally safe—making movement enjoyable while still clinically effective.
 
-Friendly and Well-Trained Exercise Specialists
+**Friendly and Well-Trained Exercise Specialists**
 Our team blends clinical expertise with emotional intelligence—creating a welcoming, informed space where children feel seen and supported.
 
-Consistent Guidance and Support
+**Consistent Guidance and Support**
 From onboarding to independence, we walk alongside each child—offering steady encouragement, clear communication, and therapeutic continuity.`,
     imageUrl: "/images/IMG_9652.jpg",
     color: "blue",
@@ -63,10 +63,10 @@ From onboarding to independence, we walk alongside each child—offering steady 
     bullets: ["Flexible Hours", "Multi-disciplinary Wellness Approach"],
     fullContent: `We meet each child where they are—offering adaptable home & school schedules, whole-person care, and a wellness model that honors lifestyle, culture, and community.
 
-Flexible Hours
+**Flexible Hours**
 We offer adaptable scheduling to accommodate diverse lifestyles, school routines, and caregiving responsibilities—because therapy should fit into real life.
 
-Multi-disciplinary Wellness Approach
+**Multi-disciplinary Wellness Approach**
 We work with a multi-disciplinary team of experts—from neurologists and pediatricians to speech therapists, occupational therapists and nutritionists —to deliver personalized care that goes beyond physical therapy. By integrating developmental support, family education and specialists’ consultations, we address the child’s neurological, physical, and emotional needs—treating the whole child, not just the isolated motor or functional challenges.`,
     imageUrl: "/images/IMG_2491.jpg",
     color: "orange",
