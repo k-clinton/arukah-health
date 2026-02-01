@@ -36,13 +36,6 @@ const PlayfulGallery = () => {
       title: "",
       emoji: "",
     },
-    {
-      id: 5,
-      src: "/images/IMG_9761.jpg",
-      alt: "Kids with musical instruments",
-      title: "",
-      emoji: "",
-    },
   ];
 
   return (
