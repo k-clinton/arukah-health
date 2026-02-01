@@ -13,7 +13,7 @@ const HeroExtro = () => {
         {/* Playful Title */}
         <h1 className="text-4xl md:text-6xl font-bold text-white mb-4 leading-tight drop-shadow-lg">
           Let’s Create{" "}
-          <span className="text-orange-300  inline-block">Magical</span> Moments
+          <span className="text-orange-500  inline-block">Magical</span> Moments
         </h1>
 
         {/* Subtitle */}
