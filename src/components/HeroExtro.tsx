@@ -11,13 +11,13 @@ const HeroExtro = () => {
       {/* Content Container */}
       <div className="relative z-10 text-center max-w-4xl px-6 py-12 md:px-12 md:py-20">
         {/* Playful Title */}
-        <h1 className="text-4xl md:text-6xl font-bold text-white mb-4 leading-tight drop-shadow-lg">
+        <h1 className="text-4xl md:text-6xl font-bold text-white mb-4 leading-tight ">
           Let’s Create{" "}
           <span className="text-orange-500  inline-block">Magical</span> Moments
         </h1>
 
         {/* Subtitle */}
-        <p className="text-xl md:text-2xl text-blue-200 mb-8 max-w-2xl mx-auto drop-shadow-md">
+        <p className="text-xl md:text-2xl text-blue-200 mb-8 max-w-2xl mx-auto ">
           Join us in redefining what’s possible. Start your child’s personalized
           exercise therapy today Move towards mobility, confidence, independence
           and joy.
