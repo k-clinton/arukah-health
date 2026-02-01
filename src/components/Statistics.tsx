@@ -68,7 +68,7 @@ export default function Statistics() {
           priority
         />
         {/* Overlay for readability + childish vibe */}
-        <div className="absolute inset-0 bg-gradient-to-br from-blue-900/35 via-purple-800/25 to-orange-800/30 backdrop-blur-sm" />
+        <div className="absolute inset-0 bg-gradient-to-br from-blue-900/35 via-purple-800/25 to-orange-800/30 " />
       </div>
 
       <div className="relative z-10 max-w-7xl mx-auto text-center">
