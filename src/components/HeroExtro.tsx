@@ -3,8 +3,7 @@ import React from "react";
 
 const HeroExtro = () => {
   return (
-    <section className="relative min-h-[500px] md:min-h-[600px] flex items-center justify-center overflow-hidden rounded-2xl mx-4 md:mx-8 my-12 md:my-20 shadow-2xl">
-      {/* Background Image with Overlay */}
+    <section className="relative min-h-[500px] md:min-h-[600px] flex items-center bg-white justify-center overflow-hidden rounded-2xl mx-4 md:mx-8 my-12 md:my-20 shadow-2xl">
       <div
         className="absolute inset-0 bg-cover bg-center bg-no-repeat"
         style={{
