@@ -79,7 +79,7 @@ export default function AboutUs() {
   return (
     <section className="py-20 px-6 bg-gradient-to-br from-blue-50 to-orange-50">
       <div className="max-w-7xl mx-auto">
-        <h2 className="text-5xl font-extrabold text-center mb-6 text-blue-800 drop-shadow-md">
+        <h2 className="text-5xl font-extrabold text-center mb-6 text-blue-600 drop-shadow-md">
           What You’ll Love About Us
         </h2>
         <p className="text-xl text-center text-gray-700 mb-16 max-w-3xl mx-auto">
@@ -93,7 +93,7 @@ export default function AboutUs() {
               key={index}
               className={`bg-white rounded-3xl shadow-xl overflow-hidden cursor-pointer transform transition-all hover:scale-105 hover:shadow-2xl border-4 border-transparent ${
                 pillar.color === "orange"
-                  ? "hover:border-orange-400"
+                  ? "hover:border-orange-500"
                   : "hover:border-blue-400"
               }`}
               whileHover={{ y: -10 }}
@@ -114,7 +114,7 @@ export default function AboutUs() {
                 <h3
                   className={`text-2xl font-bold mb-4 ${
                     pillar.color === "orange"
-                      ? "text-orange-600"
+                      ? "text-orange-500"
                       : "text-blue-600"
                   }`}
                 >
@@ -171,7 +171,7 @@ export default function AboutUs() {
                 <h3
                   className={`text-4xl font-bold mb-6 ${
                     selectedPillar.color === "orange"
-                      ? "text-orange-600"
+                      ? "text-orange-500"
                       : "text-blue-600"
                   }`}
                 >

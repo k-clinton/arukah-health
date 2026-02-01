@@ -118,7 +118,7 @@ export default function Statistics() {
                   "0"
                 )}
               </div>
-              <h3 className="text-2xl md:text-3xl font-bold text-orange-600 mb-4">
+              <h3 className="text-2xl md:text-3xl font-bold text-orange-500 mb-4">
                 {stat.label}
               </h3>
               <p className="text-gray-700 text-lg md:text-xl">
