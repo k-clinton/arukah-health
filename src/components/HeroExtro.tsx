@@ -4,13 +4,7 @@ import React from "react";
 const HeroExtro = () => {
   return (
     <section className="relative min-h-[500px] md:min-h-[600px] flex items-center bg-white justify-center overflow-hidden rounded-2xl mx-4 md:mx-8 my-12 md:my-20 shadow-2xl">
-      <div
-        className="absolute inset-0 bg-cover bg-center bg-no-repeat"
-        style={{
-          backgroundImage:
-            'url("https://i.pinimg.com/1200x/a9/d8/20/a9d8209ebf3d4e8eb0bd787d9fe76dc5.jpg")',
-        }}
-      >
+      <div className="absolute inset-0 bg-cover bg-center bg-no-repeat">
         <div className="absolute inset-0 bg-white mix-blend-multiply"></div>
       </div>
 
