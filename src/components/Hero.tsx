@@ -16,7 +16,7 @@ const imageVariants = {
 
 export default function Hero() {
   return (
-    <section className="relative min-h-screen flex items-center justify-center pb-20 md:pt-32 overflow-hidden bg-gradient-to-br from-[#4793FF]/10 via-purple-50 to-[#FFB347]/10">
+    <section className="relative min-h-screen flex items-center justify-center pb-20 md:pt-32 overflow-hidden bg-white">
       {/* Floating playful elements (gold accents) */}
       <motion.div
         className="absolute top-20 left-10 w-16 h-16 bg-[#EAB308] rounded-full opacity-60 blur-md"
@@ -51,12 +51,15 @@ export default function Hero() {
           className="text-center md:text-left"
         >
           <h1 className="text-5xl md:text-7xl font-serif font-bold text-blue-700 mb-6 leading-tight">
-            Exercise Is Love
+            Exercise Is{" "}
+            <span className="p-2 text-white bg-red-500 rounded-lg">
+              L<i>falove</i>ve
+            </span>
           </h1>
 
           <p className="text-xl md:text-3xl font-serif text-gray-800 mb-8 max-w-xl">
-            Redefining recovery, reclaiming milestones, reshaping beliefs, and
-            transforming lives through the power of movement.
+            Redefining Recovery, Reclaiming milestones, Reshaping beliefs, and
+            Transforming lives through the power of movement.
           </p>
 
           <div className="mb-10">

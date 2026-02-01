@@ -16,7 +16,7 @@ const InfiniteTestimonials = () => {
     {
       id: 1,
       name: "James Mwangi",
-      role: "Back Pain Recovery",
+      role: "Father of Ethan Mwangi",
       content:
         "Ethan now climbs stairs independently and plays with joy. The fun sessions built his balance, posture, and confidence. Arukah truly sees the whole child—thank you for the hope!",
       rating: 5,
@@ -26,7 +26,7 @@ const InfiniteTestimonials = () => {
     {
       id: 2,
       name: "Sarah Kamau",
-      role: "Post-Stroke Therapy",
+      role: "Mother of Aisha Kamau",
       content:
         "Aisha's core strength and posture improved dramatically. She takes supported steps with excitement now. The personalized, joyful approach has made a huge difference for our family.",
       rating: 5,
@@ -36,7 +36,7 @@ const InfiniteTestimonials = () => {
     {
       id: 3,
       name: "Dr. Michael Otieno",
-      role: "Orthopedic Surgeon",
+      role: "",
       content:
         "Liam's mobility, endurance, and self-esteem have soared. He thinks it's just play, but we're seeing real gains in muscle tone and posture. Arukah is transforming him!",
       rating: 5,
@@ -46,7 +46,7 @@ const InfiniteTestimonials = () => {
     {
       id: 4,
       name: "Grace Wanjiku",
-      role: "Arthritis Management",
+      role: "",
       content:
         "Maya is reaching independently and holding better posture. The encouraging, evidence-based sessions are helping her rebuild function and confidence. We're so grateful",
       rating: 5,
@@ -56,7 +56,7 @@ const InfiniteTestimonials = () => {
     {
       id: 5,
       name: "Robert Kiprop",
-      role: "Sports Injury",
+      role: "",
       content:
         "Noah's posture has improved so much—he sits and stands with confidence now. The playful sessions boosted his strength and mobility, and he's more independent every day. Arukah brings real joy to his therapy!",
       rating: 5,
@@ -66,7 +66,7 @@ const InfiniteTestimonials = () => {
     {
       id: 6,
       name: "Maryanne Akoth",
-      role: "Elderly Care",
+      role: "",
       content:
         "Zara is reaching, balancing, and moving with purpose for the first time. Her physical capacity and function are growing fast, and she smiles through every session. Thank you for the gentle, effective support!",
       rating: 5,
