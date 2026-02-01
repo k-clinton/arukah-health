@@ -107,7 +107,7 @@ export default function ContactPage() {
                 <button
                   type="submit"
                   disabled={status === "sending"}
-                  className="w-full text-black bg-orange-200 font-bold py-4 rounded-lg hover:bg-orange-600 transition flex items-center justify-center gap-3 disabled:opacity-70"
+                  className="w-full text-black bg-orange-500 font-bold py-4 rounded-lg hover:bg-orange-600 transition flex items-center justify-center gap-3 disabled:opacity-70"
                 >
                   {status === "sending" ? (
                     <>Sending...</>
@@ -161,7 +161,7 @@ export default function ContactPage() {
                     href="tel:+254700000000"
                     className="text-amber-700 hover:underline text-lg"
                   >
-                    +254 712 436 230/+254 732 461 867
+                    +254 758 304 012/+254 732 461 867
                   </a>
                 </div>
               </div>

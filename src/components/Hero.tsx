@@ -3,6 +3,7 @@
 import { motion, Variants } from "framer-motion";
 import Link from "next/link";
 import Image from "next/image";
+import { LuHeart } from "react-icons/lu";
 
 const floatingVariants: Variants = {
   animate: {
@@ -37,7 +38,8 @@ export default function Hero() {
           <h1 className="text-5xl md:text-7xl font-serif font-extrabold text-[#4793FF] mb-8 leading-tight">
             Exercise Is{" "}
             <span className="inline-block px-5 py-2 bg-[#EAB308] text-white rounded-xl shadow-lg font-serif font-bold tracking-wide">
-              Love
+              L<LuHeart className="inline-block text-red-500" />
+              VE
             </span>
           </h1>
 
@@ -71,12 +73,12 @@ export default function Hero() {
           initial={{ opacity: 0, scale: 0.95 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 1.3, delay: 0.4 }}
-          className="relative rounded-3xl overflow-hidden shadow-2xl aspect-[4/5] md:aspect-auto"
+          className="relative rounded-3xl  shadow-2xl aspect-[4/5] md:aspect-auto"
         >
-          <div className="absolute inset-0 clip-path-hero">
+          <div className="absolute  ">
             <Image
-              src="/images/IMG_2412.JPG"
-              alt="Child joyfully engaged in supportive movement therapy"
+              src="/images/"
+              alt="Hero Image"
               fill
               className="object-cover"
               priority
