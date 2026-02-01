@@ -52,9 +52,7 @@ export default function Hero() {
         >
           <h1 className="text-5xl md:text-7xl font-serif font-bold text-blue-700 mb-6 leading-tight">
             Exercise Is{" "}
-            <span className="p-2 text-white bg-red-500 rounded-lg">
-              L<i>falove</i>ve
-            </span>
+            <span className="p-2 text-white bg-red-500 rounded-lg">Love</span>
           </h1>
 
           <p className="text-xl md:text-3xl font-serif text-gray-800 mb-8 max-w-xl">
