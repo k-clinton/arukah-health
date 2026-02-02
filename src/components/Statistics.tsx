@@ -68,7 +68,7 @@ export default function Statistics() {
           initial={{ opacity: 0, y: 50 }}
           animate={inView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.8 }}
-          className="text-4xl md:text-6xl font-extrabold text-[#4993FF] drop-shadow-2xl mb-8"
+          className="text-4xl md:text-6xl font-extrabold text-blue-700 drop-shadow-2xl mb-8"
         >
           Real Impact, Real Joy
         </motion.h2>

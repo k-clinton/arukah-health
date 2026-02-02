@@ -24,7 +24,7 @@ export default function Hero() {
           transition={{ duration: 1, ease: "easeOut" }}
           className="text-center md:text-left"
         >
-          <h1 className="text-5xl md:text-7xl font-serif text-[#4793FF] font-extrabold mb-8 leading-tight">
+          <h1 className="text-5xl md:text-7xl font-serif text-blue-700 font-extrabold mb-8 leading-tight">
             Exercise Is{" "}
             <span className="inline-block px-5 py-2 bg-[#FFB347] text-white rounded-xl shadow-lg font-serif font-bold tracking-wide">
               L<LuHeart className="inline-block text-red-500" />
@@ -38,7 +38,7 @@ export default function Hero() {
           </p>
 
           <div className="mb-12">
-            <h2 className="text-3xl md:text-4xl font-serif font-bold text-[#4793FF] mb-5">
+            <h2 className="text-3xl md:text-4xl font-serif font-bold text-blue-700 mb-5">
               THERAPY THROUGH MOTION
             </h2>
             <p className="text-lg md:text-xl text-gray-700 leading-relaxed">
