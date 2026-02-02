@@ -56,7 +56,7 @@ const PlayfulGallery = () => {
 
         {/* Decorative border */}
         <div className="flex justify-center mt-6 space-x-2">
-          {["⭐", , "✨", "🎈", "🌟"].map((emoji, i) => (
+          {["", , "", "", ""].map((emoji, i) => (
             <span
               key={i}
               className="text-2xl animate-bounce"
