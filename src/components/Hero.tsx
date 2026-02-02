@@ -21,7 +21,7 @@ export default function Hero() {
         animate="animate"
       />
       <motion.div
-        className="absolute bottom-40 right-20 w-24 h-24 bg-[#4793FF]/20 rounded-full opacity-40 blur-2xl"
+        className="absolute bottom-40 right-20 w-24 h-24 bg-white rounded-full opacity-40 blur-2xl"
         variants={floatingVariants}
         animate="animate"
         transition={{ delay: 2, duration: 9 }}
