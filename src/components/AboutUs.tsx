@@ -133,6 +133,9 @@ export default function AboutUs() {
                       {bullet}
                     </li>
                   ))}
+                  <button className="ml-4 text-sm text-red-500 hover:underline">
+                    Learn More
+                  </button>
                 </ul>
               </div>
             </motion.div>
@@ -161,7 +164,7 @@ export default function AboutUs() {
                 className="absolute top-4 right-4 text-gray-500 hover:text-gray-800 text-3xl font-bold"
                 onClick={() => setSelectedPillar(null)}
               >
-                ×
+                &times;
               </button>
 
               <div className="p-10">
