@@ -24,7 +24,7 @@ const stats = [
     end: 5,
     label: "Years of Experience",
     suffix: "+",
-    description: "Expertise in neurodevelopmental exercise therapy",
+    description: "Expertise in neuro-developmental exercise therapy",
     icon: "",
   },
   {
@@ -38,7 +38,7 @@ const stats = [
     end: 100,
     label: "Children Supported",
     suffix: "+",
-    description: "Kids building independence through fun movement",
+    description: "Kids building independence through fun EXERCISE",
     icon: "",
   },
   {

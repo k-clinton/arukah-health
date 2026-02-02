@@ -8,8 +8,10 @@ const HeroExtro = () => {
       <div className="relative z-10 text-center max-w-4xl px-6 py-12 md:px-12 md:py-20">
         {/* Playful Title */}
         <h1 className="text-4xl md:text-6xl font-bold text-black mb-4 leading-tight ">
-          Let’s Create{" "}
-          <span className="text-orange-500  inline-block">Magical</span> Moments
+          Nurturing{" "}
+          <span className="text-orange-500  inline-block">Progress, </span>
+          Inspiring{" "}
+          <span className="text-orange-500  inline-block">Possibilities</span>
         </h1>
 
         {/* Subtitle */}
@@ -22,24 +24,16 @@ const HeroExtro = () => {
         {/* CTA Button */}
         <Link
           href="/contact"
-          className="inline-flex items-center justify-center gap-2 bg-orange hover:from-yellow-500 hover:to-orange-600 text-gray-900 font-bold text-xl md:text-2xl py-4 px-10 rounded-full shadow-2xl hover:scale-105 transform transition-all duration-300 hover:shadow-2xl hover:shadow-yellow-300/50 border-4 border-white/30"
+          className="inline-flex items-center justify-center gap-2 bg-orange-500 hover:from-yellow-500 hover:to-orange-600 text-gray-900 font-bold text-xl md:text-2xl py-4 px-10 rounded-full shadow-2xl hover:scale-105 transform transition-all duration-300 hover:shadow-2xl hover:shadow-yellow-300/50 border-4 border-white/30"
         >
-          <span>Start the Adventure!</span>
-          <span className="text-2xl animate-bounce ">🚀</span>
+          <span className="text-white">Begin the Journey</span>
+          <span className="text-2xl animate-bounce "></span>
         </Link>
 
         {/* Decorative Elements */}
-        <div className="mt-16 flex justify-center space-x-8">
-          <div className="w-16 h-16 bg-blue-400/30 rounded-full  animate-pulse"></div>
-          <div className="w-20 h-20 bg-pink-400/30 rounded-full blur-sm animate-pulse delay-300"></div>
-          <div className="w-16 h-16 bg-orange-400/30 rounded-full animate-pulse delay-700"></div>
-        </div>
       </div>
 
       {/* Floating Shapes for Childlike Vibe */}
-      <div className="absolute top-10 left-5 w-10 h-10 bg-yellow-300/40 rounded-full animate-bounce hidden md:block"></div>
-      <div className="absolute bottom-16 right-10 w-16 h-16 bg-pink-400/30 rounded-full animate-bounce delay-500 hidden md:block"></div>
-      <div className="absolute top-1/3 right-20 w-12 h-12 bg-blue-400/40 rounded-full animate-spin slow hidden md:block"></div>
     </section>
   );
 };
