@@ -115,7 +115,7 @@ export default function AboutUs() {
                 >
                   {pillar.title}
                 </h3>
-                <p className="text-xl font-bold text-black pb-2">
+                <p className="text-lg font-bold text-black pb-2">
                   {pillar.shortDesc}
                 </p>
                 <ul className="space-y-3">
@@ -133,7 +133,7 @@ export default function AboutUs() {
                       {bullet}
                     </li>
                   ))}
-                  <button className="ml-4 text-sm text-red-500 hover:underline">
+                  <button className="ml-4 text-lg text-red-500 font-semibold hover:underline">
                     Learn More
                   </button>
                 </ul>
