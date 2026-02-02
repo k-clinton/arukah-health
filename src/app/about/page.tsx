@@ -316,7 +316,7 @@ export default function AboutUsPage() {
                 “I believe every child deserves to be seen, celebrated, and
                 supported on their unique journey toward strength and
                 independence, this is where healing begins and recover is
-                redefined ,this is home. Welcome to Arukah Health ”
+                redefined ,this is home. Welcome to Arukah Health.”
               </p>
               <p className="font-semibold text-orange-500">Ivy Gacheri</p>
               <p className="text-sm text-orange-600">
