@@ -123,7 +123,7 @@ export default function AboutUsPage() {
       </section>
       {/* SECTION 4: FEATURE – Childlike Background */}
       <section className="py-24 relative overflow-hidden">
-        <div className="absolute inset-0 opacity-20 pointer-events-none">
+        <div className="absolute inset-0  pointer-events-none">
           <Image
             src="/images/bg1.jpg"
             alt="Soft pastel dreamy clouds background"
@@ -141,32 +141,50 @@ export default function AboutUsPage() {
             className="bg-white/80 backdrop-blur-md rounded-3xl p-12 shadow-xl border border-gray-100"
           >
             <h2 className="text-4xl md:text-5xl font-serif font-bold text-blue-700 mb-10">
-              Movement with us
+              Movement with Us;
             </h2>
             <div className="prose prose-xl text-gray-800 leading-relaxed space-y-6 max-w-4xl mx-auto">
               <p className="italic font-medium">
-                this is where science meets soul.
+                This is where science meets soul!
               </p>
               <p>
                 Where evidence-based exercise therapy is delivered with
-                tenderness.
+                tenderness!
               </p>
               <p>
                 Where every child is seen, every parent supported, and every
                 family empowered to move—not just physically, but towards
-                wholeness.
+                wholeness!
               </p>
               <p>
                 Arukah Health is more than a brand—it’s a living, breathing
                 reflection of everything we believe in: clinical excellence,
                 emotional safety, cultural sensitivity, and the power of
-                movement to transform lives.
+                movement to transform lives!
               </p>
               <p className="font-semibold">
-                Every session, every program, every playful activity is crafted
-                with intention—because wholeness deserves that kind of care.
+                Every Session, Every Program, Every Playful Activity is crafted
+                with intention—because wholeness deserves that kind of care!
               </p>
             </div>
+          </motion.div>
+        </div>
+      </section>
+      <section className="bg-blue-50 py-20 text-center">
+        <div className="max-w-4xl mx-auto px-6">
+          <motion.div
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true }}
+            variants={fadeInUp}
+            className="space-y-8"
+          >
+            <h2 className="text-3xl md:text-4xl font-serif font-bold text-blue-700">
+              Thank you for being part of this story.
+            </h2>
+            <p className="text-xl text-gray-700 leading-relaxed">
+              Whether you’re here to learn, move, teach, or heal — you belong.
+            </p>
           </motion.div>
         </div>
       </section>
@@ -304,24 +322,6 @@ export default function AboutUsPage() {
       </section>
 
       {/* FINAL SECTION: CLOSING MESSAGE */}
-      <section className="bg-blue-50 py-20 text-center">
-        <div className="max-w-4xl mx-auto px-6">
-          <motion.div
-            initial="hidden"
-            whileInView="visible"
-            viewport={{ once: true }}
-            variants={fadeInUp}
-            className="space-y-8"
-          >
-            <h2 className="text-3xl md:text-4xl font-serif font-bold text-blue-700">
-              Thank you for being part of this story.
-            </h2>
-            <p className="text-xl text-gray-700 leading-relaxed">
-              Whether you’re here to learn, move, teach, or heal — you belong.
-            </p>
-          </motion.div>
-        </div>
-      </section>
     </div>
   );
 }
