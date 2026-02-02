@@ -37,7 +37,7 @@ export default function Hero() {
         >
           <h1 className="text-5xl md:text-7xl font-serif font-extrabold text-[#4793FF] mb-8 leading-tight">
             Exercise Is{" "}
-            <span className="inline-block px-5 py-2 bg-[#EAB308] text-white rounded-xl shadow-lg font-serif font-bold tracking-wide">
+            <span className="inline-block px-5 py-2 bg-[#FFB347] text-white rounded-xl shadow-lg font-serif font-bold tracking-wide">
               L<LuHeart className="inline-block text-red-500" />
               VE
             </span>
