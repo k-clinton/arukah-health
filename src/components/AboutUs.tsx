@@ -115,7 +115,7 @@ export default function AboutUs() {
                 >
                   {pillar.title}
                 </h3>
-                <p className="text-2xl font-bold text-black pb-2">
+                <p className="text-xl font-bold text-black pb-2">
                   {pillar.shortDesc}
                 </p>
                 <ul className="space-y-3">
