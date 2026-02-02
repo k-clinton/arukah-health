@@ -19,6 +19,22 @@ export default function AboutUsPage() {
             whileInView="visible"
             viewport={{ once: true }}
             variants={fadeInUp}
+            className="order-1 lg:order-2 rounded-2xl overflow-hidden shadow-xl"
+          >
+            <Image
+              src="/images/IMG_2491.jpg"
+              alt="Therapist and child sharing a joyful high-five moment in therapy"
+              width={2160}
+              height={1216}
+              className="w-full h-auto object-cover"
+              priority
+            />
+          </motion.div>
+          <motion.div
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true }}
+            variants={fadeInUp}
             className="order-2 lg:order-1"
           >
             <h1 className="text-4xl md:text-5xl font-serif font-bold text-blue-700 mb-8">
@@ -47,52 +63,15 @@ export default function AboutUsPage() {
               </p>
             </div>
           </motion.div>
-
-          <motion.div
-            initial="hidden"
-            whileInView="visible"
-            viewport={{ once: true }}
-            variants={fadeInUp}
-            className="order-1 lg:order-2 rounded-2xl overflow-hidden shadow-xl"
-          >
-            <Image
-              src="/images/IMG_2491.jpg"
-              alt="Therapist and child sharing a joyful high-five moment in therapy"
-              width={2160}
-              height={1216}
-              className="w-full h-auto object-cover"
-              priority
-            />
-          </motion.div>
         </div>
       </section>
 
       {/* SECTION 2: PHILOSOPHY – Movement Is Medicine */}
+
+      {/* SECTION 3: PROGRAM APPROACH – Three Image Grid */}
+
       <section className="max-w-7xl mx-auto px-6 lg:px-8 py-20">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
-          <motion.div
-            initial="hidden"
-            whileInView="visible"
-            viewport={{ once: true }}
-            variants={fadeInUp}
-            className="order-1 lg:order-2"
-          >
-            <h2 className="text-4xl md:text-5xl font-serif font-bold text-blue-700 mb-8"></h2>
-            <div className="prose prose-lg text-gray-700 leading-relaxed space-y-6">
-              <p>
-                Arukah Health is built on the belief that movement is medicine.
-                For us, movement is more than biomechanics—it’s a language of
-                healing, play, and growth. Every stretch, step, and breath is an
-                opportunity to restore what challenges may have taken away and
-                to open new pathways of strength, confidence, and joy. Our care
-                is rooted in compassion and clinical excellence, honoring the
-                full humanity of the children and families we serve. We meet
-                each child where they are—physically, emotionally, and
-                developmentally—crafting therapeutic exercise experiences that
-                are inclusive, intentional, and transformative.
-              </p>
-            </div>
-          </motion.div>
           <motion.div
             initial="hidden"
             whileInView="visible"
@@ -108,72 +87,40 @@ export default function AboutUsPage() {
               className="w-full h-auto object-cover"
             />
           </motion.div>
+          <motion.div
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true }}
+            variants={fadeInUp}
+            className="order-1 lg:order-2"
+          >
+            <h2 className="text-4xl md:text-5xl font-serif font-bold text-blue-700 mb-8"></h2>
+            <div className="prose prose-lg text-gray-700 leading-relaxed space-y-6">
+              <p>
+                Our programs blend clinical rigor with cultural sensitivity,
+                emotional warmth, and playful joy.
+              </p>
+              <p>
+                We partner with families to co-create care plans that reflect
+                each child’s unique needs and aspirations. We train caregivers,
+                empower communities, and walk alongside families through
+                challenges and milestones—ensuring that every step forward is
+                safe, supported, and deeply attuned to the journey toward
+                wellness.
+              </p>
+              <p>
+                {" "}
+                Through years of clinical experience and continuous learning,
+                we’ve developed an approach that combines the latest research in
+                pediatric exercise physiology with time-tested therapeutic
+                practices. This is more than therapy—it’s a reclamation, a
+                celebration, and a return to embodied hope for every child and
+                family we serve.{" "}
+              </p>
+            </div>
+          </motion.div>
         </div>
       </section>
-
-      {/* SECTION 3: PROGRAM APPROACH – Three Image Grid */}
-      <section className="max-w-7xl mx-auto px-6 lg:px-8 py-20">
-        <h2 className="text-4xl md:text-5xl font-serif font-bold text-center text-blue-700 mb-12">
-          Our Program Approach
-        </h2>
-
-        <div className="prose prose-lg text-1.5 text-gray-700 text-center max-w-4xl mx-auto mb-16 leading-relaxed">
-          <p>
-            Our programs blend clinical rigor with cultural sensitivity,
-            emotional warmth, and playful joy.
-          </p>
-          <p>
-            We partner with families to co-create care plans that reflect each
-            child’s unique needs and aspirations. We train caregivers, empower
-            communities, and walk alongside families through challenges and
-            milestones—ensuring that every step forward is safe, supported, and
-            deeply attuned to the journey toward wellness.
-          </p>
-          <p>
-            Through years of clinical experience and continuous learning, we’ve
-            developed an approach that combines the latest research in pediatric
-            exercise physiology with time-tested therapeutic practices. This is
-            more than therapy—it’s a reclamation, a celebration, and a return to
-            embodied hope for every child and family we serve.
-          </p>
-        </div>
-
-        <div className="grid md:grid-cols-3 gap-8">
-          {[
-            {
-              src: "/images/IMG_2182.jpg",
-              alt: "Therapist guiding child in gentle interactive play therapy",
-            },
-            {
-              src: "/images/IMG_2325.jpg",
-              alt: "Caregiver actively participating in child's therapy session",
-            },
-            {
-              src: "/images/IMG_9508.jpg",
-              alt: "Joyful child making heart shape during playful movement activity",
-            },
-          ].map((img, i) => (
-            <motion.div
-              key={i}
-              initial="hidden"
-              whileInView="visible"
-              viewport={{ once: true }}
-              variants={fadeInUp}
-              className="rounded-2xl overflow-hidden shadow-lg bg-white"
-            >
-              <div className="relative aspect-[4/3]">
-                <Image
-                  src={img.src}
-                  alt={img.alt}
-                  fill
-                  className="object-cover"
-                />
-              </div>
-            </motion.div>
-          ))}
-        </div>
-      </section>
-
       {/* SECTION 4: FEATURE – Childlike Background */}
       <section className="py-24 relative overflow-hidden">
         <div className="absolute inset-0 opacity-20 pointer-events-none">
