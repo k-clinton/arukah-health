@@ -60,13 +60,6 @@ export default function Statistics() {
     <section ref={ref} className="relative py-24 px-6 overflow-hidden">
       {/* Translucent joyful background */}
       <div className="absolute inset-0 z-0">
-        <Image
-          src="/images/bg4.jpg"
-          alt="Happy children engaged in playful coordination and balance exercises"
-          fill
-          className="object-cover "
-          priority
-        />
         {/* Overlay for readability + childish vibe */}
       </div>
 
@@ -125,21 +118,6 @@ export default function Statistics() {
       </div>
 
       {/* Floating playful elements */}
-      <motion.div
-        className="absolute top-16 left-8 w-20 h-20 bg-yellow-300 rounded-full opacity-70 blur-xl"
-        animate={{ y: [0, -30, 0], scale: [1, 1.15, 1] }}
-        transition={{ repeat: Infinity, duration: 9, ease: "easeInOut" }}
-      />
-      <motion.div
-        className="absolute bottom-24 right-12 w-24 h-24 bg-orange-400 rounded-full opacity-60 blur-2xl"
-        animate={{ y: [0, 35, 0], scale: [1, 1.2, 1] }}
-        transition={{
-          repeat: Infinity,
-          duration: 11,
-          delay: 1.5,
-          ease: "easeInOut",
-        }}
-      />
     </section>
   );
 }
