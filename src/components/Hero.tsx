@@ -15,17 +15,6 @@ export default function Hero() {
   return (
     <section className="relative min-h-screen flex items-center justify-center pt-32 pb-20 bg-white overflow-hidden">
       {/* Subtle floating accents (optional – remove if you want ultra-clean) */}
-      <motion.div
-        className="absolute top-24 left-16 w-20 h-20 bg-[#EAB308] rounded-full opacity-50 blur-xl"
-        variants={floatingVariants}
-        animate="animate"
-      />
-      <motion.div
-        className="absolute bottom-40 right-20 w-24 h-24 bg-white rounded-full opacity-40 blur-2xl"
-        variants={floatingVariants}
-        animate="animate"
-        transition={{ delay: 2, duration: 9 }}
-      />
 
       <div className="relative z-10 max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-16 items-center">
         {/* Left: Text Content */}
