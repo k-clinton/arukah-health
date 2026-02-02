@@ -15,7 +15,7 @@ interface Pillar {
 
 const pillars: Pillar[] = [
   {
-    title: "Evidence-Based, Personalized Care",
+    title: "Evidence-Based, Personalized Care Rooted In:",
     shortDesc: "",
     bullets: [
       "Scientific and Data-Driven Practice",
@@ -36,7 +36,7 @@ We track each child's journey with regular assessments and feedback loops—ensu
     color: "orange",
   },
   {
-    title: "Child-Centered Experience",
+    title: "Child-Centered Experience Built On:",
     shortDesc: "",
     bullets: [
       "Fun & Interactive Sessions",
@@ -57,7 +57,7 @@ From onboarding to independence, we walk alongside each child—offering steady 
     color: "blue",
   },
   {
-    title: "Flexible, Holistic Wellness",
+    title: "Flexible, Holistic Wellness Driven by:",
     shortDesc: "",
     bullets: ["Flexible Hours", "Multi-disciplinary Wellness Approach"],
     fullContent: `We meet each child where they are—offering adaptable home & school schedules, whole-person care, and a wellness model that honors lifestyle, culture, and community.
