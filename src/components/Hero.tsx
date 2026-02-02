@@ -44,8 +44,8 @@ export default function Hero() {
           </h1>
 
           <p className="text-xl md:text-3xl font-serif text-gray-800 mb-10 max-w-xl">
-            Redefining Recovery, Reclaiming milestones, Reshaping beliefs, and
-            Transforming lives through the power of movement.
+            Redefining Recovery, Reclaiming Milestones, Reshaping Beliefs, and
+            Transforming Lives through the Power of Movement.
           </p>
 
           <div className="mb-12">
