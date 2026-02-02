@@ -312,14 +312,14 @@ export default function AboutUsPage() {
                 heart for families navigating uncertainty, Ivy created a space
                 where science, compassion, and hope converge.
               </p>
-              <p className="italic font-medium">
+              <p className="italic font-medium font-semibold">
                 “I believe every child deserves to be seen, celebrated, and
                 supported on their unique journey toward strength and
-                independence, this is where healing begins and recover is
-                redefined ,this is home. Welcome to Arukah Health.”
+                independence. This is where healing begins and recovery is
+                redefined.This is home! Welcome to Arukah Health!”
               </p>
               <p className="font-semibold text-orange-500">Ivy Gacheri</p>
-              <p className="text-sm text-orange-600">
+              <p className="text-sm text-orange-500 font-semibold">
                 CEO & Founder, Arukah Health
               </p>
             </div>
