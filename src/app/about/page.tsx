@@ -180,10 +180,10 @@ export default function AboutUsPage() {
             className="space-y-8"
           >
             <h2 className="text-3xl md:text-4xl font-serif font-bold text-blue-700">
-              Thank you for being part of this story.
+              Thank you for being part of this story!
             </h2>
             <p className="text-xl text-gray-700 leading-relaxed">
-              Whether you’re here to learn, move, teach, or heal — you belong.
+              Whether you’re here to learn, move, teach, or heal — you belong!
             </p>
           </motion.div>
         </div>
