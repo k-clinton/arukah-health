@@ -17,8 +17,8 @@ const HeroExtro = () => {
         {/* Subtitle */}
         <p className="text-xl md:text-2xl text-gray-700 mb-8 max-w-2xl mx-auto ">
           Join us in redefining what’s possible. Start your child’s personalized
-          exercise therapy today Move towards mobility, confidence, independence
-          and joy.
+          exercise therapy today - Move towards mobility, confidence,
+          independence and joy.
         </p>
 
         {/* CTA Button */}
