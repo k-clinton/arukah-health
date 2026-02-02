@@ -26,7 +26,7 @@ export default function Hero() {
         >
           <h1 className="text-5xl md:text-7xl font-serif text-blue-700 font-extrabold mb-8 leading-tight">
             Exercise Is{" "}
-            <span className="inline-block px-5 py-2 bg-[#FFB347] text-white rounded-xl shadow-lg font-serif font-bold tracking-wide">
+            <span className="inline-block px-5 py-2 bg-orange-500 text-white rounded-xl shadow-lg font-serif font-bold tracking-wide">
               L<LuHeart className="inline-block text-red-500" />
               VE
             </span>
@@ -51,7 +51,7 @@ export default function Hero() {
 
           <Link
             href="/about"
-            className="inline-block bg-[#FFB347] hover:bg-[#FFB347]/90 text-white font-bold py-5 px-14 rounded-full text-xl shadow-lg transform hover:scale-105 transition duration-300"
+            className="inline-block bg-orange-500 hover:bg-orange-600 text-white font-bold py-5 px-14 rounded-full text-xl shadow-lg transform hover:scale-105 transition duration-300"
           >
             KNOW MORE →
           </Link>
