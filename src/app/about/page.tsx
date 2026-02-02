@@ -68,6 +68,48 @@ export default function AboutUsPage() {
       </section>
 
       {/* SECTION 2: PHILOSOPHY – Movement Is Medicine */}
+      <section className="max-w-7xl mx-auto px-6 lg:px-8 py-20">
+        <div className="grid lg:grid-cols-2 gap-12 items-center">
+          <motion.div
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true }}
+            variants={fadeInUp}
+            className="order-1 lg:order-2"
+          >
+            <h2 className="text-4xl md:text-5xl font-serif font-bold text-blue-700 mb-8"></h2>
+            <div className="prose prose-lg text-gray-700 leading-relaxed space-y-6">
+              <p>
+                Arukah Health is built on the belief that movement is medicine.
+                For us, movement is more than biomechanics—it’s a language of
+                healing, play, and growth. Every stretch, step, and breath is an
+                opportunity to restore what challenges may have taken away and
+                to open new pathways of strength, confidence, and joy. Our care
+                is rooted in compassion and clinical excellence, honoring the
+                full humanity of the children and families we serve. We meet
+                each child where they are—physically, emotionally, and
+                developmentally—crafting therapeutic exercise experiences that
+                are inclusive, intentional, and transformative.
+              </p>
+            </div>
+          </motion.div>
+          <motion.div
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true }}
+            variants={fadeInUp}
+            className="rounded-2xl overflow-hidden shadow-xl order-2 lg:order-1"
+          >
+            <Image
+              src="/images/IMG-20250822-WA000.jpg"
+              alt=""
+              width={2560}
+              height={1707}
+              className="w-full h-auto object-cover"
+            />
+          </motion.div>
+        </div>
+      </section>
 
       {/* SECTION 3: PROGRAM APPROACH – Three Image Grid */}
       <section className="max-w-7xl mx-auto px-6 lg:px-8 py-20">
