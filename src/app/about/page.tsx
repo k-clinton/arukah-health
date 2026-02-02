@@ -44,7 +44,7 @@ export default function AboutUsPage() {
               <p>
                 Arukah Health is more than an exercise clinic. We are a movement
                 of hope, science, and soul - where every step is sacred, and
-                every child’s story matters.
+                every child’s story matters !
               </p>
               <p>
                 We understand that nurturing children with neuro-developmental
@@ -234,7 +234,7 @@ export default function AboutUsPage() {
       {/* SECTION 6: CORE VALUES */}
       <section className="bg-gray-50 py-20">
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
-          <h2 className="text-4xl md:text-5xl font-serif font-bold text-center text-blue-700 mb-16">
+          <h2 className="text-4xl md:text-5xl font-serif font-bold text-center text-orange-500 mb-16">
             Our Core Values
           </h2>
 
@@ -303,8 +303,9 @@ export default function AboutUsPage() {
             <div className="prose prose-lg text-gray-700 leading-relaxed space-y-6">
               <p>
                 Ivy Gacheri founded Arukah Health with a deep passion for
-                helping children with neuro-developmental challenges discover
-                their potential through joyful, purposeful movement.
+                helping children with neuro-developmental challenges and
+                milestone delays discover their potential through joyful,
+                purposeful exercise.
               </p>
               <p>
                 With years of clinical experience in pediatric therapy and a
@@ -314,7 +315,12 @@ export default function AboutUsPage() {
               <p className="italic font-medium">
                 “I believe every child deserves to be seen, celebrated, and
                 supported on their unique journey toward strength and
-                independence.”
+                independence, this is where healing begins and recover is
+                redefined ,this is home. Welcome to Arukah Health ”
+              </p>
+              <p className="font-semibold text-orange-500">Ivy Gacheri</p>
+              <p className="text-sm text-orange-600">
+                CEO & Founder, Arukah Health
               </p>
             </div>
           </motion.div>
