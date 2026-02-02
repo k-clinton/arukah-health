@@ -23,8 +23,8 @@ const Footer = () => {
                 ARUKAH <span className="text-blue-400">HEALTH</span>
               </h1>
               <p className="text-blue-200 text-lg font-medium italic mb-4">
-                Healing Hearts, Touching lives & Restoring health through
-                movement!
+                Healing Hearts, Touching Lives & Restoring Health through
+                Exercise!
               </p>
             </div>
 
