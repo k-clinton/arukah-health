@@ -82,9 +82,9 @@ export default function Navbar() {
           <div className="flex justify-between items-center h-12">
             {/* Brand */}
             <Link href="/" className="flex items-center gap-3 group">
-              <div className="w-8 h-8 bg-white rounded-full flex items-center justify-center text-blue-700 font-bold">
+              <div className="w-8 h-8   flex items-center justify-center text-blue-700 font-bold">
                 <Image
-                  src="/images/logo.png"
+                  src="/images/logoA.png"
                   alt="Arukah Health Logo"
                   width={37}
                   height={37}
