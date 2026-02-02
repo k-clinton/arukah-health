@@ -79,13 +79,9 @@ export default function AboutUs() {
   return (
     <section className="py-20 px-6 bg-gradient-to-br from-blue-50 to-orange-50">
       <div className="max-w-7xl mx-auto">
-        <h2 className="text-5xl font-extrabold text-center mb-6 text-blue-600 drop-shadow-md">
+        <h2 className="text-5xl font-extrabold text-center mb-6 text-[#4793FF] drop-shadow-md">
           What You’ll Love About Us
         </h2>
-        <p className="text-xl text-center text-gray-700 mb-16 max-w-3xl mx-auto">
-          At Arukah Health, we combine evidence-based expertise with heartfelt,
-          playful care to help every child thrive through joyful movement.
-        </p>
 
         <div className="grid md:grid-cols-3 gap-8">
           {pillars.map((pillar, index) => (
