@@ -133,7 +133,7 @@ export default function AboutUs() {
                       {bullet}
                     </li>
                   ))}
-                  <button className="ml-4 text-lg text-red-500 font-semibold hover:underline">
+                  <button className="ml-4 text-lg text-red-500  font-semibold hover:underline">
                     Learn More
                   </button>
                 </ul>

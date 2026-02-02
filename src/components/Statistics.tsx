@@ -64,11 +64,10 @@ export default function Statistics() {
           src="/images/bg3.jpg"
           alt="Happy children engaged in playful coordination and balance exercises"
           fill
-          className="object-cover brightness-90 contrast-110"
+          className="object-cover "
           priority
         />
         {/* Overlay for readability + childish vibe */}
-        <div className="absolute inset-0 bg-gradient-to-br from-blue-900/35 via-purple-800/25 to-orange-800/30 " />
       </div>
 
       <div className="relative z-10 max-w-7xl mx-auto text-center">
@@ -76,7 +75,7 @@ export default function Statistics() {
           initial={{ opacity: 0, y: 50 }}
           animate={inView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.8 }}
-          className="text-4xl md:text-6xl font-extrabold text-blue-700 drop-shadow-2xl mb-8"
+          className="text-4xl md:text-6xl font-extrabold text-[#4993FF] drop-shadow-2xl mb-8"
         >
           Real Impact, Real Joy
         </motion.h2>
@@ -85,12 +84,8 @@ export default function Statistics() {
           initial={{ opacity: 0, y: 50 }}
           animate={inView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.8, delay: 0.2 }}
-          className="text-xl md:text-2xl text-orange-100 mb-16 max-w-4xl mx-auto drop-shadow-lg"
-        >
-          See how Arukah Health is transforming lives through personalized,
-          evidence-based movement for children with neurodevelopmental
-          challenges.
-        </motion.p>
+          className="text-xl md:text-2xl  mb-16 max-w-4xl mx-auto "
+        ></motion.p>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 md:gap-10">
           {stats.map((stat, index) => (
