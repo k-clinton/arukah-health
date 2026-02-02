@@ -132,18 +132,18 @@ export default function AboutUsPage() {
           />
         </div>
 
-        <div className="relative max-w-5xl mx-auto px-6 text-center">
+        <div className="relative max-w-5xl text-1xl mx-auto px-6 text-center">
           <motion.div
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true }}
             variants={fadeInUp}
-            className="bg-white/80 backdrop-blur-md rounded-3xl p-12 shadow-xl border border-gray-100"
+            className="bg-white/80 backdrop-blur-md rounded-3xl p-12 text-2xl shadow-xl border border-orange-400"
           >
             <h2 className="text-4xl md:text-5xl font-serif font-bold text-blue-700 mb-10">
               Movement with Us;
             </h2>
-            <div className="prose prose-xl text-gray-800 leading-relaxed space-y-6 max-w-4xl mx-auto">
+            <div className="prose prose-xl text-gray-800 leading-relaxed   p-6 space-y-6 max-w-4xl mx-auto">
               <p className="italic font-medium">
                 This is where science meets soul!
               </p>
