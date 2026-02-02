@@ -38,7 +38,7 @@ export default function AboutUsPage() {
             className="order-2 lg:order-1"
           >
             <h1 className="text-4xl md:text-5xl font-serif font-bold text-blue-700 mb-8">
-              Our Story
+              About Us
             </h1>
             <div className="prose prose-lg text-gray-700 text-2xl leading-relaxed space-y-6">
               <p>
@@ -95,7 +95,7 @@ export default function AboutUsPage() {
             className="order-1 lg:order-2"
           >
             <h2 className="text-4xl md:text-5xl font-serif font-bold text-blue-700 mb-8"></h2>
-            <div className="prose prose-lg text-gray-700 leading-relaxed space-y-6">
+            <div className="prose prose-lg text-gray-700 text-2xl leading-relaxed space-y-6">
               <p>
                 Our programs blend clinical rigor with cultural sensitivity,
                 emotional warmth, and playful joy.
