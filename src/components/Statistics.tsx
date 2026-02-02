@@ -38,7 +38,7 @@ const stats = [
     end: 100,
     label: "Children Supported",
     suffix: "+",
-    description: "Kids building independence through fun Exercise",
+    description: "Kids building independence through fun exercise",
     icon: "",
   },
   {
