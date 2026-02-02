@@ -43,9 +43,9 @@ export default function Hero() {
             </h2>
             <p className="text-lg md:text-xl text-gray-700 leading-relaxed">
               We offer exercise sessions to children with neuro-developmental
-              challenges, helping them build strength, improve mobility,
-              stabilize posture, rebuild physical capacity, reestablish physical
-              function and enhance their independence.
+              challenges and milestone delays, helping them build strength,
+              improve mobility, stabilize posture, build physical capacity,
+              establish physical function and enhance their independence.
             </p>
           </div>
 

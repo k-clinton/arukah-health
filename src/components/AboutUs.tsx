@@ -15,8 +15,8 @@ interface Pillar {
 
 const pillars: Pillar[] = [
   {
-    title: "Evidence-Based, Personalized Care Rooted In:",
-    shortDesc: "",
+    title: "Evidence-Based, Personalized Care ",
+    shortDesc: "Rooted In:",
     bullets: [
       "Scientific and Data-Driven Practice",
       "Custom-Tailored Treatments",
@@ -36,8 +36,8 @@ We track each child's journey with regular assessments and feedback loops—ensu
     color: "orange",
   },
   {
-    title: "Child-Centered Experience Built On:",
-    shortDesc: "",
+    title: "Child-Centered Experience ",
+    shortDesc: "Built On:",
     bullets: [
       "Fun & Interactive Sessions",
       "Friendly and Well-Trained Exercise Specialists",
@@ -57,8 +57,8 @@ From onboarding to independence, we walk alongside each child—offering steady 
     color: "blue",
   },
   {
-    title: "Flexible, Holistic Wellness Driven by:",
-    shortDesc: "",
+    title: "Flexible, Holistic Wellness ",
+    shortDesc: "Driven by:",
     bullets: ["Flexible Hours", "Multi-disciplinary Wellness Approach"],
     fullContent: `We meet each child where they are—offering adaptable home & school schedules, whole-person care, and a wellness model that honors lifestyle, culture, and community.
 
@@ -115,7 +115,9 @@ export default function AboutUs() {
                 >
                   {pillar.title}
                 </h3>
-                <p className="text-gray-600 mb-6">{pillar.shortDesc}</p>
+                <p className="text-2xl font-bold text-black pb-2">
+                  {pillar.shortDesc}
+                </p>
                 <ul className="space-y-3">
                   {pillar.bullets.map((bullet, i) => (
                     <li key={i} className="flex items-start text-gray-700">
