@@ -44,7 +44,7 @@ export default function AboutUsPage() {
               <p>
                 Arukah Health is more than an exercise clinic. We are a movement
                 of hope, science, and soul - where every step is sacred, and
-                every child’s story matters !
+                every child’s story matters!
               </p>
               <p>
                 We understand that nurturing children with neuro-developmental
