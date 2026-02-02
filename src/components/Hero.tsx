@@ -38,7 +38,7 @@ export default function Hero() {
           </p>
 
           <div className="mb-12">
-            <h2 className="text-3xl md:text-4xl font-serif font-bold text-[#FFB347] mb-5">
+            <h2 className="text-3xl md:text-4xl font-serif font-bold text-[#4793FF] mb-5">
               THERAPY THROUGH MOTION
             </h2>
             <p className="text-lg md:text-xl text-gray-700 leading-relaxed">
