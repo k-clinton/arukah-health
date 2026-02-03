@@ -20,7 +20,6 @@ import {
 } from "lucide-react";
 import { motion } from "framer-motion";
 import Image from "next/image";
-import { href } from "react-router-dom";
 
 const navItems = [
   { label: "Home", href: "/", icon: Home },
