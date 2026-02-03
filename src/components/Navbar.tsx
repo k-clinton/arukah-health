@@ -20,18 +20,26 @@ import {
 } from "lucide-react";
 import { motion } from "framer-motion";
 import Image from "next/image";
+import { href } from "react-router-dom";
 
 const navItems = [
   { label: "Home", href: "/", icon: Home },
   { label: "About Us", href: "/about", icon: Info },
   {
     label: "Our Services",
-    href: "/services",
+    href: "/(services)",
     icon: Briefcase,
     hasDropdown: true,
     dropdownItems: [
-      { label: "Exercise Therapy", icon: HeartPulse },
-      { label: "Education and Training", icon: UsersRound },
+      {
+        label: "Exercise Therapy",
+        icon: HeartPulse,
+      },
+      {
+        label: "Education and Training",
+        icon: UsersRound,
+        href: "/services/education-and-training",
+      },
     ],
   },
   { label: "Team", href: "/team", icon: Users },
@@ -280,7 +288,6 @@ export default function Navbar() {
                 onClick={() => setMobileOpen(false)}
               >
                 <BookOpen size={20} />
-                Education & Training
               </Link>
             </div>
           </motion.div>
