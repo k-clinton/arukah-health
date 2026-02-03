@@ -80,7 +80,7 @@ export default function AboutUsPage() {
             className="rounded-2xl overflow-hidden shadow-xl order-2 lg:order-1"
           >
             <Image
-              src="/images/IMG-20250822-WA000.jpg"
+              src="/images/bg4.jpg"
               alt=""
               width={2560}
               height={1707}

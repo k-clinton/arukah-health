@@ -100,13 +100,6 @@ export default function Navbar() {
             </Link>
 
             {/* Utility link */}
-            <Link
-              href="/education-training"
-              className="hidden md:flex items-center text-orange-500 gap-2 text-sm font-medium hover:text-blue-100 transition-colors"
-            >
-              <BookOpen size={18} />
-              Education & Training
-            </Link>
           </div>
         </div>
       </div>

@@ -24,7 +24,7 @@ export default function ModelOfCare() {
 
             {/* Right: Intro Text */}
             <div className="order-1 lg:order-2 text-center lg:text-left">
-              <h1 className="text-4xl md:text-5xl lg:text-6xl font-serif font-extrabold text-[#4793FF] mb-6 leading-tight">
+              <h1 className="text-4xl md:text-5xl lg:text-6xl font-serif font-extrabold text-blue-700 mb-6 leading-tight">
                 Our Model of Care
               </h1>
               <p className="text-xl md:text-2xl text-gray-700 leading-relaxed max-w-3xl mx-auto lg:mx-0">
@@ -64,7 +64,7 @@ export default function ModelOfCare() {
                 {
                   icon: Users,
                   title: "Interdisciplinary Care",
-                  color: "#4793FF",
+                  color: "#1759b4",
                   content:
                     "We collaborate with pediatricians, neurologists, physiotherapists, occupational therapists, and speech-language pathologists to align exercise interventions with medical, functional, and developmental priorities.",
                 },
@@ -78,7 +78,7 @@ export default function ModelOfCare() {
                 {
                   icon: HeartHandshake,
                   title: "Family & Caregiver Involvement",
-                  color: "#4793FF",
+                  color: "#1759b4",
                   content:
                     "Parents and caregivers are essential partners. We provide training, home strategies, empowerment, consistency across environments, and collaborative decision-making to support progress in daily life.",
                 },
@@ -119,7 +119,7 @@ export default function ModelOfCare() {
 
           {/* Final CTA */}
           <div className="text-center">
-            <h3 className="text-3xl md:text-4xl font-serif font-bold text-[#4793FF] mb-6">
+            <h3 className="text-3xl md:text-4xl font-serif font-bold text-blue-700 mb-6">
               Ready to Begin Your Child’s Journey?
             </h3>
             <p className="text-xl text-gray-700 mb-8 max-w-2xl mx-auto">
@@ -128,7 +128,7 @@ export default function ModelOfCare() {
             </p>
             <Link
               href="/contact"
-              className="inline-block bg-gradient-to-r from-[#FFB347] to-orange-500 hover:from-orange-500 hover:to-[#FFB347] text-white font-bold py-5 px-12 rounded-full text-xl shadow-xl transform hover:scale-105 transition duration-300"
+              className="inline-block bg-[#FFB347] hover:from-orange-500 hover:to-[#FFB347] text-white font-bold py-5 px-12 rounded-full text-xl shadow-xl transform hover:scale-105 transition duration-300"
             >
               Get Started →
             </Link>
