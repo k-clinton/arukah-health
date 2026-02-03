@@ -154,10 +154,10 @@ export default function TeamPage() {
       </section>
 
       {/* CTA */}
-      <section className="py-16 bg-slate-300 text-white">
+      <section className="py-16 bg-orange-300 text-white">
         <div className="max-w-4xl mx-auto px-4 text-center">
           <h2 className="text-3xl md:text-4xl font-bold font-['Playfair_Display']">
-            Ready to Start Healing?
+            Get Started with Arukah Health Today!
           </h2>
           <p className="mt-4 text-lg text-black">
             Your first session is just one click away.
@@ -166,7 +166,7 @@ export default function TeamPage() {
             onClick={() => router.push("/services")}
             className="mt-6 bg-[gold] text-[white] px-8 py-3 rounded-lg font-bold hover:bg-gray-900 transition"
           >
-            Book Appointment
+            Contact us
           </button>
         </div>
       </section>

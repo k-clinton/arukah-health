@@ -25,15 +25,13 @@ const navItems = [
   { label: "Home", href: "/", icon: Home },
   { label: "About Us", href: "/about", icon: Info },
   {
-    label: "Services",
+    label: "Our Services",
     href: "/services",
     icon: Briefcase,
     hasDropdown: true,
     dropdownItems: [
-      { label: "P", icon: HeartPulse },
-      { label: "N", icon: UsersRound },
-      { label: "F", icon: BookOpen },
-      { label: "C", icon: Globe },
+      { label: "Exercise Therapy", icon: HeartPulse },
+      { label: "Education and Training", icon: UsersRound },
     ],
   },
   { label: "Team", href: "/team", icon: Users },
