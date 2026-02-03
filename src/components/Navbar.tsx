@@ -15,7 +15,6 @@ import {
   BookOpen,
   HeartPulse,
   UsersRound,
-  Globe,
   Layers,
 } from "lucide-react";
 import { motion } from "framer-motion";
@@ -37,7 +36,6 @@ const navItems = [
       {
         label: "Education and Training",
         icon: UsersRound,
-        href: "/services/education-and-training",
       },
     ],
   },

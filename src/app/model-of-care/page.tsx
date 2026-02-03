@@ -1,12 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
-import {
-  Users,
-  HeartHandshake,
-  ShieldCheck,
-  Target,
-  ArrowRight,
-} from "lucide-react";
+import { Users, HeartHandshake, ShieldCheck, Target } from "lucide-react";
 
 export default function ModelOfCare() {
   return (
