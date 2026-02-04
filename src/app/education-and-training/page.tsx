@@ -22,7 +22,7 @@ export default function EducationAndTraining() {
             {/* Left: Image */}
             <div className="relative rounded-3xl overflow-hidden shadow-2xl order-2 lg:order-1">
               <Image
-                src="/images/family-training-session.jpg" // ← replace with warm parent/caregiver training photo
+                src="/images/IMG_9516.JPG" // ← replace with warm parent/caregiver training photo
                 alt=""
                 width={1200}
                 height={800}
