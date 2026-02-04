@@ -2,84 +2,34 @@
 import Image from "next/image";
 
 const galleryImages = [
-  {
-    src: "/images/IMG_9909.jpg",
-    alt: "Arukah Health clinic exterior with welcoming garden in Nairobi",
-    caption: "Our welcoming home in Nairobi",
-  },
-  {
-    src: "/images/IMG_9652.jpg",
-    alt: "Child smiling during joyful movement session with caregiver",
-    caption: "Moments of connection and growth",
-  },
-  {
-    src: "/images/IMG_9611.jpg",
-    alt: "Young child engaged in playful balance and strength exercise",
-    caption: "Fun, purposeful movement",
-  },
-  {
-    src: "/images/IMG_9600 (1).jpg",
-    alt: "Children and therapist in group movement play",
-    caption: "Building confidence together",
-  },
-  {
-    src: "/images/IMG_9516 (1).JPG",
-    alt: "Child reaching new milestone with support",
-    caption: "Celebrating every step forward",
-  },
-  {
-    src: "/images/IMG_2198.JPG",
-    alt: "Therapist and child sharing a high-five after session",
-    caption: "Where care meets joy",
-  },
+  "/images/IMG_9909.jpg",
+  "/images/IMG_9652.jpg",
+  "/images/IMG_9611.jpg",
+  "/images/IMG_9600 (1).jpg",
+  "/images/IMG_9516 (1).JPG",
 ];
 
 export default function GallerySection() {
   return (
-    <section className="py-16 md:py-24 px-6 bg-gradient-to-b from-white to-blue-50/30">
+    <section className="py-16 md:py-24 px-6 bg-white">
       <div className="max-w-7xl mx-auto">
-        {/* Header */}
-        <div className="text-center mb-12 md:mb-16">
-          <h2 className="text-4xl md:text-5xl font-serif font-extrabold text-blue-700 mb-4">
-            Arukah Health <span className="text-blue-700">Gallery</span>
-          </h2>
-          <p className="text-xl md:text-2xl text-gray-700 max-w-3xl mx-auto">
-            Capturing the joy, progress, and connection in every child&apos;s
-            movement journey.
-          </p>
-        </div>
-
-        {/* Image Grid */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
-          {galleryImages.map((image, index) => (
+        {/* Horizontal image row */}
+        <div className="flex flex-nowrap gap-6 md:gap-8 overflow-x-auto pb-4 scrollbar-hide justify-start md:justify-center">
+          {galleryImages.map((src, index) => (
             <div
               key={index}
-              className="group bg-white rounded-3xl overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-300 border border-gray-100"
+              className="flex-shrink-0 w-64 h-64 md:w-80 md:h-80 relative group rounded-full overflow-hidden border-4 border-[#FFB347] shadow-lg hover:shadow-2xl transition-all duration-300 hover:scale-105"
             >
-              <div className="relative aspect-[4/3] md:aspect-[5/4]">
-                <Image
-                  src={image.src}
-                  alt={image.alt}
-                  fill
-                  className="object-cover transition-transform duration-500 group-hover:scale-105"
-                  sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
-                />
-              </div>
-
-              {/* Caption */}
-              <div className="p-5 md:p-6 text-center">
-                <p className="text-gray-700 font-medium text-base md:text-lg">
-                  {image.caption}
-                </p>
-              </div>
+              <Image
+                src={src}
+                alt={`Gallery image ${index + 1}`}
+                fill
+                className="object-cover transition-transform duration-500 group-hover:scale-110"
+                sizes="(max-height: 768px) 500px, 320px"
+              />
             </div>
           ))}
         </div>
-
-        {/* Optional footer text */}
-        <p className="text-center text-gray-500 mt-12 text-lg">
-          More moments of hope and healing being created every day.
-        </p>
       </div>
     </section>
   );
