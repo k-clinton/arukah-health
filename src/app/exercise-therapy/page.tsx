@@ -43,7 +43,7 @@ export default function ExerciseTherapy() {
 
           {/* Right: Tagline + Intro */}
           <div className="order-1 lg:order-2">
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-serif font-extrabold text-[#4793FF] mb-8 leading-tight">
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-serif font-extrabold text-blue-700 mb-8 leading-tight">
               Exercise Therapy
             </h1>
             <p className="text-xl md:text-2xl font-medium text-gray-800 leading-relaxed mb-8">
@@ -65,7 +65,7 @@ export default function ExerciseTherapy() {
       {/* Core Philosophy */}
       <section className="py-20 px-6 bg-white">
         <div className="max-w-5xl mx-auto text-center">
-          <h2 className="text-3xl md:text-4xl font-serif font-bold text-[#4793FF] mb-10">
+          <h2 className="text-3xl md:text-4xl font-serif font-bold tet-blue-700 mb-10">
             Harnessing Neuroplasticity Through Joyful Movement
           </h2>
           <p className="text-xl text-gray-700 leading-relaxed max-w-4xl mx-auto">
@@ -82,7 +82,7 @@ export default function ExerciseTherapy() {
       {/* Four Key Domains Cards */}
       <section className="py-16 px-6 bg-gradient-to-b from-blue-50/30 to-white">
         <div className="max-w-7xl mx-auto">
-          <h3 className="text-3xl md:text-4xl font-serif font-bold text-center text-[#4793FF] mb-12">
+          <h3 className="text-3xl md:text-4xl font-serif font-bold text-center text-blue-700 mb-12">
             Key Areas We Strengthen
           </h3>
 
@@ -139,7 +139,7 @@ export default function ExerciseTherapy() {
               />
             </div>
             <div>
-              <h2 className="text-3xl md:text-4xl font-serif font-bold text-[#4793FF] mb-6">
+              <h2 className="text-3xl md:text-4xl font-serif font-bold text-blue-700 mb-6">
                 Structured & Play-Based Exercise
               </h2>
               <p className="text-lg text-gray-700 leading-relaxed">
