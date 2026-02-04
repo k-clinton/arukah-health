@@ -211,7 +211,7 @@ export default function ExerciseTherapy() {
               />
             </div>
             <div>
-              <h2 className="text-3xl md:text-4xl font-serif font-bold text-[#4793FF] mb-6">
+              <h2 className="text-3xl md:text-4xl font-serif font-bold text-blue-700 mb-6">
                 Hiking Sessions
               </h2>
               <p className="text-lg text-gray-700 leading-relaxed mb-6">
@@ -243,7 +243,7 @@ export default function ExerciseTherapy() {
           {/* Block 4: Image right */}
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div className="order-2 lg:order-1">
-              <h2 className="text-3xl md:text-4xl font-serif font-bold text-[#4793FF] mb-6">
+              <h2 className="text-3xl md:text-4xl font-serif font-bold text-blue-700 mb-6">
                 Biking Sessions
               </h2>
               <p className="text-lg text-gray-700 leading-relaxed mb-6">
