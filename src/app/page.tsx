@@ -2,7 +2,6 @@ import Hero from "@/components/Hero";
 import About from "@/components/AboutUs";
 import Stats from "@/components/Statistics";
 import Extro from "@/components/HeroExtro";
-import Gallery from "@/components/PlayfulGallery";
 import Testimonials from "@/components/Testimonials";
 
 export default function HomePage() {
@@ -13,7 +12,6 @@ export default function HomePage() {
       <Stats />
       <Extro />
       <Testimonials />
-      <Gallery />
     </main>
   );
 }
