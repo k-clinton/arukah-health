@@ -89,7 +89,7 @@ export default function TeamSection() {
   >(null);
 
   return (
-    <section className="py-16 md:py-24 px-6 bg-gradient-to-b from-white to-blue-50/30">
+    <section className="py-16 md:py-24 px-6 mt-20 bg-gradient-to-b from-white to-blue-50/30">
       <div className="max-w-7xl mx-auto">
         {/* Section Header */}
         <div className="text-center mb-12 md:mb-16">
@@ -112,7 +112,7 @@ export default function TeamSection() {
             >
               {/* Image with oval border */}
               <div className="relative h-64 md:h-80 flex items-center justify-center bg-gradient-to-br from-blue-50 to-orange-50/30 p-6">
-                <div className="relative w-48 h-48 md:w-56 md:h-56 rounded-full overflow-hidden border-4 border-orange-500 shadow-lg group-hover:scale-105 transition-transform duration-500">
+                <div className="relative w-48 h-48 md:w-56 md:h-56 rounded-full overflow-hidden border-4 border-blue-500 shadow-lg group-hover:scale-105 transition-transform duration-500">
                   <Image
                     src={member.image}
                     alt={member.alt}
