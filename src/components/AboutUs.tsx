@@ -32,7 +32,7 @@ Every exercise plan is uniquely designed to reflect the child's physical needs, 
 
 <strong>Ongoing Progress Monitoring & Evaluation</strong><br>  
 We track each child's journey with regular assessments and feedback loops—ensuring care remains responsive, measurable, and goal-driven.`,
-    imageUrl: "/images/IMG_2182.jpg",
+    imageUrl: "/images/olym2.jpg",
     color: "orange",
   },
   {
@@ -53,7 +53,7 @@ Our team blends clinical expertise with emotional intelligence—creating a welc
 
 <strong>Consistent Guidance and Support</strong> 
 From onboarding to independence, we walk alongside each child—offering steady encouragement, clear communication, and therapeutic continuity.`,
-    imageUrl: "/images/IMG_9642.jpg",
+    imageUrl: "/images/olym5.jpg",
     color: "blue",
   },
   {
@@ -67,7 +67,7 @@ We offer adaptable scheduling to accommodate diverse lifestyles, school routines
 
 <strong>Multi-disciplinary Wellness Approach</strong>
 We work with a multi-disciplinary team of experts—from neurologists and pediatricians to speech therapists, occupational therapists and nutritionists —to deliver personalized care that goes beyond physical therapy. By integrating developmental support, family education and specialists’ consultations, we address the child’s neurological, physical, and emotional needs—treating the whole child, not just the isolated motor or functional challenges.`,
-    imageUrl: "/images/IMG_2325.jpg",
+    imageUrl: "/images/olym4.jpg",
     color: "orange",
   },
 ];
@@ -99,7 +99,7 @@ export default function AboutUs() {
                   src={pillar.imageUrl}
                   alt={pillar.title}
                   fill
-                  className="object-cover"
+                  className="object-contain object-center"
                 />
                 <div
                   className={`absolute inset-0 bg-gradient-to-t from-black/40 to-transparent`}
