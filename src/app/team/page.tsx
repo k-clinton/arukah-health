@@ -19,10 +19,10 @@ Driven by a deep commitment to inclusive wellness, Ivy designs structured, senso
 Through educational outreach, therapeutic exercise sessions, and tailored wellness initiatives, Ivy advocates for enjoyable movement as a proactive tool for rehabilitation, prevention, and lifelong vitality.
 
 As CEO of Arukah Health, she leads with heart and clinical insight—transforming the way communities engage with movement-centered care. Her mission is simple but powerful: to make physical fitness accessible, engaging, and life-enhancing for everyone.
-
-**Qualifications & Specializations**  
-• BSc Exercise & Sports Science  
-• Clinical Exercise and Movement Specialist  
+<br>
+<strong>Qualifications & Specializations</strong><br>
+• BSc Exercise & Sports Science  <br>
+• Clinical Exercise and Movement Specialist  <br>
 • Certified Swimming Coach`,
   },
   {
@@ -40,10 +40,10 @@ Beyond the classroom and pool, Mr. Kabata is a passionate advocate for community
 Mr. Kabata is also a writer and thought leader, currently finalizing publications on life issues and personal growth. He advocates for whole-person education, challenging traditional exam-centric models and promoting learning as a dynamic, life-wide experience.
 
 At Arukah Health, Mr. Kabata serves as our Movement, Life Skills and Community Wellness Specialist, where he integrates decades of experience into transformative, community-rooted practice. His work anchors our commitment to whole-person healing—bridging physical vitality, emotional resilience, and social connection through thematic games, guided hikes, and inclusive fitness programs. Whether leading a hike, facilitating a life skills session, or coaching swimming, Mr. Kabata brings Arukah's philosophy to life: movement as medicine, play as pedagogy, and community as the heartbeat of transformation. He lives with purpose, humility, and joy—serving his generation as a guide, a coach, and a catalyst for change.
-
-**Qualifications & Specializations**  
-• Bachelor of Education Arts - Physical and Education  
-• Certified Coach in Swimming, Volleyball and Athletics  
+<br>
+<strong>Qualifications & Specializations</strong><br>
+• Bachelor of Education Arts - Physical and Education<br>  
+• Certified Coach in Swimming, Volleyball and Athletics  <br>
 • Certified Life Skill Trainer and Fitness Instructor`,
   },
   {
@@ -60,8 +60,8 @@ From managing complex medical cases to leading transformative community health p
 
 At Arukah, he champions integrated, equitable, and ethical care that puts people first—every patient, every time.
 
-**Qualifications & Specializations**  
-• MSc Healthcare Management  
+<strong>Qualifications & Specializations</strong><br>
+• MSc Healthcare Management  <br>
 • BSc Clinical Medicine and Community Health`,
   },
   {
@@ -75,10 +75,10 @@ At Arukah, he champions integrated, equitable, and ethical care that puts people
 From managing exercise therapy for people recovering from injury to supporting clients with chronic conditions and disabilities, Kamau's approach is both compassionate and evidence-based. He specializes in fitness assessment, therapeutic programming, and functional movement training—ensuring that every client, regardless of ability, is met with care and a path forward.
 
 At Arukah Health, Kamau champions the belief that movement is for everyone. His mission is to help individuals—of all ages, backgrounds, and abilities—gain confidence, build resilience, and thrive through purposeful movement.
-
-**Qualifications & Specializations**  
-• MSc. Exercise & Sports Science  
-• Certified Auditor on Quality Management Systems  
+<br>
+<strong>Qualifications & Specializations</strong><br>
+• MSc. Exercise & Sports Science  <br>
+• Certified Auditor on Quality Management Systems  <br>
 • Certified Exercise Physiologist`,
   },
 ];
@@ -209,13 +209,10 @@ export default function TeamSection() {
                 </div>
 
                 {/* Bio */}
-                <div className="prose prose-lg max-w-none text-gray-800 whitespace-pre-line leading-relaxed">
-                  {selectedMember.bio.split("\n").map((paragraph, i) => (
-                    <p key={i} className="mb-6">
-                      {paragraph}
-                    </p>
-                  ))}
-                </div>
+                <div
+                  className="prose prose-lg max-w-none text-gray-800 font-serif leading-relaxed"
+                  dangerouslySetInnerHTML={{ __html: selectedMember.bio }}
+                />
               </div>
             </motion.div>
           </motion.div>
