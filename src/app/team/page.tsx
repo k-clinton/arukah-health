@@ -12,17 +12,17 @@ const teamMembers = [
     title: "Lead Clinical Exercise Physiologist",
     image: "/images/ivy gacheri.jpg",
     alt: "Ivy Gacheru smiling in clinical setting",
-    bio: `Ivy Gacheru is a passionate Clinical Exercise Physiologist and the visionary founder of Arukah Health. With a firm belief in the healing power of movement, Ivy specializes in exercise therapy for individuals with special needs—including older adults, people with disabilities, those recovering from injury, and individuals managing chronic medical conditions.
+    bio: `Ivy Gacheru is a passionate Clinical Exercise Physiologist and the visionary founder of Arukah Health. With a firm belief in the healing power of movement, Ivy specializes in exercise therapy for individuals with special needs—including older adults, people with disabilities, those recovering from injury, and individuals managing chronic medical conditions.<br><br>
 
-Driven by a deep commitment to inclusive wellness, Ivy designs structured, sensory-friendly movement programs that improve physical function, enhance motor skills, and uplift overall quality of life. Her approach blends science with compassion, ensuring that every client—regardless of ability—feels empowered, supported, and seen.
+Driven by a deep commitment to inclusive wellness, Ivy designs structured, sensory-friendly movement programs that improve physical function, enhance motor skills, and uplift overall quality of life. Her approach blends science with compassion, ensuring that every client—regardless of ability—feels empowered, supported, and seen.<br><br>
 
 Through educational outreach, therapeutic exercise sessions, and tailored wellness initiatives, Ivy advocates for enjoyable movement as a proactive tool for rehabilitation, prevention, and lifelong vitality.
-
+<br><br>
 As CEO of Arukah Health, she leads with heart and clinical insight—transforming the way communities engage with movement-centered care. Her mission is simple but powerful: to make physical fitness accessible, engaging, and life-enhancing for everyone.
-<br>
-<strong>Qualifications & Specializations</strong><br>
-• BSc Exercise & Sports Science  <br>
-• Clinical Exercise and Movement Specialist  <br>
+<br><br>
+<strong>Qualifications & Specializations</strong><br><br>
+• BSc Exercise & Sports Science  <br><br>
+• Clinical Exercise and Movement Specialist  <br><br>
 • Certified Swimming Coach`,
   },
   {
