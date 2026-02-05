@@ -24,6 +24,7 @@ const navItems = [
   { label: "About Us", href: "/about", icon: Info },
   {
     label: "Our Services",
+    href: "/services",
     icon: Briefcase,
     hasDropdown: true,
     dropdownItems: [
