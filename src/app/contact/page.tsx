@@ -144,7 +144,7 @@ export default function ContactPage() {
                   <p className="font-bold text-black">Email</p>
                   <a
                     href="mailto:info@arukahhealth.co.ke"
-                    className="text-orange-700 hover:underline text-lg"
+                    className="text-[#FFB347] hover:underline text-lg"
                   >
                     info@arukahhealth.co.ke
                   </a>
@@ -159,7 +159,7 @@ export default function ContactPage() {
                   <p className="font-bold text-black">Phone / WhatsApp</p>
                   <a
                     href="tel:+254700000000"
-                    className="text-amber-700 hover:underline text-lg"
+                    className="text-[#FFB347] hover:underline text-lg"
                   >
                     +254 758 304 012/+254 732 461 867
                   </a>

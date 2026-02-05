@@ -49,8 +49,8 @@ export default function Hero() {
           <div className="order-2 md:order-2 flex justify-center md:justify-end">
             <div className="relative w-full max-w-sm sm:max-w-md md:max-w-lg lg:max-w-xl">
               <Image
-                src="/images/hero3.png"
-                alt="Child engaged in joyful movement therapy"
+                src="/images/"
+                alt="Child engaged in joyful exercise therapy"
                 width={700}
                 height={700}
                 className="w-full h-auto object-cover "
