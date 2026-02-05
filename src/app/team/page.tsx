@@ -137,7 +137,7 @@ export default function TeamSection() {
                 {/* View Profile Button */}
                 <button
                   onClick={() => setSelectedMember(member)}
-                  className="mt-6 inline-block px-8 py-3 rounded-full bg-gradient-to-r from-[#4793FF] to-blue-600 text-white font-semibold text-base md:text-lg shadow-md hover:shadow-lg hover:from-blue-600 hover:to-[#4793FF] transform hover:scale-105 transition-all duration-300"
+                  className="mt-6 inline-block px-8 py-3 rounded-full bg-[#FFB347]  text-white font-semibold text-base md:text-lg shadow-md hover:shadow-lg hover:from-blue-600 hover:to-[#4793FF] transform hover:scale-105 transition-all duration-300"
                 >
                   View Profile →
                 </button>
