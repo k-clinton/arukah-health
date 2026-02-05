@@ -12,7 +12,6 @@ import {
   Briefcase,
   Users,
   Phone,
-  BookOpen,
   HeartPulse,
   UsersRound,
   Layers,
@@ -25,7 +24,6 @@ const navItems = [
   { label: "About Us", href: "/about", icon: Info },
   {
     label: "Our Services",
-    href: "/",
     icon: Briefcase,
     hasDropdown: true,
     dropdownItems: [
@@ -71,11 +69,14 @@ export default function Navbar() {
     return () => document.removeEventListener("mousedown", handleClickOutside);
   }, []);
 
-  // Close mobile menu when route changes
-  useEffect(() => {
-    setMobileOpen(false);
-    setServicesOpen(false);
-  }, [pathname]);
+  // Helper to close menus (with tiny delay for mobile navigation to fire first)
+  const closeMenus = () => {
+    // Use setTimeout to let the Link navigation start before unmounting menu
+    setTimeout(() => {
+      setMobileOpen(false);
+      setServicesOpen(false);
+    }, 50); // 50ms is enough for touch events to complete
+  };
 
   const isActive = (href: string) => pathname === href;
 
@@ -145,8 +146,12 @@ export default function Navbar() {
                             <Link
                               key={sub.label}
                               href={sub.href}
-                              className="flex items-center gap-3 px-6 py-3.5 text-gray-700 hover:bg-blue-50 hover:text-[#4793FF] transition-colors"
-                              onClick={() => setServicesOpen(false)}
+                              className={`flex items-center gap-3 px-6 py-3.5 text-gray-700 hover:bg-blue-50 hover:text-[#4793FF] transition-colors ${
+                                isActive(sub.href)
+                                  ? "bg-blue-50 font-semibold"
+                                  : ""
+                              }`}
+                              onClick={closeMenus}
                             >
                               <sub.icon size={20} className="text-[#4793FF]" />
                               <span className="font-medium">{sub.label}</span>
@@ -163,6 +168,7 @@ export default function Navbar() {
                           ? "text-[#4793FF] font-semibold"
                           : ""
                       }`}
+                      onClick={closeMenus}
                     >
                       <item.icon size={18} />
                       {item.label}
@@ -179,6 +185,7 @@ export default function Navbar() {
                 className={`flex items-center gap-2 px-6 py-3 rounded-full border-2 border-[#4793FF] text-[#4793FF] font-semibold hover:bg-blue-50 transition-colors ${
                   isActive(specialLink.href) ? "bg-blue-50" : ""
                 }`}
+                onClick={closeMenus}
               >
                 <specialLink.icon size={18} />
                 {specialLink.label}
@@ -231,8 +238,12 @@ export default function Navbar() {
                             <Link
                               key={sub.label}
                               href={sub.href}
-                              className="flex items-center gap-3 py-3 text-gray-700 hover:text-[#4793FF] transition-colors text-base"
-                              onClick={() => setMobileOpen(false)}
+                              className={`flex items-center gap-3 py-3 text-gray-700 hover:text-[#4793FF] transition-colors text-base ${
+                                isActive(sub.href)
+                                  ? "text-[#4793FF] font-semibold bg-blue-50/50 pl-6 border-l-4 border-[#4793FF]"
+                                  : ""
+                              }`}
+                              onClick={closeMenus}
                             >
                               <sub.icon size={20} />
                               {sub.label}
@@ -249,7 +260,7 @@ export default function Navbar() {
                           ? "bg-blue-50 text-[#4793FF] font-semibold"
                           : "text-gray-700 hover:bg-gray-50"
                       }`}
-                      onClick={() => setMobileOpen(false)}
+                      onClick={closeMenus}
                     >
                       <item.icon size={22} />
                       {item.label}
@@ -266,7 +277,7 @@ export default function Navbar() {
                     ? "bg-blue-50 text-[#4793FF] border-l-4 border-[#4793FF] pl-4"
                     : "text-[#4793FF] hover:bg-blue-50"
                 }`}
-                onClick={() => setMobileOpen(false)}
+                onClick={closeMenus}
               >
                 <specialLink.icon size={22} />
                 {specialLink.label}

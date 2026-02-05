@@ -252,6 +252,18 @@ export default function AboutUsPage() {
                 title: "Respect & Compassion",
                 desc: "We honor each child's journey with empathy, dignity, and personalized care—creating safe spaces for healing through movement and relationship.",
               },
+              {
+                title: "Innovation",
+                desc: "We embrace creativity and adaptability—continually exploring new skills, tools, and technologies to design movement programs that are effective, engaging, and inclusive.",
+              },
+              {
+                title: "Integrity",
+                desc: "Honesty, transparency, and trust guide every relationship—with our clients, partners, and within our team.",
+              },
+              {
+                title: "Expertise",
+                desc: "We uphold the highest standards in therapeutic care through clinically sound, research-driven methodologies.",
+              },
             ].map((value, i) => (
               <motion.div
                 key={i}
