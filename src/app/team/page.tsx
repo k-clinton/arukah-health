@@ -31,19 +31,19 @@ As CEO of Arukah Health, she leads with heart and clinical insight—transformin
     title: "Movement, Life Skills and Community Wellness Specialist",
     image: "/images/team.jpg",
     alt: "Charles Kabatata Gitau professional portrait",
-    bio: `Charles Kabata Gitau is a seasoned sports educator with over 33 years of teaching experience, including 17 years in teacher training and 16 years in secondary school education. His career is defined by a deep commitment to holistic development, blending physical education with life skills training through his signature approach—thematic games.
+    bio: `Charles Kabata Gitau is a seasoned sports educator with over 33 years of teaching experience, including 17 years in teacher training and 16 years in secondary school education. His career is defined by a deep commitment to holistic development, blending physical education with life skills training through his signature approach—thematic games.<br><br>
 
-A trusted collaborator with the Ministry of Education and USAID, Mr. Kabata has spent over a decade advancing soft skills education across Kenya. His coaching in swimming and athletics has empowered students to compete at national and regional levels, with several securing international sports scholarships, particularly in the USA.
+A trusted collaborator with the Ministry of Education and USAID, Mr. Kabata has spent over a decade advancing soft skills education across Kenya. His coaching in swimming and athletics has empowered students to compete at national and regional levels, with several securing international sports scholarships, particularly in the USA.<br><br>
 
-Beyond the classroom and pool, Mr. Kabata is a passionate advocate for community health and fitness. He leads a women's wellness group that meets thrice weekly and founded the Saturday Tea Zone Challenge, a nature-based hiking initiative promoting physical and mental well-being in Tigoni. His love for nature and belief in its healing power inspire regular nature walks, where he sensitizes participants to the therapeutic unity between humanity and the natural world.
+Beyond the classroom and pool, Mr. Kabata is a passionate advocate for community health and fitness. He leads a women's wellness group that meets thrice weekly and founded the Saturday Tea Zone Challenge, a nature-based hiking initiative promoting physical and mental well-being in Tigoni. His love for nature and belief in its healing power inspire regular nature walks, where he sensitizes participants to the therapeutic unity between humanity and the natural world.<br><br>
 
-Mr. Kabata is also a writer and thought leader, currently finalizing publications on life issues and personal growth. He advocates for whole-person education, challenging traditional exam-centric models and promoting learning as a dynamic, life-wide experience.
+Mr. Kabata is also a writer and thought leader, currently finalizing publications on life issues and personal growth. He advocates for whole-person education, challenging traditional exam-centric models and promoting learning as a dynamic, life-wide experience.<br><br>
 
 At Arukah Health, Mr. Kabata serves as our Movement, Life Skills and Community Wellness Specialist, where he integrates decades of experience into transformative, community-rooted practice. His work anchors our commitment to whole-person healing—bridging physical vitality, emotional resilience, and social connection through thematic games, guided hikes, and inclusive fitness programs. Whether leading a hike, facilitating a life skills session, or coaching swimming, Mr. Kabata brings Arukah's philosophy to life: movement as medicine, play as pedagogy, and community as the heartbeat of transformation. He lives with purpose, humility, and joy—serving his generation as a guide, a coach, and a catalyst for change.
-<br>
-<strong>Qualifications & Specializations</strong><br>
-• Bachelor of Education Arts - Physical and Education<br>  
-• Certified Coach in Swimming, Volleyball and Athletics  <br>
+<br><br>
+<strong>Qualifications & Specializations</strong><br><br>
+• Bachelor of Education Arts - Physical and Education<br> <br>
+• Certified Coach in Swimming, Volleyball and Athletics  <br><br>
 • Certified Life Skill Trainer and Fitness Instructor`,
   },
   {
@@ -52,16 +52,16 @@ At Arukah Health, Mr. Kabata serves as our Movement, Life Skills and Community W
     title: "Lead Clinician & Care Strategist",
     image: "/images/team4.jpg",
     alt: "Dr. Mburu Victor Kariuki in office",
-    bio: `Dr. Victor Mburu is a dynamic Healthcare Manager and Lead Clinician at Arukah Health, bringing over five years of excellence in clinical care, quality assurance, and healthcare systems optimization.
+    bio: `Dr. Victor Mburu is a dynamic Healthcare Manager and Lead Clinician at Arukah Health, bringing over five years of excellence in clinical care, quality assurance, and healthcare systems optimization.<br><br>
 
-Victor is known for uniting medical precision with a deep sense of purpose. His approach blends compassionate, patient-centered care with strategic insight—improving outcomes through root cause analysis, policy design, and data-driven innovations.
+Victor is known for uniting medical precision with a deep sense of purpose. His approach blends compassionate, patient-centered care with strategic insight—improving outcomes through root cause analysis, policy design, and data-driven innovations.<br><br>
 
-From managing complex medical cases to leading transformative community health programs, Victor consistently uplifts care standards. His impact spans roles such as Deputy Clinician-in-Charge on the USAID Tujenge Jamii project and medical case manager at M-Tiba, where he advances quality health delivery through smart systems and analytics.
+From managing complex medical cases to leading transformative community health programs, Victor consistently uplifts care standards. His impact spans roles such as Deputy Clinician-in-Charge on the USAID Tujenge Jamii project and medical case manager at M-Tiba, where he advances quality health delivery through smart systems and analytics.<br><br>
 
-At Arukah, he champions integrated, equitable, and ethical care that puts people first—every patient, every time.
+At Arukah, he champions integrated, equitable, and ethical care that puts people first—every patient, every time.<br><br>
 
-<strong>Qualifications & Specializations</strong><br>
-• MSc Healthcare Management  <br>
+<strong>Qualifications & Specializations</strong><br><br>
+• MSc Healthcare Management  <br><br>
 • BSc Clinical Medicine and Community Health`,
   },
   {
@@ -70,15 +70,15 @@ At Arukah, he champions integrated, equitable, and ethical care that puts people
     title: "Exercise Therapist & Inclusive Fitness Consultant",
     image: "/images/team3.jpeg",
     alt: "Paul Kamau professional portrait",
-    bio: `Kamau Paul is a respected Exercise and Fitness Consultant with deep roots in Kenya's top sports and wellness institutions. Beyond his role as a tutor and coach, Kamau is especially passionate about designing inclusive fitness programs tailored to individuals with special health needs.
+    bio: `Kamau Paul is a respected Exercise and Fitness Consultant with deep roots in Kenya's top sports and wellness institutions. Beyond his role as a tutor and coach, Kamau is especially passionate about designing inclusive fitness programs tailored to individuals with special health needs.<br><br>
 
 From managing exercise therapy for people recovering from injury to supporting clients with chronic conditions and disabilities, Kamau's approach is both compassionate and evidence-based. He specializes in fitness assessment, therapeutic programming, and functional movement training—ensuring that every client, regardless of ability, is met with care and a path forward.
-
+<br><br>
 At Arukah Health, Kamau champions the belief that movement is for everyone. His mission is to help individuals—of all ages, backgrounds, and abilities—gain confidence, build resilience, and thrive through purposeful movement.
-<br>
-<strong>Qualifications & Specializations</strong><br>
-• MSc. Exercise & Sports Science  <br>
-• Certified Auditor on Quality Management Systems  <br>
+<br><br>
+<strong>Qualifications & Specializations</strong><br><br>
+• MSc. Exercise & Sports Science  <br><br>
+• Certified Auditor on Quality Management Systems  <br><br>
 • Certified Exercise Physiologist`,
   },
 ];
