@@ -66,7 +66,7 @@ export default function ExerciseTherapy() {
       <section className="py-20 px-6 bg-white">
         <div className="max-w-5xl mx-auto text-center">
           <h2 className="text-3xl md:text-4xl font-serif font-bold tet-blue-700 mb-10">
-            Harnessing Neuroplasticity Through Joyful Movement
+            Our Programs
           </h2>
           <p className="text-xl text-gray-700 leading-relaxed max-w-4xl mx-auto">
             Our Exercise Therapy programs are built on the principle of

@@ -8,11 +8,11 @@ import Link from "next/link";
 const teamMembers = [
   {
     id: 1,
-    name: "Ivy Gacheru",
+    name: "Ivy Gacheri",
     title: "Lead Clinical Exercise Physiologist",
     image: "/images/ivy gacheri.jpg",
-    alt: "Ivy Gacheru smiling in clinical setting",
-    bio: `Ivy Gacheru is a passionate Clinical Exercise Physiologist and the visionary founder of Arukah Health. With a firm belief in the healing power of movement, Ivy specializes in exercise therapy for individuals with special needs—including older adults, people with disabilities, those recovering from injury, and individuals managing chronic medical conditions.<br><br>
+    alt: "Ivy Gacheri smiling in clinical setting",
+    bio: `Ivy Gacheri is a passionate Clinical Exercise Physiologist and the visionary founder of Arukah Health. With a firm belief in the healing power of movement, Ivy specializes in exercise therapy for individuals with special needs—including older adults, people with disabilities, those recovering from injury, and individuals managing chronic medical conditions.<br><br>
 
 Driven by a deep commitment to inclusive wellness, Ivy designs structured, sensory-friendly movement programs that improve physical function, enhance motor skills, and uplift overall quality of life. Her approach blends science with compassion, ensuring that every client—regardless of ability—feels empowered, supported, and seen.<br><br>
 
