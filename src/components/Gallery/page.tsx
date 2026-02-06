@@ -2,19 +2,19 @@ import Image from "next/image";
 
 const images = [
   {
-    src: "/images/IMG_9584.jpg",
+    src: "/images/IMG_9611.jpg",
     alt: "Grandfather and granddaughter smiling",
   },
   {
-    src: "/images/IMG_9516.JPG",
+    src: "/images/IMG_2182.jpg",
     alt: "Mother and daughter talking",
   },
   {
-    src: "/images/IMG_9508 (1).jpg",
+    src: "/images/IMG_9761.jpg",
     alt: "Mother holding baby",
   },
   {
-    src: "/images/IMG_2198.JPG",
+    src: "/images/IMG_2325.jpg",
     alt: "Happy family portrait",
   },
 ];
