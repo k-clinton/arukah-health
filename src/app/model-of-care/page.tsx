@@ -1,13 +1,12 @@
-import Navbar from "@/components/Navbar";
+"use client";
 import { Users, HeartHandshake, ShieldCheck, Target } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
+import { motion } from "framer-motion";
 
 export default function ModelOfCare() {
   return (
     <main className="min-h-screen bg-white">
-      <Navbar />
-
       {/* Hero Section with Background Image */}
       <section className="relative min-h-[70vh] md:min-h-[80vh] flex items-center justify-center">
         {/* Background Image */}
@@ -126,20 +125,55 @@ export default function ModelOfCare() {
       </div>
 
       {/* Final CTA */}
-      <div className="text-center py-16 px-6 bg-gradient-to-b from-blue-50/30 to-white">
-        <h3 className="text-3xl md:text-4xl font-serif font-bold text-[#4793FF] mb-6">
-          Ready to Begin Your Child’s Journey?
-        </h3>
-        <p className="text-xl text-gray-700 mb-8 max-w-2xl mx-auto">
-          Contact us today to discuss how our model of care can support your
-          child’s unique needs with compassion, expertise, and joy.
-        </p>
-        <Link
-          href="/contact"
-          className="inline-block bg-gradient-to-r from-[#FFB347] to-orange-500 hover:from-orange-500 hover:to-[#FFB347] text-white font-bold py-5 px-12 rounded-full text-xl shadow-xl transform hover:scale-105 transition duration-300"
+      <div className="relative text-center py-16 px-6 bg-gradient-to-b from-blue-50/30 to-white overflow-hidden">
+        {/* Decorative Image – Left */}
+        <motion.div
+          className="pointer-events-none absolute top-10 left-6 z-0 hidden md:block"
+          animate={{ y: [0, -12, 0] }}
+          transition={{ duration: 6, repeat: Infinity, ease: "easeInOut" }}
         >
-          Get Started →
-        </Link>
+          <Image
+            src="/images/pd3.jpg"
+            alt=""
+            width={120}
+            height={120}
+            className="opacity-70 -rotate-6"
+          />
+        </motion.div>
+
+        {/* Decorative Image – Right */}
+        <motion.div
+          className="pointer-events-none absolute bottom-10 right-6 z-0 hidden md:block"
+          animate={{ y: [0, -12, 0] }}
+          transition={{ duration: 7, repeat: Infinity, ease: "easeInOut" }}
+        >
+          <Image
+            src="/images/pd3.jpg"
+            alt=""
+            width={140}
+            height={140}
+            className="opacity-70 rotate-6"
+          />
+        </motion.div>
+
+        {/* Existing Content (UNCHANGED) */}
+        <div className="relative z-10">
+          <h3 className="text-3xl md:text-4xl font-serif font-bold text-[#4793FF] mb-6">
+            Ready to Begin Your Child’s Journey?
+          </h3>
+
+          <p className="text-xl text-gray-700 mb-8 max-w-2xl mx-auto">
+            Contact us today to discuss how our model of care can support your
+            child’s unique needs with compassion, expertise, and joy.
+          </p>
+
+          <Link
+            href="/contact"
+            className="inline-block bg-gradient-to-r from-[#FFB347] to-orange-500 hover:from-orange-500 hover:to-[#FFB347] text-white font-bold py-5 px-12 rounded-full text-xl shadow-xl transform hover:scale-105 transition duration-300"
+          >
+            Get Started →
+          </Link>
+        </div>
       </div>
     </main>
   );
