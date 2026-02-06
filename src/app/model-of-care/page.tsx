@@ -259,7 +259,7 @@ Our interventions are delivered within a supervised, safe, and supportive enviro
           transition={{ duration: 7, repeat: Infinity, ease: "easeInOut" }}
         >
           <Image
-            src="/images/pd3.jpg"
+            src="/images/icon3.jpg"
             alt=""
             width={140}
             height={140}
