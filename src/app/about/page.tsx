@@ -232,8 +232,26 @@ export default function AboutUsPage() {
       </section>
 
       {/* SECTION 6: CORE VALUES */}
-      <section className="bg-gray-50  positin-relative py-20">
-        <div className="max-w-7xl mx-auto px-6 lg:px-8">
+      <section className="relative bg-gray-50 py-20 overflow-hidden">
+        {/* Decorative Images */}
+        <Image
+          src="/images/pd3.jpg"
+          alt=""
+          width={120}
+          height={120}
+          className="pointer-events-none absolute top-6 left-6 opacity-70 z-0"
+        />
+
+        <Image
+          src="/images/pd3.jpg"
+          alt=""
+          width={140}
+          height={140}
+          className="pointer-events-none absolute top-6 right-6 opacity-70 z-0"
+        />
+
+        {/* Content */}
+        <div className="relative z-10 max-w-7xl mx-auto px-6 lg:px-8">
           <h2 className="text-4xl md:text-5xl font-serif font-bold text-center text-orange-500 mb-16">
             Our Core Values
           </h2>
@@ -279,14 +297,6 @@ export default function AboutUsPage() {
                 <p className="text-gray-700">{value.desc}</p>
               </motion.div>
             ))}
-          </div>
-          <div className="position-absolute">
-            <Image
-              src="/images/pd3.jpg"
-              alt="Soft pastel dreamy clouds background"
-              fill
-              className="fixed top-8 right-8 w-24 h-24 md:w-32 md:h-32 object-contain z-50 pointer-events-none opacity-80"
-            />
           </div>
         </div>
       </section>
