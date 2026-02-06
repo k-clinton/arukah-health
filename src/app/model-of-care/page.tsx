@@ -12,7 +12,7 @@ export default function ModelOfCare() {
         {/* Background Image */}
         <div className="absolute inset-0">
           <Image
-            src="/images/model-care-hero.jpg" // ← Replace with your actual hero background image
+            src="/images/IMG_9647.jpg" // ← Replace with your actual hero background image
             alt="Child and family in joyful, supportive movement environment"
             fill
             className="object-cover brightness-[0.75]"
