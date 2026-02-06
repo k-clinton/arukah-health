@@ -1,5 +1,6 @@
 "use client";
-import Navbar from "@/components/Navbar";
+
+import { useState } from "react";
 import {
   Plus,
   Minus,
@@ -11,7 +12,6 @@ import {
   Mountain,
 } from "lucide-react";
 import Image from "next/image";
-import { useState } from "react";
 import Link from "next/link";
 
 export default function ExerciseTherapy() {
@@ -23,49 +23,52 @@ export default function ExerciseTherapy() {
 
   return (
     <main className="min-h-screen bg-white">
-      <Navbar />
+      {/* Hero Section with Background Image */}
+      <section className="relative min-h-[70vh] md:min-h-[80vh] flex items-center justify-center">
+        {/* Background Image */}
+        <div className="absolute inset-0">
+          <Image
+            src="/images/IMG_9696.jpg"
+            alt="Joyful child in movement therapy environment"
+            fill
+            className="object-cover brightness-[0.75]"
+            priority
+          />
+          {/* Dark overlay for text readability */}
+          <div className="absolute inset-0 bg-black/40" />
+        </div>
 
-      {/* Hero / Intro */}
-      <section className="relative pt-32 pb-20 px-6 bg-gradient-to-b from-white to-blue-50/30">
-        <div className="max-w-7xl mx-auto grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
-          {/* Left: Image */}
-          <div className="relative rounded-3xl overflow-hidden shadow-2xl order-2 lg:order-1">
-            <Image
-              src="/images/IMG_9642.jpg"
-              alt="Child smiling during joyful movement session with therapist"
-              width={1200}
-              height={800}
-              className="w-full h-auto object-cover"
-              priority
-            />
-            <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent" />
-          </div>
+        {/* Content on top */}
+        <div className="relative z-10 text-center px-6 max-w-5xl">
+          <h1 className="text-5xl sm:text-6xl md:text-7xl font-serif font-extrabold text-white drop-shadow-2xl mb-6 md:mb-8">
+            Exercise Therapy
+          </h1>
 
-          {/* Right: Tagline + Intro */}
-          <div className="order-1 lg:order-2">
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-serif font-extrabold text-blue-700 mb-8 leading-tight">
-              Exercise Therapy
-            </h1>
-            <p className="text-xl md:text-2xl font-medium text-gray-800 leading-relaxed mb-8">
-              Supporting children with neuro-developmental challenges through
-              exercise—meeting them not by diagnosis, but by the everyday
-              milestones and struggles that matter most.
-            </p>
-            <p className="text-lg text-gray-700 leading-relaxed">
-              Neuro-developmental conditions and milestone delays often bring
-              complex physical challenges: impaired motor control, reduced
-              strength & endurance, balance/coordination deficits, limited
-              flexibility, and altered proprioception. These can restrict daily
-              participation, independence, and quality of life.
-            </p>
-          </div>
+          <p className="text-xl sm:text-2xl md:text-3xl font-medium text-white/95 leading-relaxed max-w-4xl mx-auto drop-shadow-lg">
+            Supporting children with neuro-developmental challenges through
+            exercise—meeting them not by diagnosis, but by the everyday
+            milestones and struggles that matter most.
+          </p>
         </div>
       </section>
 
-      {/* Core Philosophy */}
-      <section className="py-20 px-6 bg-white">
+      {/* Intro Paragraph Section */}
+      <section className="py-16 md:py-20 px-6 bg-white">
         <div className="max-w-5xl mx-auto text-center">
-          <h2 className="text-3xl md:text-4xl font-serif font-bold tet-blue-700 mb-10">
+          <p className="text-lg md:text-xl text-gray-700 leading-relaxed">
+            Neuro-developmental conditions and milestone delays often bring
+            complex physical challenges: impaired motor control, reduced
+            strength & endurance, balance/coordination deficits, limited
+            flexibility, and altered proprioception. These can restrict daily
+            participation, independence, and quality of life.
+          </p>
+        </div>
+      </section>
+
+      {/* Core Philosophy – Our Programs */}
+      <section className="py-16 md:py-20 px-6 bg-gradient-to-b from-white to-blue-50/30">
+        <div className="max-w-5xl mx-auto text-center">
+          <h2 className="text-3xl md:text-4xl font-serif font-bold text-[#4793FF] mb-8 md:mb-10">
             Our Programs
           </h2>
           <p className="text-xl text-gray-700 leading-relaxed max-w-4xl mx-auto">
@@ -79,10 +82,10 @@ export default function ExerciseTherapy() {
         </div>
       </section>
 
-      {/* Four Key Domains Cards */}
-      <section className="py-16 px-6 bg-gradient-to-b from-blue-50/30 to-white">
+      {/* Key Domains Cards */}
+      <section className="py-16 px-6 bg-white">
         <div className="max-w-7xl mx-auto">
-          <h3 className="text-3xl md:text-4xl font-serif font-bold text-center text-blue-700 mb-12">
+          <h3 className="text-3xl md:text-4xl font-serif font-bold text-center text-[#4793FF] mb-12">
             Key Areas We Strengthen
           </h3>
 
@@ -124,14 +127,14 @@ export default function ExerciseTherapy() {
         </div>
       </section>
 
-      {/* Four Alternating Image + Content Blocks */}
+      {/* Alternating Image + Content Blocks (unchanged) */}
       <section className="py-20 px-6">
         <div className="max-w-7xl mx-auto space-y-24">
           {/* Block 1: Image left */}
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div className="relative rounded-3xl overflow-hidden shadow-2xl">
               <Image
-                src="/images/bg7.jpg" // replace with real swimming photo
+                src="/images/bg7.jpg"
                 alt="Child enjoying water-based exercise therapy"
                 width={1200}
                 height={800}
@@ -148,13 +151,39 @@ export default function ExerciseTherapy() {
                 Every activity is purposeful, fun, and tailored to your
                 child&apos;s unique abilities.
               </p>
+              <button
+                onClick={() => toggleTab(0)}
+                className="flex items-center gap-2 text-[#FFB347] font-medium hover:underline mt-4"
+              >
+                {openTab === 0 ? <Minus size={20} /> : <Plus size={20} />}
+                Learn More
+              </button>
+              {openTab === 0 && (
+                <div className="mt-4 pl-8 border-l-2 border-[#FFB347]/30">
+                  <ul className="space-y-3 text-gray-700">
+                    <li>
+                      • Organized exercise and games employ a structured,
+                      sensory-aware environment for rehabilitation, strength
+                      building, and functional recovery utilizing specialized
+                      equipment, controlled environments and curated soundscapes
+                      to support precise movement, focused engagement,
+                      neuromuscular re-education, and emotional regulation.
+                    </li>
+                    <li>
+                      • Purposeful exercise and games activate strength, restore
+                      alignment, enhance mobility and deepen body awareness
+                      through structured, supportive movement.
+                    </li>
+                  </ul>
+                </div>
+              )}
             </div>
           </div>
 
           {/* Block 2: Image right */}
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div className="order-2 lg:order-1">
-              <h2 className="text-3xl md:text-4xl font-serif font-bold text-[#4793FF] mb-6">
+              <h2 className="text-3xl md:text-4xl font-serif font-bold text-blue-700 mb-6">
                 Swimming Lessons
               </h2>
               <p className="text-lg text-gray-700 leading-relaxed mb-6">
@@ -277,7 +306,7 @@ export default function ExerciseTherapy() {
             </div>
             <div className="relative rounded-3xl overflow-hidden shadow-2xl order-1 lg:order-2">
               <Image
-                src="/images/biking.jpg" // replace with structured exercise photo
+                src="/images/biking.jpg"
                 alt="Child in structured play-based exercise session"
                 width={1200}
                 height={800}
@@ -293,7 +322,7 @@ export default function ExerciseTherapy() {
             </h3>
             <Link
               href="/contact"
-              className="inline-block bg-orange-300 hover:from-orange-500 hover:to-[#FFB347] text-white font-bold py-5 px-12 rounded-full text-xl shadow-xl transform hover:scale-105 transition duration-300"
+              className="inline-block bg-gradient-to-r from-[#FFB347] to-orange-500 hover:from-orange-500 hover:to-[#FFB347] text-white font-bold py-5 px-12 rounded-full text-xl shadow-xl transform hover:scale-105 transition duration-300"
             >
               Get Started Today →
             </Link>

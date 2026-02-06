@@ -125,7 +125,7 @@ export default function AboutUsPage() {
       <section className="py-24 relative overflow-hidden">
         <div className="absolute inset-0  pointer-events-none">
           <Image
-            src="/images/bg1.jpg"
+            src="/images/at3.jpg"
             alt="Soft pastel dreamy clouds background"
             fill
             className="object-cover"
