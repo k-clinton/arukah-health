@@ -102,7 +102,7 @@ export default function EducationAndTraining() {
             <div className="grid lg:grid-cols-2 gap-12 items-center">
               <div className="relative rounded-3xl overflow-hidden shadow-2xl">
                 <Image
-                  src="/images/parent-workshop.jpg" // ← replace with parent/caregiver workshop photo
+                  src="/images/edu11.jpg"
                   alt="Group of parents learning inclusive movement strategies"
                   width={1200}
                   height={800}
@@ -139,7 +139,7 @@ export default function EducationAndTraining() {
               </div>
               <div className="relative rounded-3xl overflow-hidden shadow-2xl order-1 lg:order-2">
                 <Image
-                  src="/images/caregiver-training.jpg"
+                  src="/images/edu22.jpg"
                   alt=""
                   width={1200}
                   height={800}
@@ -152,7 +152,7 @@ export default function EducationAndTraining() {
             <div className="grid lg:grid-cols-2 gap-12 items-center">
               <div className="relative rounded-3xl overflow-hidden shadow-2xl">
                 <Image
-                  src="/images/community-workshop.jpg"
+                  src="/images/edu33.jpg"
                   alt=""
                   width={1200}
                   height={800}
