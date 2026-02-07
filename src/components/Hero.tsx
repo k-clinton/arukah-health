@@ -60,10 +60,10 @@ export default function Hero() {
                 }}
               >
                 <Image
-                  src="/images/pd3.jpg"
+                  src="/images/pd2.jpg"
                   alt=""
-                  width={110}
-                  height={110}
+                  width={220}
+                  height={230}
                   className="opacity-70 rotate-6"
                 />
               </motion.div>
