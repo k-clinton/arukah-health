@@ -267,7 +267,6 @@ Our interventions are delivered within a supervised, safe, and supportive enviro
           />
         </motion.div>
 
-        {/* Existing Content (UNCHANGED) */}
         <div className="relative z-10">
           <h3 className="text-3xl md:text-4xl font-serif font-bold text-blue-700 mb-6">
             Ready to Begin Your Child’s Journey?

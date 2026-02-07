@@ -3,6 +3,7 @@
 import Link from "next/link";
 import Image from "next/image";
 import { LuHeart } from "react-icons/lu";
+import { motion } from "framer-motion";
 
 export default function Hero() {
   return (
@@ -48,12 +49,51 @@ export default function Hero() {
           {/* Image – comes SECOND on mobile */}
           <div className="order-2 md:order-2 flex justify-center md:justify-end">
             <div className="relative w-full max-w-sm sm:max-w-md md:max-w-lg lg:max-w-xl">
+              {/* Decorative Image – Top Right */}
+              <motion.div
+                className="pointer-events-none absolute -top-6 -right-6 z-10 hidden md:block"
+                animate={{ y: [0, -12, 0] }}
+                transition={{
+                  duration: 6,
+                  repeat: Infinity,
+                  ease: "easeInOut",
+                }}
+              >
+                <Image
+                  src="/images/pd3.jpg"
+                  alt=""
+                  width={110}
+                  height={110}
+                  className="opacity-70 rotate-6"
+                />
+              </motion.div>
+
+              {/* Decorative Image – Bottom Left */}
+              <motion.div
+                className="pointer-events-none absolute -bottom-6 -left-6 z-10 hidden md:block"
+                animate={{ y: [0, -12, 0] }}
+                transition={{
+                  duration: 7,
+                  repeat: Infinity,
+                  ease: "easeInOut",
+                }}
+              >
+                <Image
+                  src="/images/pd3.jpg"
+                  alt=""
+                  width={95}
+                  height={95}
+                  className="opacity-65 -rotate-6"
+                />
+              </motion.div>
+
+              {/* Main Image (UNCHANGED) */}
               <Image
-                src="/images/"
+                src="/images/Hero.png"
                 alt="Child engaged in joyful exercise therapy"
                 width={700}
                 height={700}
-                className="w-full h-auto object-cover "
+                className="w-full h-auto object-cover"
                 priority
               />
             </div>

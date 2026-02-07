@@ -30,7 +30,7 @@ export default function FamilyOvalGallery() {
           {images.map((image, index) => (
             <div
               key={index}
-              className="relative h-[320px] w-[220px] overflow-hidden rounded-full shadow-lg transition-transform duration-300 hover:scale-105"
+              className="relative h-[420px] w-[320px] overflow-hidden rounded-full shadow-lg transition-transform duration-300 hover:scale-105"
             >
               <Image
                 src={image.src}
