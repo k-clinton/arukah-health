@@ -1,13 +1,19 @@
+/* global.css */
 @import "tailwindcss";
 
 :root {
+  --background: white;
+  --foreground: black;
 }
 
+/* Theme tokens */
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+
+  /* Font tokens mapped from next/font */
+  --font-sans: var(--font-montserrat);
+  --font-serif: var(--font-inria);
 }
 
 @media (prefers-color-scheme: dark) {
@@ -20,11 +26,10 @@
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family:
-    Montserrat,
-    inria serif,
-    Sloop Script Pro;
+  font-family: var(--font-montserrat), system-ui, sans-serif;
 }
+
+/* ---------------- Animations ---------------- */
 @keyframes spin-slow {
   from {
     transform: rotate(0deg);
@@ -38,6 +43,7 @@ body {
   animation: spin-slow 8s linear infinite;
 }
 
+/* ---------------- Footer ---------------- */
 footer a {
   transition: all 0.3s ease;
 }
@@ -45,23 +51,30 @@ footer a {
 footer .group:hover .group-hover\:translate-x-2 {
   transform: translateX(0.5rem);
 }
+
+/* ---------------- Shapes ---------------- */
 .clip-path-hero {
   border-radius: 73% 27% 56% 44% / 46% 38% 62% 54%;
 }
+
 @media (min-width: 640px) {
   .clip-path-hero {
     border-radius: 63% 37% 70% 30% / 44% 56% 24% 76%;
   }
 }
+
 @media (min-width: 1024px) {
   .clip-path-hero {
     border-radius: 63% 37% 70% 30% / 44% 56% 24% 76%;
   }
 }
+
+/* ---------------- Scrollbar ---------------- */
 .scrollbar-hide {
   -ms-overflow-style: none;
   scrollbar-width: none;
 }
+
 .scrollbar-hide::-webkit-scrollbar {
   display: none;
 }

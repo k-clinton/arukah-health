@@ -1,33 +1,38 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Montserrat, Inria_Serif } from "next/font/google";
 import "./globals.css";
-import Footer from "@/components/Footer";
 import Navbar from "@/components/Navbar";
+import Footer from "@/components/Footer";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
+/* Google Fonts */
+const montserrat = Montserrat({
   subsets: ["latin"],
+  weight: ["300", "400", "500", "600", "700"],
+  variable: "--font-montserrat",
+  display: "swap",
 });
 
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
+const inriaSerif = Inria_Serif({
   subsets: ["latin"],
+  weight: ["300", "400", "700"],
+  variable: "--font-inria",
+  display: "swap",
 });
 
 export const metadata: Metadata = {
   title: "Arukah Health",
-  description: "Empowering Health with AI-Driven Insights",
+  description: "Empowering Health with Compassionate, Evidence-Based Care",
 };
 
 export default function RootLayout({
   children,
-}: Readonly<{
+}: {
   children: React.ReactNode;
-}>) {
+}) {
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${montserrat.variable} ${inriaSerif.variable} antialiased`}
       >
         <Navbar />
         {children}
