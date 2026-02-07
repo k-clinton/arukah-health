@@ -59,7 +59,6 @@ export default function Navbar() {
 
   const dropdownRef = useRef<HTMLDivElement>(null);
 
-  /* ---------------- DESKTOP: CLOSE ON OUTSIDE CLICK ---------------- */
   useEffect(() => {
     const handleClickOutside = (event: MouseEvent) => {
       if (
@@ -224,8 +223,9 @@ export default function Navbar() {
                             key={sub.label}
                             href={sub.href}
                             onClick={closeMenus}
-                            className="block py-2 text-gray-700 hover:text-[#4793FF]"
+                            className="flex items-center gap-3 py-2 text-gray-700 hover:text-[#4793FF]"
                           >
+                            <sub.icon size={20} />
                             {sub.label}
                           </Link>
                         ))}
@@ -237,8 +237,9 @@ export default function Navbar() {
                     key={item.label}
                     href={item.href}
                     onClick={closeMenus}
-                    className="block px-4 py-3 rounded-lg hover:bg-gray-100"
+                    className="flex items-center gap-3 px-4 py-3 rounded-lg hover:bg-gray-100"
                   >
+                    <item.icon size={22} />
                     {item.label}
                   </Link>
                 ),
@@ -247,8 +248,9 @@ export default function Navbar() {
               <Link
                 href={specialLink.href}
                 onClick={closeMenus}
-                className="block px-4 py-3 font-semibold text-[#4793FF]"
+                className="flex items-center gap-3 px-4 py-3 font-semibold text-[#4793FF]"
               >
+                <specialLink.icon size={22} />
                 {specialLink.label}
               </Link>
             </div>
