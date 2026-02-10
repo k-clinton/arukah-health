@@ -91,7 +91,7 @@ export default function Navbar() {
   return (
     <nav className="fixed top-0 left-0 right-0 z-50 bg-white shadow-sm">
       {/* Top Bar */}
-      <div className="bg-[#4793FF] text-white">
+      <div className="bg-white text-blue-700 ">
         <div className="max-w-7xl mx-auto px-4">
           <div className="flex items-center h-12">
             <Link href="/" className="flex items-center gap-3">
