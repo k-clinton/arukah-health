@@ -18,7 +18,7 @@ const HeroExtro = () => {
           alt=""
           width={140}
           height={140}
-          className="opacity-70 -rotate-6"
+          className="opacity-90 -rotate-6"
         />
       </motion.div>
 
@@ -33,7 +33,7 @@ const HeroExtro = () => {
           alt=""
           width={160}
           height={160}
-          className="opacity-70 rotate-6"
+          className="opacity-90 rotate-6"
         />
       </motion.div>
 

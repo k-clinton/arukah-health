@@ -65,7 +65,7 @@ export default function Statistics() {
           alt=""
           width={240}
           height={240}
-          className="opacity-70 rotate-6"
+          className="opacity-100 rotate-6"
         />
       </motion.div>
 
