@@ -30,7 +30,7 @@ export default function Hero() {
               <h2 className="text-2xl sm:text-3xl md:text-4xl font-serif font-bold text-blue-700 mb-4 md:mb-5">
                 THERAPY THROUGH MOTION
               </h2>
-              <p className="text-base sm:text-lg md:text-xl text-gray-700 leading-relaxed">
+              <p className="text-base sm:text-lg md:text-xl  text-gray-700 leading-relaxed">
                 We offer exercise sessions to children with neuro-developmental
                 challenges and milestone delays, helping them build strength,
                 improve mobility, stabilize posture, build physical capacity,
@@ -81,8 +81,8 @@ export default function Hero() {
                 <Image
                   src="/images/icon7.jpg"
                   alt=""
-                  width={95}
-                  height={95}
+                  width={225}
+                  height={225}
                   className="opacity-100 -rotate-6"
                 />
               </motion.div>
