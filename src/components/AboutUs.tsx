@@ -78,7 +78,7 @@ export default function AboutUs() {
   return (
     <section className="py-20 px-6 bg-gradient-to-br from-blue-50 to-orange-50">
       <div className="max-w-7xl mx-auto">
-        <h2 className="text-5xl  text-center font-serif mb-6 text-blue-700 drop-shadow-md">
+        <h2 className="text-5xl  text-center font-serif mb-6 font-bold text-blue-700 drop-shadow-md">
           What You’ll Love About Us
         </h2>
 
@@ -109,7 +109,7 @@ export default function AboutUs() {
                 <h3
                   className={`text-2xl font-bold mb-4 ${
                     pillar.color === "orange"
-                      ? "text-orange-500"
+                      ? "text-orange-600"
                       : "text-blue-600"
                   }`}
                 >
@@ -124,8 +124,8 @@ export default function AboutUs() {
                       <span
                         className={`mr-3 text-xl ${
                           pillar.color === "orange"
-                            ? "text-orange-500"
-                            : "text-blue-500"
+                            ? "text-orange-600"
+                            : "text-blue-600"
                         }`}
                       >
                         ✦

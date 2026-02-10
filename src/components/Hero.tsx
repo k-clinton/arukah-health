@@ -81,8 +81,8 @@ export default function Hero() {
                 <Image
                   src="/images/icon7.jpg"
                   alt=""
-                  width={225}
-                  height={225}
+                  width={200}
+                  height={200}
                   className="opacity-100 -rotate-6"
                 />
               </motion.div>

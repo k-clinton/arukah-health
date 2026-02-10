@@ -97,9 +97,9 @@ export default function TeamSection() {
             Meet Our <span className="text-orange-500">Dedicated Team</span>
           </h2>
           <p className="text-xl text-gray-700 max-w-3xl mx-auto">
-            Passionate experts committed to helping children with
-            neuro-developmental challenges thrive through joyful, evidence-based
-            movement.
+            Passionate pediatric exercise therapy experts, commited to helping
+            children with neuro-developmental challenges and milestone delays
+            achieve growth,independence and joy through movement{" "}
           </p>
         </div>
 
