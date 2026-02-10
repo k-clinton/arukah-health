@@ -110,11 +110,11 @@ export default function Navbar() {
       </div>
 
       {/* Main Nav */}
-      <div className="border-b border-gray-100 bg-blue-700">
+      <div className="border-b  border-gray-100 bg-blue-700">
         <div className="max-w-7xl bg-blue-700 mx-auto px-4">
           <div className="flex justify-between  items-center h-16">
             {/* Desktop Nav */}
-            <div className="hidden lg:flex items-center gap-8">
+            <div className="hidden lg:flex text-white items-center gap-8">
               {navItems.map((item) =>
                 item.hasDropdown ? (
                   <div key={item.label} ref={dropdownRef} className="relative">
@@ -122,7 +122,7 @@ export default function Navbar() {
                       onClick={() =>
                         setDesktopServicesOpen(!desktopServicesOpen)
                       }
-                      className="flex items-center gap-2 font-medium text-gray-700 hover:text-[#4793FF]"
+                      className="flex items-center gap-2 font-medium text-white hover:text-[#4793FF]"
                     >
                       <item.icon size={18} />
                       {item.label}
@@ -162,9 +162,7 @@ export default function Navbar() {
                     href={item.href}
                     onClick={closeMenus}
                     className={`flex items-center gap-2 font-medium ${
-                      isActive(item.href)
-                        ? "text-[#4793FF]"
-                        : "text-gray-700 hover:text-[#4793FF]"
+                      isActive(item.href) ? "text-white" : "text-white"
                     }`}
                   >
                     <item.icon size={18} />
