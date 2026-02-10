@@ -46,7 +46,7 @@ const navItems = [
 ];
 
 const secondaryLink = {
-  label: "Who we are here for",
+  label: "Who We are Here For",
   href: "/who-we-are-here-for",
   icon: CalendarCheck,
 };
@@ -177,7 +177,7 @@ export default function Navbar() {
               <Link
                 href={secondaryLink.href}
                 onClick={closeMenus}
-                className="border-2 border-orange-300 text-orange-300 px-6 py-2 rounded-full font-semibold hover:bg-orange-50"
+                className="border-2 border-orange-300 text-orange-600 px-6 py-2 rounded-full font-semibold hover:bg-white"
               >
                 {secondaryLink.label}
               </Link>
@@ -185,7 +185,7 @@ export default function Navbar() {
               <Link
                 href={specialLink.href}
                 onClick={closeMenus}
-                className="border-2 border-[#4793FF] text-[#4793FF] px-6 py-2 rounded-full font-semibold hover:bg-blue-50"
+                className="border-2 border-[#4793FF] text-blue-700px-6 py-2 rounded-full font-semibold hover:bg-white"
               >
                 {specialLink.label}
               </Link>
@@ -266,7 +266,7 @@ export default function Navbar() {
               <Link
                 href={specialLink.href}
                 onClick={closeMenus}
-                className="flex items-center gap-3 px-4 py-3 font-semibold text-[#4793FF]"
+                className="flex items-center gap-3 px-4 py-3 font-semibold text-blue-700"
               >
                 <specialLink.icon size={22} />
                 {specialLink.label}
