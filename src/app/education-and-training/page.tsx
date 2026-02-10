@@ -38,18 +38,19 @@ export default function EducationAndTraining() {
                 Education & Training
               </h1>
               <p className="text-xl md:text-2xl text-gray-700 leading-relaxed mb-8">
-                Empowering parents, caregivers, and communities with the
-                knowledge, skills, tools, and movement strategies to support
-                children with neurological and developmental challenges across
-                all life stages and health needs.
-              </p>
-              <p className="text-lg text-gray-700 leading-relaxed">
-                Our training integrates therapeutic exercise with practical
-                education — helping participants build body awareness, encourage
-                safe motor development, and confidently apply exercise
+                Our education and training programs are designed to equip
+                parents, caregivers, and communities with the knowledge, skills,
+                tools and movement strategies needed to understand and support
+                to support children with neurological and developmental
+                challenges across diverse life stages and health needs. These
+                training forums integrate therapeutic exercise with practical
+                education - empowering participants to build body awareness,
+                encourage safe motor development and confidently apply exercise
                 principles in everyday routines. Whether focused on inclusive
-                play, family coaching, or neurodevelopmental care, each session
-                is accessible, engaging, and rooted in evidence-based practice.
+                play, family coaching, or neurodevelopmental care, each training
+                is accessible, engaging, and rooted in evidence-based
+                practice—creating a foundation for informed movement, empowered
+                caregiving, and sustainable developmental progress.
               </p>
             </div>
           </div>

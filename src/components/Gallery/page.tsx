@@ -36,7 +36,7 @@ export default function FamilyOvalGallery() {
                 src={image.src}
                 alt={image.alt}
                 fill
-                className="object-cover"
+                className="object-contain"
                 sizes="(max-width: 768px) 180px, 220px"
                 priority={index === 0}
               />
