@@ -110,9 +110,9 @@ export default function Navbar() {
       </div>
 
       {/* Main Nav */}
-      <div className="border-b border-gray-100">
-        <div className="max-w-7xl mx-auto px-4">
-          <div className="flex justify-between items-center h-16">
+      <div className="border-b border-gray-100 bg-blue-700">
+        <div className="max-w-7xl bg-blue-700 mx-auto px-4">
+          <div className="flex justify-between  items-center h-16">
             {/* Desktop Nav */}
             <div className="hidden lg:flex items-center gap-8">
               {navItems.map((item) =>
@@ -136,7 +136,7 @@ export default function Navbar() {
                       <motion.div
                         initial={{ opacity: 0, y: 10 }}
                         animate={{ opacity: 1, y: 0 }}
-                        className="absolute mt-3 w-72 rounded-xl bg-white shadow-xl border py-3"
+                        className="absolute mt-3 w-72 rounded-xl bg-blue-700 shadow-xl border py-3"
                       >
                         {item.dropdownItems?.map((sub) => (
                           <Link
