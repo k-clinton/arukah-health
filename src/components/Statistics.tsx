@@ -61,7 +61,7 @@ export default function Statistics() {
         transition={{ duration: 6, repeat: Infinity, ease: "easeInOut" }}
       >
         <Image
-          src="/images/pd2.jpg"
+          src="/images/icon8.jpg"
           alt=""
           width={240}
           height={240}

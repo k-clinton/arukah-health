@@ -79,7 +79,7 @@ export default function Hero() {
                 }}
               >
                 <Image
-                  src="/images/pd3.jpg"
+                  src="/images/icon7.jpg"
                   alt=""
                   width={95}
                   height={95}

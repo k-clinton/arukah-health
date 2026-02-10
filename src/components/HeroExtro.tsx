@@ -14,7 +14,7 @@ const HeroExtro = () => {
         transition={{ duration: 6, repeat: Infinity, ease: "easeInOut" }}
       >
         <Image
-          src="/images/pd3.jpg"
+          src="/images/icon12.png"
           alt=""
           width={140}
           height={140}
@@ -29,7 +29,7 @@ const HeroExtro = () => {
         transition={{ duration: 7, repeat: Infinity, ease: "easeInOut" }}
       >
         <Image
-          src="/images/pd3.jpg"
+          src="/images/icon12.png"
           alt=""
           width={160}
           height={160}
