@@ -122,7 +122,7 @@ export default function Navbar() {
                       onClick={() =>
                         setDesktopServicesOpen(!desktopServicesOpen)
                       }
-                      className="flex items-center gap-2 font-medium text-white hover:text-[#4793FF]"
+                      className="flex items-center gap-2 font-medium text-white hover:text-orange-500"
                     >
                       <item.icon size={18} />
                       {item.label}
@@ -143,10 +143,10 @@ export default function Navbar() {
                             key={sub.label}
                             href={sub.href}
                             onClick={closeMenus}
-                            className={`flex items-center gap-3 px-6 py-3 hover:bg-blue-50 ${
+                            className={`flex items-center gap-3 px-6 py-3 hover:bg-blue-400 ${
                               isActive(sub.href)
-                                ? "font-semibold text-[#4793FF]"
-                                : "text-gray-700"
+                                ? "font-semibold text-orange-500"
+                                : "text-white"
                             }`}
                           >
                             <sub.icon size={20} />
@@ -162,7 +162,7 @@ export default function Navbar() {
                     href={item.href}
                     onClick={closeMenus}
                     className={`flex items-center gap-2 font-medium ${
-                      isActive(item.href) ? "text-white" : "text-white"
+                      isActive(item.href) ? "text-orange-500" : "text-white"
                     }`}
                   >
                     <item.icon size={18} />
