@@ -56,11 +56,8 @@ export default function ExerciseTherapy() {
       <section className="py-16 md:py-20 px-6 bg-white">
         <div className="max-w-5xl mx-auto text-center">
           <p className="text-lg md:text-xl text-gray-700 leading-relaxed">
-            Neuro-developmental conditions and milestone delays often bring
-            complex physical challenges: impaired motor control, reduced
-            strength & endurance, balance/coordination deficits, limited
-            flexibility, and altered proprioception. These can restrict daily
-            participation, independence, and quality of life.
+            We apply exercise as a cornerstone for rehabilitation – supporting
+            children through everyday milestones and struggles that most.{" "}
           </p>
         </div>
       </section>
@@ -72,12 +69,28 @@ export default function ExerciseTherapy() {
             Our Programs
           </h2>
           <p className="text-xl text-gray-700 leading-relaxed max-w-4xl mx-auto">
-            Our Exercise Therapy programs are built on the principle of
-            neuroplasticity—the brain’s remarkable ability to reorganize and
-            form new connections through targeted, repetitive movement. We
-            translate science into hope: every repetition, every playful step,
-            becomes a building block toward greater independence, brighter
-            participation, and lifelong joy in movement.
+            Our Exercise programs are designed to harness the principles of
+            neuroplasticity—the brain’s ability to reorganize and form new
+            connections through targeted, repetitive movement. This means that
+            every repetition and every movement, is a step toward greater
+            independence and brighter participation in life - since targeted
+            exercise improves strength, balance, and mobility—making everyday
+            activities like walking, playing, and self-care more achievable.
+          </p>
+          <p className="text-xl text-gray-700 leading-relaxed max-w-4xl mx-auto mt-6">
+            Our interventions are evidence-based, drawing from research in motor
+            learning, pediatric rehabilitation, and functional exercise science.
+            Each program offers diverse exercise experiences that build
+            strength, coordination, endurance, and confidence. The programs are
+            designed to be fun, engaging, and supportive of your child’s unique
+            journey in movement and physical development. All our programs are
+            tailored to the specific needs and abilities of the child, ensuring
+            that therapy is not only clinically effective but also safe,
+            meaningful and motivating for the child. Through this approach,
+            Arukah Health empowers children to achieve greater independence,
+            resilience, and joy in movement. We envision a future where exercise
+            therapy is recognized not just as rehabilitation, but as a pathway
+            to lifelong health, independence and joyful participation.
           </p>
         </div>
       </section>
@@ -130,6 +143,9 @@ export default function ExerciseTherapy() {
       {/* Alternating Image + Content Blocks (unchanged) */}
       <section className="py-20 px-6">
         <div className="max-w-7xl mx-auto space-y-24">
+          <h3 className="text-3xl md:text-4xl font-serif font-bold text-center text-[#4793FF] mb-12">
+            Activities in Our programs{" "}
+          </h3>
           {/* Block 1: Image left */}
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div className="relative rounded-3xl overflow-hidden shadow-2xl">
@@ -146,10 +162,8 @@ export default function ExerciseTherapy() {
                 Structured & Play-Based Exercise
               </h2>
               <p className="text-lg text-gray-700 leading-relaxed">
-                Playful workouts and games build motor skills, strength,
-                coordination, and confidence in a safe, motivating environment.
-                Every activity is purposeful, fun, and tailored to your
-                child&apos;s unique abilities.
+                Playful workouts and games that build motor skills, strength,
+                coordination and confidence in a safe, motivating environment.
               </p>
               <button
                 onClick={() => toggleTab(0)}
@@ -164,15 +178,13 @@ export default function ExerciseTherapy() {
                     <li>
                       • Organized exercise and games employ a structured,
                       sensory-aware environment for rehabilitation, strength
-                      building, and functional recovery utilizing specialized
-                      equipment, controlled environments and curated soundscapes
-                      to support precise movement, focused engagement,
-                      neuromuscular re-education, and emotional regulation.
+                      building, and functional recovery.
                     </li>
                     <li>
-                      • Purposeful exercise and games activate strength, restore
-                      alignment, enhance mobility and deepen body awareness
-                      through structured, supportive movement.
+                      • They utilize specialized equipment, controlled
+                      environments and curated soundscapes to support precise
+                      movement, focused engagement, neuromuscular re-education,
+                      and emotional regulation.
                     </li>
                   </ul>
                 </div>
@@ -187,9 +199,8 @@ export default function ExerciseTherapy() {
                 Swimming Lessons
               </h2>
               <p className="text-lg text-gray-700 leading-relaxed mb-6">
-                Water provides reduced joint stress, gentle resistance, and deep
-                relaxation—creating the perfect space for strength building,
-                sensory regulation, and restorative care.
+                Exercise sessions that strengthen muscles, improve coordination
+                and boosts confidence in a fun, aquatic environment.
               </p>
               <button
                 onClick={() => toggleTab(1)}
@@ -202,16 +213,17 @@ export default function ExerciseTherapy() {
                 <div className="mt-4 pl-8 border-l-2 border-[#FFB347]/30">
                   <ul className="space-y-3 text-gray-700">
                     <li>
+                      • Water leverages on reduced joint stress, gentle
+                      resistance, and deep relaxation— creating an optimal space
+                      for strength building and restorative care.{" "}
+                    </li>
+                    <li>
                       • Builds coordination, cardiovascular endurance, muscle
-                      strength, and flexibility
+                      Strength and flexibility through low impact movement.
                     </li>
                     <li>
-                      • Low-impact environment ideal for motor planning and
-                      sensory integration
-                    </li>
-                    <li>
-                      • Boosts confidence and emotional regulation through water
-                      play
+                      • Enhances emotional regulation and motor planning through
+                      water play.
                     </li>
                   </ul>
                 </div>
@@ -244,9 +256,8 @@ export default function ExerciseTherapy() {
                 Hiking Sessions
               </h2>
               <p className="text-lg text-gray-700 leading-relaxed mb-6">
-                Outdoor adventures on varied terrain engage proprioception,
-                cardiovascular health, emotional regulation, and functional
-                recovery in nature-rich environments.
+                Outdoor experiences that build balance, stamina, resilience, and
+                a love for active living.{" "}
               </p>
               <button
                 onClick={() => toggleTab(2)}
@@ -258,11 +269,15 @@ export default function ExerciseTherapy() {
               {openTab === 2 && (
                 <div className="mt-4 pl-8 border-l-2 border-[#FFB347]/30">
                   <ul className="space-y-3 text-gray-700">
-                    <li>• Promotes dynamic movement, balance, and stamina</li>
                     <li>
-                      • Reduces stress and enhances mood through nature exposure
+                      • Outdoor experiences that build balance, stamina,
+                      resilience, and a love for active living.{" "}
                     </li>
-                    <li>• Builds resilience and love for active living</li>
+                    <li>
+                      • It promotes dynamic movement, proprioceptive engagement
+                      and cardiovascular health, while reducing stress and
+                      enhancing mood.
+                    </li>
                   </ul>
                 </div>
               )}
@@ -276,9 +291,8 @@ export default function ExerciseTherapy() {
                 Biking Sessions
               </h2>
               <p className="text-lg text-gray-700 leading-relaxed mb-6">
-                Guided cycling in open-air environments develops balance,
-                cognitive engagement, lower-limb strength, coordination, and
-                emotional resilience.
+                Guided cycling that enhances balance, endurance, and
+                independence.
               </p>
               <button
                 onClick={() => toggleTab(3)}
@@ -291,14 +305,19 @@ export default function ExerciseTherapy() {
                 <div className="mt-4 pl-8 border-l-2 border-[#FFB347]/30">
                   <ul className="space-y-3 text-gray-700">
                     <li>
-                      • Strengthens lower limbs and improves cardiovascular
-                      fitness
+                      • Cycling leverages on open air, nature-rich environments
+                      to develop balance, physical strength and coordination
+                      which supports gait training and overall physical
+                      function.
                     </li>
                     <li>
-                      • Supports gait training and overall physical function
+                      • It also promotes cognitive engagement, motor planning
+                      and emotional resilience through active exploration in
+                      open, grounding spaces.
                     </li>
                     <li>
-                      • Encourages exploration and motor planning in nature
+                      • Additionally, cycling strengthens lower limbs and
+                      improves cardiovascular fitness.
                     </li>
                   </ul>
                 </div>
