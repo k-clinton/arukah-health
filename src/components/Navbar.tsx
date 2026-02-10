@@ -98,8 +98,8 @@ export default function Navbar() {
               <Image
                 src="/images/logoA.png"
                 alt="Arukah Health Logo"
-                width={36}
-                height={36}
+                width={40}
+                height={40}
               />
               <span className="font-serif text-xl font-semibold">
                 ARUKAH HEALTH
