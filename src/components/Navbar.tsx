@@ -15,6 +15,7 @@ import {
   HeartPulse,
   UsersRound,
   Layers,
+  CalendarCheck,
 } from "lucide-react";
 import { motion } from "framer-motion";
 import Image from "next/image";
@@ -43,6 +44,12 @@ const navItems = [
   { label: "Team", href: "/team", icon: Users },
   { label: "Contact", href: "/contact", icon: Phone },
 ];
+
+const secondaryLink = {
+  label: "Who we are here for",
+  href: "/who-we-are-here-for",
+  icon: CalendarCheck,
+};
 
 const specialLink = {
   label: "Our Model of Care",
@@ -121,9 +128,7 @@ export default function Navbar() {
                       {item.label}
                       <ChevronDown
                         size={16}
-                        className={`transition-transform ${
-                          desktopServicesOpen ? "rotate-180" : ""
-                        }`}
+                        className={`transition-transform ${desktopServicesOpen ? "rotate-180" : ""}`}
                       />
                     </button>
 
@@ -169,8 +174,16 @@ export default function Navbar() {
               )}
             </div>
 
-            {/* Desktop CTA */}
-            <div className="hidden lg:block">
+            {/* Desktop CTAs */}
+            <div className="hidden lg:flex items-center gap-4">
+              <Link
+                href={secondaryLink.href}
+                onClick={closeMenus}
+                className="border-2 border-orange-300 text-orange-300 px-6 py-2 rounded-full font-semibold hover:bg-orange-50"
+              >
+                {secondaryLink.label}
+              </Link>
+
               <Link
                 href={specialLink.href}
                 onClick={closeMenus}
@@ -210,9 +223,7 @@ export default function Navbar() {
                         {item.label}
                       </span>
                       <ChevronDown
-                        className={`transition-transform ${
-                          mobileServicesOpen ? "rotate-180" : ""
-                        }`}
+                        className={`transition-transform ${mobileServicesOpen ? "rotate-180" : ""}`}
                       />
                     </button>
 
@@ -244,6 +255,15 @@ export default function Navbar() {
                   </Link>
                 ),
               )}
+
+              <Link
+                href={secondaryLink.href}
+                onClick={closeMenus}
+                className="flex items-center gap-3 px-4 py-3 font-semibold text-orange-600"
+              >
+                <secondaryLink.icon size={22} />
+                {secondaryLink.label}
+              </Link>
 
               <Link
                 href={specialLink.href}

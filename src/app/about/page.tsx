@@ -40,27 +40,25 @@ export default function AboutUsPage() {
             <h1 className="text-4xl md:text-5xl font-serif font-bold text-blue-700 mb-8">
               About Us
             </h1>
-            <div className="prose prose-lg text-gray-700 text-2xl leading-relaxed space-y-6">
+            <div className="prose prose-lg text-gray-700 text-1xl leading-relaxed space-y-6">
               <p>
-                Arukah Health is more than an exercise clinic. We are a movement
-                of hope, science, and soul - where every step is sacred, and
-                every child’s story matters!
+                Arukah Health is a pediatric therapy center dedicated to
+                creating progress through movement. We specialize in
+                personalized exercise therapy for children with neuro
+                developmental challenges and milestone delays, helping them
+                build strength, confidence, and independence in ways that feel
+                joyful and empowering.
               </p>
               <p>
-                We understand that nurturing children with neuro-developmental
-                challenges can be a walk through seasons of uncertainty,
-                burnout, pain, and quiet resilience. And oftentimes, care can be
-                intricate and complex, with no single fix or simple path
-                forward.
+                Our programs are designed to nurture core physical functions —
+                strength, balance, coordination, flexibility, and endurance —
+                while also fostering resilience, play, and emotional well being.
+                Every child’s journey is unique, and we meet them where they
+                are, tailoring therapy to their individual needs, celebrating
+                every milestone along the way and honoring progress in all its
+                forms.
               </p>
-              <p>
-                With us, care and support looks different - it is more embodied,
-                more inclusive, more human. We create a space where exercise is
-                not just movement, but medicine. Where children feel seen, not
-                just defined by their challenges. Where parents feel equipped,
-                not overwhelmed. Where families can reclaim wellness, strength,
-                mobility, and joy with dignity and hope!
-              </p>
+              <p></p>
             </div>
           </motion.div>
         </div>
@@ -95,28 +93,34 @@ export default function AboutUsPage() {
             className="order-1 lg:order-2"
           >
             <h2 className="text-4xl md:text-5xl font-serif font-bold text-blue-700 mb-8"></h2>
-            <div className="prose prose-lg text-gray-700 text-2xl leading-relaxed space-y-6">
+            <div className="prose prose-lg text-gray-700 text-1xl leading-relaxed space-y-6">
               <p>
-                Our programs blend clinical rigor with cultural sensitivity,
-                emotional warmth, and playful joy.
+                At Arukah, therapy, care and support look different—they are
+                more embodied, more inclusive, more human. Through exercise, we
+                create a space where children feel seen and encouraged, not just
+                defined by their challenges. Where parents feel equipped and
+                supported, not overwhelmed. Where families can reclaim wellness,
+                strength, mobility, and joy with dignity and hope.
               </p>
               <p>
-                We partner with families to co-create care plans that reflect
-                each child’s unique needs and aspirations. We train caregivers,
-                empower communities, and walk alongside families through
-                challenges and milestones—ensuring that every step forward is
-                safe, supported, and deeply attuned to the journey toward
-                wellness.
+                Families who walk through our doors find more than therapy; they
+                find a community. We partner with them to co create exercise
+                care plans that reflect each child’s unique needs and
+                aspirations. We train and walk alongside them through challenges
+                and milestones—ensuring that every step forward is safe,
+                supported, and deeply attuned to the journey toward wellness. We
+                believe exercise is medicine, and we use it to open new pathways
+                of growth, healing, and possibility.
               </p>
               <p>
-                {" "}
                 Through years of clinical experience and continuous learning,
                 we’ve developed an approach that combines the latest research in
-                pediatric exercise physiology with time-tested therapeutic
-                practices. This is more than therapy—it’s a reclamation, a
-                celebration, and a return to embodied hope for every child and
-                family we serve.{" "}
+                pediatric exercise physiology with time tested therapeutic
+                practices. For us, exercise is more than therapy—it’s a
+                reclamation, a celebration, and a return to embodied hope for
+                every child and family we serve.
               </p>
+              <p></p>
             </div>
           </motion.div>
         </div>
@@ -145,23 +149,23 @@ export default function AboutUsPage() {
             </h2>
             <div className="prose prose-xl text-gray-800 leading-relaxed   p-6 space-y-6 max-w-4xl mx-auto">
               <p className="italic font-medium font-semibold ">
-                This is where science meets soul!
+                At Arukah, therapy, care and support look different—they are
+                more embodied, more inclusive, more human. Through exercise, we
+                create a space where children feel seen and encouraged, not just
+                defined by their challenges. Where parents feel equipped and
+                supported, not overwhelmed. Where families can reclaim wellness,
+                strength, mobility, and joy with dignity and hope.
               </p>
               <p>
-                Where evidence-based exercise therapy is delivered with
-                tenderness!
+                Exercise with Us, is where science, compassion and hope converge
+                to redefine recovery.
               </p>
               <p>
-                Where every child is seen, every parent supported, and every
+                With Us, every child is seen, every parent supported, and every
                 family empowered to move—not just physically, but towards
-                wholeness!
+                wholeness.
               </p>
-              <p>
-                Arukah Health is more than a brand—it’s a living, breathing
-                reflection of everything we believe in: clinical excellence,
-                emotional safety, cultural sensitivity, and the power of
-                movement to transform lives!
-              </p>
+              <p></p>
               <p className="font-semibold">
                 Every Session, Every Program, Every Playful Activity is crafted
                 with intention—because wholeness deserves that kind of care!
@@ -180,10 +184,10 @@ export default function AboutUsPage() {
             className="space-y-8"
           >
             <h2 className="text-3xl md:text-4xl font-serif font-bold text-blue-700">
-              Thank you for being part of this story!
+              Thank you for being part of this story.
             </h2>
             <p className="text-xl text-gray-700 leading-relaxed">
-              Whether you’re here to learn, move, teach, or heal — you belong!
+              Whether you’re here to learn, move, teach, or heal, you belong.
             </p>
           </motion.div>
         </div>
@@ -203,10 +207,9 @@ export default function AboutUsPage() {
               Our Vision
             </h3>
             <p className="text-lg text-gray-700 leading-relaxed">
-              To be East Africa’s leading provider of pediatric
-              movement-centered care—where exercise therapy shines as a beacon
-              of hope, empowering every child with neuro-developmental
-              challenges to grow in strength, joy, and lifelong independence.
+              To redefine recovery through exercise — transforming lives,
+              nurturing resilience, and unlocking endless possibilities for
+              every child
             </p>
           </motion.div>
 
@@ -221,11 +224,11 @@ export default function AboutUsPage() {
               Our Mission
             </h3>
             <p className="text-lg text-gray-700 leading-relaxed">
-              To deliver inclusive, evidence-based pediatric exercise therapy
-              that enhances function, builds confidence, and nurtures
-              independence in children with neurodevelopmental
-              challenges—blending clinical excellence with compassionate care to
-              transform lives through personalized movement.
+              To deliver inclusive, evidence based pediatric exercise therapy
+              that builds function and independence in children with
+              neuro-developmental challenges and milestone delays—blending
+              clinical excellence with compassionate care to transform lives
+              through personalized movement.
             </p>
           </motion.div>
         </div>
@@ -332,21 +335,50 @@ export default function AboutUsPage() {
             </h2>
             <div className="prose prose-lg text-gray-700 leading-relaxed space-y-6">
               <p>
-                Ivy Gacheri founded Arukah Health with a deep passion for
-                helping children with neuro-developmental challenges and
-                milestone delays discover their potential through joyful,
-                purposeful exercise.
-              </p>
-              <p>
-                With years of clinical experience in pediatric therapy and a
-                heart for families navigating uncertainty, Ivy created a space
-                where science, compassion, and hope converge.
+                Arukah Health was founded with a deep passion for helping
+                children with neuro-developmental challenges and milestone
+                delays discover their potential through joyful, purposeful
+                exercise. With years of clinical experience in pediatric therapy
+                and a heart for families navigating uncertainty, Ivy created a
+                space where science, compassion, and hope converge. Arukah
+                Health is more than a brand—it’s a living, breathing reflection
+                of everything we believe in: clinical excellence, emotional
+                safety, cultural sensitivity, and the power of exercise to
+                transform lives!
               </p>
               <p className="italic font-medium font-semibold">
-                “I believe every child deserves to be seen, celebrated, and
-                supported on their unique journey toward strength and
-                independence. This is where healing begins and recovery is
-                redefined.This is home! Welcome to Arukah Health!”
+                “I understand that nurturing children with neuro developmental
+                challenges and milestone delays can be a walk through seasons of
+                uncertainty, burnout, pain, and quiet resilience. Complexities
+                such as impaired motor control, reduced strength & endurance,
+                balance/coordination deficits, limited flexibility, and altered
+                proprioception affects a child’s capabilities and independence
+                in life which can be quite an uphill task to navigate.
+                Oftentimes, this makes care intricate and complex, with no
+                single fix or simple path forward. At Arukah, we create a
+                community where families can breathe, hope, and feel understood.
+                This is a space where is exercise is impactful in building core
+                dimensions of physical function necessary for these children. A
+                space where science meets compassion, and where every child’s
+                story is honored. Arukah Health is built on the belief that
+                exercise is medicine. For us, exercise is more than
+                biomechanics—it’s a language of healing, play, and growth. Every
+                stretch, step, and breath is an opportunity to restore what
+                challenges may have taken away and to open new pathways of
+                strength, confidence, and joy. We believe every child deserves
+                to be seen, celebrated, and supported on their unique journey
+                toward strength and independence. Hence, we meet each child
+                where they are—physically, emotionally, and
+                developmentally—crafting therapeutic exercise experiences that
+                are inclusive, intentional, and transformative. There is no
+                greater joy than witnessing children take small steps that
+                become great milestones, and the resilience of parents who walk
+                beside them with love. Every smile and every breakthrough
+                reminds us why this work matters. That is why here, we celebrate
+                progress in all its forms, knowing that strength is built not
+                only in muscles but also in spirit. This is where healing begins
+                and recovery is redefined! This is home! Welcome to Arukah
+                Health!”
               </p>
               <p className="font-semibold text-orange-500">Ivy Gacheri</p>
               <p className="text-sm text-orange-500 font-semibold">
