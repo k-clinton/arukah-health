@@ -64,7 +64,7 @@ export default function Hero() {
                   alt=""
                   width={220}
                   height={230}
-                  className="opacity-70 rotate-6"
+                  className="opacity-90 rotate-6"
                 />
               </motion.div>
 
