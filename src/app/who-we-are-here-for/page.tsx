@@ -25,34 +25,87 @@ export default function WhoWeAreHereFor() {
       </div>
 
       {/* Content */}
-      <div className="max-w-5xl mx-auto px-6 mt-20 space-y-10 text-gray-700 leading-relaxed">
-        <p>
-          Many children with neuro-developmental conditions face challenges like
-          delayed milestones, poor coordination, or muscle weakness that make
-          everyday movement harder. We understand that every child’s journey is
-          unique, and our exercise therapy programs are designed to meet those
-          needs with fun, engaging activities that build strength, confidence,
-          and joy in movement.
-        </p>
+      <div className="max-w-5xl mx-auto px-6 mt-20 space-y-10 font-medium text-gray-700 leading-relaxed">
+        <section className="py-16 md:py-20 px-6 bg-gradient-to-b from-white to-blue-50/30">
+          <div className="max-w-7xl mx-auto space-y-16 md:space-y-24">
+            {/* First paragraph + image on right */}
+            <div className="grid lg:grid-cols-2 gap-10 lg:gap-16 items-center">
+              <div className="order-2 lg:order-1 text-center lg:text-left">
+                <p className="text-xl text-gray-700 font-montserrat leading-relaxed max-w-4xl mx-auto lg:mx-0">
+                  Many children with neuro-developmental conditions face
+                  challenges like delayed milestones, poor coordination, or
+                  muscle weakness that make everyday movement harder. We
+                  understand that every child’s journey is unique, and our
+                  exercise therapy programs are designed to meet those needs
+                  with fun, engaging activities that build strength, confidence,
+                  and joy in movement.
+                </p>
+              </div>
 
-        <p>
-          We don’t limit our care to a diagnosis—we meet each child where they
-          are, focusing on the everyday difficulties parents often notice, and
-          helping them grow stronger, more confident, and more independent. Our
-          programs are designed specifically for children with neurological and
-          neurodevelopmental conditions. We believe in addressing challenges
-          early so that each child has the best opportunity to grow, thrive, and
-          reach their full potential.
-        </p>
+              {/* Image on right (desktop) / below (mobile) */}
+              <div className="order-1 lg:order-2 relative rounded-3xl overflow-hidden shadow-2xl">
+                <Image
+                  src="/images/care1.jpg"
+                  alt="Child smiling while reaching new movement milestone"
+                  width={1200}
+                  height={800}
+                  className="w-full h-auto object-cover"
+                />
+              </div>
+            </div>
 
-        <p>
-          Our therapies are carefully tailored to meet every stage of
-          development, offering age-appropriate, engaging, and effective
-          activities that nurture physical, cognitive, and emotional growth.
-          From playful games to structured movement and skill-building
-          exercises, we ensure that each child’s journey is supported with care,
-          creativity, and clinical expertise.
-        </p>
+            {/* Second paragraph + image on left */}
+            <div className="grid lg:grid-cols-2 gap-10 lg:gap-16 items-center">
+              {/* Image on left (desktop) / above (mobile) */}
+              <div className="relative rounded-3xl overflow-hidden shadow-2xl">
+                <Image
+                  src="/images/care3.jpg"
+                  alt="Family and therapist supporting child in movement activity"
+                  width={1200}
+                  height={800}
+                  className="w-full h-auto object-cover"
+                />
+              </div>
+
+              <div className="text-center lg:text-left">
+                <p className="text-xl text-gray-700 leading-relaxed max-w-4xl mx-auto lg:mx-0">
+                  We don’t limit our care to a diagnosis—we meet each child
+                  where they are, focusing on the everyday difficulties parents
+                  often notice, and helping them grow stronger, more confident,
+                  and more independent. Our programs are designed specifically
+                  for children with neurological and neurodevelopmental
+                  conditions. We believe in addressing challenges early so that
+                  each child has the best opportunity to grow, thrive, and reach
+                  their full potential.
+                </p>
+              </div>
+            </div>
+
+            {/* Third paragraph + image on right */}
+            <div className="grid lg:grid-cols-2 gap-10 lg:gap-16 items-center">
+              <div className="order-2 lg:order-1 text-center lg:text-left">
+                <p className="text-xl text-gray-700 leading-relaxed max-w-4xl mx-auto lg:mx-0">
+                  Our therapies are carefully tailored to meet every stage of
+                  development, offering age-appropriate, engaging, and effective
+                  activities that nurture physical, cognitive, and emotional
+                  growth. From playful games to structured movement and
+                  skill-building exercises, we ensure that each child’s journey
+                  is supported with care, creativity, and clinical expertise.
+                </p>
+              </div>
+
+              <div className="order-1 lg:order-2 relative rounded-3xl overflow-hidden shadow-2xl">
+                <Image
+                  src="/images/care2.jpg"
+                  alt="Child engaged in structured yet playful exercise therapy"
+                  width={1200}
+                  height={800}
+                  className="w-full h-auto object-cover"
+                />
+              </div>
+            </div>
+          </div>
+        </section>
       </div>
 
       {/* Struggles We Address */}
