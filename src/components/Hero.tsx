@@ -89,7 +89,7 @@ export default function Hero() {
 
               {/* Main Image (UNCHANGED) */}
               <Image
-                src=""
+                src="/images/hero.jpg"
                 alt="Child engaged in joyful exercise therapy"
                 width={300}
                 height={300}
