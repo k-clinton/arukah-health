@@ -6,7 +6,7 @@ import { motion } from "framer-motion";
 
 const HeroExtro = () => {
   return (
-    <section className="relative min-h-[500px] md:min-h-[600px] flex items-center bg-white justify-center overflow-hidden rounded-2xl mx-4 md:mx-8 my-12 md:my-20 shadow-2xl">
+    <section className="relative min-h-[500px] bg-blue-700 md:min-h-[600px] flex items-center  justify-center overflow-hidden rounded-2xl mx-4 md:mx-8 my-12 md:my-20 shadow-2xl">
       {/* Decorative Image – Left */}
       <motion.div
         className="pointer-events-none absolute top-10 left-8 z-0 hidden md:block"
@@ -39,14 +39,14 @@ const HeroExtro = () => {
 
       {/* Content Container */}
       <div className="relative z-10 text-center max-w-4xl px-6 py-12 md:px-12 md:py-20">
-        <h1 className="text-4xl md:text-4xl font-bold text-black mb-4 leading-tight">
+        <h1 className="text-4xl md:text-4xl font-bold text-white mb-4 leading-tight">
           Nurturing{" "}
-          <span className="text-orange-500 inline-block">Progress,</span>{" "}
+          <span className="text-orange-600 inline-block">Progress,</span>{" "}
           Inspiring{" "}
-          <span className="text-orange-500 inline-block">Possibilities</span>
+          <span className="text-orange-600 inline-block">Possibilities</span>
         </h1>
 
-        <p className="text-xl md:text-2xl text-gray-700 mb-8 max-w-2xl mx-auto">
+        <p className="text-xl md:text-2xl text-white mb-8 max-w-2xl mx-auto">
           Join us in redefining what’s possible. Start your child’s personalized
           exercise therapy today - Move towards mobility, confidence,
           independence and joy.

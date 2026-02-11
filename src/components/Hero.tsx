@@ -89,10 +89,10 @@ export default function Hero() {
 
               {/* Main Image (UNCHANGED) */}
               <Image
-                src="/images/Hero.png"
+                src=""
                 alt="Child engaged in joyful exercise therapy"
-                width={700}
-                height={700}
+                width={300}
+                height={300}
                 className="w-full h-auto object-cover"
                 priority
               />

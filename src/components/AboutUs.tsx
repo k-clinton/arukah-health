@@ -10,7 +10,7 @@ interface Pillar {
   bullets: string[];
   fullContent: string;
   imageUrl: string;
-  color: string; // for accent
+  color: string;
 }
 
 const pillars: Pillar[] = [
@@ -78,7 +78,7 @@ export default function AboutUs() {
   return (
     <section className="py-20 px-6 bg-gradient-to-br from-blue-50 to-orange-50">
       <div className="max-w-7xl mx-auto">
-        <h2 className="text-5xl  text-center font-serif mb-6 font-bold text-blue-700 drop-shadow-md">
+        <h2 className="text-5xl text-center font-serif mb-6 font-bold text-blue-700 drop-shadow-md">
           What You’ll Love About Us
         </h2>
 
@@ -86,14 +86,16 @@ export default function AboutUs() {
           {pillars.map((pillar, index) => (
             <motion.div
               key={index}
-              className={`bg-white rounded-3xl shadow-xl overflow-hidden cursor-pointer transform transition-all hover:scale-105 hover:shadow-2xl border-4 border-transparent ${
+              className={`bg-white rounded-3xl shadow-xl overflow-hidden cursor-pointer transform transition-all hover:scale-105 hover:shadow-2xl border-4 border-transparent flex flex-col ${
                 pillar.color === "orange"
                   ? "hover:border-orange-500"
                   : "hover:border-blue-600"
               }`}
               whileHover={{ y: -10 }}
-              onClick={() => setSelectedPillar(pillar)}
+              // Optional: Keep card click if you want modal to open on card click too
+              // onClick={() => setSelectedPillar(pillar)}
             >
+              {/* Image */}
               <div className="relative h-48">
                 <Image
                   src={pillar.imageUrl}
@@ -101,31 +103,33 @@ export default function AboutUs() {
                   fill
                   className="object-contain object-center"
                 />
-                <div
-                  className={`absolute inset-0 bg-gradient-to-t from-black/40 to-transparent`}
-                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent" />
               </div>
-              <div className="p-8">
+
+              {/* Card Content */}
+              <div className="p-8 flex flex-col flex-grow">
                 <h3
                   className={`text-2xl font-bold mb-4 ${
                     pillar.color === "orange"
                       ? "text-orange-600"
-                      : "text-blue-600"
+                      : "text-blue-700"
                   }`}
                 >
                   {pillar.title}
                 </h3>
+
                 <p className="text-lg font-bold text-black pb-2">
                   {pillar.shortDesc}
                 </p>
-                <ul className="space-y-3">
+
+                <ul className="space-y-3 mb-6 flex-grow">
                   {pillar.bullets.map((bullet, i) => (
                     <li key={i} className="flex items-start text-gray-700">
                       <span
                         className={`mr-3 text-xl ${
                           pillar.color === "orange"
                             ? "text-orange-600"
-                            : "text-blue-600"
+                            : "text-blue-700"
                         }`}
                       >
                         ✦
@@ -133,17 +137,29 @@ export default function AboutUs() {
                       {bullet}
                     </li>
                   ))}
-                  <button className="ml-4 text-lg text-red-500  font-semibold hover:underline">
-                    Learn More
-                  </button>
                 </ul>
+
+                {/* Learn More Button – at the bottom */}
+                <button
+                  onClick={(e) => {
+                    e.stopPropagation(); // Prevent card click from interfering
+                    setSelectedPillar(pillar);
+                  }}
+                  className={`w-full py-3 px-6 rounded-full font-semibold text-white transition-all duration-300 hover:scale-105 hover:shadow-md ${
+                    pillar.color === "orange"
+                      ? "bg-gradient-to-r from-orange-500 to-orange-600 hover:from-orange-600 hover:to-orange-700"
+                      : "bg-gradient-to-r from-blue-700 to-blue-700 hover:from-blue-700 hover:to-blue-800"
+                  }`}
+                >
+                  Learn More →
+                </button>
               </div>
             </motion.div>
           ))}
         </div>
       </div>
 
-      {/* Modal for full content */}
+      {/* Modal */}
       <AnimatePresence>
         {selectedPillar && (
           <motion.div
@@ -164,7 +180,7 @@ export default function AboutUs() {
                 className="absolute top-4 right-4 text-gray-500 hover:text-gray-800 text-3xl font-bold"
                 onClick={() => setSelectedPillar(null)}
               >
-                &times;
+                ×
               </button>
 
               <div className="p-10">
