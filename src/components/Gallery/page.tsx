@@ -24,19 +24,19 @@ export default function FamilyOvalGallery() {
     <section className="w-full bg-white py-16">
       <div className="mx-auto max-w-7xl px-6">
         <h2 className="text-3xl md:text-4xl font-serif font-bold text-center text-blue-700 mb-10 md:mb-16">
-          Moments of <span className="text-[#FFB347]">Joy</span> & Connection
+          Moments of <span className="text-orange-600">Joy</span> & Connection
         </h2>
         <div className="flex flex-wrap items-center justify-center gap-10">
           {images.map((image, index) => (
             <div
               key={index}
-              className="relative h-[420px] w-[320px] overflow-hidden rounded-full shadow-lg transition-transform duration-300 hover:scale-105"
+              className="relative h-[420px] w-[420px] overflow-hidden shadow-lg transition-transform duration-300 hover:scale-105"
             >
               <Image
                 src={image.src}
                 alt={image.alt}
                 fill
-                className="object-contain"
+                className="object-cover object-center"
                 sizes="(max-width: 768px) 180px, 220px"
                 priority={index === 0}
               />

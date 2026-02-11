@@ -127,9 +127,9 @@ export default function AboutUsPage() {
       </section>
       {/* SECTION 4: FEATURE – Childlike Background */}
       <section className="py-24 relative overflow-hidden">
-        <div className="absolute inset-0  pointer-events-none">
+        <div className="absolute inset-0 ">
           <Image
-            src="/images/at3.jpg"
+            src="/images/movement3.jpg"
             alt="Soft pastel dreamy clouds background"
             fill
             className="object-cover"
@@ -149,12 +149,9 @@ export default function AboutUsPage() {
             </h2>
             <div className="prose prose-xl text-gray-800 leading-relaxed   p-6 space-y-6 max-w-4xl mx-auto">
               <p className="italic font-medium font-semibold ">
-                At Arukah, therapy, care and support look different—they are
-                more embodied, more inclusive, more human. Through exercise, we
-                create a space where children feel seen and encouraged, not just
-                defined by their challenges. Where parents feel equipped and
-                supported, not overwhelmed. Where families can reclaim wellness,
-                strength, mobility, and joy with dignity and hope.
+                We are more than an exercise clinic. We are a movement of hope,
+                science, and soul—where every step is sacred, and every child’s
+                story matters.
               </p>
               <p>
                 Exercise with Us, is where science, compassion and hope converge
@@ -255,7 +252,7 @@ export default function AboutUsPage() {
 
         {/* Content */}
         <div className="relative z-10 max-w-7xl mx-auto px-6 lg:px-8">
-          <h2 className="text-4xl md:text-5xl font-serif font-bold text-center text-orange-500 mb-16">
+          <h2 className="text-4xl md:text-5xl font-serif font-bold text-center text-orange-600 mb-16">
             Our Core Values
           </h2>
 
@@ -294,7 +291,7 @@ export default function AboutUsPage() {
                 variants={fadeInUp}
                 className="bg-white rounded-2xl p-8 shadow-md border border-gray-100 text-center"
               >
-                <h3 className="text-2xl font-serif font-bold text-blue-600 mb-4">
+                <h3 className="text-2xl font-serif font-bold text-blue-700 mb-4">
                   {value.title}
                 </h3>
                 <p className="text-gray-700">{value.desc}</p>
@@ -380,8 +377,8 @@ export default function AboutUsPage() {
                 and recovery is redefined! This is home! Welcome to Arukah
                 Health!”
               </p>
-              <p className="font-semibold text-orange-500">Ivy Gacheri</p>
-              <p className="text-sm text-orange-500 font-semibold">
+              <p className="font-semibold text-orange-600">Ivy Gacheri</p>
+              <p className="text-sm text-orange-600 font-semibold">
                 CEO & Founder, Arukah Health
               </p>
             </div>
