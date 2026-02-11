@@ -12,7 +12,7 @@ export default function AboutUsPage() {
   return (
     <div className="pt-20 pb-24 mt-40">
       {/* SECTION 1: HERO / Our Story */}
-      <section className="max-w-7xl mx-auto px-6 lg:px-8">
+      <section className="max-w-7xl font-medium mx-auto px-6 lg:px-8">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           <motion.div
             initial="hidden"
@@ -40,7 +40,7 @@ export default function AboutUsPage() {
             <h1 className="text-4xl md:text-5xl font-serif font-bold text-blue-700 mb-8">
               About Us
             </h1>
-            <div className="prose prose-lg text-gray-700 text-1xl leading-relaxed space-y-6">
+            <div className="prose prose-lg text-gray-700 font-medium text-1xl leading-relaxed space-y-6">
               <p>
                 Arukah Health is a pediatric therapy center dedicated to
                 creating progress through movement. We specialize in
@@ -93,7 +93,7 @@ export default function AboutUsPage() {
             className="order-1 lg:order-2"
           >
             <h2 className="text-4xl md:text-5xl font-serif font-bold text-blue-700 mb-8"></h2>
-            <div className="prose prose-lg text-gray-700 text-1xl leading-relaxed space-y-6">
+            <div className="prose prose-lg text-gray-700 font-medium text-1xl leading-relaxed space-y-6">
               <p>
                 At Arukah, therapy, care and support look different—they are
                 more embodied, more inclusive, more human. Through exercise, we
@@ -183,7 +183,7 @@ export default function AboutUsPage() {
             <h2 className="text-3xl md:text-4xl font-serif font-bold text-blue-700">
               Thank you for being part of this story.
             </h2>
-            <p className="text-xl text-gray-700 leading-relaxed">
+            <p className="text-xl text-gray-700 font-medium leading-relaxed">
               Whether you’re here to learn, move, teach, or heal, you belong.
             </p>
           </motion.div>
@@ -203,7 +203,7 @@ export default function AboutUsPage() {
             <h3 className="text-3xl font-serif font-bold text-blue-700 mb-6">
               Our Vision
             </h3>
-            <p className="text-lg text-gray-700 leading-relaxed">
+            <p className="text-lg font-medium text-gray-700 leading-relaxed">
               To redefine recovery through exercise — transforming lives,
               nurturing resilience, and unlocking endless possibilities for
               every child
@@ -220,7 +220,7 @@ export default function AboutUsPage() {
             <h3 className="text-3xl font-serif font-bold text-blue-700 mb-6">
               Our Mission
             </h3>
-            <p className="text-lg text-gray-700 leading-relaxed">
+            <p className="text-lg font-medium text-gray-700 leading-relaxed">
               To deliver inclusive, evidence based pediatric exercise therapy
               that builds function and independence in children with
               neuro-developmental challenges and milestone delays—blending
@@ -294,7 +294,7 @@ export default function AboutUsPage() {
                 <h3 className="text-2xl font-serif font-bold text-blue-700 mb-4">
                   {value.title}
                 </h3>
-                <p className="text-gray-700">{value.desc}</p>
+                <p className="text-gray-700 font-medium">{value.desc}</p>
               </motion.div>
             ))}
           </div>
@@ -330,7 +330,7 @@ export default function AboutUsPage() {
             <h2 className="text-4xl md:text-5xl font-serif font-bold text-blue-700 mb-8">
               Meet the Founder
             </h2>
-            <div className="text-gray-700 font-moserrat space-y-6">
+            <div className="text-gray-700 font-medium font-moserrat space-y-6">
               <p>
                 Arukah Health was founded with a deep passion for helping
                 children with neuro-developmental challenges and milestone
