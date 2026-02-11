@@ -214,9 +214,9 @@ export default function Navbar() {
                   <div key={item.label}>
                     <button
                       onClick={() => setMobileServicesOpen(!mobileServicesOpen)}
-                      className="flex justify-between w-full px-4 py-3 rounded-lg hover:bg-blue-50"
+                      className="flex justify-between w-full px-4 py-3 rounded-lg hover:bg-orange-400"
                     >
-                      <span className="flex items-center gap-3">
+                      <span className="flex text-white items-center gap-3">
                         <item.icon size={22} />
                         {item.label}
                       </span>
@@ -232,7 +232,7 @@ export default function Navbar() {
                             key={sub.label}
                             href={sub.href}
                             onClick={closeMenus}
-                            className="flex items-center gap-3 py-2 text-gray-700 hover:text-[#4793FF]"
+                            className="flex items-center gap-3 py-2 text-orange-500 hover:text-orange-600"
                           >
                             <sub.icon size={20} />
                             {sub.label}
@@ -246,7 +246,7 @@ export default function Navbar() {
                     key={item.label}
                     href={item.href}
                     onClick={closeMenus}
-                    className="flex items-center gap-3 px-4 py-3 rounded-lg hover:bg-gray-100"
+                    className="flex items-center text-white gap-3 px-4 py-3 rounded-lg hover:bg-orange-400"
                   >
                     <item.icon size={22} />
                     {item.label}
@@ -257,7 +257,7 @@ export default function Navbar() {
               <Link
                 href={secondaryLink.href}
                 onClick={closeMenus}
-                className="flex items-center gap-3 px-4 py-3 font-semibold text-orange-600"
+                className="flex items-center gap-3 px-4 py-3 font-semibold text-orange-500"
               >
                 <secondaryLink.icon size={22} />
                 {secondaryLink.label}
@@ -266,7 +266,7 @@ export default function Navbar() {
               <Link
                 href={specialLink.href}
                 onClick={closeMenus}
-                className="flex items-center gap-3 px-4 py-3 font-semibold text-blue-700"
+                className="flex items-center gap-3 px-4 py-3 font-semibold text-white"
               >
                 <specialLink.icon size={22} />
                 {specialLink.label}
