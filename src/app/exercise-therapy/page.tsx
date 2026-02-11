@@ -67,7 +67,7 @@ export default function ExerciseTherapy() {
               <h2 className="text-3xl md:text-4xl font-serif font-bold text-blue-700 mb-8 md:mb-10">
                 Our Programs
               </h2>
-              <p className="text-xl text-gray-700 font-montserrat leading-relaxed max-w-4xl mx-auto lg:mx-0">
+              <p className="text-xl text-gray-700 font-montserrat leading-relaxed font-medium max-w-4xl mx-auto lg:mx-0">
                 Our Exercise programs are designed to harness the principles of
                 neuroplasticity—the brain’s ability to reorganize and form new
                 connections through targeted, repetitive movement. This means
@@ -105,7 +105,7 @@ export default function ExerciseTherapy() {
             </div>
 
             <div className="text-center lg:text-left">
-              <p className="text-xl text-gray-700 leading-relaxed max-w-4xl mx-auto lg:mx-0">
+              <p className="text-xl text-gray-700 font-medium leading-relaxed max-w-4xl mx-auto lg:mx-0">
                 Our interventions are evidence-based, drawing from research in
                 motor learning, pediatric rehabilitation, and functional
                 exercise science. Each program offers diverse exercise
@@ -129,7 +129,7 @@ export default function ExerciseTherapy() {
       {/* Key Domains Cards */}
       <section className="py-16 px-6 bg-white">
         <div className="max-w-7xl mx-auto">
-          <h3 className="text-3xl md:text-4xl font-serif font-bold text-center text-[#4793FF] mb-12">
+          <h3 className="text-3xl md:text-4xl font-serif font-bold text-center text-blue-700 mb-12">
             Key Areas We Strengthen
           </h3>
 
@@ -161,10 +161,10 @@ export default function ExerciseTherapy() {
                 className="bg-white rounded-2xl p-8 shadow-lg border border-gray-100 hover:shadow-xl transition-all duration-300 text-center"
               >
                 <item.icon size={48} className="text-orange-600 mx-auto mb-6" />
-                <h4 className="text-xl font-bold text-gray-900 mb-3">
+                <h4 className="text-xl font-bold font-medium text-gray-900 mb-3">
                   {item.title}
                 </h4>
-                <p className="text-gray-700">{item.desc}</p>
+                <p className="text-gray-700 font-medium">{item.desc}</p>
               </div>
             ))}
           </div>
@@ -198,7 +198,7 @@ export default function ExerciseTherapy() {
               </p>
               <button
                 onClick={() => toggleTab(0)}
-                className="flex items-center gap-2 text-[#FFB347] font-medium hover:underline mt-4"
+                className="flex items-center gap-2 text-orange-600 font-medium hover:underline mt-4"
               >
                 {openTab === 0 ? <Minus size={20} /> : <Plus size={20} />}
                 Learn More
@@ -235,13 +235,13 @@ export default function ExerciseTherapy() {
               </p>
               <button
                 onClick={() => toggleTab(1)}
-                className="flex items-center gap-2 text-[#FFB347] font-medium hover:underline"
+                className="flex items-center gap-2 text-orange-600 font-medium hover:underline"
               >
                 {openTab === 1 ? <Minus size={20} /> : <Plus size={20} />}
                 Learn More
               </button>
               {openTab === 1 && (
-                <div className="mt-4 pl-8 border-l-2 border-[#FFB347]/30">
+                <div className="mt-4 pl-8 border-l-2 border-orange-600/30">
                   <ul className="space-y-3 text-gray-700">
                     <li>
                       • Water leverages on reduced joint stress, gentle
@@ -262,8 +262,8 @@ export default function ExerciseTherapy() {
             </div>
             <div className="relative rounded-3xl overflow-hidden shadow-2xl order-1 lg:order-2">
               <Image
-                src="/images/IMG_2325.jpg"
-                alt="Child guided cycling session outdoors"
+                src="/images/swimming4.jpg"
+                alt="Child guided swimming session"
                 width={1200}
                 height={800}
                 className="w-full h-auto object-cover"
@@ -292,17 +292,18 @@ export default function ExerciseTherapy() {
               </p>
               <button
                 onClick={() => toggleTab(2)}
-                className="flex items-center gap-2 text-[#FFB347] font-medium hover:underline"
+                className="flex items-center gap-2 text-orange-600 font-medium hover:underline"
               >
                 {openTab === 2 ? <Minus size={20} /> : <Plus size={20} />}
                 Learn More
               </button>
               {openTab === 2 && (
-                <div className="mt-4 pl-8 border-l-2 border-[#FFB347]/30">
+                <div className="mt-4 pl-8 border-l-2 border-orange-600/30">
                   <ul className="space-y-3 text-gray-700">
                     <li>
-                      • Outdoor experiences that build balance, stamina,
-                      resilience, and a love for active living.{" "}
+                      • Hiking utilizes varied terrain, fresh air and
+                      sensory-rich stimuli to support rehabilitation, emotional
+                      regulation and functional recovery.
                     </li>
                     <li>
                       • It promotes dynamic movement, proprioceptive engagement
@@ -327,13 +328,13 @@ export default function ExerciseTherapy() {
               </p>
               <button
                 onClick={() => toggleTab(3)}
-                className="flex items-center gap-2 text-[#FFB347] font-medium hover:underline"
+                className="flex items-center gap-2 text-orange-600 font-medium hover:underline"
               >
                 {openTab === 3 ? <Minus size={20} /> : <Plus size={20} />}
                 Learn More
               </button>
               {openTab === 3 && (
-                <div className="mt-4 pl-8 border-l-2 border-[#FFB347]/30">
+                <div className="mt-4 pl-8 border-l-2 border-orange-600/30">
                   <ul className="space-y-3 text-gray-700">
                     <li>
                       • Cycling leverages on open air, nature-rich environments
@@ -367,12 +368,12 @@ export default function ExerciseTherapy() {
 
           {/* Final CTA */}
           <div className="text-center mt-20">
-            <h3 className="text-3xl md:text-4xl font-serif font-bold text-[#4793FF] mb-6">
+            <h3 className="text-3xl md:text-4xl font-serif font-bold text-blue-700 mb-6">
               Ready to Help Your Child Move with Joy?
             </h3>
             <Link
               href="/contact"
-              className="inline-block bg-gradient-to-r from-[#FFB347] to-orange-500 hover:from-orange-500 hover:to-[#FFB347] text-white font-bold py-5 px-12 rounded-full text-xl shadow-xl transform hover:scale-105 transition duration-300"
+              className="inline-block bg-gradient-to-r from-orange-500 to-orange-600 hover:from-orange-600 hover:to-orange-500 text-white font-bold py-5 px-12 rounded-full text-xl shadow-xl transform hover:scale-105 transition duration-300"
             >
               Get Started Today →
             </Link>
