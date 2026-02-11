@@ -330,7 +330,7 @@ export default function AboutUsPage() {
             <h2 className="text-4xl md:text-5xl font-serif font-bold text-blue-700 mb-8">
               Meet the Founder
             </h2>
-            <div className="prose prose-lg text-gray-700 leading-relaxed space-y-6">
+            <div className="text-gray-700 font-moserrat space-y-6">
               <p>
                 Arukah Health was founded with a deep passion for helping
                 children with neuro-developmental challenges and milestone

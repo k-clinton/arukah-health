@@ -45,9 +45,8 @@ export default function ExerciseTherapy() {
           </h1>
 
           <p className="text-xl sm:text-2xl md:text-3xl font-medium text-white/95 leading-relaxed max-w-4xl mx-auto drop-shadow-lg">
-            Supporting children with neuro-developmental challenges through
-            exercise—meeting them not by diagnosis, but by the everyday
-            milestones and struggles that matter most.
+            We apply exercise as a cornerstone for rehabilitation – supporting
+            children through everyday milestones and struggles that most.{" "}
           </p>
         </div>
       </section>
@@ -55,43 +54,75 @@ export default function ExerciseTherapy() {
       {/* Intro Paragraph Section */}
       <section className="py-16 md:py-20 px-6 bg-white">
         <div className="max-w-5xl mx-auto text-center">
-          <p className="text-lg md:text-xl text-gray-700 leading-relaxed">
-            We apply exercise as a cornerstone for rehabilitation – supporting
-            children through everyday milestones and struggles that most.{" "}
-          </p>
+          <p className="text-lg md:text-xl text-gray-700 leading-relaxed"></p>
         </div>
       </section>
 
       {/* Core Philosophy – Our Programs */}
       <section className="py-16 md:py-20 px-6 bg-gradient-to-b from-white to-blue-50/30">
-        <div className="max-w-5xl mx-auto text-center">
-          <h2 className="text-3xl md:text-4xl font-serif font-bold text-[#4793FF] mb-8 md:mb-10">
-            Our Programs
-          </h2>
-          <p className="text-xl text-gray-700 leading-relaxed max-w-4xl mx-auto">
-            Our Exercise programs are designed to harness the principles of
-            neuroplasticity—the brain’s ability to reorganize and form new
-            connections through targeted, repetitive movement. This means that
-            every repetition and every movement, is a step toward greater
-            independence and brighter participation in life - since targeted
-            exercise improves strength, balance, and mobility—making everyday
-            activities like walking, playing, and self-care more achievable.
-          </p>
-          <p className="text-xl text-gray-700 leading-relaxed max-w-4xl mx-auto mt-6">
-            Our interventions are evidence-based, drawing from research in motor
-            learning, pediatric rehabilitation, and functional exercise science.
-            Each program offers diverse exercise experiences that build
-            strength, coordination, endurance, and confidence. The programs are
-            designed to be fun, engaging, and supportive of your child’s unique
-            journey in movement and physical development. All our programs are
-            tailored to the specific needs and abilities of the child, ensuring
-            that therapy is not only clinically effective but also safe,
-            meaningful and motivating for the child. Through this approach,
-            Arukah Health empowers children to achieve greater independence,
-            resilience, and joy in movement. We envision a future where exercise
-            therapy is recognized not just as rehabilitation, but as a pathway
-            to lifelong health, independence and joyful participation.
-          </p>
+        <div className="max-w-7xl mx-auto space-y-16 md:space-y-24">
+          {/* First paragraph + image on right */}
+          <div className="grid lg:grid-cols-2 gap-10 lg:gap-16 items-center">
+            <div className="order-2 lg:order-1 text-center lg:text-left">
+              <h2 className="text-3xl md:text-4xl font-serif font-bold text-blue-700 mb-8 md:mb-10">
+                Our Programs
+              </h2>
+              <p className="text-xl text-gray-700 font-montserrat leading-relaxed max-w-4xl mx-auto lg:mx-0">
+                Our Exercise programs are designed to harness the principles of
+                neuroplasticity—the brain’s ability to reorganize and form new
+                connections through targeted, repetitive movement. This means
+                that every repetition and every movement, is a step toward
+                greater independence and brighter participation in life - since
+                targeted exercise improves strength, balance, and
+                mobility—making everyday activities like walking, playing, and
+                self-care more achievable.
+              </p>
+            </div>
+
+            {/* Image on right (desktop) / below (mobile) */}
+            <div className="order-1 lg:order-2 relative rounded-3xl overflow-hidden shadow-2xl">
+              <Image
+                src="/images/movement.jpg"
+                alt="Children engaged in joyful, purposeful exercise"
+                width={1200}
+                height={800}
+                className="w-full h-auto object-cover"
+              />
+            </div>
+          </div>
+
+          {/* Second paragraph + image on left */}
+          <div className="grid lg:grid-cols-2 gap-10 lg:gap-16 items-center">
+            {/* Image on left (desktop) / above (mobile) */}
+            <div className="relative rounded-3xl overflow-hidden shadow-2xl">
+              <Image
+                src="/images/movement.jpg"
+                alt="Therapist guiding child in tailored movement activity"
+                width={1200}
+                height={800}
+                className="w-full h-auto object-cover"
+              />
+            </div>
+
+            <div className="text-center lg:text-left">
+              <p className="text-xl text-gray-700 leading-relaxed max-w-4xl mx-auto lg:mx-0">
+                Our interventions are evidence-based, drawing from research in
+                motor learning, pediatric rehabilitation, and functional
+                exercise science. Each program offers diverse exercise
+                experiences that build strength, coordination, endurance, and
+                confidence. The programs are designed to be fun, engaging, and
+                supportive of your child’s unique journey in movement and
+                physical development. All our programs are tailored to the
+                specific needs and abilities of the child, ensuring that therapy
+                is not only clinically effective but also safe, meaningful and
+                motivating for the child. Through this approach, Arukah Health
+                empowers children to achieve greater independence, resilience,
+                and joy in movement. We envision a future where exercise therapy
+                is recognized not just as rehabilitation, but as a pathway to
+                lifelong health, independence and joyful participation.
+              </p>
+            </div>
+          </div>
         </div>
       </section>
 
@@ -129,7 +160,7 @@ export default function ExerciseTherapy() {
                 key={item.title}
                 className="bg-white rounded-2xl p-8 shadow-lg border border-gray-100 hover:shadow-xl transition-all duration-300 text-center"
               >
-                <item.icon size={48} className="text-[#FFB347] mx-auto mb-6" />
+                <item.icon size={48} className="text-orange-600 mx-auto mb-6" />
                 <h4 className="text-xl font-bold text-gray-900 mb-3">
                   {item.title}
                 </h4>
@@ -143,7 +174,7 @@ export default function ExerciseTherapy() {
       {/* Alternating Image + Content Blocks (unchanged) */}
       <section className="py-20 px-6">
         <div className="max-w-7xl mx-auto space-y-24">
-          <h3 className="text-3xl md:text-4xl font-serif font-bold text-center text-[#4793FF] mb-12">
+          <h3 className="text-3xl md:text-4xl font-serif font-bold text-center text-blue-700 mb-12">
             Activities in Our programs{" "}
           </h3>
           {/* Block 1: Image left */}
