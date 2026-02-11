@@ -192,7 +192,7 @@ export default function ExerciseTherapy() {
               <h2 className="text-3xl md:text-4xl font-serif font-bold text-blue-700 mb-6">
                 Structured & Play-Based Exercise
               </h2>
-              <p className="text-lg text-gray-700 leading-relaxed">
+              <p className="text-lg text-gray-700 font-medium leading-relaxed">
                 Playful workouts and games that build motor skills, strength,
                 coordination and confidence in a safe, motivating environment.
               </p>
@@ -204,8 +204,8 @@ export default function ExerciseTherapy() {
                 Learn More
               </button>
               {openTab === 0 && (
-                <div className="mt-4 pl-8 border-l-2 border-[#FFB347]/30">
-                  <ul className="space-y-3 text-gray-700">
+                <div className="mt-4 pl-8 border-l-2 border-orange-600/30">
+                  <ul className="space-y-3 text-gray-700 font-medium">
                     <li>
                       • Organized exercise and games employ a structured,
                       sensory-aware environment for rehabilitation, strength
@@ -229,7 +229,7 @@ export default function ExerciseTherapy() {
               <h2 className="text-3xl md:text-4xl font-serif font-bold text-blue-700 mb-6">
                 Swimming Lessons
               </h2>
-              <p className="text-lg text-gray-700 leading-relaxed mb-6">
+              <p className="text-lg text-gray-700 leading-relaxed mb-6 font-medium">
                 Exercise sessions that strengthen muscles, improve coordination
                 and boosts confidence in a fun, aquatic environment.
               </p>
@@ -242,7 +242,7 @@ export default function ExerciseTherapy() {
               </button>
               {openTab === 1 && (
                 <div className="mt-4 pl-8 border-l-2 border-orange-600/30">
-                  <ul className="space-y-3 text-gray-700">
+                  <ul className="space-y-3 text-gray-700 font-medium">
                     <li>
                       • Water leverages on reduced joint stress, gentle
                       resistance, and deep relaxation— creating an optimal space
@@ -286,7 +286,7 @@ export default function ExerciseTherapy() {
               <h2 className="text-3xl md:text-4xl font-serif font-bold text-blue-700 mb-6">
                 Hiking Sessions
               </h2>
-              <p className="text-lg text-gray-700 leading-relaxed mb-6">
+              <p className="text-lg text-gray-700 leading-relaxed mb-6 font-medium">
                 Outdoor experiences that build balance, stamina, resilience, and
                 a love for active living.{" "}
               </p>
@@ -299,7 +299,7 @@ export default function ExerciseTherapy() {
               </button>
               {openTab === 2 && (
                 <div className="mt-4 pl-8 border-l-2 border-orange-600/30">
-                  <ul className="space-y-3 text-gray-700">
+                  <ul className="space-y-3 text-gray-700 font-medium">
                     <li>
                       • Hiking utilizes varied terrain, fresh air and
                       sensory-rich stimuli to support rehabilitation, emotional
@@ -322,7 +322,7 @@ export default function ExerciseTherapy() {
               <h2 className="text-3xl md:text-4xl font-serif font-bold text-blue-700 mb-6">
                 Biking Sessions
               </h2>
-              <p className="text-lg text-gray-700 leading-relaxed mb-6">
+              <p className="text-lg text-gray-700 leading-relaxed mb-6 font-medium">
                 Guided cycling that enhances balance, endurance, and
                 independence.
               </p>
@@ -335,7 +335,7 @@ export default function ExerciseTherapy() {
               </button>
               {openTab === 3 && (
                 <div className="mt-4 pl-8 border-l-2 border-orange-600/30">
-                  <ul className="space-y-3 text-gray-700">
+                  <ul className="space-y-3 text-gray-700 font-medium">
                     <li>
                       • Cycling leverages on open air, nature-rich environments
                       to develop balance, physical strength and coordination
