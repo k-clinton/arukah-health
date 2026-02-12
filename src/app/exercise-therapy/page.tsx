@@ -44,7 +44,7 @@ export default function ExerciseTherapy() {
             Exercise Therapy
           </h1>
 
-          <p className="  font-medium text-white/95 leading-relaxed max-w-4xl mx-auto drop-shadow-lg">
+          <p className="  text-1xl md:text-1xl text-white/95 leading-relaxed max-w-4xl mx-auto drop-shadow-lg">
             We apply exercise as a cornerstone for rehabilitation – supporting
             children through everyday milestones and struggles that most.{" "}
           </p>
@@ -130,7 +130,7 @@ export default function ExerciseTherapy() {
       <section className="py-16 px-6 bg-white">
         <div className="max-w-7xl mx-auto">
           <h3 className="text-3xl md:text-4xl font-serif font-bold text-center text-blue-700 mb-12">
-            Key Areas We Strengthen
+            Key Areas Of Focus
           </h3>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
