@@ -1,5 +1,5 @@
 // src/app/education-and-training/page.tsx
-import Navbar from "@/components/Navbar";
+
 import {
   BookOpen,
   Users,
@@ -13,58 +13,78 @@ import Link from "next/link";
 export default function EducationAndTraining() {
   return (
     <main className="min-h-screen bg-white">
-      <Navbar />
-
       <div className="pt-32 pb-24">
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
           {/* Hero / Intro */}
-          <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center mb-20">
-            {/* Left: Image */}
-            <div className="relative rounded-3xl overflow-hidden shadow-2xl order-2 lg:order-1">
+          <section className="relative min-h-[70vh] md:min-h-[80vh] flex items-center justify-center">
+            {/* Background Image */}
+            <div className="absolute inset-0">
               <Image
                 src="/images/IMG_9516.JPG"
-                alt=""
+                alt="Education and training background – joyful learning moment"
+                fill
+                className="object-cover brightness-[0.75]"
+                priority
+              />
+              {/* Dark overlay for text contrast */}
+              <div className="absolute inset-0 bg-black/45" />
+            </div>
+
+            {/* Content centered on top */}
+            <div className="relative z-10 text-center px-6 max-w-5xl">
+              <h1 className="text-5xl sm:text-6xl md:text-7xl font-serif font-extrabold text-white drop-shadow-2xl mb-6 md:mb-8">
+                Education and Training
+              </h1>
+
+              <p className="text-xl sm:text-2xl md:text-3xl font-medium text-white/95 leading-relaxed max-w-4xl mx-auto drop-shadow-lg">
+                Training sessions designed to build capacity and increase
+                knowledge among individuals, caregivers, parents, families and
+                communities.
+              </p>
+            </div>
+          </section>
+
+          {/* Core Message */}
+          <div className="max-w-5xl mx-auto  mb-20">
+            <p className=" font-medium text-gray-800 leading-relaxed">
+              Our education and training programs are designed to equip parents,
+              caregivers, and communities with the knowledge, skills, tools and
+              exercise strategies needed to understand and support to support
+              children with neuro-developmental challenges and milestone delays
+              across diverse life stages and health needs. These training forums
+              integrate therapeutic exercise with practical education -
+              empowering participants to build body awareness, encourage safe
+              motor development and confidently apply exercise principles in
+              everyday routines. Whether focused on inclusive play, family
+              coaching, or neuro-developmental care, each training is
+              accessible, engaging, and rooted in evidence-based
+              practice—creating a foundation for informed movement, empowered
+              caregiving, and sustainable developmental progress.
+            </p>
+          </div>
+          <div className="grid lg:grid-cols-2 mb-20 gap-12 items-center">
+            <div className="relative rounded-3xl overflow-hidden shadow-2xl">
+              <Image
+                src="/images/educare.jpeg"
+                alt="Group of parents learning inclusive movement strategies"
                 width={1200}
                 height={800}
                 className="w-full h-auto object-cover"
-                priority
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent" />
             </div>
-
-            {/* Right: Intro Text */}
-            <div className="order-1 lg:order-2">
-              <h1 className="text-4xl md:text-5xl lg:text-6xl font-serif font-extrabold text-blue-700 mb-8 leading-tight">
-                Education & Training
-              </h1>
-              <p className="text-xl md:text-2xl text-gray-700 leading-relaxed mb-8">
-                Our education and training programs are designed to equip
-                parents, caregivers, and communities with the knowledge, skills,
-                tools and movement strategies needed to understand and support
-                to support children with neurological and developmental
-                challenges across diverse life stages and health needs. These
-                training forums integrate therapeutic exercise with practical
-                education - empowering participants to build body awareness,
-                encourage safe motor development and confidently apply exercise
-                principles in everyday routines. Whether focused on inclusive
-                play, family coaching, or neurodevelopmental care, each training
-                is accessible, engaging, and rooted in evidence-based
-                practice—creating a foundation for informed movement, empowered
-                caregiving, and sustainable developmental progress.
+            <div>
+              <p className="text-lg  text-orange-500 italic p-4 shadow-md rounded-md text-gray-700 leading-relaxed">
+                “Exercise knowledge is essential to supporting children with
+                neuro developmental conditions and milestone delays—because
+                informed care creates consistent progress and lasting impact.”
               </p>
             </div>
           </div>
 
-          {/* Core Message */}
-          <div className="max-w-5xl mx-auto text-center mb-20">
-            <p className="text-xl md:text-2xl font-medium text-gray-800 leading-relaxed">
-              We create a foundation for informed movement, empowered
-              caregiving, and sustainable developmental progress — turning
-              knowledge into everyday confidence and joy.
-            </p>
-          </div>
-
           {/* Two Specialties – Cards with Icons */}
+          <h2 className="text-3xl md:text-4xl font-serif text-center font-bold text-blue-700 mb-6">
+            Our Education and Training Specialties{" "}
+          </h2>
           <div className="grid md:grid-cols-2 gap-10 mb-24">
             {[
               {
@@ -98,6 +118,9 @@ export default function EducationAndTraining() {
           </div>
 
           {/* Alternating Image + Content Blocks */}
+          <h2 className="text-3xl md:text-4xl font-serif text-center font-bold text-blue-700 mb-6">
+            Why Education and Training?{" "}
+          </h2>
           <div className="space-y-24">
             {/* Block 1: Image left / Content right */}
             <div className="grid lg:grid-cols-2 gap-12 items-center">
@@ -112,7 +135,7 @@ export default function EducationAndTraining() {
               </div>
               <div>
                 <h2 className="text-3xl md:text-4xl font-serif font-bold text-blue-700 mb-6">
-                  Empowering Caregivers as Partners
+                  Partnering with Families for Lasting Progress
                 </h2>
                 <p className="text-lg text-gray-700 leading-relaxed">
                   We believe parents and caregivers are the most important
@@ -129,13 +152,15 @@ export default function EducationAndTraining() {
             <div className="grid lg:grid-cols-2 gap-12 items-center">
               <div className="order-2 lg:order-1">
                 <h2 className="text-3xl md:text-4xl font-serif font-bold text-blue-700 mb-6">
-                  Building Body Awareness & Safe Motor Habits
+                  Setting the Foundations for Safe and Healthy Exercise
                 </h2>
                 <p className="text-lg text-gray-700 leading-relaxed">
-                  From postural awareness to movement ergonomics, we teach
-                  simple, effective techniques that reduce strain, prevent
-                  complications, and promote healthy development in everyday
-                  life — helping children move with more ease, safety, and joy.
+                  Body awareness, motor planning, and Postural Stability &
+                  Control form the foundation of healthy movement and exercise.
+                  We teach simple, effective techniques that reduce strain,
+                  prevent complications, and promote healthy development in
+                  everyday life — helping children move and exercise with more
+                  ease, safety, and joy.
                 </p>
               </div>
               <div className="relative rounded-3xl overflow-hidden shadow-2xl order-1 lg:order-2">
@@ -162,13 +187,15 @@ export default function EducationAndTraining() {
               </div>
               <div>
                 <h2 className="text-3xl md:text-4xl font-serif font-bold text-blue-700 mb-6">
-                  Inclusive & Community-Focused
+                  Creating Inclusive Spaces for Exercise and Movement
                 </h2>
                 <p className="text-lg text-gray-700 leading-relaxed">
-                  Our programs extend beyond the family — we train teachers,
-                  community leaders, and support networks to create inclusive
-                  environments where every child can participate, grow, and
-                  thrive through movement.
+                  Inclusive environments are vital for ensuring every child can
+                  participate, grow, and thrive through movement. Our programs
+                  extend beyond the family, equipping teachers, community
+                  leaders, and support networks with the tools to foster spaces
+                  where all children feel supported and empowered in matters
+                  exercise and movement.
                 </p>
               </div>
             </div>
