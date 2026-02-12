@@ -54,11 +54,14 @@ export default function ContactPage() {
       {/* Hero */}
       <section className="bg-[#FFB347] text-white mt-20 py-20">
         <div className="max-w-7xl mx-auto px-4 text-center">
-          <h1 className=" text-4xl md:text-6xl font-inria serif font-bold">
+          <h1 className=" text-4xl md:text-6xl font-serif font-bold">
             Get in Touch
           </h1>
           <p className="mt-4 text-lg text-[black] max-w-2xl mx-auto">
-            We’re here when you’re ready to talk no pressure, just support.
+            We’re here to listen, guide, and support. Connect with us to learn
+            more about our programs, training, and resources. Together, we can
+            empower every child’s journey and build brighter futures through
+            exercise.
           </p>
         </div>
       </section>

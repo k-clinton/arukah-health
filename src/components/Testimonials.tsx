@@ -81,17 +81,6 @@ const InfiniteTestimonials = () => {
   return (
     <section className="py-16 relative overflow-hidden">
       {/* Background Image */}
-      <div className="absolute inset-0 z-0">
-        <Image
-          src="/images/olym3.jpg" // ← Replace with your actual background image path
-          alt="Background of joyful families and children"
-          fill
-          className="object-cover "
-          priority
-        />
-        {/* Optional subtle overlay for better text readability */}
-        <div className="absolute inset-0 bg-gradient-to-b from-white/40 via-white/20 to-white/40" />
-      </div>
 
       {/* Content – everything else unchanged */}
       <div className="relative z-10 max-w-7xl mx-auto px-4 md:px-8">
@@ -117,8 +106,19 @@ const InfiniteTestimonials = () => {
 
         {/* Infinite Scrolling Container */}
         <div className="relative">
+          <div className="absolute w-full h-194 inset-0 z-0">
+            <Image
+              src="/images/olym3.jpg"
+              alt="Background of joyful families and children"
+              fill
+              className="object-cover w-full h-full custom "
+              priority
+            />
+
+            <div className="absolute inset-0 bg-gradient-to-b from-white/40 via-white/20 to-white/40" />
+          </div>
           {/* Gradient overlays for smooth edges */}
-          <div className="absolute left-0 top-0 bottom-0 w-24 md:w-48 bg-gradient-to-r from-orange-400 to-transparent z-10 pointer-events-none"></div>
+          <div className="absolute left-0 top-0 bottom-0 w-24 md:w-48 bg-gradient-to-r from-white to-transparent z-10 pointer-events-none"></div>
           <div className="absolute right-0 top-0 bottom-0 w-24 md:w-48 bg-gradient-to-l from-white to-transparent z-10 pointer-events-none"></div>
 
           {/* Infinite Scroll Wrapper */}

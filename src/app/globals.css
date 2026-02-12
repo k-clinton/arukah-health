@@ -78,3 +78,6 @@ footer .group:hover .group-hover\:translate-x-2 {
 .scrollbar-hide::-webkit-scrollbar {
   display: none;
 }
+.custom {
+  object-position: 50% 30%;
+}
