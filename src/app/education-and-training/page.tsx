@@ -45,7 +45,7 @@ export default function EducationAndTraining() {
           </section>
 
           {/* Core Message */}
-          <div className="max-w-5xl mx-auto  mb-20">
+          <div className="max-w-5xl mt-10 mx-auto  mb-20">
             <p className=" font-medium text-gray-800 leading-relaxed">
               Our education and training programs are designed to equip parents,
               caregivers, and communities with the knowledge, skills, tools and

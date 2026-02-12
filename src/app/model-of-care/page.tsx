@@ -17,7 +17,7 @@ export default function ModelOfCare() {
       imageUrl: "/images/doctors.jpg",
       details: `
 We work in collaboration with pediatricians, neurologists, physiotherapists, occupational therapists, and speech language pathologists, ensuring that therapeutic exercise interventions are aligned with medical, functional, and developmental priorities. This coordinated framework allows for:
-
+<br><br>
 <strong>• Comprehensive assessment</strong> that synthesizes medical, neurological, and functional findings.<br>
 <strong>• Individualized treatment planning</strong> informed by cross disciplinary expertise.<br>
 <strong>• Continuity of care</strong> across medical, therapeutic, and community settings.<br>
@@ -32,7 +32,7 @@ We work in collaboration with pediatricians, neurologists, physiotherapists, occ
       imageUrl: "/images/goals.jpg",
       details: `
 Our programs are designed to achieve measurable, functional outcomes that are monitored, tracked and adjusted to maximize long term developmental potential. Through evidence based exercise therapy and interdisciplinary collaboration, families can expect:
-
+<br><br>
 <strong>• Improved mobility and motor function</strong>: targeted interventions to enhance gait, balance, coordination, and overall physical capacity.<br>
 <strong>• Greater independence in daily activities</strong>: skill development that supports self care, feeding, dressing, and participation in age appropriate routines.<br>
 <strong>• Reduced risk of secondary complications</strong>: proactive strategies to minimize musculoskeletal issues such as contractures, postural deformities, and activity limitations.<br>
@@ -47,7 +47,7 @@ Our programs are designed to achieve measurable, functional outcomes that are mo
       imageUrl: "/images/care involment.jpg",
       details: `
 Our model of care recognizes parents and caregivers as essential partners in the therapeutic journey. We provide tools, training, and encouragement so that progress continues beyond the clinic and into everyday life. Families can expect:
-
+<br><br>
 <strong>• Practical training and home strategies</strong>: equipping caregivers with exercises and routines that reinforce therapy goals in daily settings.<br>
 <strong>• Confidence and empowerment</strong>: building caregiver skills to reduce anxiety and foster a supportive environment for the child.<br>
 <strong>• Consistency across environments</strong>: ensuring therapeutic practices are carried over into home, school, and community life.<br>
@@ -63,7 +63,7 @@ Our model of care recognizes parents and caregivers as essential partners in the
       imageUrl: "/images/safety.jpg",
       details: `
 Our interventions are delivered within a supervised, safe, and supportive environment, ensuring that every child’s medical profile and developmental needs are fully considered. Each program is individually tailored through comprehensive assessment of neurological status, functional capacity, and co existing medical conditions. This process allows us to:
-
+<br><br>
 <strong>• Customize therapy plans</strong> to align with each child’s medical history, current health status, and developmental stage.<br>
 <strong>• Implement risk mitigation strategies</strong> to safeguard against injury, fatigue, or secondary complications during therapy.<br>
 <strong>• Adapt activities and intensity levels</strong> to ensure interventions remain both effective and age appropriate.<br>
