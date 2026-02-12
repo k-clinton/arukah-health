@@ -149,17 +149,17 @@ export default function AboutUsPage() {
             </h2>
             <div className="prose prose-xl text-gray-800 leading-relaxed   p-6 space-y-6 max-w-4xl mx-auto">
               <p className=" font-medium font-semibold ">
-                We are more than an exercise clinic. We are a movement of hope,
-                science, and soul—where every step is sacred, and every child’s
-                story matters.
+                We are more than an Exercise Clinic. We are a movement of Hope,
+                Science, and Soul—where every step is sacred, and every child’s
+                story matters!
               </p>
               <p>
-                Exercise with Us, is where science, compassion and hope converge
+                Exercise with Us, is where Science, Compassion and Hope converge
                 to redefine recovery.
               </p>
               <p>
-                With Us, every child is seen, every parent supported, and every
-                family empowered to move—not just physically, but towards
+                With Us, Every child is Seen, Every Parent Supported, and Every
+                Family Empowered to move—not just physically, but towards
                 wholeness.
               </p>
               <p></p>
@@ -184,7 +184,7 @@ export default function AboutUsPage() {
               Thank you for being part of this story.
             </h2>
             <p className="text-xl text-gray-700 font-medium leading-relaxed">
-              Whether you’re here to learn, move, teach, or heal, you belong !
+              Whether you’re here to learn, move, teach, or heal, You Belong!
             </p>
           </motion.div>
         </div>

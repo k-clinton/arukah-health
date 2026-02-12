@@ -30,7 +30,7 @@ export default function FamilyOvalGallery() {
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentIndex((prev) => (prev + 1) % images.length);
-    }, 5000);
+    }, 9000);
 
     return () => clearInterval(interval);
   }, []);
