@@ -96,10 +96,10 @@ export default function TeamSection() {
           <h2 className="text-4xl md:text-5xl font-serif font-extrabold text-blue-700 mb-4">
             Meet Our <span className="text-blue-700">Dedicated Team</span>
           </h2>
-          <p className="text-xl text-gray-700 max-w-3xl mx-auto">
-            Passionate pediatric exercise therapy experts, commited to helping
-            children with neuro-developmental challenges and milestone delays
-            achieve growth,independence and joy through movement{" "}
+          <p className="text-xl font-medium text-gray-700 max-w-3xl mx-auto">
+            Passionate experts, commited to helping children with
+            neuro-developmental challenges and milestone delays achieve growth,
+            independence and joy through movement{" "}
           </p>
         </div>
 
@@ -126,10 +126,10 @@ export default function TeamSection() {
               {/* Content */}
               <div className="p-6 md:p-8 text-center flex-grow flex flex-col justify-between">
                 <div>
-                  <h3 className="text-2xl md:text-3xl font-serif font-bold text-gray-900 mb-2">
+                  <h3 className="text-xl md:text-2xl font-serif font-bold text-gray-900 mb-2">
                     {member.name}
                   </h3>
-                  <p className="text-lg md:text-xl text-orange-600 font-medium mb-6">
+                  <p className="font-medium text-orange-600 font-medium mb-6">
                     {member.title}
                   </p>
                 </div>

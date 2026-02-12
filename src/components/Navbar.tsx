@@ -101,7 +101,7 @@ export default function Navbar() {
                 width={40}
                 height={40}
               />
-              <span className="font-serif text-3xl font-bold">
+              <span className="font-serif text-4xl font-bold">
                 ARUKAH HEALTH
               </span>
             </Link>
@@ -122,7 +122,7 @@ export default function Navbar() {
                       onClick={() =>
                         setDesktopServicesOpen(!desktopServicesOpen)
                       }
-                      className="flex items-center gap-2 font-medium text-white hover:text-orange-500"
+                      className="flex items-center gap-2 font-medium text-white hover:text-[#FFB347] "
                     >
                       <item.icon size={18} />
                       {item.label}
@@ -143,7 +143,7 @@ export default function Navbar() {
                             key={sub.label}
                             href={sub.href}
                             onClick={closeMenus}
-                            className={`flex items-center gap-3 px-6 py-3 hover:bg-blue-400 ${
+                            className={`flex items-center gap-3 px-6 py-3 hover:bg-[#FFB347] ${
                               isActive(sub.href)
                                 ? "font-semibold text-orange-500"
                                 : "text-white"
@@ -162,7 +162,7 @@ export default function Navbar() {
                     href={item.href}
                     onClick={closeMenus}
                     className={`flex items-center gap-2 font-medium ${
-                      isActive(item.href) ? "text-orange-500" : "text-white"
+                      isActive(item.href) ? "text-[#FFB347] " : "text-white"
                     }`}
                   >
                     <item.icon size={18} />

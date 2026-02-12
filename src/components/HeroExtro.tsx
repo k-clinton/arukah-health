@@ -41,9 +41,9 @@ const HeroExtro = () => {
       <div className="relative z-10 text-center max-w-4xl px-6 py-12 md:px-12 md:py-20">
         <h1 className="text-4xl md:text-4xl font-bold text-white mb-4 leading-tight">
           Nurturing{" "}
-          <span className="text-orange-600 inline-block">Progress,</span>{" "}
+          <span className="text-[#FFB347]  inline-block">Progress,</span>{" "}
           Inspiring{" "}
-          <span className="text-orange-600 inline-block">Possibilities</span>
+          <span className="text-[#FFB347]  inline-block">Possibilities</span>
         </h1>
 
         <p className="text-xl md:text-2xl text-white mb-8 max-w-2xl mx-auto">

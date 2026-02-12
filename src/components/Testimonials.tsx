@@ -98,7 +98,7 @@ const InfiniteTestimonials = () => {
         {/* Header */}
         <div className="text-center mb-12">
           <h2 className="text-4xl md:text-5xl font-bold text-gray-800 mb-4">
-            <span className="text-transparent bg-clip-text bg-orange-600">
+            <span className="text-transparent bg-clip-text bg-blue-700">
               Success Stories
             </span>
           </h2>

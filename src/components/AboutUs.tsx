@@ -92,8 +92,6 @@ export default function AboutUs() {
                   : "hover:border-blue-600"
               }`}
               whileHover={{ y: -10 }}
-              // Optional: Keep card click if you want modal to open on card click too
-              // onClick={() => setSelectedPillar(pillar)}
             >
               {/* Image */}
               <div className="relative h-48">

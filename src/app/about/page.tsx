@@ -148,7 +148,7 @@ export default function AboutUsPage() {
               Arukah Health
             </h2>
             <div className="prose prose-xl text-gray-800 leading-relaxed   p-6 space-y-6 max-w-4xl mx-auto">
-              <p className="italic font-medium font-semibold ">
+              <p className=" font-medium font-semibold ">
                 We are more than an exercise clinic. We are a movement of hope,
                 science, and soul—where every step is sacred, and every child’s
                 story matters.
@@ -184,15 +184,35 @@ export default function AboutUsPage() {
               Thank you for being part of this story.
             </h2>
             <p className="text-xl text-gray-700 font-medium leading-relaxed">
-              Whether you’re here to learn, move, teach, or heal, you belong.
+              Whether you’re here to learn, move, teach, or heal, you belong !
             </p>
           </motion.div>
         </div>
       </section>
 
       {/* SECTION 5: VISION & MISSION */}
-      <section className="max-w-7xl mx-auto px-6 lg:px-8 py-20">
-        <div className="grid md:grid-cols-2 gap-12">
+      <section className="relative max-w-7xl mx-auto px-6 lg:px-8 py-20">
+        {/* Decorative images – top left & top right */}
+        <div className="absolute -top-16 -left-16 md:-left-24 w-32 h-32 md:w-48 md:h-48 pointer-events-none z-0 opacity-70">
+          <Image
+            src="/images/icon8.png"
+            alt=""
+            fill
+            className="object-contain"
+          />
+        </div>
+
+        <div className="absolute -top-16 -right-16 md:-right-24 w-32 h-32 md:w-48 md:h-48 pointer-events-none z-0 opacity-70">
+          <Image
+            src="/images/icon12.png"
+            alt=""
+            fill
+            className="object-contain"
+          />
+        </div>
+
+        {/* Main Content – unchanged */}
+        <div className="grid md:grid-cols-2 gap-12 relative z-10">
           <motion.div
             initial="hidden"
             whileInView="visible"
@@ -221,11 +241,11 @@ export default function AboutUsPage() {
               Our Mission
             </h3>
             <p className="text-lg font-medium text-gray-700 leading-relaxed">
-              To deliver inclusive, evidence based pediatric exercise therapy
+              To deliver inclusive, research informed pediatric exercise therapy
               that builds function and independence in children with
               neuro-developmental challenges and milestone delays—blending
               clinical excellence with compassionate care to transform lives
-              through personalized movement.
+              through movement.
             </p>
           </motion.div>
         </div>
