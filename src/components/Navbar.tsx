@@ -177,7 +177,7 @@ export default function Navbar() {
               <Link
                 href={secondaryLink.href}
                 onClick={closeMenus}
-                className="border-2 border-orange-300 text-orange-600 px-6 py-2 bg-white rounded-full font-semibold hover:bg-white"
+                className="border-2 border-orange-300 text-[#FFB347] px-6 py-2 bg-white rounded-full font-semibold hover:bg-white"
               >
                 {secondaryLink.label}
               </Link>
