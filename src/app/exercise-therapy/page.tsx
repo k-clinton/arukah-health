@@ -158,10 +158,10 @@ export default function ExerciseTherapy() {
             ].map((item, i) => (
               <div
                 key={item.title}
-                className="bg-white rounded-2xl p-8 shadow-lg border border-gray-100 hover:shadow-xl transition-all duration-300 text-center"
+                className="bg-white rounded-2xl p-8 shadow-lg border border-[#FFB347] hover:shadow-xl transition-all duration-300 text-center"
               >
                 <item.icon size={48} className="text-orange-600 mx-auto mb-6" />
-                <h4 className="text-xl font-bold font-medium text-gray-900 mb-3">
+                <h4 className="text-xl font-bold font-serif font-medium text-gray-900 mb-3">
                   {item.title}
                 </h4>
                 <p className="text-gray-700 font-medium">{item.desc}</p>
