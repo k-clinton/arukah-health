@@ -41,7 +41,7 @@ export default function ContactPage() {
         body: JSON.stringify({
           name,
           email,
-          phone: subject, // Using subject field as phone/subject
+          subject: subject,
           message,
         }),
       });
