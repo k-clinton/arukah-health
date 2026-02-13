@@ -28,7 +28,7 @@ export default function ExerciseTherapy() {
         {/* Background Image */}
         <div className="absolute inset-0">
           <Image
-            src="/images/IMG_9696.jpg"
+            src="/images/IMG_9642.jpg"
             alt="Joyful child in movement therapy environment"
             fill
             className="object-cover brightness-[0.75]"
@@ -82,7 +82,7 @@ export default function ExerciseTherapy() {
             {/* Image on right (desktop) / below (mobile) */}
             <div className="order-1 lg:order-2 relative rounded-3xl overflow-hidden shadow-2xl">
               <Image
-                src="/images/movement.jpg"
+                src="/images/IMG_9761.jpg"
                 alt="Children engaged in joyful, purposeful exercise"
                 width={1200}
                 height={800}
@@ -96,7 +96,7 @@ export default function ExerciseTherapy() {
             {/* Image on left (desktop) / above (mobile) */}
             <div className="relative rounded-3xl overflow-hidden shadow-2xl">
               <Image
-                src="/images/movement.jpg"
+                src="/images/IMG_2198.JPG"
                 alt="Therapist guiding child in tailored movement activity"
                 width={1200}
                 height={800}

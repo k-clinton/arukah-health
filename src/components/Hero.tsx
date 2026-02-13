@@ -87,7 +87,7 @@ export default function Hero() {
               </motion.div>
 
               <motion.div
-                className="pointer-events-none absolute -bottom-28 -left-6 z-30 hidden md:block"
+                className="pointer-events-none absolute -bottom-28 -right-6 z-30 hidden md:block"
                 animate={{ y: [0, -12, 0] }}
                 transition={{
                   duration: 7,

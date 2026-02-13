@@ -14,11 +14,15 @@ const images = [
     alt: "Mother and daughter talking",
   },
   {
-    src: "/images/IMG_9761.jpg",
+    src: "/images/IMG_9584.jpg",
     alt: "Mother holding baby",
   },
   {
     src: "/images/IMG_2325.jpg",
+    alt: "Happy family portrait",
+  },
+  {
+    src: "/images/images/IMG_9573 (2).jpg",
     alt: "Happy family portrait",
   },
 ];
