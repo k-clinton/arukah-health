@@ -19,7 +19,8 @@ export default function WhoWeAreHereFor() {
 
         <div className="relative z-10 flex items-center justify-center h-full px-6 text-center">
           <h1 className="font-serif text-white text-3xl sm:text-4xl md:text-5xl font-semibold max-w-4xl leading-snug">
-            Healing Hearts, Touching Lives and Restoring Health Through Exercise
+            Healing Hearts, Touching Lives and Restoring Health Through
+            Exercise!
           </h1>
         </div>
       </div>

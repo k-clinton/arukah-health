@@ -155,8 +155,8 @@ export default function EducationAndTraining() {
                   Setting the Foundations for Safe and Healthy Exercise
                 </h2>
                 <p className="text-lg text-gray-700 leading-relaxed">
-                  Body awareness, motor planning, and Postural Stability &
-                  Control form the foundation of healthy movement and exercise.
+                  Body awareness, motor planning, and postural stability &
+                  control form the foundation of healthy movement and exercise.
                   We teach simple, effective techniques that reduce strain,
                   prevent complications, and promote healthy development in
                   everyday life — helping children move and exercise with more

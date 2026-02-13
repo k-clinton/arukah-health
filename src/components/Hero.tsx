@@ -27,10 +27,10 @@ export default function Hero() {
             </p>
 
             <div className="mb-10 md:mb-12">
-              <h2 className=" sm:text-3xl text-3xl md:text-4xl font-serif font-bold text-blue-700 mb-4 md:mb-5">
+              <h2 className="text-3xl md:text-4xl font-serif font-bold text-blue-700 mb-4 md:mb-5">
                 THERAPY THROUGH MOTION
               </h2>
-              <p className="text-base sm:text-lg md:text-xl  text-gray-700 leading-relaxed">
+              <p className="text-base sm:text-lg md:text-xl text-gray-700 leading-relaxed">
                 We offer exercise sessions to children with neuro-developmental
                 challenges and milestone delays, helping them build strength,
                 improve mobility, stabilize posture, build physical capacity,
@@ -46,12 +46,30 @@ export default function Hero() {
             </Link>
           </div>
 
-          {/* Image – comes SECOND on mobile */}
-          <div className="order-2 md:order-2 flex justify-center md:justify-end">
-            <div className="relative w-full max-w-sm sm:max-w-md md:max-w-lg lg:max-w-xl">
-              {/* Decorative Image – Top Right */}
+          {/* Right Column – Image with decorative frame */}
+          <div className="order-2 md:order-2 flex justify-center md:justify-end relative">
+            {/* Orange background rectangle (tilted) */}
+            <div className="absolute top-0 right-0 md:right-[-20%] w-[140%] md:w-[160%] h-full bg-[#FFB347] md:rotate-[-90deg]  -z-10 shadow-xl" />
+
+            {/* Black frame with blue outline */}
+            <div className="relative w-full max-w-sm sm:max-w-md md:max-w-lg lg:max-w-xl z-10">
+              {/* Blue outline border */}
+
+              {/* Black inner frame */}
+              <div className="relative bg-black rounded-2xl shadow-2xl overflow-hidden">
+                <Image
+                  src="/images/IMG_2412.JPG"
+                  alt="Child engaged in joyful exercise therapy"
+                  width={400}
+                  height={400}
+                  className="w-full h-auto border-5 border-blue-700 object-cover rounded-xl"
+                  priority
+                />
+              </div>
+
+              {/* Existing floating decorative images (unchanged) */}
               <motion.div
-                className="pointer-events-none absolute -top-6 -right-6 z-10 hidden md:block"
+                className="pointer-events-none absolute -top-34 -right-26 z-30 hidden md:block"
                 animate={{ y: [0, -12, 0] }}
                 transition={{
                   duration: 6,
@@ -68,9 +86,8 @@ export default function Hero() {
                 />
               </motion.div>
 
-              {/* Decorative Image – Bottom Left */}
               <motion.div
-                className="pointer-events-none absolute -bottom-6 -left-6 z-10 hidden md:block"
+                className="pointer-events-none absolute -bottom-28 -left-6 z-30 hidden md:block"
                 animate={{ y: [0, -12, 0] }}
                 transition={{
                   duration: 7,
@@ -86,16 +103,6 @@ export default function Hero() {
                   className="opacity-100 -rotate-6"
                 />
               </motion.div>
-
-              {/* Main Image (UNCHANGED) */}
-              <Image
-                src="/images/hero.jpg"
-                alt="Child engaged in joyful exercise therapy"
-                width={300}
-                height={300}
-                className="w-full h-auto object-cover"
-                priority
-              />
             </div>
           </div>
         </div>
