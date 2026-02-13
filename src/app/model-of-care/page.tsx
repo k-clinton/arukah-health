@@ -75,13 +75,13 @@ Our interventions are delivered within a supervised, safe, and supportive enviro
   return (
     <main className="min-h-screen bg-white">
       {/* Hero Section with Background Image */}
-      <section className="relative min-h-[70vh] md:min-h-[80vh] flex items-center justify-center">
-        <div className="absolute inset-0">
+      <section className="relative min-h-[70vh] md:min-h-[80vh] flex mt-19 items-center justify-center">
+        <div className="absolute pt-10 inset-0">
           <Image
             src="/images/IMG_9647.jpg"
             alt="Child and family in joyful, supportive movement environment"
             fill
-            className="object-cover brightness-[0.75]"
+            className="object-cover brightness-[0.75] care"
             priority
           />
           <div className="absolute inset-0 bg-black/40" />
@@ -119,7 +119,7 @@ Our interventions are delivered within a supervised, safe, and supportive enviro
           {pillars.map((pillar, index) => (
             <div
               key={pillar.title}
-              className="bg-white rounded-3xl text-blue-700 shadow-lg hover:shadow-2xl transition-all duration-300 border border-gray-100 flex flex-col relative min-h-[480px] overflow-hidden"
+              className="bg-white rounded-3xl text-blue-700 shadow-lg hover:shadow-2xl transition-all  duration-300 border-4 border-blue-700 flex flex-col hover:scale-105 relative min-h-[480px] overflow-hidden hover:border-orange-600  "
             >
               {/* Full-width top image */}
               <div className="relative h-48 w-full">

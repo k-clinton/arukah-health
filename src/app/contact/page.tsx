@@ -14,6 +14,7 @@ import {
 } from "react-icons/fa";
 
 import { useRouter } from "next/navigation";
+import Image from "next/image";
 
 export default function ContactPage() {
   const router = useRouter();
@@ -21,7 +22,9 @@ export default function ContactPage() {
   const [email, setEmail] = useState("");
   const [subject, setSubject] = useState("");
   const [message, setMessage] = useState("");
-  const [status, setStatus] = useState<"idle" | "sending" | "success" | "error">("idle");
+  const [status, setStatus] = useState<
+    "idle" | "sending" | "success" | "error"
+  >("idle");
   const [errorMessage, setErrorMessage] = useState("");
 
   const handleSubmit = async (e: React.FormEvent) => {
@@ -38,7 +41,7 @@ export default function ContactPage() {
         body: JSON.stringify({
           name,
           email,
-          subject,
+          phone: subject, // Using subject field as phone/subject
           message,
         }),
       });
@@ -54,13 +57,17 @@ export default function ContactPage() {
         setTimeout(() => setStatus("idle"), 7000);
       } else {
         setStatus("error");
-        setErrorMessage(data.error || "Failed to send message. Please try again.");
+        setErrorMessage(
+          data.error || "Failed to send message. Please try again.",
+        );
         setTimeout(() => setStatus("idle"), 5000);
       }
     } catch (error) {
       console.error("Error submitting form:", error);
       setStatus("error");
-      setErrorMessage("An error occurred. Please try again or contact us directly.");
+      setErrorMessage(
+        "An error occurred. Please try again or contact us directly.",
+      );
       setTimeout(() => setStatus("idle"), 5000);
     }
   };
@@ -68,6 +75,18 @@ export default function ContactPage() {
   return (
     <>
       {/* Hero */}
+      <section className="relative  md:min-h-[80vh] flex items-center justify-center">
+        {/* Background Image */}
+        <div>
+          <Image
+            src="/images/IMG_9815 (1).jpg"
+            alt="Education and training background – joyful learning moment"
+            fill
+            className="object-cover "
+            priority
+          />
+        </div>
+      </section>
       <section className="bg-[#FFB347] text-white mt-20 py-20">
         <div className="max-w-7xl mx-auto px-4 text-center">
           <h1 className=" text-4xl md:text-6xl font-serif font-bold">
@@ -143,14 +162,17 @@ export default function ContactPage() {
                   <div className="p-5 bg-green-50 border border-green-300 rounded-lg text-green-800 flex items-center gap-3">
                     <FaCheckCircle className="w-7 h-7 text-green-600" />
                     <div>
-                      <strong>Thank you!</strong> Your message has been sent successfully. We'll reply within 24 hours.
+                      <strong>Thank you!</strong> Your message has been sent
+                      successfully. We&apos;ll reply within 24 hours.
                     </div>
                   </div>
                 )}
 
                 {status === "error" && (
                   <div className="p-5 bg-red-50 border border-red-300 rounded-lg text-red-800 flex items-center gap-3">
-                    <div className="w-7 h-7 text-red-600 flex items-center justify-center">⚠️</div>
+                    <div className="w-7 h-7 text-red-600 flex items-center justify-center">
+                      ⚠️
+                    </div>
                     <div>
                       <strong>Error:</strong> {errorMessage}
                     </div>

@@ -14,35 +14,35 @@ export default function EducationAndTraining() {
   return (
     <main className="min-h-screen bg-white">
       <div className="pt-32 pb-24">
+        <section className="relative min-h-[70vh] md:min-h-[80vh] flex items-center justify-center">
+          {/* Background Image */}
+          <div className="absolute inset-0">
+            <Image
+              src="/images/IMG_9516.JPG"
+              alt="Education and training background – joyful learning moment"
+              fill
+              className="object-cover brightness-[0.95]"
+              priority
+            />
+            {/* Dark overlay for text contrast */}
+            <div className="absolute inset-0 bg-black/45" />
+          </div>
+
+          {/* Content centered on top */}
+          <div className="relative z-10 text-center px-6 max-w-5xl">
+            <h1 className="text-5xl sm:text-6xl md:text-7xl font-serif font-extrabold text-[#FFB347] drop-shadow-2xl mb-6 md:mb-8">
+              Education and Training
+            </h1>
+
+            <p className="text-xl sm:text-2xl md:text-3xl font-medium text-white/95 leading-relaxed max-w-4xl mx-auto drop-shadow-lg">
+              Training sessions designed to build capacity and increase
+              knowledge among individuals, caregivers, parents, families and
+              communities.
+            </p>
+          </div>
+        </section>
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
           {/* Hero / Intro */}
-          <section className="relative min-h-[70vh] md:min-h-[80vh] flex items-center justify-center">
-            {/* Background Image */}
-            <div className="absolute inset-0">
-              <Image
-                src="/images/IMG_9516.JPG"
-                alt="Education and training background – joyful learning moment"
-                fill
-                className="object-cover brightness-[0.75]"
-                priority
-              />
-              {/* Dark overlay for text contrast */}
-              <div className="absolute inset-0 bg-black/45" />
-            </div>
-
-            {/* Content centered on top */}
-            <div className="relative z-10 text-center px-6 max-w-5xl">
-              <h1 className="text-5xl sm:text-6xl md:text-7xl font-serif font-extrabold text-white drop-shadow-2xl mb-6 md:mb-8">
-                Education and Training
-              </h1>
-
-              <p className="text-xl sm:text-2xl md:text-3xl font-medium text-white/95 leading-relaxed max-w-4xl mx-auto drop-shadow-lg">
-                Training sessions designed to build capacity and increase
-                knowledge among individuals, caregivers, parents, families and
-                communities.
-              </p>
-            </div>
-          </section>
 
           {/* Core Message */}
           <div className="max-w-5xl mt-10 mx-auto  mb-20">
