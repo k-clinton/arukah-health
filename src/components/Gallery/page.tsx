@@ -22,7 +22,7 @@ const images = [
     alt: "Happy family portrait",
   },
   {
-    src: "/images/images/IMG_9573 (2).jpg",
+    src: "/images/IMG_9573 (2).jpg",
     alt: "Happy family portrait",
   },
 ];

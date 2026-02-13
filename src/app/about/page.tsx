@@ -78,7 +78,7 @@ export default function AboutUsPage() {
             className="rounded-2xl overflow-hidden shadow-xl order-2 lg:order-1"
           >
             <Image
-              src=""
+              src="/images/IMG_9909.jpg"
               alt=""
               width={2560}
               height={1707}
@@ -129,7 +129,7 @@ export default function AboutUsPage() {
       <section className="py-24 relative overflow-hidden">
         <div className="absolute inset-0 ">
           <Image
-            src="/images/movement3.jpg"
+            src="/images/move4.jpg"
             alt="Soft pastel dreamy clouds background"
             fill
             className="object-cover"
@@ -391,30 +391,7 @@ export default function AboutUsPage() {
               such as impaired motor control, reduced strength & endurance,
               balance/coordination deficits, limited flexibility, and altered
               proprioception affects a child’s capabilities and independence in
-              life which can be quite an uphill task to navigate. Oftentimes,
-              this makes care intricate and complex, with no single fix or
-              simple path forward. At Arukah, we create a community where
-              families can breathe, hope, and feel understood. This is a space
-              where is exercise is impactful in building core dimensions of
-              physical function necessary for these children. A space where
-              science meets compassion, and where every child’s story is
-              honored. Arukah Health is built on the belief that exercise is
-              medicine. For us, exercise is more than biomechanics—it’s a
-              language of healing, play, and growth. Every stretch, step, and
-              breath is an opportunity to restore what challenges may have taken
-              away and to open new pathways of strength, confidence, and joy. We
-              believe every child deserves to be seen, celebrated, and supported
-              on their unique journey toward strength and independence. Hence,
-              we meet each child where they are—physically, emotionally, and
-              developmentally—crafting therapeutic exercise experiences that are
-              inclusive, intentional, and transformative. There is no greater
-              joy than witnessing children take small steps that become great
-              milestones, and the resilience of parents who walk beside them
-              with love. Every smile and every breakthrough reminds us why this
-              work matters. That is why here, we celebrate progress in all its
-              forms, knowing that strength is built not only in muscles but also
-              in spirit. This is where healing begins and recovery is redefined!
-              This is home! Welcome to Arukah Health!”
+              life which can be quite an uphill task to navigate.“
             </p>
           </motion.div>
         </div>
