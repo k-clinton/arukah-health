@@ -3,7 +3,7 @@ import nodemailer from 'nodemailer';
 
 export async function POST(request: NextRequest) {
   try {
-    const { name, email, phone, message } = await request.json();
+    const { name, email, subject, message } = await request.json();
 
     // Validate required fields
     if (!name || !email || !message) {
@@ -23,11 +23,7 @@ export async function POST(request: NextRequest) {
     });
 
     // Email content
-    const mailOptions = {
-      from: process.env.EMAIL_USER,
-      to: 'kappyclinton@gmail.com',
-      subject: `New Contact Form Submission from ${name}`,
-      html: `
+    const htmlContent = `
         <div style="font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto;">
           <h2 style="color: #333; border-bottom: 2px solid #4CAF50; padding-bottom: 10px;">
             Aruka Health
@@ -36,7 +32,7 @@ export async function POST(request: NextRequest) {
           <div style="margin: 20px 0;">
             <p style="margin: 10px 0;"><strong>Name:</strong> ${name}</p>
             <p style="margin: 10px 0;"><strong>Email:</strong> ${email}</p>
-            <p style="margin: 10px 0;"><strong>Phone:</strong> ${phone || 'Not provided'}</p>
+            <p style="margin: 10px 0;"><strong>Subject:</strong> ${subject}</p>
           </div>
           
           <div style="margin: 20px 0;">
@@ -52,7 +48,13 @@ export async function POST(request: NextRequest) {
             This email was sent from the Arukah Health contact form.
           </p>
         </div>
-      `,
+    `;
+
+    const mailOptions = {
+      from: `"Arukah Health Website" <${process.env.EMAIL_USER}>`,
+      to: 'omondiclinn@gmail.com',
+      subject: `Subject: ${subject || 'No Subject'} - from ${name}`,
+      html: htmlContent,
       replyTo: email,
     };
 

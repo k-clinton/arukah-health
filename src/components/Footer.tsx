@@ -51,10 +51,10 @@ const Footer = () => {
               <div className="flex items-center gap-3">
                 <FaEnvelope className="text-blue-400" />
                 <a
-                  href="mailto:info@arukahhealth.co.ke"
+                  href="mailto:arukahhealthke@gmail.com"
                   className="text-gray-300 hover:text-white transition-colors"
                 >
-                  info@arukahhealth.co.ke
+                  arukahhealthke@gmail.com
                 </a>
               </div>
             </div>
@@ -91,28 +91,34 @@ const Footer = () => {
                   platform: "Facebook",
                   icon: FaFacebook,
                   color: "text-blue-500",
+                  url: "https://www.facebook.com/profile.php?id=100089553415870",
                 },
                 {
                   platform: "Instagram",
                   icon: FaInstagram,
                   color: "text-pink-500",
+                  url: "https://www.instagram.com/arukahhealth_",
                 },
                 {
                   platform: "WhatsApp",
                   icon: FaWhatsapp,
                   color: "text-green-500",
+                  url: "https://wa.me/254732461867",
                 },
                 {
                   platform: "Email Us",
                   icon: FaEnvelope,
                   color: "text-red-500",
+                  url: "mailto:arukahhealthke@gmail.com",
                 },
               ].map((social) => {
                 const Icon = social.icon;
                 return (
                   <a
                     key={social.platform}
-                    href="#"
+                    href={social.url}
+                    target={social.url.startsWith("mailto:") ? "_self" : "_blank"}
+                    rel={social.url.startsWith("mailto:") ? undefined : "noopener noreferrer"}
                     className="flex items-center gap-3 text-gray-300 hover:text-white group transition-all duration-300"
                   >
                     <div
