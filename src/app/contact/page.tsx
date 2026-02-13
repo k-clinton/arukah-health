@@ -21,32 +21,48 @@ export default function ContactPage() {
   const [email, setEmail] = useState("");
   const [subject, setSubject] = useState("");
   const [message, setMessage] = useState("");
-  const [status, setStatus] = useState<"idle" | "sending" | "success">("idle");
+  const [status, setStatus] = useState<"idle" | "sending" | "success" | "error">("idle");
+  const [errorMessage, setErrorMessage] = useState("");
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setStatus("sending");
+    setErrorMessage("");
 
-    // Simulate network delay
-    await new Promise((resolve) => setTimeout(resolve, 1200));
+    try {
+      const response = await fetch("/api/send-email", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({
+          name,
+          email,
+          phone: subject, // Using subject field as phone/subject
+          message,
+        }),
+      });
 
-    // Log to browser console (open DevTools → Console to see it)
-    console.log("Contact Form Submitted:", {
-      name,
-      email,
-      subject,
-      message,
-      timestamp: new Date().toISOString(),
-    });
+      const data = await response.json();
 
-    // Show success + auto-reset
-    setStatus("success");
-    setName("");
-    setEmail("");
-    setSubject("");
-    setMessage("");
-
-    setTimeout(() => setStatus("idle"), 7000);
+      if (response.ok) {
+        setStatus("success");
+        setName("");
+        setEmail("");
+        setSubject("");
+        setMessage("");
+        setTimeout(() => setStatus("idle"), 7000);
+      } else {
+        setStatus("error");
+        setErrorMessage(data.error || "Failed to send message. Please try again.");
+        setTimeout(() => setStatus("idle"), 5000);
+      }
+    } catch (error) {
+      console.error("Error submitting form:", error);
+      setStatus("error");
+      setErrorMessage("An error occurred. Please try again or contact us directly.");
+      setTimeout(() => setStatus("idle"), 5000);
+    }
   };
 
   return (
@@ -127,8 +143,16 @@ export default function ContactPage() {
                   <div className="p-5 bg-green-50 border border-green-300 rounded-lg text-green-800 flex items-center gap-3">
                     <FaCheckCircle className="w-7 h-7 text-green-600" />
                     <div>
-                      <strong>Thank you!</strong> Your message has been
-                      received. We’ll reply within 24 hours.
+                      <strong>Thank you!</strong> Your message has been sent successfully. We'll reply within 24 hours.
+                    </div>
+                  </div>
+                )}
+
+                {status === "error" && (
+                  <div className="p-5 bg-red-50 border border-red-300 rounded-lg text-red-800 flex items-center gap-3">
+                    <div className="w-7 h-7 text-red-600 flex items-center justify-center">⚠️</div>
+                    <div>
+                      <strong>Error:</strong> {errorMessage}
                     </div>
                   </div>
                 )}
