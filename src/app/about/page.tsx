@@ -326,12 +326,12 @@ export default function AboutUsPage() {
         <h2 className="text-4xl md:text-5xl font-serif font-bold text-center text-orange-600 mb-16">
           Meet the Founder
         </h2>
-        <div  classname="items center mx-auto p-2 ">
-          <p classname="items center mx-auto p-2 ">
-           Arukah Health was founded with a deep passion for helping children with neuro-developmental challenges and milestone delays discover their potential through joyful, purposeful exercise. With years of clinical experience in pediatric therapy and a heart for families navigating uncertainty, Ivy created a space where science, compassion, and hope converge. 
-
-          </p>
-          </div>
+        <div classname="mb-10">
+              <p className="text-lg p-4 shadow-md mb-10 rounded-md text-gray-700 leading-relaxed">
+                Arukah Health was founded with a deep passion for helping children with neuro-developmental challenges and milestone delays discover their potential through joyful, purposeful exercise. With years of clinical experience in pediatric therapy and a heart for families navigating uncertainty, Ivy created a space where science, compassion, and hope converge. 
+              </p>
+            </div>
+        
         <div className="grid lg:grid-cols-3 gap-10 lg:gap-12 items-start">
           {/* Left: Intro content */}
           <motion.div
@@ -342,15 +342,7 @@ export default function AboutUsPage() {
             className="lg:col-span-1 text-lg  order-2 lg:order-1 text-gray-700 font-medium font-montserrat space-y-6 text-center lg:text-left"
           >
             <p>
-              Arukah Health was founded with a deep passion for helping children
-              with neuro-developmental challenges and milestone delays discover
-              their potential through joyful, purposeful exercise. With years of
-              clinical experience in pediatric therapy and a heart for families
-              navigating uncertainty, Ivy created a space where science,
-              compassion, and hope converge. Arukah Health is more than a
-              brand—it’s a living, breathing reflection of everything we believe
-              in: clinical excellence, emotional safety, cultural sensitivity,
-              and the power of exercise to transform lives!
+              I understand that nurturing children with neuro developmental conditions and milestone delays can be a walk through seasons of uncertainty, burnout, pain, and quiet resilience. Complexities such as impaired motor control, reduced strength, balance deficits, and altered proprioception affect a child’s independence, making care intricate and complex. At Arukah Health, we create a community where families can breathe, hope, and feel understood. A space where exercise is utilized in building core dimensions of physical function in a fun and intentional manner. A space where every child’s story is honored and small steps are cultured into great milestones.
             </p>
           </motion.div>
 
@@ -373,12 +365,10 @@ export default function AboutUsPage() {
             </div>
 
             <div className="mt-6 text-center">
-              <h3 className="text-3xl md:text-4xl font-serif font-bold text-blue-700 mb-2">
-                Ivy Gacheri
-              </h3>
-              <p className="text-xl md:text-2xl font-medium text-orange-600">
-                CEO & Founder, Arukah Health
+              <p className="text-lg  font-serif font-bold text-blue-700 mb-2">
+                Ivy Gacheri CEO & Founder, Arukah Health
               </p>
+             
             </div>
           </motion.div>
 
@@ -391,13 +381,10 @@ export default function AboutUsPage() {
             className="lg:col-span-1 order-3 lg:order-3 text-gray-700 font-medium font-montserrat space-y-6 text-center lg:text-left"
           >
             <p className="italic font-medium text-lg  font-semibold">
-              “I understand that nurturing children with neuro developmental
-              challenges and milestone delays can be a walk through seasons of
-              uncertainty, burnout, pain, and quiet resilience. Complexities
-              such as impaired motor control, reduced strength & endurance,
-              balance/coordination deficits, limited flexibility, and altered
-              proprioception affects a child’s capabilities and independence in
-              life which can be quite an uphill task to navigate.“
+             Arukah Health is built on the belief that Exercise is Medicine. For us, exercise is more than biomechanics—it’s a language of healing, play, and growth. Every stretch, step, and breath is an opportunity to restore what challenges may have taken away and to open new pathways of strength, confidence, and joy. 
+We believe every child deserves to be seen, celebrated, and supported on their unique journeys in life. That is why, we meet each child where they are—physically, emotionally, and developmentally—crafting therapeutic exercise experiences that are inclusive, intentional, and transformative.  Every smile and Every Breakthrough reminds us why this work matters. Which is why here, we celebrate progress in all its forms, knowing that strength is built not only in muscles but also in spirit. 
+This is where Healing Begins and Recovery is Redefined! This is Home! Welcome to Arukah Health!”
+
             </p>
           </motion.div>
         </div>
