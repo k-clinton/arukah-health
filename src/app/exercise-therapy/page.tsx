@@ -225,8 +225,8 @@ export default function ExerciseTherapy() {
           transition={{ delay: i * 0.1 }}
           className={`group bg-white rounded-2xl overflow-hidden shadow-lg transition-all duration-300 border-4 ${
             item.theme === "orange"
-              ? "border-blue-700 hover:border-orange-600 hover:shadow-orange-200/50"
-              : "border-orange-600 hover:border-blue-700 hover:shadow-blue-200/50"
+              ? "border-blue-700 hover:border-orange-600 "
+              : "border-orange-600 hover:border-blue-700 "
           } hover:scale-105 hover:shadow-xl flex flex-col`}
         >
           {/* Full-width image at top */}
@@ -235,7 +235,7 @@ export default function ExerciseTherapy() {
               src={item.imageUrl}
               alt={item.title}
               fill
-              className="object-cover object-center transition-transform duration-500 group-hover:scale-110"
+              className="object-cover object-center transition-transform duration-500 group-hover:scale-1o5"
             />
             {/* Subtle overlay on hover for polish */}
             <div className="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
