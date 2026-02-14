@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import {
   Plus,
   Minus,
@@ -13,7 +13,60 @@ import {
 } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
-import { motion } from "framer-motion";
+import { motion, AnimatePresence } from "framer-motion";
+
+// Reusable Carousel Component
+function Carousel({ images }: { images: string[] }) {
+  const [currentIndex, setCurrentIndex] = useState(0);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentIndex((prev) => (prev + 1) % images.length);
+    }, 5000); // change interval here (5000ms = 5 seconds)
+
+    return () => clearInterval(interval);
+  }, [images.length]);
+
+  return (
+    <div className="relative w-full h-full overflow-hidden rounded-3xl shadow-2xl">
+      <AnimatePresence mode="wait">
+        <motion.div
+          key={currentIndex}
+          initial={{ x: "100%", opacity: 0 }}
+          animate={{ x: 0, opacity: 1 }}
+          exit={{ x: "-100%", opacity: 0 }}
+          transition={{ duration: 0.8, ease: "easeInOut" }}
+          className="absolute inset-0"
+        >
+          <Image
+            src={images[currentIndex]}
+            alt={`Program image ${currentIndex + 1}`}
+            fill
+            className="object-cover object-center"
+            sizes="(max-width: 768px) 100vw, 50vw"
+            priority={currentIndex < 2}
+          />
+        </motion.div>
+      </AnimatePresence>
+
+      {/* Navigation Dots */}
+      <div className="absolute bottom-4 left-0 right-0 flex justify-center gap-2 z-10">
+        {images.map((_, index) => (
+          <button
+            key={index}
+            onClick={() => setCurrentIndex(index)}
+            className={`w-3 h-3 rounded-full transition-all duration-300 ${
+              index === currentIndex
+                ? "bg-orange-500 scale-125"
+                : "bg-white/60 hover:bg-white/90"
+            }`}
+            aria-label={`Go to slide ${index + 1}`}
+          />
+        ))}
+      </div>
+    </div>
+  );
+}
 
 export default function ExerciseTherapy() {
   const [openTab, setOpenTab] = useState<number | null>(null);
@@ -22,11 +75,27 @@ export default function ExerciseTherapy() {
     setOpenTab(openTab === index ? null : index);
   };
 
+  // Example placeholders — replace with your actual 10 images
+  const leftCarouselImages = [
+    "/images/IMG_2388 (2).jpg",
+    "/images/IMG_9537.jpg",
+    "/images/IMG_9834 (1).jpg",
+    "/images/IMG_9567.jpg",
+    "/images/program-left-5.jpg",
+  ];
+
+  const rightCarouselImages = [
+    "/images/IMG_9761 (1).jpg",
+    "/images/IMG_9682.jpg",
+    "/images/IMG_9544.jpg",
+    "/images/IMG_9642 (1).jpg",
+    "/images/IMG_9761 (1).jpg",
+  ];
+
   return (
     <main className="min-h-screen bg-white">
       {/* Hero Section with Background Image */}
       <section className="relative min-h-[70vh] md:min-h-[80vh] flex items-center justify-center">
-        {/* Background Image */}
         <div className="absolute inset-0">
           <Image
             src="/images/IMG_9642.jpg"
@@ -35,19 +104,17 @@ export default function ExerciseTherapy() {
             className="object-cover brightness-[0.75]"
             priority
           />
-          {/* Dark overlay for text readability */}
           <div className="absolute inset-0 bg-black/40" />
         </div>
 
-        {/* Content on top */}
         <div className="relative z-10 text-center px-6 max-w-5xl">
-          <h1 className="text-5xl sm:text-6xl md:text-7xl font-serif font-extrabold text-[#FFB347]  drop-shadow-2xl mb-6 md:mb-8">
+          <h1 className="text-5xl sm:text-6xl md:text-7xl font-serif font-extrabold text-[#FFB347] drop-shadow-2xl mb-6 md:mb-8">
             Exercise Therapy
           </h1>
 
-          <p className="  text-lg  text-white/95 leading-relaxed max-w-4xl mx-auto drop-shadow-lg">
+          <p className="text-lg text-white/95 leading-relaxed max-w-4xl mx-auto drop-shadow-lg">
             We apply exercise as a cornerstone for rehabilitation – supporting
-            children through everyday milestones and struggles that most.{" "}
+            children through everyday milestones and struggles that matter most.{" "}
           </p>
         </div>
       </section>
@@ -59,10 +126,10 @@ export default function ExerciseTherapy() {
         </div>
       </section>
 
-      {/* Core Philosophy – Our Programs */}
+      {/* Core Philosophy – Our Programs with carousels */}
       <section className="py-16 md:py-20 px-6 bg-gradient-to-b from-white to-blue-50/30">
         <div className="max-w-7xl mx-auto space-y-16 md:space-y-24">
-          {/* First paragraph + image on right */}
+          {/* First paragraph + carousel on right */}
           <div className="grid lg:grid-cols-2 gap-10 lg:gap-16 items-center">
             <div className="order-2 lg:order-1 text-center lg:text-left">
               <h2 className="text-3xl md:text-4xl font-serif font-bold text-blue-700 mb-8 md:mb-10">
@@ -80,29 +147,17 @@ export default function ExerciseTherapy() {
               </p>
             </div>
 
-            {/* Image on right (desktop) / below (mobile) */}
-            <div className="order-1 lg:order-2 relative rounded-3xl overflow-hidden shadow-2xl">
-              <Image
-                src="/images/IMG_9761.jpg"
-                alt="Children engaged in joyful, purposeful exercise"
-                width={1200}
-                height={800}
-                className="w-full h-auto object-cover"
-              />
+            {/* Carousel on right */}
+            <div className="order-1 lg:order-2 relative rounded-3xl overflow-hidden shadow-2xl h-64 md:h-96">
+              <Carousel images={leftCarouselImages} />
             </div>
           </div>
 
-          {/* Second paragraph + image on left */}
+          {/* Second paragraph + carousel on left */}
           <div className="grid lg:grid-cols-2 gap-10 lg:gap-16 items-center">
-            {/* Image on left (desktop) / above (mobile) */}
-            <div className="relative rounded-3xl overflow-hidden shadow-2xl">
-              <Image
-                src="/images/IMG_2198.JPG"
-                alt="Therapist guiding child in tailored movement activity"
-                width={1200}
-                height={800}
-                className="w-full h-auto object-cover"
-              />
+            {/* Carousel on left */}
+            <div className="relative rounded-3xl overflow-hidden shadow-2xl h-64 md:h-96">
+              <Carousel images={rightCarouselImages} />
             </div>
 
             <div className="text-center lg:text-left">
@@ -127,7 +182,6 @@ export default function ExerciseTherapy() {
         </div>
       </section>
 
-      {/* Key Domains Cards */}
       {/* Key Domains Cards */}
       <section className="py-16 px-6 bg-white">
         <div className="max-w-7xl mx-auto">
@@ -168,11 +222,11 @@ export default function ExerciseTherapy() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ delay: i * 0.1 }}
-                className={`group bg-white rounded-2xl p-8 shadow-lg transition-all duration-300 border ${
+                className={`group bg-white rounded-2xl p-8 shadow-lg transition-all duration-300 border-2 ${
                   item.theme === "orange"
                     ? "border-orange-200 hover:border-orange-600 hover:shadow-orange-200/50"
                     : "border-blue-200 hover:border-blue-700 hover:shadow-blue-200/50"
-                } hover:scale-115 hover:shadow-xl flex flex-col  items-center text-center`}
+                } hover:scale-105 hover:shadow-xl flex flex-col items-center text-center`}
               >
                 <item.icon
                   size={48}
@@ -194,13 +248,14 @@ export default function ExerciseTherapy() {
         </div>
       </section>
 
-      {/* Alternating Image + Content Blocks (unchanged) */}
+      {/* Alternating Image + Content Blocks */}
       <section className="py-20 px-6">
         <div className="max-w-7xl mx-auto space-y-24">
           <h3 className="text-3xl md:text-4xl font-serif font-bold text-center text-orange-600 mb-12">
             Activities in Our programs{" "}
           </h3>
-          {/* Block 1: Image left */}
+
+          {/* Block 1 */}
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div className="relative rounded-3xl overflow-hidden shadow-2xl">
               <Image
@@ -229,32 +284,22 @@ export default function ExerciseTherapy() {
               {openTab === 0 && (
                 <div className="mt-4 pl-8 border-l-2 border-orange-600/30">
                   <ul className="space-y-3 text-gray-700 font-medium">
-                    <li>
-                      • Organized exercise and games employ a structured,
-                      sensory-aware environment for rehabilitation, strength
-                      building, and functional recovery.
-                    </li>
-                    <li>
-                      • They utilize specialized equipment, controlled
-                      environments and curated soundscapes to support precise
-                      movement, focused engagement, neuromuscular re-education,
-                      and emotional regulation.
-                    </li>
+                    <li>• Organized exercise and games employ a structured, sensory-aware environment for rehabilitation, strength building, and functional recovery.</li>
+                    <li>• They utilize specialized equipment, controlled environments and curated soundscapes to support precise movement, focused engagement, neuromuscular re-education, and emotional regulation.</li>
                   </ul>
                 </div>
               )}
             </div>
           </div>
 
-          {/* Block 2: Image right */}
+          {/* Block 2 */}
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div className="order-2 lg:order-1">
               <h2 className="text-3xl md:text-4xl font-serif font-bold text-orange-600 mb-6">
                 Swimming Lessons
               </h2>
               <p className="text-lg text-gray-700 leading-relaxed mb-6 font-medium">
-                Exercise sessions that strengthen muscles, improve coordination
-                and boosts confidence in a fun, aquatic environment.
+                Exercise sessions that strengthen muscles, improve coordination and boosts confidence in a fun, aquatic environment.
               </p>
               <button
                 onClick={() => toggleTab(1)}
@@ -266,19 +311,9 @@ export default function ExerciseTherapy() {
               {openTab === 1 && (
                 <div className="mt-4 pl-8 border-l-2 border-orange-600/30">
                   <ul className="space-y-3 text-gray-700 font-medium">
-                    <li>
-                      • Water leverages on reduced joint stress, gentle
-                      resistance, and deep relaxation— creating an optimal space
-                      for strength building and restorative care.{" "}
-                    </li>
-                    <li>
-                      • Builds coordination, cardiovascular endurance, muscle
-                      Strength and flexibility through low impact movement.
-                    </li>
-                    <li>
-                      • Enhances emotional regulation and motor planning through
-                      water play.
-                    </li>
+                    <li>• Water leverages on reduced joint stress, gentle resistance, and deep relaxation— creating an optimal space for strength building and restorative care.</li>
+                    <li>• Builds coordination, cardiovascular endurance, muscle Strength and flexibility through low impact movement.</li>
+                    <li>• Enhances emotional regulation and motor planning through water play.</li>
                   </ul>
                 </div>
               )}
@@ -294,7 +329,7 @@ export default function ExerciseTherapy() {
             </div>
           </div>
 
-          {/* Block 3: Image left */}
+          {/* Block 3 */}
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div className="relative rounded-3xl overflow-hidden shadow-2xl">
               <Image
@@ -310,8 +345,7 @@ export default function ExerciseTherapy() {
                 Hiking Sessions
               </h2>
               <p className="text-lg text-gray-700 leading-relaxed mb-6 font-medium">
-                Outdoor experiences that build balance, stamina, resilience, and
-                a love for active living.{" "}
+                Outdoor experiences that build balance, stamina, resilience, and a love for active living.
               </p>
               <button
                 onClick={() => toggleTab(2)}
@@ -323,31 +357,22 @@ export default function ExerciseTherapy() {
               {openTab === 2 && (
                 <div className="mt-4 pl-8 border-l-2 border-orange-600/30">
                   <ul className="space-y-3 text-gray-700 font-medium">
-                    <li>
-                      • Hiking utilizes varied terrain, fresh air and
-                      sensory-rich stimuli to support rehabilitation, emotional
-                      regulation and functional recovery.
-                    </li>
-                    <li>
-                      • It promotes dynamic movement, proprioceptive engagement
-                      and cardiovascular health, while reducing stress and
-                      enhancing mood.
-                    </li>
+                    <li>• Hiking utilizes varied terrain, fresh air and sensory-rich stimuli to support rehabilitation, emotional regulation and functional recovery.</li>
+                    <li>• It promotes dynamic movement, proprioceptive engagement and cardiovascular health, while reducing stress and enhancing mood.</li>
                   </ul>
                 </div>
               )}
             </div>
           </div>
 
-          {/* Block 4: Image right */}
+          {/* Block 4 */}
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div className="order-2 lg:order-1">
               <h2 className="text-3xl md:text-4xl font-serif font-bold text-orange-600 mb-6">
                 Biking Sessions
               </h2>
               <p className="text-lg text-gray-700 leading-relaxed mb-6 font-medium">
-                Guided cycling that enhances balance, endurance, and
-                independence.
+                Guided cycling that enhances balance, endurance, and independence.
               </p>
               <button
                 onClick={() => toggleTab(3)}
@@ -359,21 +384,9 @@ export default function ExerciseTherapy() {
               {openTab === 3 && (
                 <div className="mt-4 pl-8 border-l-2 border-orange-600/30">
                   <ul className="space-y-3 text-gray-700 font-medium">
-                    <li>
-                      • Cycling leverages on open air, nature-rich environments
-                      to develop balance, physical strength and coordination
-                      which supports gait training and overall physical
-                      function.
-                    </li>
-                    <li>
-                      • It also promotes cognitive engagement, motor planning
-                      and emotional resilience through active exploration in
-                      open, grounding spaces.
-                    </li>
-                    <li>
-                      • Additionally, cycling strengthens lower limbs and
-                      improves cardiovascular fitness.
-                    </li>
+                    <li>• Cycling leverages on open air, nature-rich environments to develop balance, physical strength and coordination which supports gait training and overall physical function.</li>
+                    <li>• It also promotes cognitive engagement, motor planning and emotional resilience through active exploration in open, grounding spaces.</li>
+                    <li>• Additionally, cycling strengthens lower limbs and improves cardiovascular fitness.</li>
                   </ul>
                 </div>
               )}

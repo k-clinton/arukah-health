@@ -12,13 +12,13 @@ const teamMembers = [
     title: "Lead Clinical Exercise Physiologist",
     image: "/images/ivy gacheri.jpg",
     alt: "Ivy Gacheri smiling in clinical setting",
-    bio: `Ivy Gacheri is a passionate Clinical Exercise Physiologist and the visionary founder of Arukah Health. With a firm belief in the healing power of movement, Ivy specializes in exercise therapy for individuals with special needs—including older adults, people with disabilities, those recovering from injury, and individuals managing chronic medical conditions.<br><br>
+    bio: `Ivy Gacheri is a passionate Clinical Exercise Physiologist and the visionary founder of Arukah Health. With a firm belief in the healing power of exercise, Ivy specializes in exercise therapy for children with special needs—particularly those with neuro-developmental conditions and milestone delays. <br><br>
 
-Driven by a deep commitment to inclusive wellness, Ivy designs structured, sensory-friendly movement programs that improve physical function, enhance motor skills, and uplift overall quality of life. Her approach blends science with compassion, ensuring that every client—regardless of ability—feels empowered, supported, and seen.<br><br>
+Driven by a deep commitment to inclusive wellness, Ivy designs structured, sensory-friendly movement programs that improve physical function, enhance motor skills, and uplift overall quality of life. Her approach blends science with compassion, ensuring that every child—regardless of ability—feels empowered, supported, and seen.<br><br>
 
-Through educational outreach, therapeutic exercise sessions, and tailored wellness initiatives, Ivy advocates for enjoyable movement as a proactive tool for rehabilitation, prevention, and lifelong vitality.
-<br><br>
-As CEO of Arukah Health, she leads with heart and clinical insight—transforming the way communities engage with movement-centered care. Her mission is simple but powerful: to make physical fitness accessible, engaging, and life-enhancing for everyone.
+
+ Through educational outreach, therapeutic exercise sessions, and tailored wellness initiatives, Ivy advocates for enjoyable movement as a proactive tool for rehabilitation, prevention, and lifelong vitality.<br><br>
+As CEO of Arukah Health, she leads with heart and clinical insight—transforming the way communities engage with movement-centered care. Her mission is simple but powerful: to make physical fitness accessible, engaging, and life-enhancing for every child.
 <br><br>
 <strong>Qualifications & Specializations</strong><br><br>
 • BSc Exercise & Sports Science  <br><br>
@@ -93,8 +93,8 @@ export default function TeamSection() {
       <div className="max-w-7xl mx-auto">
         {/* Section Header */}
         <div className="text-center mb-12 md:mb-16">
-          <h2 className="text-4xl md:text-5xl font-serif font-extrabold text-blue-700 mb-4">
-            Meet Our <span className="text-blue-700">Dedicated Team</span>
+          <h2 className="text-4xl md:text-5xl font-serif font-extrabold text-orange-600 mb-4">
+            Meet Our <span className="text-orange-600">Dedicated Team</span>
           </h2>
           <p className="text-xl font-medium text-gray-700 max-w-3xl mx-auto">
             Passionate experts, commited to helping children with
@@ -108,7 +108,7 @@ export default function TeamSection() {
           {teamMembers.map((member) => (
             <div
               key={member.id}
-              className="group bg-white rounded-3xl overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-300 border border-gray-100 flex flex-col"
+              className="group bg-white rounded-3xl overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-300 border-3 border-orange-600 flex flex-col"
             >
               {/* Image with oval border */}
               <div className="relative h-64 md:h-80 flex items-center justify-center bg-gradient-to-br from-blue-50 to-orange-50/30 p-6">

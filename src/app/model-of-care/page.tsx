@@ -97,7 +97,7 @@ Our interventions are delivered within a supervised, safe, and supportive enviro
       {/* Core Philosophy Paragraph */}
       <section className="py-20 px-6 bg-gradient-to-b from-white to-blue-50/30">
         <div className="max-w-5xl mx-auto text-center">
-          <p className="text-xl md:text-2xl text-gray-800 leading-relaxed font-medium">
+          <p className="text-lg text-gray-800 leading-relaxed font-medium">
             Grounded in clinical research and guided by compassion, our model of
             care brings together expertise and personalization to meet each
             child’s unique needs. We focus on building strong foundations for
@@ -152,7 +152,6 @@ Our interventions are delivered within a supervised, safe, and supportive enviro
               </div>
 
               {/* Connecting dot */}
-              <div className="absolute -bottom-3 left-1/2 w-6 h-6 bg-white border-4 border-[#FFB347] rounded-full hidden lg:block" />
             </div>
           ))}
         </div>
@@ -214,8 +213,7 @@ Our interventions are delivered within a supervised, safe, and supportive enviro
           Ready to Begin Your Child’s Journey?
         </h3>
         <p className="text-xl text-gray-700 mb-8 max-w-2xl mx-auto">
-          Contact us today to discuss how our model of care can support your
-          child’s unique needs with compassion, expertise, and joy.
+         Contact us today to discuss how we can support your child.
         </p>
         <Link
           href="/contact"

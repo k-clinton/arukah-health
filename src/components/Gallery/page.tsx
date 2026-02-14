@@ -23,7 +23,23 @@ const images = [
   },
   {
     src: "/images/IMG_9573 (2).jpg",
-    alt: "Happy family portrait",
+    alt: "",
+  },
+  {
+    src: "/images/IMG_9659.jpg",
+    alt: "",
+  },
+  {
+    src: "/images/IMG_9858.jpg",
+    alt: "",
+  },
+  {
+    src: "/images/IMG_9909 (1).jpg",
+    alt: "",
+  },
+  {
+    src: "/images/IMG_9857.jpg",
+    alt: "",
   },
 ];
 
@@ -64,7 +80,7 @@ export default function FamilyOvalGallery() {
                 transition={{ duration: 0.8, ease: "easeInOut" }}
                 className="absolute inset-0"
               >
-                <div className="relative h-full w-full overflow-hidden rounded-3xl shadow-2xl border-2 border-orange-100 hover:border-orange-300 transition-colors">
+                <div className="relative h-full w-full overflow-hidden rounded-3xl shadow-2xl border-4 border-orange-100 hover:border-orange-300 transition-colors">
                   <Image
                     src={images[currentIndex].src}
                     alt={images[currentIndex].alt}
