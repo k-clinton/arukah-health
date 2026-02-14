@@ -13,6 +13,7 @@ import {
 } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
+import { motion } from "framer-motion";
 
 export default function ExerciseTherapy() {
   const [openTab, setOpenTab] = useState<number | null>(null);
@@ -127,6 +128,7 @@ export default function ExerciseTherapy() {
       </section>
 
       {/* Key Domains Cards */}
+      {/* Key Domains Cards */}
       <section className="py-16 px-6 bg-white">
         <div className="max-w-7xl mx-auto">
           <h3 className="text-3xl md:text-4xl font-serif font-bold text-center text-blue-700 mb-12">
@@ -139,33 +141,54 @@ export default function ExerciseTherapy() {
                 icon: Dumbbell,
                 title: "Muscular Strength & Endurance",
                 desc: "Building postural stability, gait support, and sustained activity tolerance",
+                theme: "orange",
               },
               {
                 icon: Footprints,
                 title: "Balance & Coordination",
                 desc: "Reducing fall risk and growing motor confidence",
+                theme: "blue",
               },
               {
                 icon: Waves,
                 title: "Flexibility & Mobility",
                 desc: "Minimizing contractures and expanding range of motion",
+                theme: "orange",
               },
               {
                 icon: Baby,
                 title: "Proprioception & Sensory Integration",
                 desc: "Refining body awareness and movement precision",
+                theme: "blue",
               },
             ].map((item, i) => (
-              <div
+              <motion.div
                 key={item.title}
-                className="bg-white rounded-2xl p-8 shadow-lg border border-[#FFB347] hover:shadow-xl transition-all duration-300 text-center"
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ delay: i * 0.1 }}
+                className={`group bg-white rounded-2xl p-8 shadow-lg transition-all duration-300 border-2 ${
+                  item.theme === "orange"
+                    ? "border-orange-200 hover:border-orange-600 hover:shadow-orange-200/50"
+                    : "border-blue-200 hover:border-blue-700 hover:shadow-blue-200/50"
+                } hover:scale-105 hover:shadow-xl flex flex-col items-center text-center`}
               >
-                <item.icon size={48} className="text-orange-600 mx-auto mb-6" />
-                <h4 className="text-xl font-bold font-serif font-medium text-gray-900 mb-3">
+                <item.icon
+                  size={48}
+                  className={`mx-auto mb-6 transition-colors duration-300 ${
+                    item.theme === "orange"
+                      ? "text-orange-600 group-hover:text-orange-700"
+                      : "text-blue-700 group-hover:text-blue-800"
+                  }`}
+                />
+                <h4 className="text-xl font-bold font-serif text-gray-900 mb-3">
                   {item.title}
                 </h4>
-                <p className="text-gray-700 font-medium">{item.desc}</p>
-              </div>
+                <p className="text-gray-700 font-medium flex-grow">
+                  {item.desc}
+                </p>
+              </motion.div>
             ))}
           </div>
         </div>
