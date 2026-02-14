@@ -44,7 +44,7 @@ Our programs are designed to achieve measurable, functional outcomes that are mo
       color: "#4793FF",
       shortDesc:
         "Partnership with families, caregivers, and communities to ensure progress continues outside the clinic.",
-      imageUrl: "/images/care involment.jpg",
+      imageUrl: "/images/care5.jpg",
       details: `
 Our model of care recognizes parents and caregivers as essential partners in the therapeutic journey. We provide tools, training, and encouragement so that progress continues beyond the clinic and into everyday life. Families can expect:
 <br><br>
