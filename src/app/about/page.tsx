@@ -142,7 +142,7 @@ export default function AboutUsPage() {
             whileInView="visible"
             viewport={{ once: true }}
             variants={fadeInUp}
-            className="bg-white/80 backdrop-blur-md rounded-3xl p-12  shadow-xl border border-orange-400"
+            className="bg-white/80 backdrop-blur-md rounded-3xl p-12  shadow-xl border border-3 border-orange-400"
           >
             <h2 className="text-4xl md:text-5xl font-serif font-bold text-blue-700 mb-10">
               Arukah Health
@@ -218,7 +218,7 @@ export default function AboutUsPage() {
             whileInView="visible"
             viewport={{ once: true }}
             variants={fadeInUp}
-            className="bg-white rounded-2xl p-10 shadow-lg border border-blue-100"
+            className="bg-white rounded-2xl p-10 shadow-lg border-3 border-blue-700"
           >
             <h3 className="text-3xl font-serif font-bold text-blue-700 mb-6">
               Our Vision
@@ -235,7 +235,7 @@ export default function AboutUsPage() {
             whileInView="visible"
             viewport={{ once: true }}
             variants={fadeInUp}
-            className="bg-white rounded-2xl p-10 shadow-lg border border-blue-100"
+            className="bg-white rounded-2xl p-10 shadow-lg border-3 border-blue-700"
           >
             <h3 className="text-3xl font-serif font-bold text-blue-700 mb-6">
               Our Mission
@@ -309,7 +309,7 @@ export default function AboutUsPage() {
                 whileInView="visible"
                 viewport={{ once: true }}
                 variants={fadeInUp}
-                className="bg-white rounded-2xl p-8 shadow-md border border-gray-100 text-center"
+                className="bg-white rounded-2xl p-8 shadow-md border-3 border-orange-600 text-center"
               >
                 <h3 className="text-2xl font-serif font-bold text-blue-700 mb-4">
                   {value.title}
@@ -326,6 +326,12 @@ export default function AboutUsPage() {
         <h2 className="text-4xl md:text-5xl font-serif font-bold text-center text-orange-600 mb-16">
           Meet the Founder
         </h2>
+        <div  classname="items center mx-auto p-2 ">
+          <p classname="items center mx-auto p-2 ">
+           Arukah Health was founded with a deep passion for helping children with neuro-developmental challenges and milestone delays discover their potential through joyful, purposeful exercise. With years of clinical experience in pediatric therapy and a heart for families navigating uncertainty, Ivy created a space where science, compassion, and hope converge. 
+
+          </p>
+          </div>
         <div className="grid lg:grid-cols-3 gap-10 lg:gap-12 items-start">
           {/* Left: Intro content */}
           <motion.div

@@ -87,7 +87,7 @@ export default function Hero() {
               </motion.div>
 
               <motion.div
-                className="pointer-events-none absolute -bottom-28 -right-6 z-30  md:block"
+                className="pointer-events-none absolute -bottom-38 -right-6 z-30  md:block"
                 animate={{ y: [0, -12, 0] }}
                 transition={{
                   duration: 7,
@@ -98,8 +98,8 @@ export default function Hero() {
                 <Image
                   src="/images/icon7.jpg"
                   alt=""
-                  width={200}
-                  height={200}
+                  width={150}
+                  height={150}
                   className="opacity-100 -rotate-6"
                 />
               </motion.div>

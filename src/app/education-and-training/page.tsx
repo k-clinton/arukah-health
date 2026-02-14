@@ -134,7 +134,7 @@ export default function EducationAndTraining() {
                 />
               </div>
               <div>
-                <h2 className="text-3xl md:text-4xl font-serif font-bold text-blue-700 mb-6">
+                <h2 className="text-3xl md:text-4xl font-serif font-bold text-orange-600 mb-6">
                   Partnering with Families for Lasting Progress
                 </h2>
                 <p className="text-lg text-gray-700 leading-relaxed">
@@ -186,7 +186,7 @@ export default function EducationAndTraining() {
                 />
               </div>
               <div>
-                <h2 className="text-3xl md:text-4xl font-serif font-bold text-blue-700 mb-6">
+                <h2 className="text-3xl md:text-4xl font-serif font-bold text-orange-700 mb-6">
                   Creating Inclusive Spaces for Exercise and Movement
                 </h2>
                 <p className="text-lg text-gray-700 leading-relaxed">
@@ -203,7 +203,7 @@ export default function EducationAndTraining() {
             {/* Final CTA */}
             <div className="text-center mt-20">
               <h3 className="text-3xl md:text-4xl font-serif font-bold text-blue-700 mb-6">
-                Ready to Empower Your Family & Community?
+                Ready to Empower Yourself, Your Family or Community?
               </h3>
               <Link
                 href="/contact"
