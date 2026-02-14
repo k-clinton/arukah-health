@@ -56,7 +56,7 @@ export default function Statistics() {
     >
       {/* Decorative floating image – top right */}
       <motion.div
-        className="pointer-events-none absolute top-8 right-8 z-0 hidden sm:block"
+        className="pointer-events-none absolute top-8 right-8 z-0  sm:block"
         animate={{ y: [0, -12, 0] }}
         transition={{ duration: 6, repeat: Infinity, ease: "easeInOut" }}
       >

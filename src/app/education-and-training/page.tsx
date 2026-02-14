@@ -14,7 +14,7 @@ export default function EducationAndTraining() {
   return (
     <main className="min-h-screen bg-white">
       <div className="pt-32 pb-24">
-        <section className="relative min-h-[70vh] md:min-h-[80vh] flex items-center justify-center">
+        <section className="relative  min-h-[70vh] md:min-h-[80vh] flex items-center justify-center">
           {/* Background Image */}
           <div className="absolute inset-0">
             <Image
