@@ -98,7 +98,7 @@ export default function ExerciseTherapy() {
       <section className="relative min-h-[70vh] md:min-h-[80vh] flex items-center justify-center">
         <div className="absolute inset-0">
           <Image
-            src="/images/IMG_9642.jpg"
+            src="/images/IMG_9696.jpg"
             alt="Joyful child in movement therapy environment"
             fill
             className="object-cover brightness-[0.75]"
@@ -112,7 +112,7 @@ export default function ExerciseTherapy() {
             Exercise Therapy
           </h1>
 
-          <p className="text-lg text-white/95 leading-relaxed max-w-4xl mx-auto drop-shadow-lg">
+          <p className="text-lg text-white/95 leading-relaxed  mx-auto drop-shadow-lg">
             We apply exercise as a cornerstone for rehabilitation – supporting
             children through everyday milestones and struggles that matter most.{" "}
           </p>
