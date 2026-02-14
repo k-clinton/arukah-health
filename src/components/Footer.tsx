@@ -83,7 +83,7 @@ const Footer = () => {
           {/* Column 3: Let's Connect */}
           <div>
             <h3 className="text-xl font-bold text-white mb-6 pb-2 border-b-2 border-blue-500 inline-block">
-              Lets Connect
+              Let&apos;s Connect
             </h3>
             <div className="space-y-4">
               {[
@@ -117,8 +117,14 @@ const Footer = () => {
                   <a
                     key={social.platform}
                     href={social.url}
-                    target={social.url.startsWith("mailto:") ? "_self" : "_blank"}
-                    rel={social.url.startsWith("mailto:") ? undefined : "noopener noreferrer"}
+                    target={
+                      social.url.startsWith("mailto:") ? "_self" : "_blank"
+                    }
+                    rel={
+                      social.url.startsWith("mailto:")
+                        ? undefined
+                        : "noopener noreferrer"
+                    }
                     className="flex items-center gap-3 text-gray-300 hover:text-white group transition-all duration-300"
                   >
                     <div
