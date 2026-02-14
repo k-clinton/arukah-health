@@ -49,7 +49,7 @@ export default function Hero() {
           {/* Right Column – Image with decorative frame */}
           <div className="order-2 md:order-2 flex justify-center md:justify-end relative">
             {/* Orange background rectangle (tilted) */}
-            <div className="absolute top-0 right-0 md:right-[-20%] w-[140%] md:w-[160%] h-full bg-[#FFB347] md:rotate-[-90deg] hidden  -z-10 shadow-xl" />
+            <div className="absolute top-0 right-0 md:right-[-20%] w-[140%] md:w-[160%] h-full bg-[#FFB347] md:rotate-[-90deg] hidden md:block -z-10 shadow-xl" />
 
             {/* Black frame with blue outline */}
             <div className="relative w-full max-w-sm sm:max-w-md md:max-w-lg lg:max-w-xl z-10">
