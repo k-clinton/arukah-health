@@ -80,7 +80,7 @@ export default function FamilyOvalGallery() {
                 transition={{ duration: 0.8, ease: "easeInOut" }}
                 className="absolute inset-0"
               >
-                <div className="relative h-full w-full overflow-hidden rounded-3xl shadow-2xl border-4 border-orange-100 hover:border-orange-300 transition-colors">
+                <div className="relative h-full w-full overflow-hidden rounded-3xl shadow-2xl border-4 border-orange-600 hover:border-orange-300 transition-colors">
                   <Image
                     src={images[currentIndex].src}
                     alt={images[currentIndex].alt}
