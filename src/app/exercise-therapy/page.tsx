@@ -285,7 +285,7 @@ export default function ExerciseTherapy() {
             </div>
             <div className="relative rounded-3xl overflow-hidden shadow-2xl order-1 lg:order-2">
               <Image
-                src="/images/swimming5.jpg"
+                src="/images/swimming6.jpg"
                 alt="Child guided swimming session"
                 width={1200}
                 height={800}
