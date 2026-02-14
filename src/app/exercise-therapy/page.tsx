@@ -183,70 +183,78 @@ export default function ExerciseTherapy() {
       </section>
 
       {/* Key Domains Cards */}
-      <section className="py-16 px-6 bg-white">
-        <div className="max-w-7xl mx-auto">
-          <h3 className="text-3xl md:text-4xl font-serif font-bold text-center text-blue-700 mb-12">
-            Key Areas Of Focus
-          </h3>
+      {/* Key Areas Of Focus Cards */}
+<section className="py-16 px-6 bg-white">
+  <div className="max-w-7xl mx-auto">
+    <h3 className="text-3xl md:text-4xl font-serif font-bold text-center text-blue-700 mb-12">
+      Key Areas Of Focus
+    </h3>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
-            {[
-              {
-                icon: Dumbbell,
-                title: "Muscular Strength & Endurance",
-                desc: "Building postural stability, gait support, and sustained activity tolerance",
-                theme: "orange",
-              },
-              {
-                icon: Footprints,
-                title: "Balance & Coordination",
-                desc: "Reducing fall risk and growing motor confidence",
-                theme: "blue",
-              },
-              {
-                icon: Waves,
-                title: "Flexibility & Mobility",
-                desc: "Minimizing contractures and expanding range of motion",
-                theme: "orange",
-              },
-              {
-                icon: Baby,
-                title: "Proprioception & Sensory Integration",
-                desc: "Refining body awareness and movement precision",
-                theme: "blue",
-              },
-            ].map((item, i) => (
-              <motion.div
-                key={item.title}
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ delay: i * 0.1 }}
-                className={`group bg-white rounded-2xl p-8 shadow-lg transition-all duration-300 border-2 ${
-                  item.theme === "orange"
-                    ? "border-orange-200 hover:border-orange-600 hover:shadow-orange-200/50"
-                    : "border-blue-200 hover:border-blue-700 hover:shadow-blue-200/50"
-                } hover:scale-105 hover:shadow-xl flex flex-col items-center text-center`}
-              >
-                <item.icon
-                  size={48}
-                  className={`mx-auto mb-6 transition-colors duration-300 ${
-                    item.theme === "orange"
-                      ? "text-orange-600 group-hover:text-orange-700"
-                      : "text-blue-700 group-hover:text-blue-800"
-                  }`}
-                />
-                <h4 className="text-xl font-bold font-serif text-gray-900 mb-3">
-                  {item.title}
-                </h4>
-                <p className="text-gray-700 font-medium flex-grow">
-                  {item.desc}
-                </p>
-              </motion.div>
-            ))}
+    <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+      {[
+        {
+          imageUrl: "/images/muscle.jpg",
+          title: "Muscular Strength & Endurance",
+          desc: "Building postural stability, gait support, and sustained activity tolerance",
+          theme: "orange",
+        },
+        {
+          imageUrl: "/images/balance.jpg", 
+          title: "Balance & Coordination",
+          desc: "Reducing fall risk and growing motor confidence",
+          theme: "blue",
+        },
+        {
+          imageUrl: "/images/flexibility.jpg", 
+          title: "Flexibility & Mobility",
+          desc: "Minimizing contractures and expanding range of motion",
+          theme: "orange",
+        },
+        {
+          imageUrl: "/images/sensory.jpg", 
+          title: "Proprioception & Sensory Integration",
+          desc: "Refining body awareness and movement precision",
+          theme: "blue",
+        },
+      ].map((item, i) => (
+        <motion.div
+          key={item.title}
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ delay: i * 0.1 }}
+          className={`group bg-white rounded-2xl overflow-hidden shadow-lg transition-all duration-300 border-4 ${
+            item.theme === "orange"
+              ? "border-blue-700 hover:border-orange-600 hover:shadow-orange-200/50"
+              : "border-orange-600 hover:border-blue-700 hover:shadow-blue-200/50"
+          } hover:scale-105 hover:shadow-xl flex flex-col`}
+        >
+          {/* Full-width image at top */}
+          <div className="relative h-48 w-full">
+            <Image
+              src={item.imageUrl}
+              alt={item.title}
+              fill
+              className="object-cover object-center transition-transform duration-500 group-hover:scale-110"
+            />
+            {/* Subtle overlay on hover for polish */}
+            <div className="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
           </div>
-        </div>
-      </section>
+
+          {/* Card content */}
+          <div className="p-8 flex flex-col flex-grow items-center text-center">
+            <h4 className="text-xl font-bold font-serif text-gray-900 mb-3">
+              {item.title}
+            </h4>
+            <p className="text-gray-700 font-medium flex-grow">
+              {item.desc}
+            </p>
+          </div>
+        </motion.div>
+      ))}
+    </div>
+  </div>
+</section>
 
       {/* Alternating Image + Content Blocks */}
       <section className="py-20 px-6">
