@@ -80,7 +80,7 @@ export default function FamilyOvalGallery() {
                 transition={{ duration: 0.8, ease: "easeInOut" }}
                 className="absolute inset-0"
               >
-                <div className="relative h-full w-full overflow-hidden rounded-3xl shadow-2xl border-4 border-orange-600 hover:border-orange-300 transition-colors">
+                <div className="relative h-full w-full overflow-hidden rounded-3xl shadow-2xl border-4 border-orange-300 hover:border-orange-300 transition-colors">
                   <Image
                     src={images[currentIndex].src}
                     alt={images[currentIndex].alt}
@@ -102,7 +102,7 @@ export default function FamilyOvalGallery() {
                 onClick={() => goToSlide(index)}
                 className={`h-3 w-3 rounded-full transition-all duration-300 ${
                   index === currentIndex
-                    ? "bg-orange-500 w-8"
+                    ? "bg-orange-300 w-8"
                     : "bg-gray-300 hover:bg-orange-300"
                 }`}
                 aria-label={`Go to slide ${index + 1}`}
