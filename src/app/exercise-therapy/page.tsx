@@ -168,11 +168,11 @@ export default function ExerciseTherapy() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ delay: i * 0.1 }}
-                className={`group bg-white rounded-2xl p-8 shadow-lg transition-all duration-300 border-2 ${
+                className={`group bg-white rounded-2xl p-8 shadow-lg transition-all duration-300 border ${
                   item.theme === "orange"
                     ? "border-orange-200 hover:border-orange-600 hover:shadow-orange-200/50"
                     : "border-blue-200 hover:border-blue-700 hover:shadow-blue-200/50"
-                } hover:scale-105 hover:shadow-xl flex flex-col items-center text-center`}
+                } hover:scale-115 hover:shadow-xl flex flex-col  items-center text-center`}
               >
                 <item.icon
                   size={48}
