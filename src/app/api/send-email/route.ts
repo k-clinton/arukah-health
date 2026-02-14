@@ -52,7 +52,7 @@ export async function POST(request: NextRequest) {
 
     const mailOptions = {
       from: `"Arukah Health Website" <${process.env.EMAIL_USER}>`,
-      to: 'arukahhealthke@gmail.com',
+      to: 'info@arukahhealth.co.ke',
       subject: `Subject: ${subject || 'No Subject'} - from ${name}`,
       html: htmlContent,
       replyTo: email,
