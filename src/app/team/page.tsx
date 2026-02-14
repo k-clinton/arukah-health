@@ -108,7 +108,7 @@ export default function TeamSection() {
           {teamMembers.map((member) => (
             <div
               key={member.id}
-              className="group bg-white rounded-3xl overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-300 border-3 border-orange-600 flex flex-col"
+              className="group bg-white rounded-3xl overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-300 border-4 border-orange-600 flex flex-col"
             >
               {/* Image with oval border */}
               <div className="relative h-64 md:h-80 flex items-center justify-center bg-gradient-to-br from-blue-50 to-orange-50/30 p-6">
