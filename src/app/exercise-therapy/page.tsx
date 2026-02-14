@@ -81,7 +81,7 @@ export default function ExerciseTherapy() {
     "/images/IMG_9537.jpg",
     "/images/IMG_9834 (1).jpg",
     "/images/IMG_9567.jpg",
-    "/images/program-left-5.jpg",
+    "/images/IMG_9674.jpg",
   ];
 
   const rightCarouselImages = [
@@ -243,7 +243,7 @@ export default function ExerciseTherapy() {
 
           {/* Card content */}
           <div className="p-8 flex flex-col flex-grow items-center text-center">
-            <h4 className="text-xl font-bold font-serif text-gray-900 mb-3">
+            <h4 className="text-xl font-bold font-serif text-blue-700 mb-3">
               {item.title}
             </h4>
             <p className="text-gray-700 font-medium flex-grow">
