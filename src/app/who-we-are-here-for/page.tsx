@@ -5,9 +5,9 @@ import { motion } from "framer-motion";
 
 export default function WhoWeAreHereFor() {
   return (
-    <section className="bg-white mt-20 py-24">
+    <section className="bg-white mt-20 ">
       {/* Hero / Carousel Section */}
-      <div className="relative w-full h-[420px] rounded-3xl overflow-hidden max-w-7xl mx-auto">
+      <div className="relative w-full h-[620px]  overflow-hidden  ">
         <Image
           src="/images/IMG_9652.jpg"
           alt="Healing Hearts, Touching Lives"
