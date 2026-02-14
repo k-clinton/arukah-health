@@ -44,7 +44,7 @@ export default function ExerciseTherapy() {
             Exercise Therapy
           </h1>
 
-          <p className="  text-1xl md:text-1xl text-white/95 leading-relaxed max-w-4xl mx-auto drop-shadow-lg">
+          <p className="  text-lg  text-white/95 leading-relaxed max-w-4xl mx-auto drop-shadow-lg">
             We apply exercise as a cornerstone for rehabilitation – supporting
             children through everyday milestones and struggles that most.{" "}
           </p>
@@ -174,7 +174,7 @@ export default function ExerciseTherapy() {
       {/* Alternating Image + Content Blocks (unchanged) */}
       <section className="py-20 px-6">
         <div className="max-w-7xl mx-auto space-y-24">
-          <h3 className="text-3xl md:text-4xl font-serif font-bold text-center text-blue-700 mb-12">
+          <h3 className="text-3xl md:text-4xl font-serif font-bold text-center text-orange-600 mb-12">
             Activities in Our programs{" "}
           </h3>
           {/* Block 1: Image left */}
@@ -226,7 +226,7 @@ export default function ExerciseTherapy() {
           {/* Block 2: Image right */}
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div className="order-2 lg:order-1">
-              <h2 className="text-3xl md:text-4xl font-serif font-bold text-blue-700 mb-6">
+              <h2 className="text-3xl md:text-4xl font-serif font-bold text-orange-600 mb-6">
                 Swimming Lessons
               </h2>
               <p className="text-lg text-gray-700 leading-relaxed mb-6 font-medium">
@@ -262,7 +262,7 @@ export default function ExerciseTherapy() {
             </div>
             <div className="relative rounded-3xl overflow-hidden shadow-2xl order-1 lg:order-2">
               <Image
-                src="/images/swimming4.jpg"
+                src="/images/swimming5.jpg"
                 alt="Child guided swimming session"
                 width={1200}
                 height={800}
@@ -319,7 +319,7 @@ export default function ExerciseTherapy() {
           {/* Block 4: Image right */}
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div className="order-2 lg:order-1">
-              <h2 className="text-3xl md:text-4xl font-serif font-bold text-blue-700 mb-6">
+              <h2 className="text-3xl md:text-4xl font-serif font-bold text-orange-600 mb-6">
                 Biking Sessions
               </h2>
               <p className="text-lg text-gray-700 leading-relaxed mb-6 font-medium">

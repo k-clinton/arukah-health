@@ -34,7 +34,7 @@ export default function EducationAndTraining() {
               Education and Training
             </h1>
 
-            <p className="text-xl sm:text-2xl md:text-3xl font-medium text-white/95 leading-relaxed max-w-4xl mx-auto drop-shadow-lg">
+            <p className="text-lg  leading-relaxed text-white">
               Training sessions designed to build capacity and increase
               knowledge among individuals, caregivers, parents, families and
               communities.
@@ -46,7 +46,7 @@ export default function EducationAndTraining() {
 
           {/* Core Message */}
           <div className="max-w-5xl mt-10 mx-auto  mb-20">
-            <p className=" font-medium text-gray-800 leading-relaxed">
+            <p className=" font-medium text-lg   text-gray-800 leading-relaxed">
               Our education and training programs are designed to equip parents,
               caregivers, and communities with the knowledge, skills, tools and
               exercise strategies needed to understand and support to support

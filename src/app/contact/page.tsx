@@ -92,7 +92,7 @@ export default function ContactPage() {
           <h1 className=" text-4xl md:text-6xl font-serif font-bold">
             Get in Touch
           </h1>
-          <p className="mt-4 text-lg text-[black] max-w-2xl mx-auto">
+          <p className="mt-4 text-lg text-[black]  font-montserrat">
             We’re here to listen, guide, and support. Connect with us to learn
             more about our programs, training, and resources. Together, we can
             empower every child’s journey and build brighter futures through
@@ -107,7 +107,7 @@ export default function ContactPage() {
           <div className="grid md:grid-cols-2 gap-12">
             {/* Form */}
             <div>
-              <h2 className="text-3xl md:text-4xl  font-bold text-black mb-8">
+              <h2 className="text-3xl md:text-4xl font-serif  font-bold text-blue-700 mb-8">
                 Send Us a Message
               </h2>
               <form onSubmit={handleSubmit} className="space-y-6">
@@ -183,7 +183,7 @@ export default function ContactPage() {
 
             {/* Contact Info */}
             <div className="space-y-8">
-              <h2 className="text-3xl md:text-4xl font-bold text-black mb-8">
+              <h2 className="text-3xl md:text-4xl font-serif font-bold text-blue-700 mb-8">
                 Contact Information
               </h2>
 

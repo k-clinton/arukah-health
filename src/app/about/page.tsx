@@ -40,7 +40,7 @@ export default function AboutUsPage() {
             <h1 className="text-4xl md:text-5xl font-serif font-bold text-blue-700 mb-8">
               About Us
             </h1>
-            <div className="prose prose-lg text-gray-700 font-medium text-1xl leading-relaxed space-y-6">
+            <div className="prose prose-lg text-gray-700  text-lg font-medium  leading-relaxed space-y-6">
               <p>
                 Arukah Health is a pediatric therapy center dedicated to
                 creating progress through movement. We specialize in
@@ -93,7 +93,7 @@ export default function AboutUsPage() {
             className="order-1 lg:order-2"
           >
             <h2 className="text-4xl md:text-5xl font-serif font-bold text-blue-700 mb-8"></h2>
-            <div className="prose prose-lg text-gray-700 font-medium text-1xl leading-relaxed space-y-6">
+            <div className="prose text-lg  prose-lg text-gray-700 font-medium  leading-relaxed space-y-6">
               <p>
                 At Arukah, therapy, care and support look different—they are
                 more embodied, more inclusive, more human. Through exercise, we
@@ -333,7 +333,7 @@ export default function AboutUsPage() {
             whileInView="visible"
             viewport={{ once: true }}
             variants={fadeInUp}
-            className="lg:col-span-1 order-2 lg:order-1 text-gray-700 font-medium font-montserrat space-y-6 text-center lg:text-left"
+            className="lg:col-span-1 text-lg  order-2 lg:order-1 text-gray-700 font-medium font-montserrat space-y-6 text-center lg:text-left"
           >
             <p>
               Arukah Health was founded with a deep passion for helping children
@@ -384,7 +384,7 @@ export default function AboutUsPage() {
             variants={fadeInUp}
             className="lg:col-span-1 order-3 lg:order-3 text-gray-700 font-medium font-montserrat space-y-6 text-center lg:text-left"
           >
-            <p className="italic font-medium font-semibold">
+            <p className="italic font-medium text-lg  font-semibold">
               “I understand that nurturing children with neuro developmental
               challenges and milestone delays can be a walk through seasons of
               uncertainty, burnout, pain, and quiet resilience. Complexities
