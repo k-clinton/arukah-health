@@ -75,7 +75,7 @@ export default function ContactPage() {
   return (
     <>
       {/* Hero */}
-      <section className="relative  md:min-h-[80vh] flex items-center justify-center">
+      <section className="relative  md:min-h-[110vh] flex items-center justify-center">
         {/* Background Image */}
         <div>
           <Image
