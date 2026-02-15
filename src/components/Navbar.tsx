@@ -161,8 +161,8 @@ export default function Navbar() {
                     key={item.label}
                     href={item.href}
                     onClick={closeMenus}
-                    className={`flex items-center font-semibold gap-2  ${
-                      isActive(item.href) ? "text-[#FFB347] " : "text-white"
+                    className={`flex items-center font-bold gap-2  ${
+                      isActive(item.href) ? "text-orange-200 " : "text-white"
                     }`}
                   >
                     <item.icon size={18} />
