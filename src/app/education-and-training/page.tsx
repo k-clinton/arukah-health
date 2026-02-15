@@ -73,9 +73,9 @@ export default function EducationAndTraining() {
               />
             </div>
             <div>
-              <p className="text-lg  text-orange-500 italic p-4 shadow-md rounded-md text-gray-700 leading-relaxed">
+              <p className="text-lg   font-bold text-orange-600 italic p-4 shadow-md font-serif rounded-md  border-3 border-blue-700 leading-relaxed">
                 “Exercise knowledge is essential to supporting children with
-                neuro developmental conditions and milestone delays—because
+                neuro-developmental conditions and milestone delays—because
                 informed care creates consistent progress and lasting impact.”
               </p>
             </div>
@@ -88,31 +88,43 @@ export default function EducationAndTraining() {
           <div className="grid md:grid-cols-2 gap-10 mb-24">
             {[
               {
-                icon: Baby,
+                imageUrl: "/images/inclusive.jpg",
                 title: "Inclusive Movement Support",
                 desc: "Adaptive exercise education tailored to children with neurological and developmental profiles—ensuring every child can participate safely, confidently, and joyfully in therapeutic exercise and play.",
                 color: "#4793FF",
               },
               {
-                icon: Users,
-                title: "Postural Awareness & Movement Ergonomics",
+                imageUrl: "/images/movement mechanics.jpg",
+                title: "Postural Awareness & Movement Mechanics",
                 desc: "Practical strategies for children and caregivers to support healthy posture, reduce strain, and promote safe motor development in everyday routines—from home activities to school environments.",
                 color: "#FFB347",
               },
             ].map((specialty, i) => (
               <div
                 key={specialty.title}
-                className="bg-white rounded-3xl p-8 md:p-10 shadow-xl border border-gray-100 hover:shadow-2xl transition-all duration-300"
+                className="bg-white rounded-3xl overflow-hidden shadow-xl border-4 border-orange-300 hover:shadow-2xl transition-all duration-300 flex flex-col"
               >
-                <div className="w-16 h-16 rounded-full bg-gradient-to-br from-gray-50 to-gray-100 flex items-center justify-center mb-6">
-                  <specialty.icon size={32} className="text-[#4793FF]" />
+                {/* Full-width image at top */}
+                <div className="relative h-48 w-full">
+                  <Image
+                    src={specialty.imageUrl}
+                    alt={specialty.title}
+                    fill
+                    className="object-cover object-center transition-transform duration-500 hover:scale-110"
+                  />
+                  {/* Subtle overlay gradient for polish */}
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent opacity-60" />
                 </div>
-                <h3 className="text-2xl md:text-3xl font-serif font-bold text-gray-900 mb-5">
-                  {specialty.title}
-                </h3>
-                <p className="text-lg text-gray-700 leading-relaxed">
-                  {specialty.desc}
-                </p>
+
+                {/* Card content */}
+                <div className="p-8 md:p-10 flex flex-col flex-grow">
+                  <h3 className="text-2xl md:text-3xl font-serif font-bold text-blue-700 mb-5">
+                    {specialty.title}
+                  </h3>
+                  <p className="text-lg text-gray-700 leading-relaxed flex-grow">
+                    {specialty.desc}
+                  </p>
+                </div>
               </div>
             ))}
           </div>
@@ -137,7 +149,7 @@ export default function EducationAndTraining() {
                 <h2 className="text-3xl md:text-4xl font-serif font-bold text-orange-600 mb-6">
                   Partnering with Families for Lasting Progress
                 </h2>
-                <p className="text-lg text-gray-700 leading-relaxed">
+                <p className="text-lg font-medium text-gray-700 leading-relaxed">
                   We believe parents and caregivers are the most important
                   members of the team. Our training equips them with practical
                   tools, confidence, and strategies to support their
@@ -154,7 +166,7 @@ export default function EducationAndTraining() {
                 <h2 className="text-3xl md:text-4xl font-serif font-bold text-blue-700 mb-6">
                   Setting the Foundations for Safe and Healthy Exercise
                 </h2>
-                <p className="text-lg text-gray-700 leading-relaxed">
+                <p className="text-lg font-medium text-gray-700 leading-relaxed">
                   Body awareness, motor planning, and postural stability &
                   control form the foundation of healthy movement and exercise.
                   We teach simple, effective techniques that reduce strain,
@@ -186,10 +198,10 @@ export default function EducationAndTraining() {
                 />
               </div>
               <div>
-                <h2 className="text-3xl md:text-4xl font-serif font-bold text-orange-700 mb-6">
+                <h2 className="text-3xl md:text-4xl font-serif font-bold text-orange-600 mb-6">
                   Creating Inclusive Spaces for Exercise and Movement
                 </h2>
-                <p className="text-lg text-gray-700 leading-relaxed">
+                <p className="text-lg font-medium text-gray-700 leading-relaxed">
                   Inclusive environments are vital for ensuring every child can
                   participate, grow, and thrive through movement. Our programs
                   extend beyond the family, equipping teachers, community
