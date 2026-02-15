@@ -114,7 +114,8 @@ export default function ExerciseTherapy() {
 
           <p className="text-lg text-white/95 leading-relaxed  mx-auto drop-shadow-lg">
             We apply exercise as a cornerstone for rehabilitation – supporting
-            children through everyday milestones and struggles that matter most.{" "}
+            children through everyday milestones and struggles that matter
+            most.{" "}
           </p>
         </div>
       </section>
@@ -184,77 +185,77 @@ export default function ExerciseTherapy() {
 
       {/* Key Domains Cards */}
       {/* Key Areas Of Focus Cards */}
-<section className="py-16 px-6 bg-white">
-  <div className="max-w-7xl mx-auto">
-    <h3 className="text-3xl md:text-4xl font-serif font-bold text-center text-blue-700 mb-12">
-      Key Areas Of Focus
-    </h3>
+      <section className="py-16 px-6 bg-white">
+        <div className="max-w-7xl mx-auto">
+          <h3 className="text-3xl md:text-4xl font-serif font-bold text-center text-blue-700 mb-12">
+            Key Areas Of Focus
+          </h3>
 
-    <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
-      {[
-        {
-          imageUrl: "/images/muscle.jpg",
-          title: "Muscular Strength & Endurance",
-          desc: "Building postural stability, gait support, and sustained activity tolerance",
-          theme: "orange",
-        },
-        {
-          imageUrl: "/images/balance.jpg", 
-          title: "Balance & Coordination",
-          desc: "Reducing fall risk and growing motor confidence",
-          theme: "blue",
-        },
-        {
-          imageUrl: "/images/flexibility.jpg", 
-          title: "Flexibility & Mobility",
-          desc: "Minimizing contractures and expanding range of motion",
-          theme: "orange",
-        },
-        {
-          imageUrl: "/images/sensory.jpg", 
-          title: "Proprioception & Sensory Integration",
-          desc: "Refining body awareness and movement precision",
-          theme: "blue",
-        },
-      ].map((item, i) => (
-        <motion.div
-          key={item.title}
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ delay: i * 0.1 }}
-          className={`group bg-white rounded-2xl overflow-hidden shadow-lg transition-all duration-300 border-4 ${
-            item.theme === "orange"
-              ? "border-blue-700 hover:border-orange-600 "
-              : "border-orange-600 hover:border-blue-700 "
-          } hover:scale-105 hover:shadow-xl flex flex-col`}
-        >
-          {/* Full-width image at top */}
-          <div className="relative h-48 w-full">
-            <Image
-              src={item.imageUrl}
-              alt={item.title}
-              fill
-              className="object-cover object-center transition-transform duration-500 group-hover:scale-1o5"
-            />
-            {/* Subtle overlay on hover for polish */}
-            <div className="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
-          </div>
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+            {[
+              {
+                imageUrl: "/images/muscle.jpg",
+                title: "Muscular Strength & Endurance",
+                desc: "Building postural stability, gait support, and sustained activity tolerance",
+                theme: "orange",
+              },
+              {
+                imageUrl: "/images/balance.jpg",
+                title: "Balance & Coordination",
+                desc: "Reducing fall risk and growing motor confidence",
+                theme: "blue",
+              },
+              {
+                imageUrl: "/images/flexibility.jpg",
+                title: "Flexibility & Mobility",
+                desc: "Minimizing contractures and expanding range of motion",
+                theme: "orange",
+              },
+              {
+                imageUrl: "/images/sensory.jpg",
+                title: "Proprioception & Sensory Integration",
+                desc: "Refining body awareness and movement precision",
+                theme: "blue",
+              },
+            ].map((item, i) => (
+              <motion.div
+                key={item.title}
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ delay: i * 0.1 }}
+                className={`group bg-white rounded-2xl overflow-hidden shadow-lg transition-all duration-300 border-4 ${
+                  item.theme === "orange"
+                    ? "border-blue-700 hover:border-orange-600 "
+                    : "border-orange-600 hover:border-blue-700 "
+                } hover:scale-105 hover:shadow-xl flex flex-col`}
+              >
+                {/* Full-width image at top */}
+                <div className="relative h-48 w-full">
+                  <Image
+                    src={item.imageUrl}
+                    alt={item.title}
+                    fill
+                    className="object-cover object-center transition-transform duration-500 group-hover:scale-1o5"
+                  />
+                  {/* Subtle overlay on hover for polish */}
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+                </div>
 
-          {/* Card content */}
-          <div className="p-8 flex flex-col flex-grow items-center text-center">
-            <h4 className="text-xl font-bold font-serif text-blue-700 mb-3">
-              {item.title}
-            </h4>
-            <p className="text-gray-700 font-medium flex-grow">
-              {item.desc}
-            </p>
+                {/* Card content */}
+                <div className="p-8 flex flex-col flex-grow items-center text-center">
+                  <h4 className="text-xl font-bold font-serif text-blue-700 mb-3">
+                    {item.title}
+                  </h4>
+                  <p className="text-gray-700 font-medium flex-grow">
+                    {item.desc}
+                  </p>
+                </div>
+              </motion.div>
+            ))}
           </div>
-        </motion.div>
-      ))}
-    </div>
-  </div>
-</section>
+        </div>
+      </section>
 
       {/* Alternating Image + Content Blocks */}
       <section className="py-20 px-6">
@@ -265,7 +266,7 @@ export default function ExerciseTherapy() {
 
           {/* Block 1 */}
           <div className="grid lg:grid-cols-2 gap-12 items-center">
-            <div className="relative rounded-3xl overflow-hidden shadow-2xl">
+            <div className="relative rounded-3xl overflow-hidden border-4 border-orange-300 shadow-2xl">
               <Image
                 src="/images/bg7.jpg"
                 alt="Child enjoying water-based exercise therapy"
@@ -292,8 +293,17 @@ export default function ExerciseTherapy() {
               {openTab === 0 && (
                 <div className="mt-4 pl-8 border-l-2 border-orange-600/30">
                   <ul className="space-y-3 text-gray-700 font-medium">
-                    <li>• Organized exercise and games employ a structured, sensory-aware environment for rehabilitation, strength building, and functional recovery.</li>
-                    <li>• They utilize specialized equipment, controlled environments and curated soundscapes to support precise movement, focused engagement, neuromuscular re-education, and emotional regulation.</li>
+                    <li>
+                      • Organized exercise and games employ a structured,
+                      sensory-aware environment for rehabilitation, strength
+                      building, and functional recovery.
+                    </li>
+                    <li>
+                      • They utilize specialized equipment, controlled
+                      environments and curated soundscapes to support precise
+                      movement, focused engagement, neuromuscular re-education,
+                      and emotional regulation.
+                    </li>
                   </ul>
                 </div>
               )}
@@ -303,11 +313,12 @@ export default function ExerciseTherapy() {
           {/* Block 2 */}
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div className="order-2 lg:order-1">
-              <h2 className="text-3xl md:text-4xl font-serif font-bold text-orange-600 mb-6">
+              <h2 className="text-3xl md:text-4xl font-serif font-bold text-blue-700 mb-6">
                 Swimming Lessons
               </h2>
               <p className="text-lg text-gray-700 leading-relaxed mb-6 font-medium">
-                Exercise sessions that strengthen muscles, improve coordination and boosts confidence in a fun, aquatic environment.
+                Exercise sessions that strengthen muscles, improve coordination
+                and boosts confidence in a fun, aquatic environment.
               </p>
               <button
                 onClick={() => toggleTab(1)}
@@ -319,14 +330,24 @@ export default function ExerciseTherapy() {
               {openTab === 1 && (
                 <div className="mt-4 pl-8 border-l-2 border-orange-600/30">
                   <ul className="space-y-3 text-gray-700 font-medium">
-                    <li>• Water leverages on reduced joint stress, gentle resistance, and deep relaxation— creating an optimal space for strength building and restorative care.</li>
-                    <li>• Builds coordination, cardiovascular endurance, muscle Strength and flexibility through low impact movement.</li>
-                    <li>• Enhances emotional regulation and motor planning through water play.</li>
+                    <li>
+                      • Water leverages on reduced joint stress, gentle
+                      resistance, and deep relaxation— creating an optimal space
+                      for strength building and restorative care.
+                    </li>
+                    <li>
+                      • Builds coordination, cardiovascular endurance, muscle
+                      Strength and flexibility through low impact movement.
+                    </li>
+                    <li>
+                      • Enhances emotional regulation and motor planning through
+                      water play.
+                    </li>
                   </ul>
                 </div>
               )}
             </div>
-            <div className="relative rounded-3xl overflow-hidden shadow-2xl order-1 lg:order-2">
+            <div className="relative rounded-3xl overflow-hidden border-4 border-orange-300 shadow-2xl order-1 lg:order-2">
               <Image
                 src="/images/swimming6.jpg"
                 alt="Child guided swimming session"
@@ -339,7 +360,7 @@ export default function ExerciseTherapy() {
 
           {/* Block 3 */}
           <div className="grid lg:grid-cols-2 gap-12 items-center">
-            <div className="relative rounded-3xl overflow-hidden shadow-2xl">
+            <div className="relative rounded-3xl border-4 border-orange-300 overflow-hidden shadow-2xl">
               <Image
                 src="/images/hiking.jpg"
                 alt="Child hiking with support in nature"
@@ -353,7 +374,8 @@ export default function ExerciseTherapy() {
                 Hiking Sessions
               </h2>
               <p className="text-lg text-gray-700 leading-relaxed mb-6 font-medium">
-                Outdoor experiences that build balance, stamina, resilience, and a love for active living.
+                Outdoor experiences that build balance, stamina, resilience, and
+                a love for active living.
               </p>
               <button
                 onClick={() => toggleTab(2)}
@@ -365,8 +387,16 @@ export default function ExerciseTherapy() {
               {openTab === 2 && (
                 <div className="mt-4 pl-8 border-l-2 border-orange-600/30">
                   <ul className="space-y-3 text-gray-700 font-medium">
-                    <li>• Hiking utilizes varied terrain, fresh air and sensory-rich stimuli to support rehabilitation, emotional regulation and functional recovery.</li>
-                    <li>• It promotes dynamic movement, proprioceptive engagement and cardiovascular health, while reducing stress and enhancing mood.</li>
+                    <li>
+                      • Hiking utilizes varied terrain, fresh air and
+                      sensory-rich stimuli to support rehabilitation, emotional
+                      regulation and functional recovery.
+                    </li>
+                    <li>
+                      • It promotes dynamic movement, proprioceptive engagement
+                      and cardiovascular health, while reducing stress and
+                      enhancing mood.
+                    </li>
                   </ul>
                 </div>
               )}
@@ -376,11 +406,12 @@ export default function ExerciseTherapy() {
           {/* Block 4 */}
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div className="order-2 lg:order-1">
-              <h2 className="text-3xl md:text-4xl font-serif font-bold text-orange-600 mb-6">
+              <h2 className="text-3xl md:text-4xl font-serif font-bold text-blue-700 mb-6">
                 Biking Sessions
               </h2>
               <p className="text-lg text-gray-700 leading-relaxed mb-6 font-medium">
-                Guided cycling that enhances balance, endurance, and independence.
+                Guided cycling that enhances balance, endurance, and
+                independence.
               </p>
               <button
                 onClick={() => toggleTab(3)}
@@ -392,14 +423,26 @@ export default function ExerciseTherapy() {
               {openTab === 3 && (
                 <div className="mt-4 pl-8 border-l-2 border-orange-600/30">
                   <ul className="space-y-3 text-gray-700 font-medium">
-                    <li>• Cycling leverages on open air, nature-rich environments to develop balance, physical strength and coordination which supports gait training and overall physical function.</li>
-                    <li>• It also promotes cognitive engagement, motor planning and emotional resilience through active exploration in open, grounding spaces.</li>
-                    <li>• Additionally, cycling strengthens lower limbs and improves cardiovascular fitness.</li>
+                    <li>
+                      • Cycling leverages on open air, nature-rich environments
+                      to develop balance, physical strength and coordination
+                      which supports gait training and overall physical
+                      function.
+                    </li>
+                    <li>
+                      • It also promotes cognitive engagement, motor planning
+                      and emotional resilience through active exploration in
+                      open, grounding spaces.
+                    </li>
+                    <li>
+                      • Additionally, cycling strengthens lower limbs and
+                      improves cardiovascular fitness.
+                    </li>
                   </ul>
                 </div>
               )}
             </div>
-            <div className="relative rounded-3xl overflow-hidden shadow-2xl order-1 lg:order-2">
+            <div className="relative rounded-3xl border-4 border-orange-300 overflow-hidden shadow-2xl order-1 lg:order-2">
               <Image
                 src="/images/biking.jpg"
                 alt="Child in structured play-based exercise session"
@@ -417,7 +460,7 @@ export default function ExerciseTherapy() {
             </h3>
             <Link
               href="/contact"
-              className="inline-block bg-gradient-to-r from-orange-500 to-orange-600 hover:from-orange-600 hover:to-orange-500 text-white font-bold py-5 px-12 rounded-full text-xl shadow-xl transform hover:scale-105 transition duration-300"
+              className="inline-block bg-gradient-to-r from-orange-300 to-orange-600 hover:from-orange-600 hover:to-orange-500 text-white font-bold py-5 px-12 rounded-full text-xl shadow-xl transform hover:scale-105 transition duration-300"
             >
               Get Started Today →
             </Link>
