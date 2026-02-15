@@ -78,7 +78,7 @@ export default function AboutUsPage() {
             className="rounded-2xl overflow-hidden shadow-xl order-2 lg:order-1"
           >
             <Image
-              src="/images/IMG_9674.jpg"
+              src="/images/IMG_9544.jpg"
               alt=""
               width={2560}
               height={1707}
@@ -218,7 +218,7 @@ export default function AboutUsPage() {
             whileInView="visible"
             viewport={{ once: true }}
             variants={fadeInUp}
-            className="bg-white rounded-2xl p-10 shadow-lg border-3 border-blue-700"
+            className="bg-white rounded-2xl p-10 shadow-lg border-4 border-orange-300"
           >
             <h3 className="text-3xl font-serif font-bold text-blue-700 mb-6">
               Our Vision
@@ -235,7 +235,7 @@ export default function AboutUsPage() {
             whileInView="visible"
             viewport={{ once: true }}
             variants={fadeInUp}
-            className="bg-white rounded-2xl p-10 shadow-lg border-3 border-blue-700"
+            className="bg-white rounded-2xl p-10 shadow-lg border-4 border-orange-300"
           >
             <h3 className="text-3xl font-serif font-bold text-blue-700 mb-6">
               Our Mission
@@ -309,7 +309,7 @@ export default function AboutUsPage() {
                 whileInView="visible"
                 viewport={{ once: true }}
                 variants={fadeInUp}
-                className="bg-white rounded-2xl p-8 shadow-md border-3 border-orange-600 text-center"
+                className="bg-white rounded-2xl p-8 shadow-md border-4 border-orange-300 text-center"
               >
                 <h3 className="text-2xl font-serif font-bold text-blue-700 mb-4">
                   {value.title}
@@ -323,79 +323,103 @@ export default function AboutUsPage() {
 
       {/* SECTION 7: FOUNDER SECTION (Placeholder) */}
       <section className="max-w-7xl mx-auto px-6 lg:px-8 py-20">
-         <h2 className="text-4xl md:text-5xl font-serif font-bold text-center text-orange-600 mb-16">
-            Meet the Founder
-          </h2>
-  {/* Top full-width intro paragraph */}
-  <div className="mb-12 md:mb-16">
-    <div className="bg-white rounded-2xl p-8 md:p-10 shadow-lg border border-gray-200/80">
-      <p className="text-lg md:text-xl text-gray-700 leading-relaxed font-medium text-center">
-        Arukah Health was founded with a deep passion for helping children with neuro-developmental challenges and milestone delays discover their potential through joyful, purposeful exercise. With years of clinical experience in pediatric therapy and a heart for families navigating uncertainty, Ivy created a space where science, compassion, and hope converge. 
-      </p>
-    </div>
-  </div>
+        <h2 className="text-4xl md:text-5xl font-serif font-bold text-center text-orange-600 mb-16">
+          Meet the Founder
+        </h2>
+        {/* Top full-width intro paragraph */}
+        <div className="mb-8 md:mb-16">
+          <div className="bg-white  p-8 md:p-10   ">
+            <p className="  text-gray-700 leading-relaxed font-medium text-center">
+              Arukah Health was founded with a deep passion for helping children
+              with neuro-developmental challenges and milestone delays discover
+              their potential through joyful, purposeful exercise. With years of
+              clinical experience in pediatric therapy and a heart for families
+              navigating uncertainty, Ivy created a space where science,
+              compassion, and hope converge.
+            </p>
+          </div>
+        </div>
 
-  {/* Three-column layout: Left text – Center image – Right text */}
-  <div className="grid lg:grid-cols-3 gap-10 lg:gap-12 items-start">
-    
-    {/* Left paragraph */}
-    <motion.div
-      initial={{ opacity: 0, x: -30 }}
-      whileInView={{ opacity: 1, x: 0 }}
-      viewport={{ once: true }}
-      transition={{ duration: 0.7 }}
-      className="lg:col-span-1 order-2 lg:order-1 bg-white rounded-2xl p-8 md:p-10 shadow-lg border border-gray-200/80"
-    >
-      <p className="text-base md:text-lg text-gray-700 leading-relaxed">
-        "I understand that nurturing children with neuro developmental conditions and milestone delays can be a walk through seasons of uncertainty, burnout, pain, and quiet resilience. Complexities such as impaired motor control, reduced strength, balance deficits, and altered proprioception affect a child’s independence, making care intricate and complex. At Arukah Health, we create a community where families can breathe, hope, and feel understood. A space where exercise is utilized in building core dimensions of physical function in a fun and intentional manner. A space where every child’s story is honored and small steps are cultured into great milestones.
-        </p>
-    </motion.div>
+        {/* Three-column layout: Left text – Center image – Right text */}
+        <div className="grid lg:grid-cols-2 gap-10 lg:gap-12 items-center">
+          {/* Left paragraph */}
+          <motion.div
+            initial={{ opacity: 0, x: -30 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.7 }}
+            className="lg:col-span-1 order-2 lg:order-1 bg-white rounded-2xl p-8 md:p-10 shadow-lg border-4 border-[#FFB347]"
+          >
+            <p className="text-base font-medium text-gray-700 mb-4  leading-relaxed">
+              &quot;I understand that nurturing children with
+              neuro-developmental conditions and milestone delays can be a walk
+              through seasons of uncertainty, burnout, pain, and quiet
+              resilience. Complexities such as impaired motor control, reduced
+              strength, balance deficits, and altered proprioception affect a
+              child’s independence, making care intricate and complex. At Arukah
+              Health, we create a community where families can breathe, hope,
+              and feel understood. A space where exercise is utilized in
+              building core dimensions of physical function in a fun and
+              intentional manner. A space where every child’s story is honored
+              and small steps are cultured into great milestones.
+            </p>
+            <p className="text-base font-medium text-gray-700 mb-4  leading-relaxed">
+              {" "}
+              Arukah Health is built on the belief that Exercise is Medicine.
+              For us, exercise is more than biomechanics—it’s a language of
+              healing, play, and growth. Every stretch, step, and breath is an
+              opportunity to restore what challenges may have taken away and to
+              open new pathways of strength, confidence, and joy. We believe
+              every child deserves to be seen, celebrated, and supported on
+              their unique journeys in life. That is why, we meet each child
+              where they are—physically, emotionally, and
+              developmentally—crafting therapeutic exercise experiences that are
+              inclusive, intentional, and transformative. Every Smile and Every
+              Breakthrough reminds us why this work matters. Which is why here,
+              we celebrate progress in all its forms, knowing that strength is
+              built not only in muscles but also in spirit.
+            </p>
 
-    {/* Center: Founder Image + Name/Title */}
-    <motion.div
-      initial={{ opacity: 0, scale: 0.92 }}
-      whileInView={{ opacity: 1, scale: 1 }}
-      viewport={{ once: true }}
-      transition={{ duration: 0.8 }}
-      className="lg:col-span-1 order-1 lg:order-2 flex flex-col items-center"
-    >
-      <div className="relative w-full max-w-sm rounded-3xl overflow-hidden shadow-2xl border-4 border-blue-700">
-        <Image
-          src="/images/ivy gacheri.jpg" 
-          alt="Ivy Gacheri – Founder & CEO of Arukah Health"
-          width={800}
-          height={1000}
-          className="w-full h-auto object-cover"
-          priority
-        />
-      </div>
+            <p className="text-base font-medium text-blue-700 mb-4 italic leading-relaxed">
+              This is where Healing Begins and Recovery is Redefined! This is
+              Home!
+              <span className="text-gray-700">”</span>
+            </p>
+            <p className="text-base md:text-2xl font-medium text-blue-700 mb-4 font-semibold  italic leading-relaxed">
+              Welcome to Arukah Health!
+            </p>
+          </motion.div>
 
-      <div className="mt-6 text-center">
-        <h3 className="text-lg font-serif font-bold text-orange-600 mb-1">
-          Ivy Gacheri Founder & CEO, Arukah Health
-        </h3>
-       
-      </div>
-    </motion.div>
+          {/* Center: Founder Image + Name/Title */}
+          <motion.div
+            initial={{ opacity: 0, scale: 0.92 }}
+            whileInView={{ opacity: 1, scale: 1 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.8 }}
+            className="lg:col-span-1 order-1 lg:order-2 flex flex-col items-center"
+          >
+            <div className="relative w-full max-w-sm  overflow-hidden  ">
+              <Image
+                src="/images/Untitled_design__6_-removebg-preview.png"
+                alt="Ivy Gacheri – Founder & CEO of Arukah Health"
+                width={800}
+                height={1000}
+                className="w-full h-100 object-cover"
+                priority
+              />
+            </div>
 
-    {/* Right paragraph */}
-    <motion.div
-      initial={{ opacity: 0, x: 30 }}
-      whileInView={{ opacity: 1, x: 0 }}
-      viewport={{ once: true }}
-      transition={{ duration: 0.7 }}
-      className="lg:col-span-1 order-3 lg:order-3 bg-white rounded-2xl p-8 md:p-10 shadow-lg border border-gray-200/80"
-    >
-      <p className="text-base md:text-lg text-gray-700 leading-relaxed">
-        Arukah Health is built on the belief that Exercise is Medicine. For us, exercise is more than biomechanics—it’s a language of healing, play, and growth. Every stretch, step, and breath is an opportunity to restore what challenges may have taken away and to open new pathways of strength, confidence, and joy. 
-We believe every child deserves to be seen, celebrated, and supported on their unique journeys in life. That is why, we meet each child where they are—physically, emotionally, and developmentally—crafting therapeutic exercise experiences that are inclusive, intentional, and transformative.  Every smile and Every Breakthrough reminds us why this work matters. Which is why here, we celebrate progress in all its forms, knowing that strength is built not only in muscles but also in spirit. 
-This is where Healing Begins and Recovery is Redefined! This is Home! Welcome to Arukah Health!”
-
-         </p>
-    </motion.div>
-  </div>
-</section>
-      
+            <div className="mt-6 text-left">
+              <h3 className="text-lg font-serif font-bold text-blue-700 mb-1">
+                Ivy Gacheri{" "}
+              </h3>
+              <h3 className="text-orange-600 font-serif">
+                Founder & CEO Arukah Health
+              </h3>
+            </div>
+          </motion.div>
+        </div>
+      </section>
 
       {/* FINAL SECTION: CLOSING MESSAGE */}
     </div>
