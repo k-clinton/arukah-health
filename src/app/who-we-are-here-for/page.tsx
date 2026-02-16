@@ -28,7 +28,7 @@ export default function WhoWeAreHereFor() {
       {/* Content */}
       <section className="py-10 md:py-10 px-6 bg-white">
         <div className="max-w-5xl mx-auto ">
-          <p className="font-medium text-xl text-gray-700 leading-relaxed">
+          <p className="font-medium  text-gray-700 leading-relaxed">
             We are dedicated to supporting children who face unique
             developmental and milestone challenges, as well as the families and
             communities who walk alongside them.
@@ -76,7 +76,7 @@ export default function WhoWeAreHereFor() {
             {/* First paragraph + image on right */}
             <div className="grid lg:grid-cols-2 gap-10 lg:gap-16 items-center">
               <div className="order-2 lg:order-1 text-center lg:text-left">
-                <p className="text-xl text-gray-700 font-montserrat leading-relaxed max-w-4xl mx-auto lg:mx-0">
+                <p className=" text-gray-700 font-montserrat leading-relaxed max-w-4xl mx-auto lg:mx-0">
                   We believe in addressing challenges early so that each child
                   has the best opportunity to grow, thrive, and reach their full
                   potential. We understand that every child’s journey is unique,
