@@ -112,7 +112,7 @@ export default function ExerciseTherapy() {
             Exercise Therapy
           </h1>
 
-          <p className="prose prose-lg text-white  text-lg font-medium  leading-relaxed space-y-6">
+          <p className="prose prose-lg text-white   font-medium  leading-relaxed space-y-6">
             We apply exercise as a cornerstone for rehabilitation – supporting
             children through everyday milestones and struggles that matter
             most.{" "}
@@ -136,7 +136,7 @@ export default function ExerciseTherapy() {
               <h2 className="text-3xl md:text-4xl font-serif font-bold text-blue-700 mb-8 md:mb-10">
                 Our Programs
               </h2>
-              <p className="prose prose-lg text-gray-700  text-lg font-medium  leading-relaxed space-y-6">
+              <p className="prose prose-lg text-gray-700   font-medium  leading-relaxed space-y-6">
                 Our Exercise programs are designed to harness the principles of
                 neuroplasticity—the brain’s ability to reorganize and form new
                 connections through targeted, repetitive movement. This means
@@ -162,7 +162,7 @@ export default function ExerciseTherapy() {
             </div>
 
             <div className="text-center lg:text-left">
-              <p className="prose prose-lg text-gray-700  text-lg font-medium  leading-relaxed space-y-6">
+              <p className="prose prose-lg text-gray-700   font-medium  leading-relaxed space-y-6">
                 Our interventions are evidence-based, drawing from research in
                 motor learning, pediatric rehabilitation, and functional
                 exercise science. Each program offers diverse exercise
@@ -176,7 +176,7 @@ export default function ExerciseTherapy() {
                 empowers children to achieve greater independence, resilience,
                 and joy in movement.
               </p>
-              <p className="prose prose-lg text-gray-700  text-lg font-medium mt-2  leading-relaxed space-y-6">
+              <p className="prose prose-lg text-gray-700  font-medium mt-2  leading-relaxed space-y-6">
                 {" "}
                 We envision a future where exercise therapy is recognized not
                 just as rehabilitation, but as a pathway to lifelong health,
