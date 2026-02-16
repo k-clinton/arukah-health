@@ -104,7 +104,7 @@ export default function AboutUsPage() {
               </p>
               <p>
                 Families who walk through our doors find more than therapy; they
-                find a community. We partner with them to co create exercise
+                find a community. We partner with them to co-create exercise
                 care plans that reflect each child’s unique needs and
                 aspirations. We train and walk alongside them through challenges
                 and milestones—ensuring that every step forward is safe,
