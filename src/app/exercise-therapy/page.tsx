@@ -322,7 +322,7 @@ export default function ExerciseTherapy() {
               </h2>
               <p className=" text-gray-700 leading-relaxed mb-6 font-medium">
                 Exercise sessions that strengthen muscles, improve coordination
-                and boosts confidence in a fun, aquatic environment.
+                and boost confidence in a fun, aquatic environment.
               </p>
               <button
                 onClick={() => toggleTab(1)}
@@ -341,7 +341,7 @@ export default function ExerciseTherapy() {
                     </li>
                     <li>
                       • Builds coordination, cardiovascular endurance, muscle
-                      Strength and flexibility through low impact movement.
+                      strength and flexibility through low impact movement.
                     </li>
                     <li>
                       • Enhances emotional regulation and motor planning through
