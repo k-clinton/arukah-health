@@ -198,7 +198,7 @@ export default function EducationAndTraining() {
                 />
               </div>
               <div>
-                <h2 className="text-2xl md:text-3xl font-serif font-bold text-orange-600 mb-6">
+                <h2 className="text-2xl  font-serif font-bold text-orange-600 mb-6">
                   Creating Inclusive Spaces for Exercise and Movement
                 </h2>
                 <p className=" font-medium text-gray-700 leading-relaxed">
