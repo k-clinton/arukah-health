@@ -280,7 +280,7 @@ export default function ExerciseTherapy() {
               />
             </div>
             <div>
-              <h2 className="text-2xl md:text-3xl font-serif font-bold text-blue-700 mb-6">
+              <h2 className="text-2xl md:text-2xl font-serif font-bold text-blue-700 mb-6">
                 Structured & Play-Based Exercise
               </h2>
               <p className="prose prose-lg text-gray-700  font-medium  leading-relaxed space-y-6">
@@ -317,7 +317,7 @@ export default function ExerciseTherapy() {
           {/* Block 2 */}
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div className="order-2 lg:order-1">
-              <h2 className="text-2xl md:text-3xl font-serif font-bold text-blue-700 mb-6">
+              <h2 className="text-2xl md:text-2xl font-serif font-bold text-blue-700 mb-6">
                 Swimming Lessons
               </h2>
               <p className=" text-gray-700 leading-relaxed mb-6 font-medium">
@@ -374,7 +374,7 @@ export default function ExerciseTherapy() {
               />
             </div>
             <div>
-              <h2 className="text-2xl md:text-3xl font-serif font-bold text-blue-700 mb-6">
+              <h2 className="text-2xl md:text-2xl font-serif font-bold text-blue-700 mb-6">
                 Hiking Sessions
               </h2>
               <p className=" text-gray-700 leading-relaxed mb-6 font-medium">
@@ -410,7 +410,7 @@ export default function ExerciseTherapy() {
           {/* Block 4 */}
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div className="order-2 lg:order-1">
-              <h2 className="text-2xl md:text-3xl font-serif font-bold text-blue-600 mb-6">
+              <h2 className="text-2xl md:text-2xl font-serif font-bold text-blue-600 mb-6">
                 Biking Sessions
               </h2>
               <p className=" text-gray-700 leading-relaxed mb-6 font-medium">
@@ -459,7 +459,7 @@ export default function ExerciseTherapy() {
 
           {/* Final CTA */}
           <div className="text-center mt-20">
-            <h3 className="text-3xl md:text-4xl font-serif font-bold text-blue-700 mb-6">
+            <h3 className="text-2xl md:text-2xl font-serif font-bold text-blue-700 mb-6">
               Ready to Help Your Child Move with Joy?
             </h3>
             <Link
