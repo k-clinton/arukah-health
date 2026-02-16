@@ -168,15 +168,19 @@ export default function ExerciseTherapy() {
                 exercise science. Each program offers diverse exercise
                 experiences that build strength, coordination, endurance, and
                 confidence. The programs are designed to be fun, engaging, and
-                supportive of your child’s unique journey in movement and
+                supportive of each child’s unique journey in movement and
                 physical development. All our programs are tailored to the
                 specific needs and abilities of the child, ensuring that therapy
                 is not only clinically effective but also safe, meaningful and
                 motivating for the child. Through this approach, Arukah Health
                 empowers children to achieve greater independence, resilience,
-                and joy in movement. We envision a future where exercise therapy
-                is recognized not just as rehabilitation, but as a pathway to
-                lifelong health, independence and joyful participation.
+                and joy in movement.
+              </p>
+              <p>
+                {" "}
+                We envision a future where exercise therapy is recognized not
+                just as rehabilitation, but as a pathway to lifelong health,
+                independence and joyful participation.{" "}
               </p>
             </div>
           </div>
