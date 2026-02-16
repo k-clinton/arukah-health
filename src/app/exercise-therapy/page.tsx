@@ -112,7 +112,7 @@ export default function ExerciseTherapy() {
             Exercise Therapy
           </h1>
 
-          <p className="text-xl text-white font-montserrat leading-relaxed font-medium max-w-4xl mx-auto lg:mx-0">
+          <p className="prose prose-lg text-white font-semibold   text-lg font-medium  leading-relaxed space-y-6">
             We apply exercise as a cornerstone for rehabilitation – supporting
             children through everyday milestones and struggles that matter
             most.{" "}
@@ -136,7 +136,7 @@ export default function ExerciseTherapy() {
               <h2 className="text-3xl md:text-4xl font-serif font-bold text-blue-700 mb-8 md:mb-10">
                 Our Programs
               </h2>
-              <p className="text-xl text-gray-700 font-montserrat leading-relaxed font-medium max-w-4xl mx-auto lg:mx-0">
+              <p className="prose prose-lg text-gray-700  text-lg font-medium  leading-relaxed space-y-6">
                 Our Exercise programs are designed to harness the principles of
                 neuroplasticity—the brain’s ability to reorganize and form new
                 connections through targeted, repetitive movement. This means
@@ -162,7 +162,7 @@ export default function ExerciseTherapy() {
             </div>
 
             <div className="text-center lg:text-left">
-              <p className="text-xl text-gray-700 font-medium leading-relaxed max-w-4xl mx-auto lg:mx-0">
+              <p className="prose prose-lg text-gray-700  text-lg font-medium  leading-relaxed space-y-6">
                 Our interventions are evidence-based, drawing from research in
                 motor learning, pediatric rehabilitation, and functional
                 exercise science. Each program offers diverse exercise
@@ -279,7 +279,7 @@ export default function ExerciseTherapy() {
               <h2 className="text-3xl md:text-4xl font-serif font-bold text-blue-700 mb-6">
                 Structured & Play-Based Exercise
               </h2>
-              <p className="text-lg text-gray-700 font-medium leading-relaxed">
+              <p className="prose prose-lg text-gray-700  text-lg font-medium  leading-relaxed space-y-6">
                 Playful workouts and games that build motor skills, strength,
                 coordination and confidence in a safe, motivating environment.
               </p>
