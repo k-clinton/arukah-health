@@ -96,7 +96,7 @@ export default function TeamSection() {
           <h2 className="text-4xl md:text-5xl font-serif font-extrabold text-orange-600 mb-4">
             Meet Our <span className="text-orange-600">Dedicated Team</span>
           </h2>
-          <p className="text-xl font-medium text-gray-700 max-w-3xl mx-auto">
+          <p className=" font-medium text-gray-700 max-w-3xl mx-auto">
             Passionate experts, commited to helping children with
             neuro-developmental challenges and milestone delays achieve growth,
             independence and joy through movement{" "}
