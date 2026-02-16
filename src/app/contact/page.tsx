@@ -77,19 +77,19 @@ export default function ContactPage() {
       {/* Hero */}
 
       {/* Background Image */}
-      <div className="relative h-[100vh]">
+      <div className="relative h-[80vh]">
         <Image
           src="/images/IMG_9815 (1).jpg"
           alt="Education and training background – joyful learning moment"
           fill
-          className="object-cover "
+          className="object-cover object-top"
           priority
         />
       </div>
 
       <section className="bg-orange-50 text-blue-700  py-10">
         <p className="text-center font-serif text-blue-700 italic font-bold text-xl py-10">
-          Building Brighter Futures Through Exercise{" "}
+          Building Brighter Futures Through Exercise!{" "}
         </p>
       </section>
       <section className="bg-[#FFB347] text-white  py-20">
