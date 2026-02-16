@@ -54,7 +54,7 @@ const Footer = () => {
                   href="mailto:arukahhealthke@gmail.com"
                   className="text-gray-300 hover:text-white transition-colors"
                 >
-                  arukahhealthke@gmail.com
+                  info@arukahhealthke.co.ke
                 </a>
               </div>
             </div>
@@ -66,17 +66,19 @@ const Footer = () => {
               Quick Links
             </h3>
             <ul className="space-y-3">
-              {["Home", "about", "Services", "Team", "Contact"].map((link) => (
-                <li key={link}>
-                  <Link
-                    href={`/${link.toLowerCase().replace(" ", "-")}`}
-                    className="text-gray-300 hover:text-blue-400 hover:translate-x-2 transition-all duration-300 flex items-center gap-2 group"
-                  >
-                    <span className="w-1.5 h-1.5 bg-blue-500 rounded-full opacity-0 group-hover:opacity-100 transition-opacity"></span>
-                    {link}
-                  </Link>
-                </li>
-              ))}
+              {["Home", "About Us", "Services", "Team", "Contact"].map(
+                (link) => (
+                  <li key={link}>
+                    <Link
+                      href={`/${link.toLowerCase().replace(" ", "-")}`}
+                      className="text-gray-300 hover:text-blue-400 hover:translate-x-2 transition-all duration-300 flex items-center gap-2 group"
+                    >
+                      <span className="w-1.5 h-1.5 bg-blue-500 rounded-full opacity-0 group-hover:opacity-100 transition-opacity"></span>
+                      {link}
+                    </Link>
+                  </li>
+                ),
+              )}
             </ul>
           </div>
 
@@ -149,9 +151,11 @@ const Footer = () => {
                 <div className="flex items-start gap-3">
                   <FaClock className="text-blue-400 mt-1 flex-shrink-0" />
                   <div className="text-gray-300">
-                    <div className="font-medium">Monday - Friday</div>
+                    <div className="font-medium font-bold ">
+                      Monday - Friday
+                    </div>
                     <div>8:00 AM - 6:00 PM</div>
-                    <div className="font-medium mt-2">Saturday</div>
+                    <div className="font-medium font-bold  mt-2">Saturday</div>
                     <div>9:00 AM - 1:00 PM</div>
                     <div className="font-medium mt-2">Public Holidays</div>
                     <div>By Appointment</div>
