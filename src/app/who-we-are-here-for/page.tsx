@@ -7,12 +7,12 @@ export default function WhoWeAreHereFor() {
   return (
     <section className="bg-white mt-20 ">
       {/* Hero / Carousel Section */}
-      <div className="relative w-full h-[620px]  overflow-hidden  ">
+      <div className="relative w-full h-[520px]  overflow-hidden  ">
         <Image
           src="/images/IMG_9652.jpg"
           alt="Healing Hearts, Touching Lives"
           fill
-          className="object-cover"
+          className="object-cover care"
           priority
         />
         <div className="absolute inset-0 bg-black/60" />
