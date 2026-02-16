@@ -75,13 +75,13 @@ Our interventions are delivered within a supervised, safe, and supportive enviro
   return (
     <main className="min-h-screen bg-white">
       {/* Hero Section with Background Image */}
-      <section className="relative min-h-[70vh] md:min-h-[80vh] flex mt-19 items-center justify-center">
+      <section className="relative min-h-[70vh] md:min-h-[70vh] flex mt-19 items-center justify-center">
         <div className="absolute pt-10 inset-0">
           <Image
             src="/images/IMG_9647.jpg"
             alt="Child and family in joyful, supportive movement environment"
             fill
-            className="object-cover brightness-[0.75] care"
+            className="object-cover brightness-[0.75] object-top "
             priority
           />
           <div className="absolute inset-0 bg-black/40" />
@@ -125,7 +125,7 @@ Our interventions are delivered within a supervised, safe, and supportive enviro
                   src={pillar.imageUrl}
                   alt={pillar.title}
                   fill
-                  className="object-cover object-center"
+                  className="object-cover object-top"
                 />
                 {/* Subtle overlay for better text contrast if needed */}
                 <div className="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent" />
@@ -207,10 +207,10 @@ Our interventions are delivered within a supervised, safe, and supportive enviro
 
       {/* Final CTA */}
       <div className="text-center py-16 px-6 bg-gradient-to-b from-blue-50/30 to-white">
-        <h3 className="text-3xl md:text-4xl font-serif font-bold text-blue-700 mb-6">
+        <h3 className="text-2xl md:text-2xl font-serif font-bold text-blue-700 mb-6">
           Ready to Begin Your Child’s Journey?
         </h3>
-        <p className="text-xl text-gray-700 mb-8 max-w-2xl mx-auto">
+        <p className=" font-medium text-gray-700 mb-8 max-w-2xl mx-auto">
           Contact us today to discuss how we can support your child.
         </p>
         <Link
