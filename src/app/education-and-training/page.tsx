@@ -14,14 +14,14 @@ export default function EducationAndTraining() {
   return (
     <main className="min-h-screen bg-white">
       <div className="pt-32 pb-24 ">
-        <section className="relative  min-h-[70vh] md:min-h-[80vh] flex items-center justify-center">
+        <section className="relative  min-h-[70vh] md:min-h-[70vh] flex items-center justify-center">
           {/* Background Image */}
           <div className="absolute inset-0">
             <Image
               src="/images/IMG_9516.JPG"
               alt="Education and training background – joyful learning moment"
               fill
-              className="object-cover brightness-[0.95]"
+              className="object-cover brightness-[0.95] care"
               priority
             />
             {/* Dark overlay for text contrast */}
@@ -146,7 +146,7 @@ export default function EducationAndTraining() {
                 />
               </div>
               <div>
-                <h2 className="text-2xl md:text-3xl font-serif font-bold text-blue-700 mb-6">
+                <h2 className="text-2xl md:text-2xl font-serif font-bold text-blue-700 mb-6">
                   Partnering with Families for Lasting Progress
                 </h2>
                 <p className="font-medium text-gray-700 leading-relaxed">
@@ -163,7 +163,7 @@ export default function EducationAndTraining() {
             {/* Block 2: Content left / Image right */}
             <div className="grid lg:grid-cols-2 gap-12 items-center">
               <div className="order-2 lg:order-1">
-                <h2 className="text-2xl md:text-3xl font-serif font-bold text-blue-700 mb-6">
+                <h2 className="text-2xl md:text-2xl font-serif font-bold text-blue-700 mb-6">
                   Setting the Foundations for Safe and Healthy Exercise
                 </h2>
                 <p className=" font-medium text-gray-700 leading-relaxed">
