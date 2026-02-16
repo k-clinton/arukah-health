@@ -200,25 +200,25 @@ export default function ExerciseTherapy() {
               {
                 imageUrl: "/images/muscle.jpg",
                 title: "Muscular Strength & Endurance",
-                desc: "Building postural stability, gait support, and sustained activity tolerance",
+                desc: "Building postural stability, gait support, and sustained activity tolerance.",
                 theme: "orange",
               },
               {
                 imageUrl: "/images/balance.jpg",
                 title: "Balance & Coordination",
-                desc: "Reducing fall risk and growing motor confidence",
+                desc: "Reducing fall risk and growing motor confidence.",
                 theme: "blue",
               },
               {
                 imageUrl: "/images/flexibility.jpg",
                 title: "Flexibility & Mobility",
-                desc: "Minimizing contractures and expanding range of motion",
+                desc: "Minimizing contractures and expanding range of motion.",
                 theme: "orange",
               },
               {
                 imageUrl: "/images/sensory.jpg",
                 title: "Proprioception & Sensory Integration",
-                desc: "Refining body awareness and movement precision",
+                desc: "Refining body awareness and movement precision.",
                 theme: "blue",
               },
             ].map((item, i) => (
