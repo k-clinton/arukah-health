@@ -283,7 +283,7 @@ export default function ExerciseTherapy() {
               <h2 className="text-2xl md:text-3xl font-serif font-bold text-blue-700 mb-6">
                 Structured & Play-Based Exercise
               </h2>
-              <p className="prose prose-lg text-gray-700  text-lg font-medium  leading-relaxed space-y-6">
+              <p className="prose prose-lg text-gray-700  font-medium  leading-relaxed space-y-6">
                 Playful workouts and games that build motor skills, strength,
                 coordination and confidence in a safe, motivating environment.
               </p>
@@ -320,7 +320,7 @@ export default function ExerciseTherapy() {
               <h2 className="text-2xl md:text-3xl font-serif font-bold text-blue-700 mb-6">
                 Swimming Lessons
               </h2>
-              <p className="text-lg text-gray-700 leading-relaxed mb-6 font-medium">
+              <p className=" text-gray-700 leading-relaxed mb-6 font-medium">
                 Exercise sessions that strengthen muscles, improve coordination
                 and boosts confidence in a fun, aquatic environment.
               </p>
@@ -377,7 +377,7 @@ export default function ExerciseTherapy() {
               <h2 className="text-2xl md:text-3xl font-serif font-bold text-blue-700 mb-6">
                 Hiking Sessions
               </h2>
-              <p className="text-lg text-gray-700 leading-relaxed mb-6 font-medium">
+              <p className=" text-gray-700 leading-relaxed mb-6 font-medium">
                 Outdoor experiences that build balance, stamina, resilience, and
                 a love for active living.
               </p>
@@ -413,7 +413,7 @@ export default function ExerciseTherapy() {
               <h2 className="text-2xl md:text-3xl font-serif font-bold text-blue-600 mb-6">
                 Biking Sessions
               </h2>
-              <p className="text-lg text-gray-700 leading-relaxed mb-6 font-medium">
+              <p className=" text-gray-700 leading-relaxed mb-6 font-medium">
                 Guided cycling that enhances balance, endurance, and
                 independence.
               </p>
@@ -464,7 +464,7 @@ export default function ExerciseTherapy() {
             </h3>
             <Link
               href="/contact"
-              className="inline-block bg-gradient-to-r from-orange-300 to-orange-600 hover:from-orange-600 hover:to-orange-500 text-white font-bold py-5 px-12 rounded-full text-xl shadow-xl transform hover:scale-105 transition duration-300"
+              className="inline-block bg-[#FFB347] hover:from-orange-600 hover:to-orange-500 text-white font-bold py-5 px-12 rounded-full text-xl shadow-xl transform hover:scale-105 transition duration-300"
             >
               Get Started Today →
             </Link>
