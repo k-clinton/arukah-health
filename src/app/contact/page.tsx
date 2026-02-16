@@ -97,7 +97,7 @@ export default function ContactPage() {
           <h1 className=" text-4xl md:text-6xl font-serif font-bold">
             Get in Touch
           </h1>
-          <p className="mt-4 text-lg text-[black]  font-montserrat">
+          <p className="mt-4 font-medium text-[black]  font-montserrat">
             We’re here to listen, guide, and support. Connect with us to learn
             more about our programs, trainings, and resources.
           </p>

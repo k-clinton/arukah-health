@@ -49,17 +49,17 @@ export default function EducationAndTraining() {
             <p className=" font-medium   text-gray-800 leading-relaxed">
               Our education and training programs are designed to equip parents,
               caregivers, and communities with the knowledge, skills, tools and
-              exercise strategies needed to understand and support to support
-              children with neuro-developmental challenges and milestone delays
-              across diverse life stages and health needs. These training forums
-              integrate therapeutic exercise with practical education -
-              empowering participants to build body awareness, encourage safe
-              motor development and confidently apply exercise principles in
-              everyday routines. Whether focused on inclusive play, family
-              coaching, or neuro-developmental care, each training is
-              accessible, engaging, and rooted in evidence-based
-              practice—creating a foundation for informed movement, empowered
-              caregiving, and sustainable developmental progress.
+              exercise strategies needed to understand and support children with
+              neuro-developmental challenges and milestone delays across diverse
+              life stages and health needs. These training forums integrate
+              therapeutic exercise with practical education - empowering
+              participants to build body awareness, encourage safe motor
+              development and confidently apply exercise principles in everyday
+              routines. Whether focused on inclusive play, family coaching, or
+              neuro-developmental care, each training is accessible, engaging,
+              and rooted in evidence-based practice—creating a foundation for
+              informed movement, empowered caregiving, and sustainable
+              developmental progress.
             </p>
           </div>
           <div className="grid lg:grid-cols-2 mb-20 gap-12 items-center">
@@ -82,7 +82,7 @@ export default function EducationAndTraining() {
           </div>
 
           {/* Two Specialties – Cards with Icons */}
-          <h2 className="text-3xl md:text-4xl font-serif text-center font-bold text-blue-700 mb-6">
+          <h2 className="text-3xl md:text-4xl font-serif text-center font-bold text-orange-600 mb-6">
             Our Education and Training Specialties{" "}
           </h2>
           <div className="grid md:grid-cols-2 gap-10 mb-24">
@@ -118,7 +118,7 @@ export default function EducationAndTraining() {
 
                 {/* Card content */}
                 <div className="p-8 md:p-10 flex flex-col flex-grow">
-                  <h3 className="text-2xl md:text-3xl font-serif font-bold text-blue-700 mb-5">
+                  <h3 className="text-2xl md:text-2xl font-serif font-bold text-blue-700 mb-5">
                     {specialty.title}
                   </h3>
                   <p className="text-gray-700 font-medium leading-relaxed flex-grow">
@@ -130,7 +130,7 @@ export default function EducationAndTraining() {
           </div>
 
           {/* Alternating Image + Content Blocks */}
-          <h2 className="text-3xl md:text-4xl font-serif text-center font-bold text-blue-700 mb-6">
+          <h2 className="text-3xl md:text-4xl font-serif text-center font-bold text-orange-600 mb-6">
             Why Education and Training?{" "}
           </h2>
           <div className="space-y-24">
@@ -146,7 +146,7 @@ export default function EducationAndTraining() {
                 />
               </div>
               <div>
-                <h2 className="text-2xl md:text-3xl font-serif font-bold text-orange-600 mb-6">
+                <h2 className="text-2xl md:text-3xl font-serif font-bold text-blue-700 mb-6">
                   Partnering with Families for Lasting Progress
                 </h2>
                 <p className="font-medium text-gray-700 leading-relaxed">
@@ -198,7 +198,7 @@ export default function EducationAndTraining() {
                 />
               </div>
               <div>
-                <h2 className="text-2xl  font-serif font-bold text-orange-600 mb-6">
+                <h2 className="text-2xl  font-serif font-bold text-blue-700 mb-6">
                   Creating Inclusive Spaces for Exercise and Movement
                 </h2>
                 <p className=" font-medium text-gray-700 leading-relaxed">
@@ -214,14 +214,14 @@ export default function EducationAndTraining() {
 
             {/* Final CTA */}
             <div className="text-center mt-20">
-              <h3 className="text-3xl md:text-4xl font-serif font-bold text-blue-700 mb-6">
+              <h3 className="text-2xl md:text-2xl font-serif font-bold text-orange-600 mb-6">
                 Ready to Empower Yourself, Your Family or Community?
               </h3>
               <Link
                 href="/contact"
                 className="inline-block bg-[#FFB347]  text-white font-bold py-5 px-12 rounded-full text-xl shadow-xl transform hover:scale-105 transition duration-300"
               >
-                Join a Training Session →
+                Contact Us
               </Link>
             </div>
           </div>
