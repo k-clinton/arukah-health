@@ -109,8 +109,8 @@ export default function AboutUsPage() {
                 aspirations. We train and walk alongside them through challenges
                 and milestones—ensuring that every step forward is safe,
                 supported, and deeply attuned to the journey toward wellness. We
-                believe exercise is medicine, and we use it to open new pathways
-                of growth, healing, and possibility.
+                believe Exercise is Medicine, and we use it to open new pathways
+                of growth, healing, and possibility!
               </p>
               <p>
                 Through years of clinical experience and continuous learning,
