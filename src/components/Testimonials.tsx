@@ -91,7 +91,7 @@ const InfiniteTestimonials = () => {
               Success Stories
             </span>
           </h2>
-          <p className="text-xl text-black max-w-3xl mx-auto ">
+          <p className="font-medium text-black max-w-3xl mx-auto ">
             Families celebrating every milestone - real stories of growth and
             achievement.
           </p>
@@ -155,7 +155,7 @@ const InfiniteTestimonials = () => {
                       </div>
 
                       {/* Testimonial Content */}
-                      <p className="text-gray-700 text-lg mb-6 italic leading-relaxed">
+                      <p className="text-gray-700 font-medium mb-6 italic leading-relaxed">
                         {testimonial.content}
                       </p>
 

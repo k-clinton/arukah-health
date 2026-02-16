@@ -112,7 +112,7 @@ export default function WhoWeAreHereFor() {
               </div>
 
               <div className="text-center lg:text-left">
-                <p className="text-xl text-gray-700 leading-relaxed max-w-4xl mx-auto lg:mx-0">
+                <p className="font-medium  text-gray-700 leading-relaxed max-w-4xl mx-auto lg:mx-0">
                   We don’t limit our care to a diagnosis—we meet each child
                   where they are, focusing on the everyday difficulties parents
                   often notice, and helping them grow stronger, more confident,
@@ -124,7 +124,7 @@ export default function WhoWeAreHereFor() {
             {/* Third paragraph + image on right */}
             <div className="grid lg:grid-cols-2 gap-10 lg:gap-16 items-center">
               <div className="order-2 lg:order-1 text-center lg:text-left">
-                <p className="text-xl text-gray-700 leading-relaxed max-w-4xl mx-auto lg:mx-0">
+                <p className="font-medium text-gray-700 leading-relaxed max-w-4xl mx-auto lg:mx-0">
                   Our therapies are carefully tailored to meet every stage of
                   development, offering age-appropriate, engaging, and effective
                   activities that nurture physical, cognitive, and emotional
