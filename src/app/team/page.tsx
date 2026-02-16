@@ -29,7 +29,7 @@ As CEO of Arukah Health, she leads with heart and clinical insight—transformin
     id: 2,
     name: "Charles Kabata Gitau",
     title: "Movement, Life Skills and Community Wellness Specialist",
-    image: "/images/team.jpg",
+    image: "/images/Untitled design (4).png",
     alt: "Charles Kabatata Gitau professional portrait",
     bio: `Charles Kabata Gitau is a seasoned sports educator with over 33 years of teaching experience, including 17 years in teacher training and 16 years in secondary school education. His career is defined by a deep commitment to holistic development, blending physical education with life skills training through his signature approach—thematic games.<br><br>
 
@@ -108,11 +108,11 @@ export default function TeamSection() {
           {teamMembers.map((member) => (
             <div
               key={member.id}
-              className="group bg-white rounded-3xl overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-300 border-4 border-orange-600 flex flex-col"
+              className="group bg-white rounded-3xl overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-300 flex flex-col "
             >
               {/* Image with oval border */}
-              <div className="relative h-64 md:h-80 flex items-center justify-center bg-gradient-to-br from-blue-50 to-orange-50/30 p-6">
-                <div className="relative w-48 h-48 md:w-56 md:h-56 rounded-full overflow-hidden border-4 border-blue-500 shadow-lg group-hover:scale-105 transition-transform duration-500">
+              <div className="relative h-64 md:h-80 flex items-center justify-center bg-gradient-to-br from-blue-50 to-orange-50/30 p-6 ">
+                <div className="relative w-full h-full overflow-hidden rounded-md  shadow-lg group-hover:scale-105 transition-transform duration-500">
                   <Image
                     src={member.image}
                     alt={member.alt}
@@ -126,10 +126,10 @@ export default function TeamSection() {
               {/* Content */}
               <div className="p-6 md:p-8 text-center flex-grow flex flex-col justify-between">
                 <div>
-                  <h3 className="text-xl md:text-2xl font-serif font-bold text-gray-900 mb-2">
+                  <h3 className="text-xl md:text-2xl text-blue-700 font-serif font-bold mb-2">
                     {member.name}
                   </h3>
-                  <p className="font-medium text-orange-600 font-medium mb-6">
+                  <p className="font-medium text-orange-600  font-medium mb-6">
                     {member.title}
                   </p>
                 </div>
