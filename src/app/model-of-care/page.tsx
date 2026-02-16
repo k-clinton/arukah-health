@@ -97,7 +97,7 @@ Our interventions are delivered within a supervised, safe, and supportive enviro
       {/* Core Philosophy Paragraph */}
       <section className="py-20 px-6 bg-gradient-to-b from-white to-blue-50/30">
         <div className="max-w-5xl mx-auto text-center">
-          <p className="text-lg text-gray-800 leading-relaxed font-medium">
+          <p className=" text-gray-800 leading-relaxed font-medium">
             Grounded in clinical research and guided by compassion, our model of
             care brings together expertise and personalization to meet each
             child’s unique needs. We focus on building strong foundations for
@@ -117,7 +117,7 @@ Our interventions are delivered within a supervised, safe, and supportive enviro
           {pillars.map((pillar, index) => (
             <div
               key={pillar.title}
-              className="bg-white rounded-3xl text-blue-700 shadow-lg hover:shadow-2xl transition-all  duration-300 border-4 border-[#FFB347] flex flex-col hover:scale-105 relative min-h-[480px] overflow-hidden hover:border-orange-600  "
+              className="bg-white rounded-3xl text-blue-700 shadow-lg hover:shadow-2xl transition-all  duration-300 border-4 border-orange-300 flex flex-col hover:scale-105 relative min-h-[480px] overflow-hidden hover:border-orange-600  "
             >
               {/* Full-width top image */}
               <div className="relative h-88 w-full">
@@ -137,7 +137,7 @@ Our interventions are delivered within a supervised, safe, and supportive enviro
                   {pillar.title}
                 </h3>
 
-                <p className="text-gray-700 leading-relaxed mb-8 flex-grow">
+                <p className="text-gray-700 font-medium leading-relaxed mb-8 flex-grow">
                   {pillar.shortDesc}
                 </p>
 
@@ -215,7 +215,7 @@ Our interventions are delivered within a supervised, safe, and supportive enviro
         </p>
         <Link
           href="/contact"
-          className="inline-block bg-gradient-to-r from-[#FFB347] to-orange-500 hover:from-orange-500 hover:to-[#FFB347] text-white font-bold py-5 px-12 rounded-full text-xl shadow-xl transform hover:scale-105 transition duration-300"
+          className="inline-block bg-[#FFB347] text-white font-bold py-5 px-12 rounded-full text-xl shadow-xl transform hover:scale-105 transition duration-300"
         >
           Get Started →
         </Link>
