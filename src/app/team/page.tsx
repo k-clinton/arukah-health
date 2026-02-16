@@ -68,7 +68,7 @@ At Arukah, he champions integrated, equitable, and ethical care that puts people
     id: 4,
     name: "Paul Kamau",
     title: "Exercise Therapist & Inclusive Fitness Consultant",
-    image: "/images/team3.jpeg",
+    image: "/images/paul (2).png",
     alt: "Paul Kamau professional portrait",
     bio: `Kamau Paul is a respected Exercise and Fitness Consultant with deep roots in Kenya's top sports and wellness institutions. Beyond his role as a tutor and coach, Kamau is especially passionate about designing inclusive fitness programs tailored to individuals with special health needs.<br><br>
 
@@ -195,7 +195,7 @@ export default function TeamSection() {
                       src={selectedMember.image}
                       alt={selectedMember.alt}
                       fill
-                      className="object-cover"
+                      className="object-cover object-top"
                     />
                   </div>
                   <div className="text-center md:text-left">
