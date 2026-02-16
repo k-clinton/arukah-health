@@ -40,7 +40,7 @@ export default function AboutUsPage() {
             <h1 className="text-4xl md:text-5xl font-serif font-bold text-blue-700 mb-8">
               About Us
             </h1>
-            <div className="prose prose-lg text-gray-700  text-lg font-medium  leading-relaxed space-y-6">
+            <div className="prose prose-lg text-gray-700  font-medium  leading-relaxed space-y-6">
               <p>
                 Arukah Health is a pediatric therapy center dedicated to
                 creating progress through movement. We specialize in
@@ -93,7 +93,7 @@ export default function AboutUsPage() {
             className="order-1 lg:order-2"
           >
             <h2 className="text-4xl md:text-5xl font-serif font-bold text-blue-700 mb-8"></h2>
-            <div className="prose text-lg  prose-lg text-gray-700  font-medium  leading-relaxed space-y-6">
+            <div className="prose   prose-lg text-gray-700  font-medium  leading-relaxed space-y-6">
               <p>
                 At Arukah, therapy, care and support look different—they are
                 more embodied, more inclusive, more human. Through exercise, we
@@ -223,7 +223,7 @@ export default function AboutUsPage() {
             <h3 className="text-3xl font-serif font-bold text-blue-700 mb-6">
               Our Vision
             </h3>
-            <p className="text-lg font-medium text-gray-700 leading-relaxed">
+            <p className=" font-medium text-gray-700 leading-relaxed">
               To redefine recovery through exercise — transforming lives,
               nurturing resilience, and unlocking endless possibilities for
               every child.
@@ -240,7 +240,7 @@ export default function AboutUsPage() {
             <h3 className="text-3xl font-serif font-bold text-blue-700 mb-6">
               Our Mission
             </h3>
-            <p className="text-lg font-medium text-gray-700 leading-relaxed">
+            <p className=" font-medium text-gray-700 leading-relaxed">
               To deliver inclusive, research informed pediatric exercise therapy
               that builds function and independence in children with
               neuro-developmental challenges and milestone delays—blending
