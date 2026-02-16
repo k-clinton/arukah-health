@@ -18,12 +18,16 @@ export default function WhoWeAreHereFor() {
         <div className="absolute inset-0 bg-black/60" />
 
         <div className="relative z-10 flex items-center justify-center h-full px-6 text-center">
-          <h1 className="font-serif text-white text-3xl sm:text-4xl md:text-5xl font-semibold max-w-4xl leading-snug">
-            Healing Hearts, Touching Lives and Restoring Health Through
-            Exercise!
+          <h1 className="text-5xl sm:text-6xl md:text-7xl font-serif font-extrabold text-[#FFB347] drop-shadow-2xl mb-6 md:mb-8">
+            Who We are Here For
           </h1>
         </div>
       </div>
+      <section className="bg-orange-50 text-blue-700  py-10">
+        <p className="text-center font-serif text-blue-700 italic font-bold text-xl py-10">
+          Healing Hearts, Touching Lives and Restoring Health Through Exercise!
+        </p>
+      </section>
 
       {/* Content */}
       <section className="py-10 md:py-10 px-6 bg-white">

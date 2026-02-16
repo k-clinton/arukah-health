@@ -88,7 +88,7 @@ Our interventions are delivered within a supervised, safe, and supportive enviro
         </div>
 
         <div className="relative z-10 text-center px-6 max-w-5xl">
-          <h1 className="text-5xl sm:text-6xl md:text-7xl font-serif font-extrabold text-white drop-shadow-2xl mb-6 md:mb-8">
+          <h1 className="text-5xl sm:text-6xl md:text-7xl font-serif font-extrabold text-[#FFB347] drop-shadow-2xl mb-6 md:mb-8">
             Our Model of Care
           </h1>
         </div>
