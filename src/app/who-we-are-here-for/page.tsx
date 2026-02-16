@@ -48,7 +48,7 @@ export default function WhoWeAreHereFor() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.4, delay: index * 0.05 }}
-              className="bg-white border-3 border-orange-600 rounded-2xl p-6 shadow-sm"
+              className="bg-white border-3 border-orange-300 rounded-2xl p-6 shadow-sm"
             >
               <h3 className="font-serif text-xl font-semibold text-blue-700 mb-4">
                 {section.title}

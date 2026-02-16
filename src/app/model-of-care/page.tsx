@@ -29,7 +29,7 @@ We work in collaboration with pediatricians, neurologists, physiotherapists, occ
       color: "#FFB347",
       shortDesc:
         "Meaningful, measurable goals to ensure longevity and long term progress.",
-      imageUrl: "/images/goals.jpg",
+      imageUrl: "/images/goals4.jpg",
       details: `
 Our programs are designed to achieve measurable, functional outcomes that are monitored, tracked and adjusted to maximize long term developmental potential. Through evidence based exercise therapy and interdisciplinary collaboration, families can expect:
 <br><br>
@@ -60,7 +60,7 @@ Our model of care recognizes parents and caregivers as essential partners in the
       color: "#FFB347",
       shortDesc:
         "Safe, supportive environments coupled with customized plans for effective, age appropriate progress.",
-      imageUrl: "/images/safety.jpg",
+      imageUrl: "/images/safety24.jpg",
       details: `
 Our interventions are delivered within a supervised, safe, and supportive environment, ensuring that every child’s medical profile and developmental needs are fully considered. Each program is individually tailored through comprehensive assessment of neurological status, functional capacity, and co existing medical conditions. This process allows us to:
 <br><br>
@@ -113,16 +113,14 @@ Our interventions are delivered within a supervised, safe, and supportive enviro
           Our 4 Pillars
         </h2>
 
-        <div className="absolute top-1/2 left-0 right-0 h-1 bg-gradient-to-r from-[#4793FF] via-[#FFB347] to-[#4793FF] rounded-full hidden lg:block" />
-
-        <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-6 relative z-10">
+        <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8 lg:gap-12 relative z-10">
           {pillars.map((pillar, index) => (
             <div
               key={pillar.title}
-              className="bg-white rounded-3xl text-blue-700 shadow-lg hover:shadow-2xl transition-all  duration-300 border-4 border-blue-700 flex flex-col hover:scale-105 relative min-h-[480px] overflow-hidden hover:border-orange-600  "
+              className="bg-white rounded-3xl text-blue-700 shadow-lg hover:shadow-2xl transition-all  duration-300 border-4 border-[#FFB347] flex flex-col hover:scale-105 relative min-h-[480px] overflow-hidden hover:border-orange-600  "
             >
               {/* Full-width top image */}
-              <div className="relative h-48 w-full">
+              <div className="relative h-88 w-full">
                 <Image
                   src={pillar.imageUrl}
                   alt={pillar.title}
@@ -213,7 +211,7 @@ Our interventions are delivered within a supervised, safe, and supportive enviro
           Ready to Begin Your Child’s Journey?
         </h3>
         <p className="text-xl text-gray-700 mb-8 max-w-2xl mx-auto">
-         Contact us today to discuss how we can support your child.
+          Contact us today to discuss how we can support your child.
         </p>
         <Link
           href="/contact"
