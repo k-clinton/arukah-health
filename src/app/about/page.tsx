@@ -40,7 +40,7 @@ export default function AboutUsPage() {
             <h1 className="text-4xl md:text-5xl font-serif font-bold text-blue-700 mb-8">
               About Us
             </h1>
-            <div className="prose prose-lg text-gray-700  text-lg font-medium  leading-relaxed space-y-6">
+            <div className="prose prose-lg text-gray-700 text-justify text-lg font-medium  leading-relaxed space-y-6">
               <p>
                 Arukah Health is a pediatric therapy center dedicated to
                 creating progress through movement. We specialize in
