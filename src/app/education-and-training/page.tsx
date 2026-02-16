@@ -13,7 +13,7 @@ import Link from "next/link";
 export default function EducationAndTraining() {
   return (
     <main className="min-h-screen bg-white">
-      <div className="pt-32 pb-24">
+      <div className="pt-32 pb-24 ">
         <section className="relative  min-h-[70vh] md:min-h-[80vh] flex items-center justify-center">
           {/* Background Image */}
           <div className="absolute inset-0">
@@ -219,7 +219,7 @@ export default function EducationAndTraining() {
               </h3>
               <Link
                 href="/contact"
-                className="inline-block bg-orange-400 hover:from-orange-500 hover:to-[#FFB347] text-white font-bold py-5 px-12 rounded-full text-xl shadow-xl transform hover:scale-105 transition duration-300"
+                className="inline-block bg-[#FFB347]  text-white font-bold py-5 px-12 rounded-full text-xl shadow-xl transform hover:scale-105 transition duration-300"
               >
                 Join a Training Session →
               </Link>
