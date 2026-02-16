@@ -341,30 +341,29 @@ export default function AboutUsPage() {
         </div>
 
         {/* Three-column layout: Left text – Center image – Right text */}
-        <div className="grid lg:grid-cols-2 gap-10 lg:gap-12 items-center">
-          {/* Left paragraph */}
+        <div className="flex flex-col lg:flex-row gap-10 lg:gap-16 items-start lg:items-center">
+          {/* Left: Quote & Text Content */}
           <motion.div
             initial={{ opacity: 0, x: -30 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.7 }}
-            className="lg:col-span-1 order-2 lg:order-1 bg-white rounded-2xl p-8 md:p-10 shadow-lg border-4 border-[#FFB347]"
+            className="lg:flex-1 order-2 lg:order-1 bg-white rounded-2xl p-8 md:p-10 shadow-lg border-4 border-[#FFB347]"
           >
-            <p className="text-base font-medium text-gray-700 mb-4  leading-relaxed">
-              &quot;I understand that nurturing children with
-              neuro-developmental conditions and milestone delays can be a walk
-              through seasons of uncertainty, burnout, pain, and quiet
-              resilience. Complexities such as impaired motor control, reduced
-              strength, balance deficits, and altered proprioception affect a
-              child’s independence, making care intricate and complex. At Arukah
-              Health, we create a community where families can breathe, hope,
-              and feel understood. A space where exercise is utilized in
-              building core dimensions of physical function in a fun and
-              intentional manner. A space where every child’s story is honored
-              and small steps are cultured into great milestones.
+            <p className="text-base font-medium text-gray-700 mb-4 leading-relaxed">
+              “I understand that nurturing children with neuro-developmental
+              conditions and milestone delays can be a walk through seasons of
+              uncertainty, burnout, pain, and quiet resilience. Complexities
+              such as impaired motor control, reduced strength, balance
+              deficits, and altered proprioception affect a child’s
+              independence, making care intricate and complex. At Arukah Health,
+              we create a community where families can breathe, hope, and feel
+              understood. A space where exercise is utilized in building core
+              dimensions of physical function in a fun and intentional manner. A
+              space where every child’s story is honored and small steps are
+              cultured into great milestones.
             </p>
-            <p className="text-base font-medium text-gray-700 mb-4  leading-relaxed">
-              {" "}
+            <p className="text-base font-medium text-gray-700 mb-4 leading-relaxed">
               Arukah Health is built on the belief that Exercise is Medicine.
               For us, exercise is more than biomechanics—it’s a language of
               healing, play, and growth. Every stretch, step, and breath is an
@@ -385,36 +384,36 @@ export default function AboutUsPage() {
               Home!
               <span className="text-gray-700">”</span>
             </p>
-            <p className="text-base md:text-2xl font-medium text-blue-700 mb-4 font-semibold  italic leading-relaxed">
+            <p className="text-base md:text-2xl font-medium text-blue-700 mb-4 font-semibold italic leading-relaxed">
               Welcome to Arukah Health!
             </p>
           </motion.div>
 
-          {/* Center: Founder Image + Name/Title */}
+          {/* Right: Larger Founder Image + Name/Title */}
           <motion.div
             initial={{ opacity: 0, scale: 0.92 }}
             whileInView={{ opacity: 1, scale: 1 }}
             viewport={{ once: true }}
             transition={{ duration: 0.8 }}
-            className="lg:col-span-1 order-1 lg:order-2 flex flex-col items-center"
+            className="lg:flex-1 order-1 lg:order-2 flex flex-col items-center"
           >
-            <div className="relative w-full max-w-sm  overflow-hidden  ">
+            <div className="relative w-full max-w-lg lg:max-w-xl rounded-3xl overflow-hidden shadow-2xl">
               <Image
-                src="/images/Untitled_design__6_-removebg-preview.png"
+                src="/images/Ivy Gacheri (3).png"
                 alt="Ivy Gacheri – Founder & CEO of Arukah Health"
                 width={800}
-                height={1000}
-                className="w-full h-100 object-cover"
+                height={1400}
+                className="w-full h-auto object-cover"
                 priority
               />
             </div>
 
-            <div className="mt-6 text-left">
-              <h3 className="text-lg font-serif font-bold text-blue-700 mb-1">
-                Ivy Gacheri{" "}
+            <div className="mt-6 text-center">
+              <h3 className="text-3xl md:text-4xl font-serif font-bold text-blue-700 mb-1">
+                Ivy Gacheri
               </h3>
-              <h3 className="text-orange-600 font-serif">
-                Founder & CEO Arukah Health
+              <h3 className="text-xl md:text-2xl font-bold font-serif text-orange-600">
+                Founder & CEO, Arukah Health
               </h3>
             </div>
           </motion.div>
