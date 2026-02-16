@@ -464,7 +464,7 @@ export default function ExerciseTherapy() {
             </h3>
             <Link
               href="/contact"
-              className="inline-block bg-[#FFB347] hover:from-orange-600 hover:to-orange-500 text-white font-bold py-5 px-12 rounded-full text-xl shadow-xl transform hover:scale-105 transition duration-300"
+              className="inline-block bg-[#FFB347] hover:bg-orange-600 text-white font-bold py-5 px-12 rounded-full text-xl shadow-xl transform hover:scale-105 transition duration-300"
             >
               Get Started Today →
             </Link>
