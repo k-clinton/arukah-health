@@ -176,7 +176,7 @@ export default function ExerciseTherapy() {
                 empowers children to achieve greater independence, resilience,
                 and joy in movement.
               </p>
-              <p>
+              <p className="prose prose-lg text-gray-700  text-lg font-medium mt-2  leading-relaxed space-y-6">
                 {" "}
                 We envision a future where exercise therapy is recognized not
                 just as rehabilitation, but as a pathway to lifelong health,
