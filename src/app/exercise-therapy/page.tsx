@@ -226,8 +226,8 @@ export default function ExerciseTherapy() {
                 transition={{ delay: i * 0.1 }}
                 className={`group bg-white rounded-2xl overflow-hidden shadow-lg transition-all duration-300 border-4 ${
                   item.theme === "orange"
-                    ? "border-blue-700 hover:border-orange-600 "
-                    : "border-orange-600 hover:border-blue-700 "
+                    ? "border-orange-300 hover:border-orange-300 "
+                    : "border-orange-300 hover:border-orange-300 "
                 } hover:scale-105 hover:shadow-xl flex flex-col`}
               >
                 {/* Full-width image at top */}
