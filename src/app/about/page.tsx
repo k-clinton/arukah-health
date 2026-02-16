@@ -44,7 +44,7 @@ export default function AboutUsPage() {
               <p>
                 Arukah Health is a pediatric therapy center dedicated to
                 creating progress through movement. We specialize in
-                personalized exercise therapy for children with neuro
+                personalized exercise therapy for children with neuro-
                 developmental challenges and milestone delays, helping them
                 build strength, confidence, and independence in ways that feel
                 joyful and empowering.
@@ -93,7 +93,7 @@ export default function AboutUsPage() {
             className="order-1 lg:order-2"
           >
             <h2 className="text-4xl md:text-5xl font-serif font-bold text-blue-700 mb-8"></h2>
-            <div className="prose text-lg  prose-lg text-gray-700 font-medium  leading-relaxed space-y-6">
+            <div className="prose text-lg  prose-lg text-gray-700 text-justify font-medium  leading-relaxed space-y-6">
               <p>
                 At Arukah, therapy, care and support look different—they are
                 more embodied, more inclusive, more human. Through exercise, we
