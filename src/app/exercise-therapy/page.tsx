@@ -112,7 +112,7 @@ export default function ExerciseTherapy() {
             Exercise Therapy
           </h1>
 
-          <p className="text-lg text-white/95 leading-relaxed  mx-auto drop-shadow-lg">
+          <p className="text-xl text-white font-montserrat leading-relaxed font-medium max-w-4xl mx-auto lg:mx-0">
             We apply exercise as a cornerstone for rehabilitation – supporting
             children through everyday milestones and struggles that matter
             most.{" "}
