@@ -399,7 +399,7 @@ export default function AboutUsPage() {
           >
             <div className="relative w-full max-w-lg lg:max-w-xl rounded-3xl overflow-hidden shadow-2xl">
               <Image
-                src="/images/Ivy Gacheri (3).png"
+                src="/images/ivy final.png"
                 alt="Ivy Gacheri – Founder & CEO of Arukah Health"
                 width={800}
                 height={1400}
