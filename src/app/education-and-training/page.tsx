@@ -34,7 +34,7 @@ export default function EducationAndTraining() {
               Education and Training
             </h1>
 
-            <p className="text-lg  leading-relaxed text-white">
+            <p className="font-medium  leading-relaxed text-white">
               Training sessions designed to build capacity and increase
               knowledge among individuals, caregivers, parents, families and
               communities.
@@ -46,7 +46,7 @@ export default function EducationAndTraining() {
 
           {/* Core Message */}
           <div className="max-w-5xl mt-10 mx-auto  mb-20">
-            <p className=" font-medium text-lg   text-gray-800 leading-relaxed">
+            <p className=" font-medium   text-gray-800 leading-relaxed">
               Our education and training programs are designed to equip parents,
               caregivers, and communities with the knowledge, skills, tools and
               exercise strategies needed to understand and support to support
@@ -73,7 +73,7 @@ export default function EducationAndTraining() {
               />
             </div>
             <div>
-              <p className="text-lg   font-bold text-orange-600 italic p-4 shadow-md font-serif rounded-md  border-3 border-blue-700 leading-relaxed">
+              <p className="   font-bold text-orange-600 italic p-4 shadow-md font-serif rounded-md  border-3 border-blue-700 leading-relaxed">
                 “Exercise knowledge is essential to supporting children with
                 neuro-developmental conditions and milestone delays—because
                 informed care creates consistent progress and lasting impact.”
@@ -121,7 +121,7 @@ export default function EducationAndTraining() {
                   <h3 className="text-2xl md:text-3xl font-serif font-bold text-blue-700 mb-5">
                     {specialty.title}
                   </h3>
-                  <p className="text-lg text-gray-700 leading-relaxed flex-grow">
+                  <p className="text-gray-700 font-medium leading-relaxed flex-grow">
                     {specialty.desc}
                   </p>
                 </div>
@@ -146,10 +146,10 @@ export default function EducationAndTraining() {
                 />
               </div>
               <div>
-                <h2 className="text-3xl md:text-4xl font-serif font-bold text-orange-600 mb-6">
+                <h2 className="text-2xl md:text-3xl font-serif font-bold text-orange-600 mb-6">
                   Partnering with Families for Lasting Progress
                 </h2>
-                <p className="text-lg font-medium text-gray-700 leading-relaxed">
+                <p className="font-medium text-gray-700 leading-relaxed">
                   We believe parents and caregivers are the most important
                   members of the team. Our training equips them with practical
                   tools, confidence, and strategies to support their
@@ -163,10 +163,10 @@ export default function EducationAndTraining() {
             {/* Block 2: Content left / Image right */}
             <div className="grid lg:grid-cols-2 gap-12 items-center">
               <div className="order-2 lg:order-1">
-                <h2 className="text-3xl md:text-4xl font-serif font-bold text-blue-700 mb-6">
+                <h2 className="text-2xl md:text-3xl font-serif font-bold text-blue-700 mb-6">
                   Setting the Foundations for Safe and Healthy Exercise
                 </h2>
-                <p className="text-lg font-medium text-gray-700 leading-relaxed">
+                <p className=" font-medium text-gray-700 leading-relaxed">
                   Body awareness, motor planning, and postural stability &
                   control form the foundation of healthy movement and exercise.
                   We teach simple, effective techniques that reduce strain,
@@ -198,10 +198,10 @@ export default function EducationAndTraining() {
                 />
               </div>
               <div>
-                <h2 className="text-3xl md:text-4xl font-serif font-bold text-orange-600 mb-6">
+                <h2 className="text-2xl md:text-3xl font-serif font-bold text-orange-600 mb-6">
                   Creating Inclusive Spaces for Exercise and Movement
                 </h2>
-                <p className="text-lg font-medium text-gray-700 leading-relaxed">
+                <p className=" font-medium text-gray-700 leading-relaxed">
                   Inclusive environments are vital for ensuring every child can
                   participate, grow, and thrive through movement. Our programs
                   extend beyond the family, equipping teachers, community
