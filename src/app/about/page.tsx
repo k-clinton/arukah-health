@@ -118,7 +118,7 @@ export default function AboutUsPage() {
                 pediatric exercise physiology with time tested therapeutic
                 practices. For us, exercise is more than therapy—it’s a
                 reclamation, a celebration, and a return to embodied hope for
-                every child and family we serve.
+                every child and family we serve!
               </p>
               <p></p>
             </div>
@@ -226,7 +226,7 @@ export default function AboutUsPage() {
             <p className="text-lg font-medium text-gray-700 leading-relaxed">
               To redefine recovery through exercise — transforming lives,
               nurturing resilience, and unlocking endless possibilities for
-              every child
+              every child.
             </p>
           </motion.div>
 
