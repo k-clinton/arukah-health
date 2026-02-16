@@ -379,12 +379,12 @@ export default function AboutUsPage() {
               built not only in muscles but also in spirit.
             </p>
 
-            <p className="text-base font-medium font-semibold text-blue-700 mb-4 italic leading-relaxed">
+            <p className="text-base font-medium font-semibold text-blue-700 mb-4 font-serif  leading-relaxed">
               This is where Healing Begins and Recovery is Redefined! This is
               Home!
               <span className="text-gray-700">”</span>
             </p>
-            <p className="text-base md:text-2xl font-medium font-serif text-blue-700 mb-4 font-semibold italic leading-relaxed">
+            <p className="text-base md:text-2xl font-medium font-serif text-blue-700 mb-4 font-semibold  leading-relaxed">
               Welcome to Arukah Health!
             </p>
           </motion.div>
