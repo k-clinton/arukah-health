@@ -87,9 +87,9 @@ export default function Statistics() {
               initial={{ opacity: 0, y: 60, scale: 0.92 }}
               animate={inView ? { opacity: 1, y: 0, scale: 1 } : {}}
               transition={{ duration: 0.7, delay: index * 0.12 }}
-              className="bg-white/90 backdrop-blur-md rounded-3xl p-8 md:p-10 shadow-2xl border-4 border-orange-300/40 hover:border-blue-400/60 transition-all duration-300 hover:scale-105"
+              className="bg-white/90 backdrop-blur-md rounded-3xl p-8 md:p-10 shadow-2xl border-4 border-orange-300/40 hover:border-orange-300 transition-all duration-300 hover:scale-105"
             >
-              <div className="text-5xl md:text-6xl font-black text-blue-700 mb-3">
+              <div className="text-4xl md:text-4xl font-black text-blue-700 mb-3">
                 {inView ? (
                   <CountUp
                     start={0}
@@ -103,11 +103,11 @@ export default function Statistics() {
                 )}
               </div>
 
-              <h3 className="text-xl md:text-2xl  text-orange-600 mb-4">
+              <h3 className="text-xl md:text-xl  text-orange-600 mb-4">
                 {stat.label}
               </h3>
 
-              <p className="text-gray-700 font-medium md:text-xl">
+              <p className="text-gray-700 font-medium ">
                 {stat.description}
               </p>
             </motion.div>
