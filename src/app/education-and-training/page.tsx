@@ -12,9 +12,9 @@ import Link from "next/link";
 
 export default function EducationAndTraining() {
   return (
-    <main className="min-h-screen bg-white">
-      <div className="pt-32 pb-24 ">
-        <section className="relative  min-h-[70vh] md:min-h-[70vh] flex items-center justify-center">
+    <main className=" bg-white">
+      <div className="pt-27 pb-24 ">
+        <section className="relative  min-h-[60vh] md:min-h-[70vh] flex items-center justify-center">
           {/* Background Image */}
           <div className="absolute inset-0">
             <Image
