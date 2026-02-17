@@ -107,7 +107,7 @@ export default function AboutUs() {
               {/* Card Content */}
               <div className="p-8 flex flex-col flex-grow">
                 <h3
-                  className={`text-2xl font-bold mb-4 ${
+                  className={`text-xl font-serif font-bold mb-4 ${
                     pillar.color === "orange"
                       ? "text-orange-600"
                       : "text-blue-700"
@@ -124,7 +124,7 @@ export default function AboutUs() {
                   {pillar.bullets.map((bullet, i) => (
                     <li key={i} className="flex items-start text-gray-700">
                       <span
-                        className={`mr-3 text-xl ${
+                        className={`mr-3 font-medium ${
                           pillar.color === "orange"
                             ? "text-orange-600"
                             : "text-blue-700"
