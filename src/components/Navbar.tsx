@@ -161,7 +161,7 @@ export default function Navbar() {
                     key={item.label}
                     href={item.href}
                     onClick={closeMenus}
-                    className={`flex font-semibold items-center  gap-2  ${
+                    className={`flex font-medium items-center  gap-2  ${
                       isActive(item.href) ? "text-orange-200 " : "text-white"
                     }`}
                   >
