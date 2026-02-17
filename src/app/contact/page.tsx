@@ -77,12 +77,12 @@ export default function ContactPage() {
       {/* Hero */}
 
       {/* Background Image */}
-      <div className="relative h-[80vh]">
+      <div className="relative mt-10 h-[80vh]">
         <Image
           src="/images/IMG_9815 (1).jpg"
           alt="Education and training background – joyful learning moment"
           fill
-          className="object-cover object-top"
+          className="object-cover object-center object-top "
           priority
         />
       </div>
