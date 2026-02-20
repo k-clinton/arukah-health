@@ -306,13 +306,13 @@ export default function AboutUsPage() {
 
       {/* SECTION 7: FOUNDER SECTION (Placeholder) */}
       <section className="max-w-7xl mx-auto px-6 lg:px-8 py-20">
-        <h2 className="text-4xl md:text-5xl font-serif font-bold text-center text-orange-600 mb-16">
+        <h2 className="text-4xl md:text-5xl font-serif font-bold text-center text-orange-600 mb-9">
           Meet the Founder
         </h2>
         {/* Top full-width intro paragraph */}
         <div className="mb-8 md:mb-16">
           <div className="bg-white  p-8 md:p-10   ">
-            <p className="  text-gray-700 leading-relaxed font-medium text-center">
+            <p className="  text-gray-700 text-left leading-relaxed font-medium text-center">
               Arukah Health was founded with a deep passion for helping children
               with neuro-developmental challenges and milestone delays discover
               their potential through joyful, purposeful exercise. With years of
