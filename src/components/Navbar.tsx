@@ -101,7 +101,7 @@ export default function Navbar() {
                 width={40}
                 height={40}
               />
-              <span className="font-serif text-4xl font-bold">
+              <span className="font-serif text-3xl font-bold">
                 ARUKAH HEALTH
               </span>
             </Link>
@@ -232,7 +232,7 @@ export default function Navbar() {
                             key={sub.label}
                             href={sub.href}
                             onClick={closeMenus}
-                            className="flex items-center gap-3 py-2 text-orange-500 hover:text-orange-600"
+                            className="flex items-center gap-3 py-2 text-white hover:text-orange-600"
                           >
                             <sub.icon size={20} />
                             {sub.label}
