@@ -250,7 +250,7 @@ export default function AboutUsPage() {
           alt=""
           width={140}
           height={140}
-          className="pointer-events-none absolute top-6 right-6 opacity-70 z-0"
+          className="pointer-events-none hidden md:block absolute top-6 right-6 opacity-70 z-0"
         />
 
         {/* Content */}
