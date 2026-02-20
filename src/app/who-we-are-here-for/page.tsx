@@ -32,7 +32,7 @@ export default function WhoWeAreHereFor() {
       {/* Content */}
       <section className="py-10 md:py-10 px-6 bg-white">
         <div className="max-w-5xl mx-auto ">
-          <p className="font-medium  text-gray-700 leading-relaxed">
+          <p className="font-medium text-left  text-gray-700 leading-relaxed">
             We are dedicated to supporting children who face unique
             developmental and milestone challenges, as well as the families and
             communities who walk alongside them.
