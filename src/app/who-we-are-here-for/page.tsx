@@ -40,7 +40,7 @@ export default function WhoWeAreHereFor() {
         </div>
       </section>
       <div className="max-w-7xl mx-auto px-6 mt-24">
-        <h2 className="text-center font-serif text-4xl font-semibold text-orange-600 mb-16">
+        <h2 className="text-center font-serif text-3xl md:text-4xl font-semibold text-orange-600 mb-16">
           Challenges We Address
         </h2>
 
@@ -54,14 +54,14 @@ export default function WhoWeAreHereFor() {
               transition={{ duration: 0.4, delay: index * 0.05 }}
               className="bg-white border-3 border-orange-300 rounded-2xl p-6 shadow-sm"
             >
-              <h3 className="font-serif text-xl font-semibold text-blue-700 mb-4">
+              <h3 className="font-serif text-lg md:text-xl font-semibold text-blue-700 mb-4">
                 {section.title}
               </h3>
               <ul className="space-y-2 text-gray-700">
                 {section.items.map((item, idx) => (
                   <li key={idx} className="flex gap-2">
                     <span
-                      className={`mr-3 text-xl text-orange-600
+                      className={`mr-3 font-medium text-orange-600
                         }`}
                     >
                       ✦
