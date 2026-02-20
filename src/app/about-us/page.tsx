@@ -49,7 +49,7 @@ export default function AboutUsPage() {
                 build strength, confidence, and independence in ways that feel
                 joyful and empowering.
               </p>
-              <p>
+              <p className="text-justify md:text-left  ">
                 Our programs are designed to nurture core physical functions —
                 strength, balance, coordination, flexibility, and endurance —
                 while also fostering resilience, play, and emotional well being.
@@ -193,23 +193,6 @@ export default function AboutUsPage() {
       {/* SECTION 5: VISION & MISSION */}
       <section className="relative max-w-7xl mx-auto px-6 lg:px-8 py-20">
         {/* Decorative images – top left & top right */}
-        <div className="absolute -top-16 -left-16 md:-left-24 w-32 h-32 md:w-48 md:h-48 pointer-events-none z-0 opacity-70">
-          <Image
-            src="/images/icon8.png"
-            alt=""
-            fill
-            className="object-contain"
-          />
-        </div>
-
-        <div className="absolute -top-16 -right-16 md:-right-24 w-32 h-32 md:w-48 md:h-48 pointer-events-none z-0 opacity-70">
-          <Image
-            src="/images/icon12.png"
-            alt=""
-            fill
-            className="object-contain"
-          />
-        </div>
 
         {/* Main Content – unchanged */}
         <div className="grid md:grid-cols-2 gap-12 relative z-10">
