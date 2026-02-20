@@ -41,7 +41,7 @@ export default function AboutUsPage() {
               About Us
             </h1>
             <div className="prose prose-lg text-gray-700  font-medium  leading-relaxed space-y-6">
-              <p>
+              <p className="text-justify md:text-left  ">
                 Arukah Health is a pediatric therapy center dedicated to
                 creating progress through movement. We specialize in
                 personalized exercise therapy for children with neuro-
