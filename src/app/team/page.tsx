@@ -117,7 +117,7 @@ export default function TeamSection() {
                     src={member.image}
                     alt={member.alt}
                     fill
-                    className="object-cover "
+                    className=" object-contain md:object-cover "
                     sizes="(max-width: 768px) 192px, 224px"
                   />
                 </div>
