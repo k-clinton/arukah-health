@@ -56,16 +56,7 @@ export default function Hero() {
               {/* Blue outline border */}
 
               {/* Black inner frame */}
-              <div className="relative bg-black rounded-2xl shadow-2xl overflow-hidden">
-                <Image
-                  src="/images/IMG_2412.JPG"
-                  alt="Child engaged in joyful exercise therapy"
-                  width={400}
-                  height={400}
-                  className="w-full h-auto border-5 border-blue-700 object-cover rounded-xl"
-                  priority
-                />
-              </div>
+              <div className="relative bg-black rounded-2xl shadow-2xl overflow-hidden"></div>
 
               {/* Existing floating decorative images (unchanged) */}
               <motion.div
@@ -76,15 +67,7 @@ export default function Hero() {
                   repeat: Infinity,
                   ease: "easeInOut",
                 }}
-              >
-                <Image
-                  src="/images/pd2.jpg"
-                  alt=""
-                  width={220}
-                  height={230}
-                  className="opacity-90 rotate-6"
-                />
-              </motion.div>
+              ></motion.div>
 
               <motion.div
                 className="pointer-events-none absolute -bottom-38 -right-6 z-30  md:block"
@@ -94,15 +77,7 @@ export default function Hero() {
                   repeat: Infinity,
                   ease: "easeInOut",
                 }}
-              >
-                <Image
-                  src="/images/icon7.jpg"
-                  alt=""
-                  width={150}
-                  height={150}
-                  className="opacity-100 -rotate-6"
-                />
-              </motion.div>
+              ></motion.div>
             </div>
           </div>
         </div>
