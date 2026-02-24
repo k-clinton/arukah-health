@@ -75,7 +75,7 @@ export default function Statistics() {
           initial={{ opacity: 0, y: 50 }}
           animate={inView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.8 }}
-          className="text-4xl md:text-4xl font-serif font-bold  text-blue-700 drop-shadow-2xl mb-8"
+          className="text-4xl md:text-4xl font-serif font-bold  text-blue-700 drop-shadow-md  mb-8"
         >
           Real Impact, Real Joy
         </motion.h2>
@@ -87,7 +87,7 @@ export default function Statistics() {
               initial={{ opacity: 0, y: 60, scale: 0.92 }}
               animate={inView ? { opacity: 1, y: 0, scale: 1 } : {}}
               transition={{ duration: 0.7, delay: index * 0.12 }}
-              className="bg-white/90 backdrop-blur-md rounded-3xl p-8 md:p-10 shadow-2xl border-4 border-orange-300/40 hover:border-orange-300 transition-all duration-300 hover:scale-105"
+              className="bg-white/90 backdrop-blur-md rounded-3xl p-8 md:p-10 shadow-xl   transition-all duration-300 hover:scale-105"
             >
               <div className="text-4xl md:text-4xl font-black text-blue-700 mb-3">
                 {inView ? (
@@ -107,9 +107,7 @@ export default function Statistics() {
                 {stat.label}
               </h3>
 
-              <p className="text-gray-700 font-medium ">
-                {stat.description}
-              </p>
+              <p className="text-gray-700 font-medium ">{stat.description}</p>
             </motion.div>
           ))}
         </div>
