@@ -1,14 +1,14 @@
 import type { Metadata } from "next";
-import { Montserrat, Inria_Serif } from "next/font/google";
+import { Inria_Serif, DM_Sans } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 
 /* Google Fonts */
-const montserrat = Montserrat({
+const dmSans = DM_Sans({
   subsets: ["latin"],
   weight: ["300", "400", "500", "600", "700"],
-  variable: "--font-montserrat",
+  variable: "--font-dm-sans",
   display: "swap",
 });
 
@@ -31,9 +31,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body
-        className={`${montserrat.variable} ${inriaSerif.variable} antialiased`}
-      >
+      <body className={`${dmSans.variable} ${inriaSerif.variable} antialiased`}>
         <Navbar />
         {children}
         <Footer />
