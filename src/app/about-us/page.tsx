@@ -37,7 +37,7 @@ export default function AboutUsPage() {
             variants={fadeInUp}
             className="order-2 lg:order-1"
           >
-            <h1 className="text-4xl md:text-5xl font-serif font-bold text-blue-700 mb-8">
+            <h1 className="text-4xl md:text-5xl font-serif font-bold text-[#0F766E] mb-8">
               About Us
             </h1>
             <div className="prose prose-lg text-gray-700  font-medium  leading-relaxed space-y-6">
@@ -144,7 +144,7 @@ export default function AboutUsPage() {
             variants={fadeInUp}
             className="bg-white/80 backdrop-blur-md rounded-3xl p-12  shadow-xl border border-4 border-orange-400"
           >
-            <h2 className="text-4xl md:text-5xl font-serif font-bold text-blue-700 mb-10">
+            <h2 className="text-4xl md:text-5xl font-serif font-bold text-[#0F766E] mb-10">
               Arukah Health
             </h2>
             <div className="prose prose-xl text-gray-800 leading-relaxed   p-6 space-y-6 max-w-4xl mx-auto">
@@ -163,7 +163,7 @@ export default function AboutUsPage() {
                 wholeness.
               </p>
               <p></p>
-              <p className="font-semibold">
+              <p className="font-semibold text-[#0F766E]">
                 Every Session, Every Program, Every Playful Activity is crafted
                 with intention—because wholeness deserves that kind of care!
               </p>
@@ -180,10 +180,10 @@ export default function AboutUsPage() {
             variants={fadeInUp}
             className="space-y-8"
           >
-            <h2 className="text-3xl md:text-4xl font-serif font-bold text-blue-700">
+            <h2 className="text-3xl md:text-4xl font-serif font-bold text-[#0F766E] mb-4">
               Thank you for being part of this story.
             </h2>
-            <p className="text-xl text-gray-700 font-medium leading-relaxed">
+            <p className="text-xl text-[#0A0504] font-medium leading-relaxed">
               Whether you’re here to learn, move, teach, or heal, You Belong!
             </p>
           </motion.div>
@@ -201,12 +201,12 @@ export default function AboutUsPage() {
             whileInView="visible"
             viewport={{ once: true }}
             variants={fadeInUp}
-            className="bg-white rounded-2xl p-10 shadow-lg border-4 border-orange-300"
+            className="bg-white rounded-2xl p-10 shadow-lg border-2 border-[#F7E7CE]"
           >
-            <h3 className="text-3xl font-serif font-bold text-blue-700 mb-6">
+            <h3 className="text-3xl font-serif font-bold text-[#0F766E] mb-6">
               Our Vision
             </h3>
-            <p className=" font-medium text-gray-700 leading-relaxed">
+            <p className=" font-medium text-[#0A0504] leading-relaxed">
               To redefine recovery through exercise — transforming lives,
               nurturing resilience, and unlocking endless possibilities for
               every child.
@@ -218,12 +218,12 @@ export default function AboutUsPage() {
             whileInView="visible"
             viewport={{ once: true }}
             variants={fadeInUp}
-            className="bg-white rounded-2xl p-10 shadow-lg border-4 border-orange-300"
+            className="bg-white rounded-2xl p-10 shadow-lg border-2 border-[#F7E7CE]"
           >
-            <h3 className="text-3xl font-serif font-bold text-blue-700 mb-6">
+            <h3 className="text-3xl font-serif font-bold text-[#0F766E] mb-6">
               Our Mission
             </h3>
-            <p className=" font-medium text-gray-700 leading-relaxed">
+            <p className=" font-medium text-[#0A0504] leading-relaxed">
               To deliver inclusive, research informed pediatric exercise therapy
               that builds function and independence in children with
               neuro-developmental challenges and milestone delays—blending
@@ -255,7 +255,7 @@ export default function AboutUsPage() {
 
         {/* Content */}
         <div className="relative z-10 max-w-7xl mx-auto px-6 lg:px-8">
-          <h2 className="text-4xl md:text-5xl font-serif font-bold text-center text-orange-600 mb-16">
+          <h2 className="text-4xl md:text-5xl font-serif font-bold text-center text-[#0F766E] mb-16">
             Our Core Values
           </h2>
 
@@ -292,12 +292,12 @@ export default function AboutUsPage() {
                 whileInView="visible"
                 viewport={{ once: true }}
                 variants={fadeInUp}
-                className="bg-white rounded-2xl p-8 shadow-md border-4 border-orange-300 text-center"
+                className="bg-white rounded-2xl p-8 shadow-md border-2 border-[#F7E7CE] text-center"
               >
-                <h3 className="text-2xl font-serif font-bold text-blue-700 mb-4">
+                <h3 className="text-2xl font-serif font-bold text-[#0F766E] mb-4">
                   {value.title}
                 </h3>
-                <p className="text-gray-700 font-medium">{value.desc}</p>
+                <p className="text-[#0A0504] font-medium">{value.desc}</p>
               </motion.div>
             ))}
           </div>
@@ -306,13 +306,13 @@ export default function AboutUsPage() {
 
       {/* SECTION 7: FOUNDER SECTION (Placeholder) */}
       <section className="max-w-7xl mx-auto px-6 lg:px-8 py-20">
-        <h2 className="text-4xl md:text-5xl font-serif font-bold text-center text-orange-600 mb-9">
+        <h2 className="text-4xl md:text-5xl font-serif font-bold text-center text-[#0F766E] mb-9">
           Meet the Founder
         </h2>
         {/* Top full-width intro paragraph */}
         <div className="mb-8 md:mb-16">
           <div className="bg-white  p-8 md:p-10   ">
-            <p className="  text-gray-700 text-left leading-relaxed font-medium text-center">
+            <p className="  text-[#0A0504] text-left leading-relaxed font-medium text-center">
               Arukah Health was founded with a deep passion for helping children
               with neuro-developmental challenges and milestone delays discover
               their potential through joyful, purposeful exercise. With years of
@@ -331,9 +331,9 @@ export default function AboutUsPage() {
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.7 }}
-            className="lg:flex-1 order-2 lg:order-1 bg-white rounded-2xl p-8 md:p-10 shadow-lg border-4 border-[#FFB347]"
+            className="lg:flex-1 order-2 lg:order-1 bg-white rounded-2xl p-8 md:p-10 shadow-lg border-2 border-[#F7E7CE]"
           >
-            <p className="text-base font-medium text-gray-700 mb-4 leading-relaxed">
+            <p className="text-base font-medium text-[#0A0504] mb-4 leading-relaxed">
               “I understand that nurturing children with neuro-developmental
               conditions and milestone delays can be a walk through seasons of
               uncertainty, burnout, pain, and quiet resilience. Complexities
@@ -362,12 +362,12 @@ export default function AboutUsPage() {
               built not only in muscles but also in spirit.
             </p>
 
-            <p className="text-base font-medium font-semibold text-blue-700 mb-4 font-serif  leading-relaxed">
+            <p className="text-base font-medium font-semibold text-[#0F766E] mb-4 font-serif  leading-relaxed">
               This is where Healing Begins and Recovery is Redefined! This is
               Home!
-              <span className="text-gray-700">”</span>
+              <span className="text-[#0A0504]">”</span>
             </p>
-            <p className="text-base md:text-2xl font-medium font-serif text-blue-700 mb-4 font-semibold  leading-relaxed">
+            <p className="text-base md:text-2xl font-medium font-serif text-[#0F766E] mb-4 font-semibold  leading-relaxed">
               Welcome to Arukah Health!
             </p>
           </motion.div>
@@ -392,10 +392,10 @@ export default function AboutUsPage() {
             </div>
 
             <div className="mt-6 text-center">
-              <h3 className="text-3xl md:text-4xl font-serif font-bold text-blue-700 mb-1">
+              <h3 className="text-3xl md:text-4xl font-serif font-bold text-[#0F766E] mb-1">
                 Ivy Gacheri
               </h3>
-              <h3 className="text-xl md:text-2xl font-bold font-serif text-orange-600">
+              <h3 className="text-xl md:text-2xl font-bold font-serif text-BLACK">
                 Founder & CEO, Arukah Health
               </h3>
             </div>
