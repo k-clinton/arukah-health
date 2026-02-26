@@ -76,9 +76,9 @@ export default function AboutUs() {
   const [selectedPillar, setSelectedPillar] = useState<Pillar | null>(null);
 
   return (
-    <section className="py-20 px-6 bg-gradient-to-br from-blue-50 to-orange-50">
+    <section className="py-20 px-6 bg-[#F7E7CE] from-blue-50 to-orange-50">
       <div className="max-w-7xl mx-auto">
-        <h2 className="text-4xl text-center font-serif mb-6 font-bold text-blue-700 drop-shadow-md">
+        <h2 className="text-4xl text-center font-serif mb-6 font-bold text-[#0f766e] drop-shadow-md">
           What You’ll Love About Us
         </h2>
 
@@ -88,8 +88,8 @@ export default function AboutUs() {
               key={index}
               className={`bg-white rounded-3xl shadow-xl overflow-hidden cursor-pointer transform transition-all hover:scale-105 hover:shadow-2xl border-4 border-transparent flex flex-col ${
                 pillar.color === "orange"
-                  ? "hover:border-orange-500"
-                  : "hover:border-blue-600"
+                  ? "hover:border-[#F7E7CE]"
+                  : "hover:border-white"
               }`}
               whileHover={{ y: -10 }}
             >
@@ -108,9 +108,7 @@ export default function AboutUs() {
               <div className="p-8 flex flex-col flex-grow">
                 <h3
                   className={`text-xl font-serif font-bold mb-4 ${
-                    pillar.color === "orange"
-                      ? "text-orange-600"
-                      : "text-blue-700"
+                    pillar.color === "orange" ? "text-[#0f766e]" : "text-black"
                   }`}
                 >
                   {pillar.title}
@@ -126,8 +124,8 @@ export default function AboutUs() {
                       <span
                         className={`mr-3 font-medium ${
                           pillar.color === "orange"
-                            ? "text-orange-600"
-                            : "text-blue-700"
+                            ? "text-[#0f766e]"
+                            : "text-black"
                         }`}
                       >
                         ✦
@@ -143,10 +141,10 @@ export default function AboutUs() {
                     e.stopPropagation(); // Prevent card click from interfering
                     setSelectedPillar(pillar);
                   }}
-                  className={`w-full py-3 px-6 rounded-full font-semibold text-white transition-all duration-300 hover:scale-105 hover:shadow-md ${
+                  className={`w-full py-3 px-6 rounded-full font-semibold text-black transition-all duration-300 hover:scale-105 hover:shadow-md ${
                     pillar.color === "orange"
-                      ? "bg-gradient-to-r from-orange-500 to-orange-600 hover:from-orange-600 hover:to-orange-700"
-                      : "bg-gradient-to-r from-blue-700 to-blue-700 hover:from-blue-700 hover:to-blue-800"
+                      ? "bg-[#0f766e] hover:bg-[#0f766e]"
+                      : "bg-[#F7E7CE] hover:bg-[#F7E7CE]"
                   }`}
                 >
                   Learn More →
