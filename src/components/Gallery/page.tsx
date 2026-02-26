@@ -61,9 +61,9 @@ export default function FamilyOvalGallery() {
   };
 
   return (
-    <section className="w-full bg-white py-16 md:py-24">
+    <section className="w-full bg-[#F7E7CE] py-16 md:py-24">
       <div className="mx-auto max-w-7xl px-6">
-        <h2 className="text-3xl md:text-4xl font-serif font-bold text-center text-blue-700 mb-10 md:mb-16">
+        <h2 className="text-3xl md:text-4xl font-serif font-bold text-center text-[#0F766E] mb-10 md:mb-16">
           Moments of <span className="text-orange-600">Joy</span> & Connection
         </h2>
 
@@ -80,7 +80,7 @@ export default function FamilyOvalGallery() {
                 transition={{ duration: 0.8, ease: "easeInOut" }}
                 className="absolute inset-0"
               >
-                <div className="relative h-full w-full overflow-hidden rounded-3xl shadow-2xl border-4 border-orange-300 hover:border-orange-300 transition-colors">
+                <div className="relative h-full w-full overflow-hidden rounded-3xl shadow-2xl border-4 border-[#F7E7CE] hover:border-white transition-colors">
                   <Image
                     src={images[currentIndex].src}
                     alt={images[currentIndex].alt}
