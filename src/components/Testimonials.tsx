@@ -87,7 +87,7 @@ const InfiniteTestimonials = () => {
         {/* Header */}
         <div className="text-center mb-12">
           <h2 className="text-4xl md:text-4xl font-serif  font-bold text-gray-800 mb-4">
-            <span className="text-transparent bg-clip-text bg-blue-700">
+            <span className="text-transparent bg-clip-text bg-[#0F766E]">
               Success Stories
             </span>
           </h2>
@@ -98,9 +98,9 @@ const InfiniteTestimonials = () => {
 
           {/* Decorative elements */}
           <div className="flex justify-center gap-4 mt-6">
-            <div className="w-4 h-4 bg-blue-400 rounded-full animate-pulse"></div>
-            <div className="w-4 h-4 bg-orange-400 rounded-full animate-pulse delay-150"></div>
-            <div className="w-4 h-4 bg-amber-400 rounded-full animate-pulse delay-300"></div>
+            <div className="w-4 h-4 bg-[#0F766E] rounded-full animate-pulse"></div>
+            <div className="w-4 h-4 bg-black rounded-full animate-pulse delay-150"></div>
+            <div className="w-4 h-4 bg-[#F7E7CE] rounded-full animate-pulse delay-300"></div>
           </div>
         </div>
 
