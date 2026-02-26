@@ -91,7 +91,7 @@ export default function Navbar() {
   return (
     <nav className="fixed top-0 left-0 right-0 z-50 bg-white shadow-sm">
       {/* Top Bar */}
-      <div className="bg-white text-blue-700 ">
+      <div className="bg-white text-[#0f766e]">
         <div className="max-w-7xl mx-auto px-4">
           <div className="flex items-center h-12">
             <Link href="/" className="flex items-center gap-3">
@@ -108,8 +108,8 @@ export default function Navbar() {
       </div>
 
       {/* Main Nav */}
-      <div className="border-b  border-gray-100 bg-blue-700">
-        <div className="max-w-7xl bg-blue-700 mx-auto px-4">
+      <div className="border-b  border-gray-100 bg-[#0f766e]">
+        <div className="max-w-7xl bg-[#0f766e] mx-auto px-4">
           <div className="flex justify-between  items-center h-16">
             {/* Desktop Nav */}
             <div className="hidden lg:flex text-white items-center gap-8">
@@ -120,7 +120,7 @@ export default function Navbar() {
                       onClick={() =>
                         setDesktopServicesOpen(!desktopServicesOpen)
                       }
-                      className="flex items-center gap-2 font-medium text-white hover:text-orange-200 "
+                      className="flex items-center gap-2 font-medium text-white hover:text-[#F7E7CE] "
                     >
                       <item.icon size={18} />
                       {item.label}
@@ -134,16 +134,16 @@ export default function Navbar() {
                       <motion.div
                         initial={{ opacity: 0, y: 10 }}
                         animate={{ opacity: 1, y: 0 }}
-                        className="absolute mt-3 w-72 rounded-xl bg-blue-700 shadow-xl border py-3"
+                        className="absolute mt-3 w-72 rounded-xl bg-[#0f766e] shadow-xl border py-3"
                       >
                         {item.dropdownItems?.map((sub) => (
                           <Link
                             key={sub.label}
                             href={sub.href}
                             onClick={closeMenus}
-                            className={`flex items-center gap-3 px-6 py-3 hover:bg-[#FFB347] ${
+                            className={`flex items-center gap-3 px-6 py-3 hover:bg- ${
                               isActive(sub.href)
-                                ? "font-semibold text-orange-200"
+                                ? "font-semibold text-[#F7E7CE]"
                                 : "text-white"
                             }`}
                           >
@@ -175,7 +175,7 @@ export default function Navbar() {
               <Link
                 href={secondaryLink.href}
                 onClick={closeMenus}
-                className="border-2 border-orange-300 text-orange-600 px-6 py-2 bg-white rounded-full font-semibold hover:bg-white"
+                className="border-2 border-[#F7E7CE] text-black px-6 py-2 bg-white rounded-full font-semibold hover:bg-white"
               >
                 {secondaryLink.label}
               </Link>
@@ -183,7 +183,7 @@ export default function Navbar() {
               <Link
                 href={specialLink.href}
                 onClick={closeMenus}
-                className="border-2 border-[#4793FF] text-blue-700 px-6 py-2 bg-white rounded-full font-semibold hover:bg-white"
+                className="border-2 border-[#F7E7CE] text-black px-6 py-2 bg-white rounded-full font-semibold hover:bg-white"
               >
                 {specialLink.label}
               </Link>
