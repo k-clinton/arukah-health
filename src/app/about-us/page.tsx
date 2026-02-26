@@ -142,7 +142,7 @@ export default function AboutUsPage() {
             whileInView="visible"
             viewport={{ once: true }}
             variants={fadeInUp}
-            className="bg-white/80 backdrop-blur-md rounded-3xl p-12  shadow-xl border border-4 border-orange-400"
+            className="bg-white/80 backdrop-blur-md rounded-3xl p-12  shadow-xl border border-2 border-[#F7E7CE]"
           >
             <h2 className="text-4xl md:text-5xl font-serif font-bold text-[#0F766E] mb-10">
               Arukah Health
