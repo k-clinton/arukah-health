@@ -103,7 +103,7 @@ export default function Statistics() {
                 )}
               </div>
 
-              <h3 className="text-xl md:text-xl  text-[#0F766E] mb-4">
+              <h3 className="text-xl md:text-xl  text-[#0F766E] font-serif mb-4">
                 {stat.label}
               </h3>
 
