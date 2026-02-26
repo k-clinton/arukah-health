@@ -64,7 +64,7 @@ export default function FamilyOvalGallery() {
     <section className="w-full bg-[#F7E7CE] py-16 md:py-24">
       <div className="mx-auto max-w-7xl px-6">
         <h2 className="text-3xl md:text-4xl font-serif font-bold text-center text-[#0F766E] mb-10 md:mb-16">
-          Moments of <span className="text-orange-600">Joy</span> & Connection
+          Moments of <span className="text-[#FFB347]">Joy</span> & Connection
         </h2>
 
         {/* Carousel Container – smaller size */}
