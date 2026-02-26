@@ -40,7 +40,7 @@ export default function AboutUsPage() {
             <h1 className="text-4xl md:text-5xl font-serif font-bold text-[#0F766E] mb-8">
               About Us
             </h1>
-            <div className="prose prose-lg text-gray-700  font-medium  leading-relaxed space-y-6">
+            <div className="prose prose-lg text-[#0A0504]  font-medium  leading-relaxed space-y-6">
               <p className="text-justify md:text-left  ">
                 Arukah Health is a pediatric therapy center dedicated to
                 creating progress through movement. We specialize in
@@ -92,8 +92,8 @@ export default function AboutUsPage() {
             variants={fadeInUp}
             className="order-1 lg:order-2"
           >
-            <h2 className="text-4xl md:text-5xl font-serif font-bold text-blue-700 mb-8"></h2>
-            <div className="prose   prose-lg text-gray-700  font-medium  leading-relaxed space-y-6">
+            <h2 className="text-4xl md:text-5xl font-serif font-bold text-[#0F766E] mb-8"></h2>
+            <div className="prose   prose-lg text-[#0A0504]  font-medium  leading-relaxed space-y-6">
               <p>
                 At Arukah, therapy, care and support look different—they are
                 more embodied, more inclusive, more human. Through exercise, we
@@ -147,7 +147,7 @@ export default function AboutUsPage() {
             <h2 className="text-4xl md:text-5xl font-serif font-bold text-[#0F766E] mb-10">
               Arukah Health
             </h2>
-            <div className="prose prose-xl text-gray-800 leading-relaxed   p-6 space-y-6 max-w-4xl mx-auto">
+            <div className="prose prose-xl text-[#0A0504] leading-relaxed   p-6 space-y-6 max-w-4xl mx-auto">
               <p className=" font-medium font-semibold ">
                 We are more than an Exercise Clinic. We are a movement of Hope,
                 Science, and Soul—where every step is sacred, and every child’s
@@ -346,7 +346,7 @@ export default function AboutUsPage() {
               space where every child’s story is honored and small steps are
               cultured into great milestones.
             </p>
-            <p className="text-base font-medium text-gray-700 mb-4 leading-relaxed">
+            <p className="text-base font-medium text-[#0A0504] mb-4 leading-relaxed">
               Arukah Health is built on the belief that Exercise is Medicine.
               For us, exercise is more than biomechanics—it’s a language of
               healing, play, and growth. Every stretch, step, and breath is an
