@@ -6,7 +6,7 @@ import { motion } from "framer-motion";
 
 const HeroExtro = () => {
   return (
-    <section className="relative min-h-[500px] bg-blue-700 md:min-h-[600px] flex items-center  justify-center overflow-hidden rounded-2xl mx-4 md:mx-8 my-12 md:my-20 shadow-2xl">
+    <section className="relative min-h-[500px] bg-[#0f766e] md:min-h-[600px] flex items-center  justify-center overflow-hidden rounded-2xl mx-4 md:mx-8 my-12 md:my-20 shadow-2xl">
       {/* Decorative Image – Left */}
       <motion.div
         className="pointer-events-none absolute top-10 left-8 z-0 hidden md:block"
@@ -54,9 +54,9 @@ const HeroExtro = () => {
 
         <Link
           href="/contact"
-          className="inline-flex items-center justify-center gap-2 bg-[#FFB347] hover:from-yellow-500 hover:to-orange-600 text-gray-900 font-bold text-xl md:text-2xl py-4 px-10 rounded-full shadow-2xl hover:scale-105 transform transition-all duration-300 hover:shadow-yellow-300/50 border-4 border-white/30"
+          className="inline-flex items-center justify-center gap-2 bg-white hover:from-yellow-500 hover:to-orange-600 text-gray-900 font-bold text-xl md:text-2xl py-4 px-10 rounded-full shadow-2xl hover:scale-105 transform transition-all duration-300 hover:shadow-yellow-300/50 border-4 border-white/30"
         >
-          <span className="text-white">Begin the Journey</span>
+          <span className="text-black">Begin the Journey</span>
         </Link>
       </div>
     </section>
