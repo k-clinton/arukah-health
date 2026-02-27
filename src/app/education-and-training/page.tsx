@@ -30,11 +30,11 @@ export default function EducationAndTraining() {
 
           {/* Content centered on top */}
           <div className="relative z-10 text-center px-6 max-w-5xl">
-            <h1 className="text-5xl sm:text-6xl md:text-7xl font-serif font-extrabold text-[#FFB347] drop-shadow-2xl mb-6 md:mb-8">
+            <h1 className="text-5xl sm:text-6xl md:text-7xl font-serif font-extrabold text-[#0f766e] drop-shadow-2xl mb-6 md:mb-8">
               Education and Training
             </h1>
 
-            <p className="font-medium  leading-relaxed text-white">
+            <p className="font-medium  leading-relaxed text-white ">
               Training sessions designed to build capacity and increase
               knowledge among individuals, caregivers, parents, families and
               communities.
@@ -46,7 +46,7 @@ export default function EducationAndTraining() {
 
           {/* Core Message */}
           <div className="max-w-5xl mt-10 mx-auto  mb-20">
-            <p className=" font-medium   text-gray-800 leading-relaxed">
+            <p className=" font-medium   text-[#0A0504]  leading-relaxed">
               Our education and training programs are designed to equip parents,
               caregivers, and communities with the knowledge, skills, tools and
               exercise strategies needed to understand and support children with
@@ -118,10 +118,10 @@ export default function EducationAndTraining() {
 
                 {/* Card content */}
                 <div className="p-8 md:p-10 flex flex-col flex-grow">
-                  <h3 className="text-2xl md:text-2xl font-serif font-bold text-blue-700 mb-5">
+                  <h3 className="text-2xl md:text-2xl font-serif font-bold text-[#0f766e] mb-5">
                     {specialty.title}
                   </h3>
-                  <p className="text-gray-700 font-medium leading-relaxed flex-grow">
+                  <p className="text-[#0A0504]  font-medium leading-relaxed flex-grow">
                     {specialty.desc}
                   </p>
                 </div>
@@ -149,7 +149,7 @@ export default function EducationAndTraining() {
                 <h2 className="text-2xl md:text-2xl font-serif font-bold text-[#0f766e] mb-6">
                   Partnering with Families for Lasting Progress
                 </h2>
-                <p className="font-medium text-gray-700 leading-relaxed">
+                <p className="font-medium text-[#0A0504]  leading-relaxed">
                   We believe parents and caregivers are the most important
                   members of the team. Our training equips them with practical
                   tools, confidence, and strategies to support their
@@ -166,7 +166,7 @@ export default function EducationAndTraining() {
                 <h2 className="text-2xl md:text-2xl font-serif font-bold text-[#0f766e] mb-6">
                   Setting the Foundations for Safe and Healthy Exercise
                 </h2>
-                <p className=" font-medium text-gray-700 leading-relaxed">
+                <p className=" font-medium text-[#0A0504]  leading-relaxed">
                   Body awareness, motor planning, and postural stability &
                   control form the foundation of healthy movement and exercise.
                   We teach simple, effective techniques that reduce strain,
@@ -201,7 +201,7 @@ export default function EducationAndTraining() {
                 <h2 className="text-2xl  font-serif font-bold text-[#0f766e] mb-6">
                   Creating Inclusive Spaces for Exercise and Movement
                 </h2>
-                <p className=" font-medium text-gray-700 leading-relaxed">
+                <p className=" font-medium text-[#0A0504]  leading-relaxed">
                   Inclusive environments are vital for ensuring every child can
                   participate, grow, and thrive through movement. Our programs
                   extend beyond the family, equipping teachers, community
@@ -219,7 +219,7 @@ export default function EducationAndTraining() {
               </h3>
               <Link
                 href="/contact"
-                className="inline-block bg-[]  text-white font-bold py-5 px-12 rounded-full text-xl shadow-xl transform hover:scale-105 transition duration-300"
+                className="inline-block bg-[#0f766e]  text-white font-bold py-5 px-12 rounded-full text-xl shadow-xl transform hover:scale-105 transition duration-300"
               >
                 Contact Us
               </Link>
