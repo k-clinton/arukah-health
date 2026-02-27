@@ -108,7 +108,7 @@ export default function ExerciseTherapy() {
         </div>
 
         <div className="relative z-10 text-center px-6 max-w-5xl">
-          <h1 className="text-5xl sm:text-6xl md:text-7xl font-serif font-extrabold text-[#FFB347] drop-shadow-2xl mb-6 md:mb-8">
+          <h1 className="text-5xl sm:text-6xl md:text-7xl font-serif font-extrabold text-[#0f766e] drop-shadow-2xl mb-6 md:mb-8">
             Exercise Therapy
           </h1>
 
@@ -133,7 +133,7 @@ export default function ExerciseTherapy() {
           {/* First paragraph + carousel on right */}
           <div className="grid lg:grid-cols-2 gap-10 lg:gap-16 items-center">
             <div className="order-2 lg:order-1 text-center lg:text-left">
-              <h2 className="text-3xl md:text-4xl font-serif font-bold text-blue-700 mb-8 md:mb-10">
+              <h2 className="text-3xl md:text-4xl font-serif font-bold text-[#0f766e] mb-8 md:mb-10">
                 Our Programs
               </h2>
               <p className="prose prose-lg text-gray-700   font-medium  leading-relaxed space-y-6">
@@ -191,7 +191,7 @@ export default function ExerciseTherapy() {
       {/* Key Areas Of Focus Cards */}
       <section className="py-16 px-6 bg-white">
         <div className="max-w-7xl mx-auto">
-          <h3 className="text-3xl md:text-4xl font-serif font-bold text-center text-blue-700 mb-12">
+          <h3 className="text-3xl md:text-4xl font-serif font-bold text-center text-[#0f766e] mb-12">
             Key Areas Of Focus
           </h3>
 
@@ -228,10 +228,10 @@ export default function ExerciseTherapy() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ delay: i * 0.1 }}
-                className={`group bg-white rounded-2xl overflow-hidden shadow-lg transition-all duration-300 border-4 ${
+                className={`group bg-white rounded-2xl overflow-hidden shadow-lg transition-all duration-300 border-2 ${
                   item.theme === "orange"
-                    ? "border-orange-300 hover:border-orange-300 "
-                    : "border-orange-300 hover:border-orange-300 "
+                    ? "border-[#F7E7CE] hover:[#F7E7CE] "
+                    : "border-[#F7E7CE] hover:[#F7E7CE] "
                 } hover:scale-105 hover:shadow-xl flex flex-col`}
               >
                 {/* Full-width image at top */}
@@ -248,7 +248,7 @@ export default function ExerciseTherapy() {
 
                 {/* Card content */}
                 <div className="p-8 flex flex-col flex-grow items-center text-center">
-                  <h4 className="text-xl font-bold font-serif text-blue-700 mb-3">
+                  <h4 className="text-xl font-bold font-serif text-[#0f766e] mb-3">
                     {item.title}
                   </h4>
                   <p className="text-gray-700 font-medium flex-grow">
@@ -264,13 +264,13 @@ export default function ExerciseTherapy() {
       {/* Alternating Image + Content Blocks */}
       <section className="py-20 px-6">
         <div className="max-w-7xl mx-auto space-y-24">
-          <h3 className="text-3xl md:text-4xl font-serif font-bold text-center text-orange-600 mb-12">
+          <h3 className="text-3xl md:text-4xl font-serif font-bold text-center text-[#0f766e] mb-12">
             Activities in Our programs{" "}
           </h3>
 
           {/* Block 1 */}
           <div className="grid lg:grid-cols-2 gap-12 items-center">
-            <div className="relative rounded-3xl overflow-hidden border-4 border-orange-300 shadow-2xl">
+            <div className="relative rounded-3xl overflow-hidden border-2 border-[#F7E7CE] shadow-2xl">
               <Image
                 src="/images/bg7.jpg"
                 alt="Child enjoying water-based exercise therapy"
@@ -280,7 +280,7 @@ export default function ExerciseTherapy() {
               />
             </div>
             <div>
-              <h2 className="text-2xl md:text-2xl font-serif font-bold text-blue-700 mb-6">
+              <h2 className="text-2xl md:text-2xl font-serif font-bold text-[#0f766e] mb-6">
                 Structured & Play-Based Exercise
               </h2>
               <p className="prose prose-lg text-gray-700  font-medium  leading-relaxed space-y-6">
@@ -289,7 +289,7 @@ export default function ExerciseTherapy() {
               </p>
               <button
                 onClick={() => toggleTab(0)}
-                className="flex items-center gap-2 text-orange-600 font-medium hover:underline mt-4"
+                className="flex items-center gap-2 text-[#0f766e] font-medium hover:underline mt-4"
               >
                 {openTab === 0 ? <Minus size={20} /> : <Plus size={20} />}
                 Learn More
@@ -317,7 +317,7 @@ export default function ExerciseTherapy() {
           {/* Block 2 */}
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div className="order-2 lg:order-1">
-              <h2 className="text-2xl md:text-2xl font-serif font-bold text-blue-700 mb-6">
+              <h2 className="text-2xl md:text-2xl font-serif font-bold text-[#0f766e] mb-6">
                 Swimming Lessons
               </h2>
               <p className=" text-gray-700 leading-relaxed mb-6 font-medium">
@@ -326,7 +326,7 @@ export default function ExerciseTherapy() {
               </p>
               <button
                 onClick={() => toggleTab(1)}
-                className="flex items-center gap-2 text-orange-600 font-medium hover:underline"
+                className="flex items-center gap-2 text-[#0f766e] font-medium hover:underline"
               >
                 {openTab === 1 ? <Minus size={20} /> : <Plus size={20} />}
                 Learn More
@@ -351,7 +351,7 @@ export default function ExerciseTherapy() {
                 </div>
               )}
             </div>
-            <div className="relative rounded-3xl overflow-hidden border-4 border-orange-300 shadow-2xl order-1 lg:order-2">
+            <div className="relative rounded-3xl overflow-hidden border-2 border-[#F7E7CE] shadow-2xl order-1 lg:order-2">
               <Image
                 src="/images/swimming55.jpg"
                 alt="Child guided swimming session"
@@ -364,7 +364,7 @@ export default function ExerciseTherapy() {
 
           {/* Block 3 */}
           <div className="grid lg:grid-cols-2 gap-12 items-center">
-            <div className="relative rounded-3xl border-4 border-orange-300 overflow-hidden shadow-2xl">
+            <div className="relative rounded-3xl border-2 border-[#F7E7CE] overflow-hidden shadow-2xl">
               <Image
                 src="/images/hiking.jpg"
                 alt="Child hiking with support in nature"
@@ -374,7 +374,7 @@ export default function ExerciseTherapy() {
               />
             </div>
             <div>
-              <h2 className="text-2xl md:text-2xl font-serif font-bold text-blue-700 mb-6">
+              <h2 className="text-2xl md:text-2xl font-serif font-bold text-[#0f766e] mb-6">
                 Hiking Sessions
               </h2>
               <p className=" text-gray-700 leading-relaxed mb-6 font-medium">
@@ -383,7 +383,7 @@ export default function ExerciseTherapy() {
               </p>
               <button
                 onClick={() => toggleTab(2)}
-                className="flex items-center gap-2 text-orange-600 font-medium hover:underline"
+                className="flex items-center gap-2 text-[#0f766e] font-medium hover:underline"
               >
                 {openTab === 2 ? <Minus size={20} /> : <Plus size={20} />}
                 Learn More
@@ -410,7 +410,7 @@ export default function ExerciseTherapy() {
           {/* Block 4 */}
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div className="order-2 lg:order-1">
-              <h2 className="text-2xl md:text-2xl font-serif font-bold text-blue-600 mb-6">
+              <h2 className="text-2xl md:text-2xl font-serif font-bold text-[#0f766e] mb-6">
                 Biking Sessions
               </h2>
               <p className=" text-gray-700 leading-relaxed mb-6 font-medium">
@@ -419,7 +419,7 @@ export default function ExerciseTherapy() {
               </p>
               <button
                 onClick={() => toggleTab(3)}
-                className="flex items-center gap-2 text-orange-600 font-medium hover:underline"
+                className="flex items-center gap-2 text-[#0f766e] font-medium hover:underline"
               >
                 {openTab === 3 ? <Minus size={20} /> : <Plus size={20} />}
                 Learn More
@@ -446,7 +446,7 @@ export default function ExerciseTherapy() {
                 </div>
               )}
             </div>
-            <div className="relative rounded-3xl border-4 border-orange-300 overflow-hidden shadow-2xl order-1 lg:order-2">
+            <div className="relative rounded-3xl border-2 border-[#F7E7CE] overflow-hidden shadow-2xl order-1 lg:order-2">
               <Image
                 src="/images/biking.jpg"
                 alt="Child in structured play-based exercise session"
@@ -459,12 +459,12 @@ export default function ExerciseTherapy() {
 
           {/* Final CTA */}
           <div className="text-center mt-20">
-            <h3 className="text-2xl md:text-2xl font-serif font-bold text-blue-700 mb-6">
+            <h3 className="text-2xl md:text-2xl font-serif font-bold text-[#0f766e] mb-6">
               Ready to Help Your Child Move with Joy?
             </h3>
             <Link
               href="/contact"
-              className="inline-block bg-[#FFB347] hover:bg-orange-600 text-white font-bold py-5 px-12 rounded-full text-xl shadow-xl transform hover:scale-105 transition duration-300"
+              className="inline-block bg-[#0f766e] hover:bg-orange-600 text-white font-bold py-5 px-12 rounded-full text-xl shadow-xl transform hover:scale-105 transition duration-300"
             >
               Get Started Today →
             </Link>
