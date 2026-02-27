@@ -41,7 +41,7 @@ export default function Hero() {
 
             <Link
               href="/about"
-              className="inline-block bg-[#0f766e] hover:bg-orange-600 text-white font-bold py-4 px-10 sm:py-5 sm:px-12 md:px-14 rounded-full text-lg sm:text-xl shadow-lg transform hover:scale-105 transition duration-300"
+              className="inline-block bg-[#0f766e] hover:bg-[#F7E7CE] hover:text-black text-white font-bold py-4 px-10 sm:py-5 sm:px-12 md:px-14 rounded-full text-lg sm:text-xl shadow-lg transform hover:scale-105 transition duration-300"
             >
               KNOW MORE →
             </Link>
