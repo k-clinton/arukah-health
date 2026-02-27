@@ -73,7 +73,7 @@ export default function EducationAndTraining() {
               />
             </div>
             <div>
-              <p className="   font-bold text-orange-600 italic p-4 shadow-md font-serif rounded-md  border-3 border-blue-700 leading-relaxed">
+              <p className="   font-bold text-[#F7E7CE] italic p-4 shadow-md bg-black font-serif rounded-md  border-3 border-[#F7E7CE] leading-relaxed">
                 “Exercise knowledge is essential to supporting children with
                 neuro-developmental conditions and milestone delays—because
                 informed care creates consistent progress and lasting impact.”
@@ -82,7 +82,7 @@ export default function EducationAndTraining() {
           </div>
 
           {/* Two Specialties – Cards with Icons */}
-          <h2 className="text-3xl md:text-4xl font-serif text-center font-bold text-orange-600 mb-6">
+          <h2 className="text-3xl md:text-4xl font-serif text-center font-bold text-[#0f766e] mb-6">
             Our Education and Training Specialties{" "}
           </h2>
           <div className="grid md:grid-cols-2 gap-10 mb-24">
@@ -102,7 +102,7 @@ export default function EducationAndTraining() {
             ].map((specialty, i) => (
               <div
                 key={specialty.title}
-                className="bg-white rounded-3xl overflow-hidden shadow-xl border-4 border-orange-300 hover:shadow-2xl transition-all duration-300 flex flex-col"
+                className="bg-white rounded-2xl overflow-hidden shadow-xl border-2 border-[#F7E7CE] hover:shadow-2xl transition-all duration-300 flex flex-col"
               >
                 {/* Full-width image at top */}
                 <div className="relative h-48 w-full">
@@ -130,7 +130,7 @@ export default function EducationAndTraining() {
           </div>
 
           {/* Alternating Image + Content Blocks */}
-          <h2 className="text-3xl md:text-4xl font-serif text-center font-bold text-orange-600 mb-6">
+          <h2 className="text-3xl md:text-4xl font-serif text-center font-bold text-[#0f766e] mb-6">
             Why Education and Training?{" "}
           </h2>
           <div className="space-y-24">
@@ -146,7 +146,7 @@ export default function EducationAndTraining() {
                 />
               </div>
               <div>
-                <h2 className="text-2xl md:text-2xl font-serif font-bold text-blue-700 mb-6">
+                <h2 className="text-2xl md:text-2xl font-serif font-bold text-[#0f766e] mb-6">
                   Partnering with Families for Lasting Progress
                 </h2>
                 <p className="font-medium text-gray-700 leading-relaxed">
@@ -163,7 +163,7 @@ export default function EducationAndTraining() {
             {/* Block 2: Content left / Image right */}
             <div className="grid lg:grid-cols-2 gap-12 items-center">
               <div className="order-2 lg:order-1">
-                <h2 className="text-2xl md:text-2xl font-serif font-bold text-blue-700 mb-6">
+                <h2 className="text-2xl md:text-2xl font-serif font-bold text-[#0f766e] mb-6">
                   Setting the Foundations for Safe and Healthy Exercise
                 </h2>
                 <p className=" font-medium text-gray-700 leading-relaxed">
@@ -198,7 +198,7 @@ export default function EducationAndTraining() {
                 />
               </div>
               <div>
-                <h2 className="text-2xl  font-serif font-bold text-blue-700 mb-6">
+                <h2 className="text-2xl  font-serif font-bold text-[#0f766e] mb-6">
                   Creating Inclusive Spaces for Exercise and Movement
                 </h2>
                 <p className=" font-medium text-gray-700 leading-relaxed">
@@ -214,12 +214,12 @@ export default function EducationAndTraining() {
 
             {/* Final CTA */}
             <div className="text-center mt-20">
-              <h3 className="text-2xl md:text-2xl font-serif font-bold text-orange-600 mb-6">
+              <h3 className="text-2xl md:text-2xl font-serif font-bold text-[#0f766e] mb-6">
                 Ready to Empower Yourself, Your Family or Community?
               </h3>
               <Link
                 href="/contact"
-                className="inline-block bg-[#FFB347]  text-white font-bold py-5 px-12 rounded-full text-xl shadow-xl transform hover:scale-105 transition duration-300"
+                className="inline-block bg-[]  text-white font-bold py-5 px-12 rounded-full text-xl shadow-xl transform hover:scale-105 transition duration-300"
               >
                 Contact Us
               </Link>
