@@ -183,14 +183,14 @@ export default function AboutUs() {
                 <h3
                   className={`text-4xl font-bold mb-6 ${
                     selectedPillar.color === "orange"
-                      ? "text-orange-500"
-                      : "text-blue-600"
+                      ? "text-[#0f766e]"
+                      : "text-black"
                   }`}
                 >
                   {selectedPillar.title}
                 </h3>
                 <div
-                  className="prose prose-lg max-w-none text-gray-800 whitespace-pre-line"
+                  className="prose prose-lg max-w-none text-black whitespace-pre-line"
                   dangerouslySetInnerHTML={{
                     __html: selectedPillar.fullContent,
                   }}
