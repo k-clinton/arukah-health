@@ -88,13 +88,13 @@ export default function ContactPage() {
       </div>
 
       <section className="bg-orange-50 text-blue-700  py-10">
-        <p className="text-center font-serif text-blue-700 italic font-bold text-xl py-10">
+        <p className="text-center font-serif text-[#0f766e] italic font-bold text-xl py-10">
           Building Brighter Futures Through Exercise!{" "}
         </p>
       </section>
-      <section className="bg-[#FFB347] text-white  py-20">
+      <section className="bg-[#F7E7CE] text-white  py-20">
         <div className="max-w-7xl mx-auto px-4 text-center">
-          <h1 className=" text-4xl md:text-6xl font-serif font-bold">
+          <h1 className=" text-4xl md:text-6xl text-[#0f766e] font-serif font-bold">
             Get in Touch
           </h1>
           <p className="mt-4 font-medium text-[black]  font-montserrat">
@@ -110,7 +110,7 @@ export default function ContactPage() {
           <div className="grid md:grid-cols-2 gap-12">
             {/* Form */}
             <div>
-              <h2 className="text-3xl md:text-4xl font-serif  font-bold text-blue-700 mb-8">
+              <h2 className="text-3xl md:text-4xl font-serif  font-bold text-[#0f766e] mb-8">
                 Send Us a Message
               </h2>
               <form onSubmit={handleSubmit} className="space-y-6">
@@ -150,7 +150,7 @@ export default function ContactPage() {
                 <button
                   type="submit"
                   disabled={status === "sending"}
-                  className="w-full text-black bg-[#FFB347]  font-bold py-4 rounded-lg hover:bg-orange-600 transition flex items-center justify-center gap-3 disabled:opacity-70"
+                  className="w-full text-black bg-[#F7E7CE]  font-bold py-4 rounded-lg hover:bg-teal-700 transition flex items-center justify-center gap-3 disabled:opacity-70"
                 >
                   {status === "sending" ? (
                     <>Sending...</>
@@ -186,19 +186,19 @@ export default function ContactPage() {
 
             {/* Contact Info */}
             <div className="space-y-8">
-              <h2 className="text-3xl md:text-4xl font-serif font-bold text-blue-700 mb-8">
+              <h2 className="text-3xl md:text-4xl font-serif font-bold text-[#0f766e] mb-8">
                 Contact Information
               </h2>
 
               <div className="flex gap-5">
-                <div className="w-14 h-14 bg-slate-100 text-red-700 rounded-full flex items-center justify-center flex-shrink-0">
+                <div className="w-14 h-14 bg-green-100 text-red-700 rounded-full flex items-center justify-center flex-shrink-0">
                   <FaEnvelope className="w-7 h-7" />
                 </div>
                 <div>
                   <p className="font-bold text-black">Email</p>
                   <a
                     href="mailto:info@arukahhealth.co.ke"
-                    className="text-[#FFB347] hover:underline text-lg"
+                    className="text-[#0f766e] hover:underline text-lg"
                   >
                     info@arukahhealth.co.ke
                   </a>
@@ -206,14 +206,14 @@ export default function ContactPage() {
               </div>
 
               <div className="flex gap-5">
-                <div className="w-14 h-14 bg-slate-100 text-blue-700 rounded-full flex items-center justify-center flex-shrink-0">
+                <div className="w-14 h-14 bg-green-100 text-blue-700 rounded-full flex items-center justify-center flex-shrink-0">
                   <FaPhone className="w-7 h-7" />
                 </div>
                 <div>
                   <p className="font-bold text-black">Phone / WhatsApp</p>
                   <a
-                    href="tel:+254700000000"
-                    className="text-[#FFB347] hover:underline text-lg"
+                    href="tel:+254732461867"
+                    className="text-[#0f766e] hover:underline text-lg"
                   >
                     +254 758 304 012/+254 732 461 867
                   </a>
@@ -221,7 +221,7 @@ export default function ContactPage() {
               </div>
 
               <div className="flex gap-5">
-                <div className="w-14 h-14 bg-slate-100 text-red-700 rounded-full flex items-center justify-center flex-shrink-0">
+                <div className="w-14 h-14 bg-green-100 text-red-700 rounded-full flex items-center justify-center flex-shrink-0">
                   <FaMapMarkerAlt className="w-7 h-7" />
                 </div>
                 <div>
@@ -234,7 +234,7 @@ export default function ContactPage() {
               </div>
 
               <div className="flex gap-5">
-                <div className="w-14 h-14 bg-slate-100 text-blue-700 rounded-full flex items-center justify-center flex-shrink-0">
+                <div className="w-14 h-14 bg-green-100 text-blue-700 rounded-full flex items-center justify-center flex-shrink-0">
                   <FaClock className="w-7 h-7" />
                 </div>
                 <div>
