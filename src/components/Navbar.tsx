@@ -212,7 +212,7 @@ export default function Navbar() {
                   <div key={item.label}>
                     <button
                       onClick={() => setMobileServicesOpen(!mobileServicesOpen)}
-                      className="flex justify-between w-full px-4 py-3 rounded-lg hover:bg-orange-400"
+                      className="flex justify-between w-full px-4 py-3 rounded-lg hover:bg-[#0f766e] text-white items-center gap-3"
                     >
                       <span className="flex text-white items-center gap-3">
                         <item.icon size={22} />
@@ -230,7 +230,7 @@ export default function Navbar() {
                             key={sub.label}
                             href={sub.href}
                             onClick={closeMenus}
-                            className="flex items-center gap-3 py-2 text-white hover:text-orange-600"
+                            className="flex items-center rounded-md p-2 gap-3 py-2 text-white hover:bg-[#F7E7CE]"
                           >
                             <sub.icon size={20} />
                             {sub.label}
@@ -244,7 +244,7 @@ export default function Navbar() {
                     key={item.label}
                     href={item.href}
                     onClick={closeMenus}
-                    className="flex items-center text-white gap-3 px-4 py-3 rounded-lg hover:bg-orange-400"
+                    className="flex items-center text-white gap-3 px-4 py-3 rounded-lg hover:bg-[#F7E7CE]"
                   >
                     <item.icon size={22} />
                     {item.label}
@@ -255,7 +255,7 @@ export default function Navbar() {
               <Link
                 href={secondaryLink.href}
                 onClick={closeMenus}
-                className="flex items-center gap-3 px-4 py-3 font-semibold text-orange-500"
+                className="flex items-center gap-3 px-4 py-3 font-semibold text-[#F7E7CE]"
               >
                 <secondaryLink.icon size={22} />
                 {secondaryLink.label}
