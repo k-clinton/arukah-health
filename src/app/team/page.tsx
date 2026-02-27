@@ -93,10 +93,10 @@ export default function TeamSection() {
       <div className="max-w-7xl mx-auto">
         {/* Section Header */}
         <div className="text-center mb-12 md:mb-16">
-          <h2 className="text-4xl md:text-5xl font-serif font-extrabold text-orange-600 mb-4">
-            Meet Our <span className="text-orange-600">Dedicated Team</span>
+          <h2 className="text-4xl md:text-5xl font-serif font-extrabold text-[#0f766e] mb-4">
+            Meet Our <span className="text-black">Dedicated Team</span>
           </h2>
-          <p className=" font-medium text-gray-700 max-w-3xl mx-auto">
+          <p className=" font-medium text-[#0A0504] max-w-3xl mx-auto">
             Passionate experts, commited to helping children with
             neuro-developmental challenges and milestone delays achieve growth,
             independence and joy through movement{" "}
@@ -112,24 +112,24 @@ export default function TeamSection() {
             >
               {/* Image with oval border */}
               <div className="relative h-64 md:h-80 flex items-center justify-center bg-gradient-to-br from-blue-50 to-orange-50/30 p-6 ">
-                <div className="relative w-full h-full overflow-hidden rounded-md  shadow-lg group-hover:scale-105 transition-transform duration-500">
+                <div className="relative w-1/2 md:w-3/4 h-full  overflow-hidden rounded-full shadow-lg group-hover:scale-105 transition-transform duration-500">
                   <Image
                     src={member.image}
                     alt={member.alt}
                     fill
-                    className=" object-contain md: object-cover "
+                    className="  object-cover "
                     sizes="(max-width: 768px) 192px, 224px"
                   />
                 </div>
               </div>
 
               {/* Content */}
-              <div className="p-6 md:p-8 text-center flex-grow flex flex-col justify-between">
+              <div className="p-6 md:p-8 text-center bg-[#F7E7CE] flex-grow flex flex-col justify-between">
                 <div>
-                  <h3 className="text-xl md:text-2xl text-blue-700 font-serif font-bold mb-2">
+                  <h3 className="text-xl md:text-2xl text-[#0f766e] font-serif font-bold mb-2">
                     {member.name}
                   </h3>
-                  <p className="font-medium text-orange-600  font-medium mb-6">
+                  <p className="font-medium text-[#0A0504]  font-medium mb-6">
                     {member.title}
                   </p>
                 </div>
@@ -137,7 +137,7 @@ export default function TeamSection() {
                 {/* View Profile Button */}
                 <button
                   onClick={() => setSelectedMember(member)}
-                  className="mt-6 inline-block px-8 py-3 rounded-full bg-[#FFB347]  text-white font-semibold text-base md:text-lg shadow-md hover:shadow-lg hover:from-blue-600 hover:to-[#4793FF] transform hover:scale-105 transition-all duration-300"
+                  className="mt-6 inline-block px-8 py-3 rounded-full bg-[#0f766e]  text-white font-semibold text-base md:text-lg shadow-md hover:shadow-lg hover:from-blue-600 hover:to-[#4793FF] transform hover:scale-105 transition-all duration-300"
                 >
                   View Profile →
                 </button>
@@ -148,13 +148,13 @@ export default function TeamSection() {
 
         {/* Optional CTA below grid */}
         <div className="text-center mt-12 md:mt-16">
-          <p className="text-xl text-gray-600 mb-6">
+          <p className="text-xl text-[#0A0504] mb-6">
             Our team combines clinical excellence with compassion and cultural
             understanding.
           </p>
           <Link
             href="/contact"
-            className="inline-block px-10 py-4 bg-[#FFB347] hover:bg-orange-600 text-white font-bold text-lg rounded-full shadow-lg transform hover:scale-105 transition duration-300"
+            className="inline-block px-10 py-4 bg-[#0f766e] hover:bg-[#0a5c54] text-white font-bold text-lg rounded-full shadow-lg transform hover:scale-105 transition duration-300"
           >
             Get in Touch with Us
           </Link>
