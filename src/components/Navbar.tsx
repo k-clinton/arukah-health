@@ -160,7 +160,7 @@ export default function Navbar() {
                     href={item.href}
                     onClick={closeMenus}
                     className={`flex font-medium items-center  gap-2  ${
-                      isActive(item.href) ? "text-orange-200 " : "text-white"
+                      isActive(item.href) ? "text-[#F7E7CE]" : "text-white"
                     }`}
                   >
                     <item.icon size={18} />
