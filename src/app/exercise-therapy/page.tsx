@@ -228,7 +228,7 @@ export default function ExerciseTherapy() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ delay: i * 0.1 }}
-                className={`group bg-white rounded-2xl overflow-hidden shadow-lg transition-all duration-300 border-2 ${
+                className={`group bg-[#F7E7CE] rounded-2xl overflow-hidden shadow-lg transition-all duration-300 border-2 ${
                   item.theme === "orange"
                     ? "border-[#F7E7CE] hover:[#F7E7CE] "
                     : "border-[#F7E7CE] hover:[#F7E7CE] "
