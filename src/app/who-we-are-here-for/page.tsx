@@ -18,13 +18,13 @@ export default function WhoWeAreHereFor() {
         <div className="absolute inset-0 bg-black/60" />
 
         <div className="relative z-10 flex items-center justify-center h-full px-6 text-center">
-          <h1 className="text-5xl sm:text-6xl md:text-7xl font-serif font-extrabold text-[#FFB347] drop-shadow-2xl mb-6 md:mb-8">
+          <h1 className="text-5xl sm:text-6xl md:text-7xl font-serif font-extrabold text-[#0f766e] drop-shadow-2xl mb-6 md:mb-8">
             Who We are Here For
           </h1>
         </div>
       </div>
       <section className="bg-orange-50 text-blue-700  py-10">
-        <p className="text-center font-serif text-blue-700 italic font-bold text-xl py-10">
+        <p className="text-center font-serif text-[#0f766e] italic font-bold text-xl py-10">
           Healing Hearts, Touching Lives and Restoring Health Through Exercise!
         </p>
       </section>
@@ -32,7 +32,7 @@ export default function WhoWeAreHereFor() {
       {/* Content */}
       <section className="py-10 md:py-10 px-6 bg-white">
         <div className="max-w-5xl mx-auto ">
-          <p className="font-medium text-left  text-gray-700 leading-relaxed">
+          <p className="font-medium text-left  text-black leading-relaxed">
             We are dedicated to supporting children who face unique
             developmental and milestone challenges, as well as the families and
             communities who walk alongside them.
@@ -40,7 +40,7 @@ export default function WhoWeAreHereFor() {
         </div>
       </section>
       <div className="max-w-7xl mx-auto px-6 mt-24">
-        <h2 className="text-center font-serif text-3xl md:text-4xl font-semibold text-orange-600 mb-16">
+        <h2 className="text-center font-serif text-3xl md:text-4xl font-semibold text-[#0f766e] mb-16">
           Challenges We Address
         </h2>
 
@@ -52,16 +52,16 @@ export default function WhoWeAreHereFor() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.4, delay: index * 0.05 }}
-              className="bg-white border-3 border-orange-300 rounded-2xl p-6 shadow-sm"
+              className="bg-[#F7E7CE] border-1 border-[#F7E7CE] rounded-md p-6 shadow-sm"
             >
-              <h3 className="font-serif text-lg md:text-xl font-semibold text-blue-700 mb-4">
+              <h3 className="font-serif text-lg md:text-xl font-semibold text-[#0f766e] mb-4">
                 {section.title}
               </h3>
               <ul className="space-y-2 text-gray-700">
                 {section.items.map((item, idx) => (
                   <li key={idx} className="flex gap-2">
                     <span
-                      className={`mr-3 font-medium text-orange-600
+                      className={`mr-3 font-medium text-[#0f766e]
                         }`}
                     >
                       ✦
@@ -80,7 +80,7 @@ export default function WhoWeAreHereFor() {
             {/* First paragraph + image on right */}
             <div className="grid lg:grid-cols-2 gap-10 lg:gap-16 items-center">
               <div className="order-2 lg:order-1 text-center lg:text-left">
-                <p className=" text-gray-700 text-left font-montserrat leading-relaxed max-w-4xl mx-auto lg:mx-0">
+                <p className=" text-black text-left font-montserrat leading-relaxed max-w-4xl mx-auto lg:mx-0">
                   We believe in addressing challenges early so that each child
                   has the best opportunity to grow, thrive, and reach their full
                   potential. We understand that every child’s journey is unique,
@@ -116,7 +116,7 @@ export default function WhoWeAreHereFor() {
               </div>
 
               <div className="text-center lg:text-left">
-                <p className="font-medium text-left  text-gray-700 leading-relaxed max-w-4xl mx-auto lg:mx-0">
+                <p className="font-medium text-left  text-black leading-relaxed max-w-4xl mx-auto lg:mx-0">
                   We don’t limit our care to a diagnosis—we meet each child
                   where they are, focusing on the everyday difficulties parents
                   often notice, and helping them grow stronger, more confident,
@@ -128,7 +128,7 @@ export default function WhoWeAreHereFor() {
             {/* Third paragraph + image on right */}
             <div className="grid lg:grid-cols-2 gap-10 lg:gap-16 items-center">
               <div className="order-2 lg:order-1 text-center lg:text-left">
-                <p className="font-medium text-left text-gray-700 leading-relaxed max-w-4xl mx-auto lg:mx-0">
+                <p className="font-medium text-left text-black leading-relaxed max-w-4xl mx-auto lg:mx-0">
                   Our therapies are carefully tailored to meet every stage of
                   development, offering age-appropriate, engaging, and effective
                   activities that nurture physical, cognitive, and emotional
