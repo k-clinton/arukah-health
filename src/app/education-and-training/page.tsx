@@ -102,7 +102,7 @@ export default function EducationAndTraining() {
             ].map((specialty, i) => (
               <div
                 key={specialty.title}
-                className="bg-white rounded-2xl overflow-hidden shadow-xl border-2 border-[#F7E7CE] hover:shadow-2xl transition-all duration-300 flex flex-col"
+                className="bg-[#F7E7CE] rounded-2xl overflow-hidden shadow-xl border-2 border-[#F7E7CE] hover:shadow-2xl transition-all duration-300 flex flex-col"
               >
                 {/* Full-width image at top */}
                 <div className="relative h-48 w-full">
@@ -117,7 +117,7 @@ export default function EducationAndTraining() {
                 </div>
 
                 {/* Card content */}
-                <div className="p-8 md:p-10 flex flex-col flex-grow">
+                <div className="p-8 md:p-10 bg-[#F7E7CE] flex flex-col flex-grow">
                   <h3 className="text-2xl md:text-2xl font-serif font-bold text-[#0f766e] mb-5">
                     {specialty.title}
                   </h3>
