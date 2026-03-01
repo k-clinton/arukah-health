@@ -88,7 +88,7 @@ Our interventions are delivered within a supervised, safe, and supportive enviro
         </div>
 
         <div className="relative z-10 text-center px-6 max-w-5xl">
-          <h1 className="text-5xl sm:text-6xl md:text-7xl font-serif font-extrabold text-[#FFB347] drop-shadow-2xl mb-6 md:mb-8">
+          <h1 className="text-5xl sm:text-6xl md:text-7xl font-serif font-extrabold text-[#0f766e] drop-shadow-2xl mb-6 md:mb-8">
             Our Model of Care
           </h1>
         </div>
@@ -97,7 +97,7 @@ Our interventions are delivered within a supervised, safe, and supportive enviro
       {/* Core Philosophy Paragraph */}
       <section className="py-20 px-6 bg-gradient-to-b from-white to-blue-50/30">
         <div className="max-w-5xl mx-auto text-center">
-          <p className=" text-gray-800 leading-relaxed font-medium">
+          <p className=" text-black leading-relaxed font-medium">
             Grounded in clinical research and guided by compassion, our model of
             care brings together expertise and personalization to meet each
             child’s unique needs. We focus on building strong foundations for
@@ -109,7 +109,7 @@ Our interventions are delivered within a supervised, safe, and supportive enviro
 
       {/* Four Pillars – with full-width images instead of icons */}
       <div className="relative py-16 px-6 bg-white">
-        <h2 className="text-3xl md:text-4xl font-serif font-bold text-center text-blue-700 mb-10 md:mb-16">
+        <h2 className="text-3xl md:text-4xl font-serif font-bold text-center text-[#0f766e] mb-10 md:mb-16">
           Our 4 Pillars
         </h2>
 
@@ -117,7 +117,7 @@ Our interventions are delivered within a supervised, safe, and supportive enviro
           {pillars.map((pillar, index) => (
             <div
               key={pillar.title}
-              className="bg-white rounded-3xl text-blue-700 shadow-lg hover:shadow-2xl transition-all  duration-300 border-4 border-orange-300 flex flex-col hover:scale-105 relative min-h-[480px] overflow-hidden hover:border-orange-600  "
+              className="bg-white rounded-3xl text-[#0f766e] shadow-lg hover:shadow-2xl transition-all  duration-300 border-2 border-[#F7E7CE] flex flex-col hover:scale-105 relative min-h-[480px] overflow-hidden hover:border-[#0f766e]  "
             >
               {/* Full-width top image */}
               <div className="relative h-88 w-full">
@@ -143,7 +143,7 @@ Our interventions are delivered within a supervised, safe, and supportive enviro
 
                 <button
                   onClick={() => setSelectedPillar(index)}
-                  className="mt-auto inline-block px-8 py-3 rounded-full bg-[#FFB347] text-white font-semibold text-base shadow-md hover:shadow-lg hover:from-blue-600 hover:to-[#4793FF] transform hover:scale-105 transition-all duration-300"
+                  className="mt-auto inline-block px-8 py-3 rounded-full bg-[#0f766e] text-white font-semibold text-base shadow-md hover:shadow-lg hover:from-blue-600 hover:to-[#4793FF] transform hover:scale-105 transition-all duration-300"
                 >
                   Learn More →
                 </button>
@@ -188,13 +188,13 @@ Our interventions are delivered within a supervised, safe, and supportive enviro
                     }}
                   ></div>
 
-                  <h2 className="text-3xl md:text-4xl font-serif font-bold text-gray-900">
+                  <h2 className="text-3xl md:text-4xl font-serif font-bold text-[#0f766e]">
                     {pillars[selectedPillar].title}
                   </h2>
                 </div>
 
                 <div
-                  className="prose prose-lg max-w-none text-gray-800 leading-relaxed"
+                  className="prose prose-lg max-w-none text-black leading-relaxed"
                   dangerouslySetInnerHTML={{
                     __html: pillars[selectedPillar].details,
                   }}
@@ -207,15 +207,15 @@ Our interventions are delivered within a supervised, safe, and supportive enviro
 
       {/* Final CTA */}
       <div className="text-center py-16 px-6 bg-gradient-to-b from-blue-50/30 to-white">
-        <h3 className="text-2xl md:text-2xl font-serif font-bold text-blue-700 mb-6">
+        <h3 className="text-2xl md:text-2xl font-serif font-bold text-[#0f766e] mb-6">
           Ready to Begin Your Child’s Journey?
         </h3>
-        <p className=" font-medium text-gray-700 mb-8 max-w-2xl mx-auto">
+        <p className=" font-medium text-black mb-8 max-w-2xl mx-auto">
           Contact us today to discuss how we can support your child.
         </p>
         <Link
           href="/contact"
-          className="inline-block bg-[#FFB347] text-white font-bold py-5 px-12 rounded-full text-xl shadow-xl transform hover:scale-105 transition duration-300"
+          className="inline-block bg-[#0f766e] text-white font-bold py-5 px-12 rounded-full text-xl shadow-xl transform hover:scale-105 transition duration-300"
         >
           Get Started →
         </Link>
