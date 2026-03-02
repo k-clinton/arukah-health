@@ -42,21 +42,23 @@ export default function AboutUsPage() {
             </h1>
             <div className="prose prose-lg text-[#0A0504]  font-medium  leading-relaxed space-y-6">
               <p className="text-justify md:text-left  ">
-                Arukah Health is a pediatric therapy center dedicated to
-                creating progress through movement. We specialize in
-                personalized exercise therapy for children with neuro-
-                developmental challenges and milestone delays, helping them
-                build strength, confidence, and independence in ways that feel
-                joyful and empowering.
+                Arukah Health is a pediatric exercise therapy center dedicated
+                to enhancing capabilities, growth and development through
+                movement. We specialize in exercise treatments for neuro-diverse
+                children and those with milestone delays, helping them grow
+                stronger, confident, and independent. Our programs are designed
+                to nurture core physical functions — strength, balance,
+                coordination, flexibility, and endurance — while also fostering
+                resilience, play, and emotional well-being.
               </p>
               <p className="text-justify md:text-left  ">
-                Our programs are designed to nurture core physical functions —
-                strength, balance, coordination, flexibility, and endurance —
-                while also fostering resilience, play, and emotional well being.
-                Every child’s journey is unique, and we meet them where they
-                are, tailoring therapy to their individual needs, celebrating
-                every milestone along the way and honoring progress in all its
-                forms.
+                At Arukah Health, we believe Exercise is Medicine, and we use it
+                to open new pathways of growth, healing, and possibility!
+                Through exercise, we create a space where children feel seen and
+                encouraged, not just defined by their challenges. In their
+                unique journeys, we meet them where they are, tailoring therapy
+                to their individual needs, celebrating every milestone along the
+                way and honoring progress in all its forms.
               </p>
               <p></p>
             </div>
@@ -95,22 +97,13 @@ export default function AboutUsPage() {
             <h2 className="text-4xl md:text-5xl font-serif font-bold text-[#0F766E] mb-8"></h2>
             <div className="prose   prose-lg text-[#0A0504]  font-medium  leading-relaxed space-y-6">
               <p>
-                At Arukah, therapy, care and support look different—they are
-                more embodied, more inclusive, more human. Through exercise, we
-                create a space where children feel seen and encouraged, not just
-                defined by their challenges. Where parents feel equipped and
-                supported, not overwhelmed. Where families can reclaim wellness,
-                strength, mobility, and joy with dignity and hope.
-              </p>
-              <p>
-                Families who walk through our doors find more than therapy; they
-                find a community. We partner with them to co-create exercise
-                care plans that reflect each child’s unique needs and
-                aspirations. We train and walk alongside them through challenges
-                and milestones—ensuring that every step forward is safe,
-                supported, and deeply attuned to the journey toward wellness. We
-                believe Exercise is Medicine, and we use it to open new pathways
-                of growth, healing, and possibility!
+                Alongside children, families who walk through our doors find
+                more than therapy; they find a community. We partner with them
+                to co-create exercise care plans that reflect each child’s
+                unique needs and aspirations. We train and walk alongside them
+                through challenges and milestones—ensuring that every step
+                forward is safe, supported, and deeply attuned to the journey
+                toward wellness.{" "}
               </p>
               <p>
                 Through years of clinical experience and continuous learning,
@@ -120,7 +113,6 @@ export default function AboutUsPage() {
                 reclamation, a celebration, and a return to embodied hope for
                 every child and family we serve!
               </p>
-              <p></p>
             </div>
           </motion.div>
         </div>
