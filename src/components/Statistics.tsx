@@ -106,8 +106,6 @@ export default function Statistics() {
               <h3 className="text-xl md:text-xl  text-[#0F766E] font-serif mb-4">
                 {stat.label}
               </h3>
-
-              <p className="text-[#AO0504] font-medium ">{stat.description}</p>
             </motion.div>
           ))}
         </div>
