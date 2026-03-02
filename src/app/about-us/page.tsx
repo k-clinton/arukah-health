@@ -304,8 +304,8 @@ export default function AboutUsPage() {
         <div className="mb-8 md:mb-16">
           <div className="bg-white  p-8 md:p-10   ">
             <p className="  text-[#0A0504] text-left leading-relaxed font-medium text-center">
-              Arukah Health was founded with a deep passion for helping children
-              with neuro-developmental challenges and milestone delays discover
+              Arukah Health was founded with a deep passion for helping
+              neuro-diverse children and those with milestone delays discover
               their potential through joyful, purposeful exercise. With years of
               clinical experience in pediatric therapy and a heart for families
               navigating uncertainty, Ivy created a space where science,
@@ -325,17 +325,17 @@ export default function AboutUsPage() {
             className="lg:flex-1 order-2 lg:order-1 bg-white rounded-2xl p-8 md:p-10 shadow-lg border-2 border-[#F7E7CE]"
           >
             <p className="text-base font-medium text-[#0A0504] mb-4 leading-relaxed">
-              “I understand that nurturing children with neuro-developmental
-              conditions and milestone delays can be a walk through seasons of
-              uncertainty, burnout, pain, and quiet resilience. Complexities
-              such as impaired motor control, reduced strength, balance
-              deficits, and altered proprioception affect a child’s
-              independence, making care intricate and complex. At Arukah Health,
-              we create a community where families can breathe, hope, and feel
-              understood. A space where exercise is utilized in building core
-              dimensions of physical function in a fun and intentional manner. A
-              space where every child’s story is honored and small steps are
-              cultured into great milestones.
+              “Nurturing neuro-diverse children and those with milestone delays
+              can be a walk through seasons of uncertainty, burnout, pain, and
+              quiet resilience. Complexities such as impaired motor control,
+              reduced strength, balance deficits, and altered proprioception
+              affect a child’s independence, making care even more intricate and
+              complex. At Arukah Health, we create a community where families
+              can breathe hope—a space where exercise becomes a joyful and
+              intentional pathway to building the core dimensions of physical
+              function that enhance function & independence. Within this space,
+              every child’s story is honored, and milestones – big or small are
+              celebrated along the journey
             </p>
             <p className="text-base font-medium text-[#0A0504] mb-4 leading-relaxed">
               Arukah Health is built on the belief that Exercise is Medicine.
