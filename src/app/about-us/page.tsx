@@ -258,7 +258,7 @@ export default function AboutUsPage() {
               },
               {
                 title: "Commitment",
-                desc: "Our smiles, words, affirmations, and follow-up throughout each child's movement journey reflect our unwavering dedication to delivering compassionate, consistent care.",
+                desc: "Our smiles, words, affirmations, and follow-up throughout each child's exercise journey, reflect our unwavering dedication to delivering compassionate, consistent care.",
               },
               {
                 title: "Respect & Compassion",
@@ -266,7 +266,7 @@ export default function AboutUsPage() {
               },
               {
                 title: "Innovation",
-                desc: "We embrace creativity and adaptability—continually exploring new skills, tools, and technologies to design movement programs that are effective, engaging, and inclusive.",
+                desc: "We embrace creativity and adaptability—continually exploring new skills, tools, and technologies to design exercise programs that are effective, engaging, and inclusive.",
               },
               {
                 title: "Integrity",
