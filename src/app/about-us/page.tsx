@@ -216,11 +216,10 @@ export default function AboutUsPage() {
               Our Mission
             </h3>
             <p className=" font-medium text-[#0A0504] leading-relaxed">
-              To deliver inclusive, research informed pediatric exercise therapy
-              that builds function and independence in children with
-              neuro-developmental challenges and milestone delays—blending
-              clinical excellence with compassionate care to transform lives
-              through movement.
+              To deliver inclusive, research informed exercise therapy that
+              builds function and independence in neuro-diverse children and
+              those with milestone delays—blending clinical excellence with
+              compassionate care to transform lives through movement.
             </p>
           </motion.div>
         </div>
