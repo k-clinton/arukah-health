@@ -246,7 +246,7 @@ export default function ExerciseTherapy() {
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div className="relative rounded-3xl overflow-hidden border-2 border-[#F7E7CE] shadow-2xl">
               <Image
-                src="/images/bg7.jpg"
+                src="/images/structured.png"
                 alt="Child enjoying water-based exercise therapy"
                 width={1000}
                 height={600}
