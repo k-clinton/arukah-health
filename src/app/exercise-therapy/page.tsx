@@ -108,15 +108,9 @@ export default function ExerciseTherapy() {
         </div>
 
         <div className="relative z-10 text-center px-6 max-w-5xl">
-          <h1 className="text-5xl sm:text-6xl md:text-7xl font-serif font-extrabold text-[#0f766e] drop-shadow-2xl mb-6 md:mb-8">
+          <h1 className="text-5xl sm:text-6xl md:text-7xl font-serif font-extrabold text-white drop-shadow-2xl mb-6 md:mb-8">
             Exercise Therapy
           </h1>
-
-          <p className="prose prose-lg text-white   font-medium  leading-relaxed space-y-6">
-            We apply exercise as a cornerstone for rehabilitation – supporting
-            children through everyday milestones and struggles that matter
-            most.{" "}
-          </p>
         </div>
       </section>
 
