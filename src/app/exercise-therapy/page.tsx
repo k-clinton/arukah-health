@@ -167,9 +167,7 @@ export default function ExerciseTherapy() {
       {/* Key Areas Of Focus Cards */}
       <section className="py-16 px-6 bg-white">
         <div className="max-w-7xl mx-auto">
-          <h3 className="text-3xl md:text-4xl font-serif font-bold text-center text-[#0f766e] mb-12">
-            Key Areas Of Focus
-          </h3>
+          <h3 className="text-3xl md:text-4xl font-serif font-bold text-center text-[#0f766e] mb-12"></h3>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
             {[
@@ -250,8 +248,8 @@ export default function ExerciseTherapy() {
               <Image
                 src="/images/bg7.jpg"
                 alt="Child enjoying water-based exercise therapy"
-                width={1200}
-                height={800}
+                width={1000}
+                height={600}
                 className="w-full h-auto object-cover"
               />
             </div>
@@ -259,34 +257,17 @@ export default function ExerciseTherapy() {
               <h2 className="text-2xl md:text-2xl font-serif font-bold text-[#0f766e] mb-6">
                 Structured & Play-Based Exercise
               </h2>
-              <p className="prose prose-lg text-gray-700  font-medium  leading-relaxed space-y-6">
-                Playful workouts and games that build motor skills, strength,
-                coordination and confidence in a safe, motivating environment.
+              <p className="prose prose-lg text-black mb-6 font-medium  leading-relaxed space-y-6">
+                Playful, organized workouts and games that build motor skills,
+                strength, coordination and confidence in a safe, motivating
+                environment.{" "}
               </p>
-              <button
-                onClick={() => toggleTab(0)}
-                className="flex items-center gap-2 text-[#0f766e] font-medium hover:underline mt-4"
-              >
-                {openTab === 0 ? <Minus size={20} /> : <Plus size={20} />}
-                Learn More
-              </button>
-              {openTab === 0 && (
-                <div className="mt-4 pl-8 border-l-2 border-orange-600/30">
-                  <ul className="space-y-3 text-gray-700 font-medium">
-                    <li>
-                      • Organized exercise and games employ a structured,
-                      sensory-aware environment for rehabilitation, strength
-                      building, and functional recovery.
-                    </li>
-                    <li>
-                      • They utilize specialized equipment, controlled
-                      environments and curated soundscapes to support precise
-                      movement, focused engagement, neuromuscular re-education,
-                      and emotional regulation.
-                    </li>
-                  </ul>
-                </div>
-              )}
+              <p className="prose prose-lg text-black  font-medium  leading-relaxed space-y-6">
+                They utilize specialized equipment, controlled environments and
+                curated soundscapes to support precise movement, focused
+                engagement, neuromuscular re-education, and emotional
+                regulation.
+              </p>
             </div>
           </div>
 
@@ -296,36 +277,17 @@ export default function ExerciseTherapy() {
               <h2 className="text-2xl md:text-2xl font-serif font-bold text-[#0f766e] mb-6">
                 Swimming Lessons
               </h2>
-              <p className=" text-gray-700 leading-relaxed mb-6 font-medium">
-                Exercise sessions that strengthen muscles, improve coordination
-                and boost confidence in a fun, aquatic environment.
+              <p className=" text-black leading-relaxed mb-6 font-medium">
+                Joyful, structured sessions in the water that build motor
+                skills, strength, coordination, resilience and confidence while
+                fostering safety and enjoyment.
               </p>
-              <button
-                onClick={() => toggleTab(1)}
-                className="flex items-center gap-2 text-[#0f766e] font-medium hover:underline"
-              >
-                {openTab === 1 ? <Minus size={20} /> : <Plus size={20} />}
-                Learn More
-              </button>
-              {openTab === 1 && (
-                <div className="mt-4 pl-8 border-l-2 border-orange-600/30">
-                  <ul className="space-y-3 text-gray-700 font-medium">
-                    <li>
-                      • Water leverages on reduced joint stress, gentle
-                      resistance, and deep relaxation— creating an optimal space
-                      for strength building and restorative care.
-                    </li>
-                    <li>
-                      • Builds coordination, cardiovascular endurance, muscle
-                      strength and flexibility through low impact movement.
-                    </li>
-                    <li>
-                      • Enhances emotional regulation and motor planning through
-                      water play.
-                    </li>
-                  </ul>
-                </div>
-              )}
+              <p className=" text-black leading-relaxed mb-6 font-medium">
+                They incorporate specialized techniques, adaptive equipment, and
+                sensory-aware approaches to foster skill development, sustained
+                attention, motor re-patterning, and a calming sense of
+                regulation.
+              </p>
             </div>
             <div className="relative rounded-3xl overflow-hidden border-2 border-[#F7E7CE] shadow-2xl order-1 lg:order-2">
               <Image
@@ -353,33 +315,16 @@ export default function ExerciseTherapy() {
               <h2 className="text-2xl md:text-2xl font-serif font-bold text-[#0f766e] mb-6">
                 Hiking Sessions
               </h2>
-              <p className=" text-gray-700 leading-relaxed mb-6 font-medium">
-                Outdoor experiences that build balance, stamina, resilience, and
-                a love for active living.
+              <p className=" text-black leading-relaxed mb-6 font-medium">
+                Fun, guided, outdoor experiences that build balance, stamina,
+                resilience, and a love for active living.{" "}
               </p>
-              <button
-                onClick={() => toggleTab(2)}
-                className="flex items-center gap-2 text-[#0f766e] font-medium hover:underline"
-              >
-                {openTab === 2 ? <Minus size={20} /> : <Plus size={20} />}
-                Learn More
-              </button>
-              {openTab === 2 && (
-                <div className="mt-4 pl-8 border-l-2 border-orange-600/30">
-                  <ul className="space-y-3 text-gray-700 font-medium">
-                    <li>
-                      • Hiking utilizes varied terrain, fresh air and
-                      sensory-rich stimuli to support rehabilitation, emotional
-                      regulation and functional recovery.
-                    </li>
-                    <li>
-                      • It promotes dynamic movement, proprioceptive engagement
-                      and cardiovascular health, while reducing stress and
-                      enhancing mood.
-                    </li>
-                  </ul>
-                </div>
-              )}
+              <p className=" text-black leading-relaxed mb-6 font-medium">
+                They utilize varied terrain, fresh air and sensory-rich stimuli
+                and adaptive strategies to promote dynamic movement,
+                proprioceptive awareness, cardiovascular health, functional
+                recovery and emotional regulation.
+              </p>
             </div>
           </div>
 
@@ -387,40 +332,20 @@ export default function ExerciseTherapy() {
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div className="order-2 lg:order-1">
               <h2 className="text-2xl md:text-2xl font-serif font-bold text-[#0f766e] mb-6">
-                Biking Sessions
+                Cycling
               </h2>
-              <p className=" text-gray-700 leading-relaxed mb-6 font-medium">
-                Guided cycling that enhances balance, endurance, and
-                independence.
+              <p className=" text-black leading-relaxed mb-6 font-medium">
+                Supported and guided biking experiences in open-air, nature-rich
+                environments, that enhance balance, endurance, independence and
+                overall physical function.{" "}
               </p>
-              <button
-                onClick={() => toggleTab(3)}
-                className="flex items-center gap-2 text-[#0f766e] font-medium hover:underline"
-              >
-                {openTab === 3 ? <Minus size={20} /> : <Plus size={20} />}
-                Learn More
-              </button>
-              {openTab === 3 && (
-                <div className="mt-4 pl-8 border-l-2 border-orange-600/30">
-                  <ul className="space-y-3 text-gray-700 font-medium">
-                    <li>
-                      • Cycling leverages on open air, nature-rich environments
-                      to develop balance, physical strength and coordination
-                      which supports gait training and overall physical
-                      function.
-                    </li>
-                    <li>
-                      • It also promotes cognitive engagement, motor planning
-                      and emotional resilience through active exploration in
-                      open, grounding spaces.
-                    </li>
-                    <li>
-                      • Additionally, cycling strengthens lower limbs and
-                      improves cardiovascular fitness.
-                    </li>
-                  </ul>
-                </div>
-              )}
+              <p className=" text-black leading-relaxed mb-6 font-medium">
+                They incorporate varied terrain, adaptive techniques and
+                sensory-aware approaches to strengthen lower limbs, improve
+                cardiovascular fitness, support gait training and promote
+                cognitive engagement, motor planning and emotional resilience
+                through active exploration in open, grounding spaces.
+              </p>
             </div>
             <div className="relative rounded-3xl border-2 border-[#F7E7CE] overflow-hidden shadow-2xl order-1 lg:order-2">
               <Image
