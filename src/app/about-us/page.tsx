@@ -163,7 +163,7 @@ export default function AboutUsPage() {
           </motion.div>
         </div>
       </section>
-      <section className="bg-blue-50 py-20 text-center">
+      <section className="bg-[#F7E7CE]  py-20 text-center">
         <div className="max-w-4xl mx-auto px-6">
           <motion.div
             initial="hidden"
