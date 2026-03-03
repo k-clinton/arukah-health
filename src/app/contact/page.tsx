@@ -12,9 +12,11 @@ import {
   FaMapMarkerAlt,
   FaClock,
 } from "react-icons/fa";
+import { LuHeart } from "react-icons/lu";
 
 import { useRouter } from "next/navigation";
 import Image from "next/image";
+import { DivideIcon } from "@heroicons/react/16/solid";
 
 export default function ContactPage() {
   const router = useRouter();
@@ -77,14 +79,15 @@ export default function ContactPage() {
       {/* Hero */}
 
       {/* Background Image */}
-      <div className="relative mt-10 h-[80vh]">
-        <Image
-          src="/images/IMG_9815 (1).jpg"
-          alt="Education and training background – joyful learning moment"
-          fill
-          className="object-cover object-center object-top "
-          priority
-        />
+      <div className="text-center mt-40 align-center h-[20vh]">
+        <h1 className="text-5xl    sm:text-6xl md:text-6xl lg:text-7xl font-serif font-extrabold text-[#0f766e] mb-6 md:mb-8 leading-tight">
+          Exercise Is{" "}
+          <span className="inline-block px-4 py-1.5 sm:px-5 sm:py-2 bg-[#F7E7CE] text-black rounded-xl shadow-lg font-serif font-bold tracking-wide align-middle">
+            L
+            <LuHeart className="inline-block text-red-500 align-middle mx-1" />
+            VE
+          </span>
+        </h1>
       </div>
 
       <section className="bg-orange-50 text-blue-700  py-10">
