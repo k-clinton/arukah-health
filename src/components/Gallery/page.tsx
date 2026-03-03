@@ -95,7 +95,7 @@ export default function FamilyOvalGallery() {
           </div>
 
           {/* Navigation Dots */}
-          <div className="flex justify-center gap-3 mt-8">
+          <div className="flex justify-center gap-3 hidden mt-8">
             {images.map((_, index) => (
               <button
                 key={index}
