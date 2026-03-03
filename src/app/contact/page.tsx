@@ -16,7 +16,6 @@ import { LuHeart } from "react-icons/lu";
 
 import { useRouter } from "next/navigation";
 import Image from "next/image";
-import { DivideIcon } from "@heroicons/react/16/solid";
 
 export default function ContactPage() {
   const router = useRouter();
