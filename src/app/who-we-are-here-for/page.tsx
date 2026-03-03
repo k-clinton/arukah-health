@@ -18,32 +18,15 @@ export default function WhoWeAreHereFor() {
         <div className="absolute inset-0 bg-black/60" />
 
         <div className="relative z-10 flex items-center justify-center h-full px-6 text-center">
-          <h1 className="text-5xl sm:text-6xl md:text-7xl font-serif font-extrabold text-[#0f766e] drop-shadow-2xl mb-6 md:mb-8">
-            Who We are Here For
+          <h1 className="text-5xl sm:text-6xl md:text-7xl font-serif font-extrabold text-white drop-shadow-2xl mb-6 md:mb-8">
+            Challenges we address
           </h1>
         </div>
       </div>
-      <section className="bg-orange-50 text-blue-700  py-10">
-        <p className="text-center font-serif text-[#0f766e] italic font-bold text-xl py-10">
-          Healing Hearts, Touching Lives and Restoring Health Through Exercise!
-        </p>
-      </section>
 
       {/* Content */}
-      <section className="py-10 md:py-10 px-6 bg-white">
-        <div className="max-w-5xl mx-auto ">
-          <p className="font-medium text-left  text-black leading-relaxed">
-            We are dedicated to supporting children who face unique
-            developmental and milestone challenges, as well as the families and
-            communities who walk alongside them.
-          </p>
-        </div>
-      </section>
-      <div className="max-w-7xl mx-auto px-6 mt-24">
-        <h2 className="text-center font-serif text-3xl md:text-4xl font-semibold text-[#0f766e] mb-16">
-          Challenges We Address
-        </h2>
 
+      <div className="max-w-7xl mx-auto px-6 mt-24">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {sections.map((section, index) => (
             <motion.div
@@ -83,10 +66,15 @@ export default function WhoWeAreHereFor() {
                 <p className=" text-black text-left font-montserrat leading-relaxed max-w-4xl mx-auto lg:mx-0">
                   We believe in addressing challenges early so that each child
                   has the best opportunity to grow, thrive, and reach their full
-                  potential. We understand that every child’s journey is unique,
-                  and our programs are designed to meet those needs with fun,
-                  engaging activities that build strength, confidence, and joy
-                  in movement.
+                  potential. We don’t limit our care to a diagnosis—we meet each
+                  child where they are, focusing on the everyday difficulties
+                  parents often notice, and helping them grow stronger, more
+                  confident, and more independent. Our therapies are carefully
+                  tailored to meet every stage of development, offering
+                  age-appropriate, engaging, and effective activities that
+                  nurture physical, cognitive, and emotional growth, ensuring
+                  that each child’s journey is supported with care, creativity,
+                  and clinical expertise.
                 </p>
               </div>
 
@@ -95,53 +83,6 @@ export default function WhoWeAreHereFor() {
                 <Image
                   src="/images/care1.jpg"
                   alt="Child smiling while reaching new movement milestone"
-                  width={1200}
-                  height={800}
-                  className="w-full h-auto object-cover"
-                />
-              </div>
-            </div>
-
-            {/* Second paragraph + image on left */}
-            <div className="grid lg:grid-cols-2 gap-10 lg:gap-16 items-center">
-              {/* Image on left (desktop) / above (mobile) */}
-              <div className="relative rounded-3xl overflow-hidden shadow-2xl">
-                <Image
-                  src="/images/care3.jpg"
-                  alt="Family and therapist supporting child in movement activity"
-                  width={1200}
-                  height={800}
-                  className="w-full h-auto object-cover"
-                />
-              </div>
-
-              <div className="text-center lg:text-left">
-                <p className="font-medium text-left  text-black leading-relaxed max-w-4xl mx-auto lg:mx-0">
-                  We don’t limit our care to a diagnosis—we meet each child
-                  where they are, focusing on the everyday difficulties parents
-                  often notice, and helping them grow stronger, more confident,
-                  and more independent.{" "}
-                </p>
-              </div>
-            </div>
-
-            {/* Third paragraph + image on right */}
-            <div className="grid lg:grid-cols-2 gap-10 lg:gap-16 items-center">
-              <div className="order-2 lg:order-1 text-center lg:text-left">
-                <p className="font-medium text-left text-black leading-relaxed max-w-4xl mx-auto lg:mx-0">
-                  Our therapies are carefully tailored to meet every stage of
-                  development, offering age-appropriate, engaging, and effective
-                  activities that nurture physical, cognitive, and emotional
-                  growth. From playful games to structured movement and
-                  skill-building exercises, we ensure that each child’s journey
-                  is supported with care, creativity, and clinical expertise.
-                </p>
-              </div>
-
-              <div className="order-1 lg:order-2 relative rounded-3xl overflow-hidden shadow-2xl">
-                <Image
-                  src="/images/care2.jpg"
-                  alt="Child engaged in structured yet playful exercise therapy"
                   width={1200}
                   height={800}
                   className="w-full h-auto object-cover"
