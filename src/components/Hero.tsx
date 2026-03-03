@@ -12,36 +12,21 @@ export default function Hero() {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-12 lg:gap-16 items-center">
           {/* Text Content – comes FIRST on mobile */}
           <div className="text-center md:text-left order-1 md:order-1">
-            <h1 className="text-5xl sm:text-6xl md:text-6xl lg:text-7xl font-serif font-extrabold text-[#0f766e] mb-6 md:mb-8 leading-tight">
-              Exercise Is{" "}
-              <span className="inline-block px-4 py-1.5 sm:px-5 sm:py-2 bg-[#F7E7CE] text-black rounded-xl shadow-lg font-serif font-bold tracking-wide align-middle">
-                L
-                <LuHeart className="inline-block text-red-500 align-middle mx-1" />
-                VE
-              </span>
-            </h1>
+            <h3 className="text-3xl sm:text-4xl md:text-3xl lg:text-4xl font-serif font-extrabold text-black mb-3 md:mb-2  leading-tight">
+              Welcome To
+            </h3>
+            <h2 className="text-5xl  sm:text-7xl md:text-6xl lg:text-6xl font-serif font-extrabold text-[#0f766e] mb-6 md:mb-8 leading-tight">
+              <span className="text-[#F7E7CE]">A</span>RUKAH HEA
+              <span className="text-[#F7E7CE]">LTH</span>{" "}
+            </h2>
 
             <p className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-serif text-black mb-8 md:mb-10 max-w-3xl mx-auto md:mx-0">
-              Redefining Recovery, Reclaiming Milestones, Reshaping Beliefs, and
-              Transforming Lives through the{" "}
-              <span className="text-[#] font-bold">Power of Movement.</span>
+              Leading Specialists in Pediatric Exercise Therapy
             </p>
-
-            <div className="mb-10 md:mb-12">
-              <h2 className="text-3xl md:text-4xl font-serif font-bold text-[#0f766e] mb-4 md:mb-5">
-                THERAPY THROUGH MOTION
-              </h2>
-              <p className="text-base sm:text-lg md:text-xl text-[#0A0504] leading-relaxed">
-                We offer exercise sessions to children with neuro-developmental
-                challenges and milestone delays, helping them build strength,
-                improve mobility, stabilize posture, build physical capacity,
-                establish physical function and enhance their independence.
-              </p>
-            </div>
 
             <Link
               href="/about"
-              className="inline-block bg-[#F7E7CE] hover:bg-[#F7E7CE] hover:text-black text-white font-bold py-4 px-10 sm:py-5 sm:px-12 md:px-14 rounded-full text-lg sm:text-xl shadow-lg transform hover:scale-105 transition duration-300"
+              className="inline-block bg-[#F7E7CE] hover:bg-[#F7E7CE] hover:text-black text-black font-bold py-4 px-10 sm:py-5 sm:px-12 md:px-14 rounded-full text-lg sm:text-xl shadow-lg transform hover:scale-105 transition duration-300"
             >
               KNOW MORE →
             </Link>
