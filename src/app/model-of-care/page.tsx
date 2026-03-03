@@ -88,7 +88,7 @@ Our interventions are delivered within a supervised, safe, and supportive enviro
         </div>
 
         <div className="relative z-10 text-center px-6 max-w-5xl">
-          <h1 className="text-5xl sm:text-6xl md:text-7xl font-serif font-extrabold text-[#0f766e] drop-shadow-2xl mb-6 md:mb-8">
+          <h1 className="text-5xl sm:text-6xl md:text-7xl font-serif font-extrabold text-white drop-shadow-2xl mb-6 md:mb-8">
             Our Model of Care
           </h1>
         </div>
@@ -100,9 +100,7 @@ Our interventions are delivered within a supervised, safe, and supportive enviro
           <p className=" text-black leading-relaxed font-medium">
             Grounded in clinical research and guided by compassion, our model of
             care brings together expertise and personalization to meet each
-            child’s unique needs. We focus on building strong foundations for
-            development, independence, and meaningful participation in everyday
-            life.
+            child’s unique needs.
           </p>
         </div>
       </section>
@@ -133,17 +131,17 @@ Our interventions are delivered within a supervised, safe, and supportive enviro
 
               {/* Card Content */}
               <div className="p-8 flex flex-col flex-grow items-center text-center">
-                <h3 className="text-2xl font-serif font-bold text-blue-700 mb-4">
+                <h3 className="text-2xl font-serif font-bold text-[#0f766e] mb-4">
                   {pillar.title}
                 </h3>
 
-                <p className="text-gray-700 font-medium leading-relaxed mb-8 flex-grow">
+                <p className="text-black font-medium leading-relaxed mb-8 flex-grow">
                   {pillar.shortDesc}
                 </p>
 
                 <button
                   onClick={() => setSelectedPillar(index)}
-                  className="mt-auto inline-block px-8 py-3 rounded-full bg-[#0f766e] text-white font-semibold text-base shadow-md hover:shadow-lg hover:from-blue-600 hover:to-[#4793FF] transform hover:scale-105 transition-all duration-300"
+                  className="mt-auto inline-block px-8 py-3 rounded-full bg-[#F7E7CE] text-black font-semibold text-base shadow-md hover:shadow-lg hover:from-blue-600 hover:to-[#4793FF] transform hover:scale-105 transition-all duration-300"
                 >
                   Learn More →
                 </button>
@@ -181,13 +179,6 @@ Our interventions are delivered within a supervised, safe, and supportive enviro
 
               <div className="p-8 md:p-12">
                 <div className="flex items-center gap-5 mb-10">
-                  <div
-                    className="w-20 h-20 rounded-full flex items-center justify-center shadow-md"
-                    style={{
-                      backgroundColor: `${pillars[selectedPillar].color}15`,
-                    }}
-                  ></div>
-
                   <h2 className="text-3xl md:text-4xl font-serif font-bold text-[#0f766e]">
                     {pillars[selectedPillar].title}
                   </h2>
@@ -208,14 +199,12 @@ Our interventions are delivered within a supervised, safe, and supportive enviro
       {/* Final CTA */}
       <div className="text-center py-16 px-6 bg-gradient-to-b from-blue-50/30 to-white">
         <h3 className="text-2xl md:text-2xl font-serif font-bold text-[#0f766e] mb-6">
-          Ready to Begin Your Child’s Journey?
+          Exercise is Medicine
         </h3>
-        <p className=" font-medium text-black mb-8 max-w-2xl mx-auto">
-          Contact us today to discuss how we can support your child.
-        </p>
+
         <Link
           href="/contact"
-          className="inline-block bg-[#0f766e] text-white font-bold py-5 px-12 rounded-full text-xl shadow-xl transform hover:scale-105 transition duration-300"
+          className="inline-block bg-[#F7E7CE] text-black font-bold py-5 px-12 rounded-full text-xl shadow-xl transform hover:scale-105 transition duration-300"
         >
           Get Started →
         </Link>
