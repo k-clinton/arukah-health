@@ -96,11 +96,6 @@ export default function TeamSection() {
           <h2 className="text-4xl md:text-5xl font-serif font-extrabold text-[#0f766e] mb-4">
             Meet Our <span className="text-black">Dedicated Team</span>
           </h2>
-          <p className=" font-medium text-[#0A0504] max-w-3xl mx-auto">
-            Passionate experts, commited to helping children with
-            neuro-developmental challenges and milestone delays achieve growth,
-            independence and joy through movement{" "}
-          </p>
         </div>
 
         {/* Team Grid */}
@@ -148,13 +143,9 @@ export default function TeamSection() {
 
         {/* Optional CTA below grid */}
         <div className="text-center mt-12 md:mt-16">
-          <p className="text-xl text-[#0A0504] mb-6">
-            Our team combines clinical excellence with compassion and cultural
-            understanding.
-          </p>
           <Link
             href="/contact"
-            className="inline-block px-10 py-4 bg-[#0f766e] hover:bg-[#0a5c54] text-white font-bold text-lg rounded-full shadow-lg transform hover:scale-105 transition duration-300"
+            className="inline-block px-10 py-4 bg-[#F7E7CE]  hover:bg-[#0a5c54] text-black font-bold text-lg rounded-full shadow-lg transform hover:scale-105 transition duration-300"
           >
             Get in Touch with Us
           </Link>
@@ -180,7 +171,7 @@ export default function TeamSection() {
             >
               {/* Close Button */}
               <button
-                className="absolute top-6 right-6 text-gray-600 hover:text-gray-900 text-4xl font-bold z-10"
+                className="absolute top-6 right-6 text-black hover:black text-4xl font-bold z-10"
                 onClick={() => setSelectedMember(null)}
               >
                 ×
@@ -190,7 +181,7 @@ export default function TeamSection() {
               <div className="p-8 md:p-12">
                 {/* Header with photo */}
                 <div className="flex flex-col md:flex-row gap-8 mb-10 items-center md:items-start">
-                  <div className="relative w-48 h-48 md:w-64 md:h-64 rounded-full overflow-hidden border-4 border-orange-500 shadow-xl flex-shrink-0">
+                  <div className="relative w-48 h-48 md:w-64 md:h-64 rounded-full overflow-hidden border-4 border-[#F7E7CE] shadow-xl flex-shrink-0">
                     <Image
                       src={selectedMember.image}
                       alt={selectedMember.alt}
@@ -202,7 +193,7 @@ export default function TeamSection() {
                     <h2 className="text-3xl md:text-4xl font-serif font-bold text-gray-900 mb-3">
                       {selectedMember.name}
                     </h2>
-                    <p className="text-xl md:text-2xl text-orange-500 font-medium mb-4">
+                    <p className="text-xl md:text-2xl text-[#0f766e] font-medium mb-4">
                       {selectedMember.title}
                     </p>
                   </div>
