@@ -167,7 +167,9 @@ export default function ExerciseTherapy() {
       {/* Key Areas Of Focus Cards */}
       <section className="py-16 px-6 bg-white">
         <div className="max-w-7xl mx-auto">
-          <h3 className="text-3xl md:text-4xl font-serif font-bold text-center text-[#0f766e] mb-12"></h3>
+          <h3 className="text-3xl md:text-4xl font-serif font-bold text-center text-[#0f766e] mb-12">
+            Key Areas Of Focus
+          </h3>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
             {[
@@ -275,7 +277,7 @@ export default function ExerciseTherapy() {
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div className="order-2 lg:order-1">
               <h2 className="text-2xl md:text-2xl font-serif font-bold text-[#0f766e] mb-6">
-                Swimming Lessons
+                Swimming
               </h2>
               <p className=" text-black leading-relaxed mb-6 font-medium">
                 Joyful, structured sessions in the water that build motor
@@ -313,7 +315,7 @@ export default function ExerciseTherapy() {
             </div>
             <div>
               <h2 className="text-2xl md:text-2xl font-serif font-bold text-[#0f766e] mb-6">
-                Hiking Sessions
+                Hiking
               </h2>
               <p className=" text-black leading-relaxed mb-6 font-medium">
                 Fun, guided, outdoor experiences that build balance, stamina,
@@ -361,11 +363,11 @@ export default function ExerciseTherapy() {
           {/* Final CTA */}
           <div className="text-center mt-20">
             <h3 className="text-2xl md:text-2xl font-serif font-bold text-[#0f766e] mb-6">
-              Exercise Is Medicine.
+              Exercise Is Medicine
             </h3>
             <Link
               href="/contact"
-              className="inline-block bg-[#F7E7CE] hover:bg-[#0f766e] text-white font-bold py-5 px-12 rounded-full text-xl shadow-xl transform hover:scale-105 transition duration-300"
+              className="inline-block bg-[#F7E7CE] hover:bg-[#0f766e] text-black font-bold py-5 px-12 rounded-full text-xl shadow-xl transform hover:scale-105 transition duration-300"
             >
               Get Started Today →
             </Link>
