@@ -55,9 +55,6 @@ export default function EducationAndTraining() {
               developmental progress.
             </p>
           </div>
-          <div className=" mb-20 gap-12 items-center">
-            {/*CENTERED IMAGE HERE*/}
-          </div>
 
           {/* Two Specialties – Cards with Icons */}
           <h2 className="text-3xl md:text-4xl font-serif text-center font-bold text-[#0f766e] mb-6">
@@ -107,6 +104,34 @@ export default function EducationAndTraining() {
             ))}
           </div>
 
+          <section className="py-6 pb-20 md:py-24 px-6 bg-gradient-to-b from-white to-blue-50/30">
+            <div className="max-w-7xl mx-auto">
+              {/* Optional heading – remove if you want pure image section */}
+
+              {/* Centered image container */}
+              <div className="relative mx-auto max-w-4xl">
+                {/* Subtle decorative ring / glow behind the image */}
+                <div className="absolute inset-0 flex items-center justify-center">
+                  <div className="w-[90%] md:w-[85%] aspect-square rounded-full bg-gradient-to-r from-[#4793FF]/10 via-[#FFB347]/20 to-[#4793FF]/10 blur-3xl opacity-70" />
+                </div>
+
+                {/* Main centered image */}
+                <div className="relative z-10 rounded-3xl overflow-hidden shadow-2xl border-4 border-white/80">
+                  <Image
+                    src="/images/P1180403.JPG"
+                    alt="Centered hero moment – joyful child or family in movement"
+                    width={1200}
+                    height={1200}
+                    className="w-full h-auto object-contain"
+                    priority
+                  />
+                </div>
+
+                {/* Optional subtle caption or call-to-action below image */}
+              </div>
+            </div>
+          </section>
+
           {/* Alternating Image + Content Blocks */}
           <h2 className="text-3xl md:text-4xl font-serif text-center font-bold text-[#0f766e] mb-6">
             Why Education and Training?{" "}
@@ -141,7 +166,7 @@ export default function EducationAndTraining() {
             <div className="grid lg:grid-cols-2 gap-12 items-center">
               <div className="order-2 lg:order-1">
                 <h2 className="text-2xl md:text-2xl font-serif font-bold text-[#0f766e] mb-6">
-                  Strong Foundation for Safe Exercise:
+                  Strong Foundation for Safe Exercise
                 </h2>
                 <p className=" font-medium text-[#0A0504]  leading-relaxed">
                   Body awareness, motor planning, and postural stability &
