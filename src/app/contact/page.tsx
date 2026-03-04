@@ -89,19 +89,14 @@ export default function ContactPage() {
         </h1>
       </div>
 
-      <section className="bg-orange-50 text-blue-700  py-10">
-        <p className="text-center font-serif text-[#0f766e] italic font-bold text-xl py-10">
-          Building Brighter Futures Through Exercise!{" "}
-        </p>
-      </section>
       <section className="bg-[#F7E7CE] text-white  py-20">
         <div className="max-w-7xl mx-auto px-4 text-center">
           <h1 className=" text-4xl md:text-6xl text-[#0f766e] font-serif font-bold">
             Get in Touch
           </h1>
-          <p className="mt-4 font-medium text-[black]  font-montserrat">
-            We’re here to listen, guide, and support. Connect with us to learn
-            more about our programs, trainings, and resources.
+          <p className="mt-4 font-medium text-[black]  ">
+            We&apos;re here to Support. Connect with us to explore our Programs
+            and Resources.{" "}
           </p>
         </div>
       </section>
