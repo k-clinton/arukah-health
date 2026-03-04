@@ -3,22 +3,45 @@
 import Link from "next/link";
 import Image from "next/image";
 import { LuHeart } from "react-icons/lu";
-import { motion } from "framer-motion";
+import { motion, AnimatePresence } from "framer-motion";
+import { useState, useEffect } from "react";
+
+const carouselImages = [
+  "/images/secc1.png",
+  "/images/secc2.png",
+  "/images/secc4.png",
+];
 
 export default function Hero() {
+  const [currentIndex, setCurrentIndex] = useState(0);
+
+  // Auto-slide every 5 seconds
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentIndex((prev) => (prev + 1) % carouselImages.length);
+    }, 5000);
+    return () => clearInterval(interval);
+  }, []);
+
   return (
-    <section className="relative min-h-screen flex items-center justify-center pt-28 pb-16 md:pt-32 md:pb-20 bg-white">
+    <section className="relative min-h-screen flex items-center justify-center pt-24 pb-16 md:pt-24 md:pb-16 bg-white overflow-hidden">
       <div className="relative z-10 max-w-7xl mx-auto px-5 sm:px-6 lg:px-8">
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-12 lg:gap-16 items-center">
-          {/* Text Content – comes FIRST on mobile */}
-          <div className="text-center md:text-left order-1 md:order-1">
-            <h3 className="text-3xl sm:text-4xl md:text-3xl lg:text-4xl font-serif font-extrabold text-black mb-3 md:mb-2  leading-tight">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-12 lg:gap-16 items-center">
+          {/* Left Side – Redesigned Text Block */}
+          <motion.div
+            initial={{ opacity: 0, x: -40 }}
+            animate={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.9, ease: "easeOut" }}
+            className="text-center md:text-left order-1 md:order-1 bg-gradient-to-br from-[#0f766e]/5 to-white/80 backdrop-blur-sm rounded-3xl p-8 md:p-12 shadow-xl border border-[#0f766e]/20"
+          >
+            <h3 className="text-3xl sm:text-4xl md:text-3xl lg:text-4xl font-serif font-extrabold text-black mb-3 md:mb-2 leading-tight">
               Welcome To
             </h3>
-            <h2 className="text-5xl  sm:text-7xl md:text-6xl lg:text-6xl font-serif font-extrabold text-[#0f766e] mb-6 md:mb-8 leading-tight">
-              <span className="text-[#F7E7CE]">A</span>RUKAH HEA
-              <span className="text-[#F7E7CE]">LTH</span>{" "}
-            </h2>
+
+            <h1 className="text-5xl text-[#0f766e] sm:text-7xl md:text-6xl lg:text-7xl font-serif font-extrabold mb-6 md:mb-8 leading-tight">
+              <span className="">A</span>RUKAH HEA
+              <span className="">LTH</span>
+            </h1>
 
             <p className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-serif text-black mb-8 md:mb-10 max-w-3xl mx-auto md:mx-0">
               Leading Specialists in Pediatric Exercise Therapy
@@ -26,54 +49,56 @@ export default function Hero() {
 
             <Link
               href="/about"
-              className="inline-block bg-[#F7E7CE] hover:bg-[#F7E7CE] hover:text-black text-black font-bold py-4 px-10 sm:py-5 sm:px-12 md:px-14 rounded-full text-lg sm:text-xl shadow-lg transform hover:scale-105 transition duration-300"
+              className="inline-block bg-[#F7E7CE] hover:bg-[#0f766e] hover:text-white text-black font-bold py-4 px-10 sm:py-5 sm:px-12 md:px-14 rounded-full text-lg sm:text-xl shadow-lg transform hover:scale-105 transition duration-300"
             >
               KNOW MORE →
             </Link>
-          </div>
+          </motion.div>
 
-          {/* Right Column – Image with decorative frame */}
-          <div className="order-2 md:order-2 flex justify-center md:justify-end relative">
-            {/* Orange background rectangle (tilted) */}
-            <div className="absolute hidden md:hidden top-0 right-0 md:right-[-20%] w-[140%] md:w-[160%] h-full bg-[#FFB347] md:rotate-[-90deg] hidden md:block -z-10 shadow-xl" />
+          {/* Right Side – Carousel + Floating Card */}
+          <div className="order-2 md:order-2 relative flex flex-col items-center md:items-end">
+            {/* Carousel of 3 images coming from bottom */}
+            <div className="relative w-full max-w-md lg:max-w-lg aspect-[4/5] overflow-hidden  ">
+              <AnimatePresence mode="wait">
+                <motion.div
+                  key={currentIndex}
+                  initial={{ y: "100%", opacity: 0 }}
+                  animate={{ y: 0, opacity: 1 }}
+                  exit={{ y: "-100%", opacity: 0 }}
+                  transition={{ duration: 0.8, ease: "easeInOut" }}
+                  className="absolute inset-0"
+                >
+                  <Image
+                    src={carouselImages[currentIndex]}
+                    alt={`Hero slide ${currentIndex + 1}`}
+                    fill
+                    className="object-contain object-center"
+                    priority={currentIndex === 0}
+                  />
+                </motion.div>
+              </AnimatePresence>
 
-            {/* Black frame with blue outline */}
-            <div className="relative w-full max-w-sm sm:max-w-md md:max-w-lg lg:max-w-xl z-10">
-              {/* Blue outline border */}
-
-              {/* Black inner frame */}
-              <div className="relative bg-black rounded-2xl shadow-2xl overflow-hidden"></div>
-
-              {/* Existing floating decorative images (unchanged) */}
-              <motion.div
-                className="pointer-events-none absolute -top-34 -right-26 z-30 hidden md:block"
-                animate={{ y: [0, -12, 0] }}
-                transition={{
-                  duration: 6,
-                  repeat: Infinity,
-                  ease: "easeInOut",
-                }}
-              ></motion.div>
-              <div>
-                <Image
-                  src="/images/Screenshot 2026-02-27 222921.png"
-                  alt="Hero Image"
-                  width={600}
-                  height={600}
-                  className="object-cover object-center transition-transform duration-500 hover:scale-105 rounded-2xl"
-                />
-              </div>
-
-              <motion.div
-                className="pointer-events-none absolute -bottom-38 -right-6 z-30  md:block"
-                animate={{ y: [0, -12, 0] }}
-                transition={{
-                  duration: 7,
-                  repeat: Infinity,
-                  ease: "easeInOut",
-                }}
-              ></motion.div>
+              {/* Navigation Dots */}
             </div>
+
+            {/* Floating Card – Bottom Right */}
+            <motion.div
+              initial={{ opacity: 0, y: 30 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ delay: 0.5, duration: 0.8 }}
+              className="absolute bottom-[-40px] right-4 md:right-[-20px] lg:right-[-40px] z-30 bg-white/95 backdrop-blur-md rounded-2xl p-6 shadow-2xl border border-[#0f766e]/20 max-w-xs hover:scale-105 transition-transform duration-300"
+            >
+              <p className="text-sm md:text-base font-medium text-gray-800 leading-relaxed">
+                <strong className="text-[#0f766e]"></strong>
+                <br />
+                Redefining recovery, reclaiming milestones, reshaping beliefs,
+                and transforming lives through the power of movement.
+              </p>
+              <Link
+                href="/contact"
+                className="mt-4 inline-block text-sm font-semibold text-[#0f766e] hover:underline"
+              ></Link>
+            </motion.div>
           </div>
         </div>
       </div>
