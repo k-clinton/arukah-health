@@ -47,7 +47,7 @@ const HeroExtro = () => {
         </h1>
 
         <p className="font-medium  text-white mb-8 max-w-2xl mx-auto">
-          Join us in redefining what’s possible.
+          Join Us in Redefining What’s Possible.
         </p>
 
         <Link
