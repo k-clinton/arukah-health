@@ -19,7 +19,7 @@ export default function WhoWeAreHereFor() {
 
         <div className="relative z-10 flex items-center justify-center h-full px-6 text-center">
           <h1 className="text-5xl sm:text-6xl md:text-7xl font-serif font-extrabold text-white drop-shadow-2xl mb-6 md:mb-8">
-            Challenges we address
+            Challenges We Address
           </h1>
         </div>
       </div>
