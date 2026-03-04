@@ -181,7 +181,7 @@ export default function AboutUs() {
 
               <div className="p-10">
                 <h3
-                  className={`text-4xl font-bold mb-6 ${
+                  className={`text-4xl mb-[-30px] font-bold  ${
                     selectedPillar.color === "orange"
                       ? "text-[#0f766e]"
                       : "text-black"
