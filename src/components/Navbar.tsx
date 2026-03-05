@@ -94,9 +94,9 @@ export default function Navbar() {
       <div className="bg-white text-[#0f766e]">
         <div className="max-w-7xl mx-auto px-4">
           <div className="flex items-center h-12">
-            <Link href="/" className="flex items-center gap-3">
+            <Link href="/" className="flex  items-center gap-3">
               <Image
-                src="/images/logoA.png"
+                src="/images/logo.png"
                 alt="Arukah Health Logo"
                 width={40}
                 height={40}
