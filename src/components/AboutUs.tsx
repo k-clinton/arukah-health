@@ -78,7 +78,7 @@ export default function AboutUs() {
   return (
     <section className="py-20 px-6 bg-[#F7E7CE] from-blue-50 to-orange-50">
       <div className="max-w-7xl mx-auto">
-        <h2 className="text-4xl text-center font-serif mb-6 font-bold text-[#0f766e] drop-shadow-md">
+        <h2 className="text-4xl text-center font-serif mb-6 font-bold text-[#0f766e] drop-shadow-xl">
           What You’ll Love About Us
         </h2>
 
@@ -141,7 +141,7 @@ export default function AboutUs() {
                     e.stopPropagation(); // Prevent card click from interfering
                     setSelectedPillar(pillar);
                   }}
-                  className={`w-full py-3 px-6 rounded-full font-semibold text-black transition-all duration-300 hover:scale-105 hover:shadow-md ${
+                  className={`w-full py-3 px-6 rounded-full font-semibold text-black transition-all duration-300 hover:scale-105 hover:shadow-xl ${
                     pillar.color === "orange"
                       ? "bg-[#0f766e] hover:bg-[#0f766e]"
                       : "bg-[#F7E7CE] hover:bg-[#F7E7CE]"
@@ -169,7 +169,7 @@ export default function AboutUs() {
               initial={{ scale: 0.8, y: 50 }}
               animate={{ scale: 1, y: 0 }}
               exit={{ scale: 0.8, y: 50 }}
-              className="bg-white rounded-3xl max-w-3xl w-full max-h-[90vh] overflow-y-auto shadow-2xl relative"
+              className="bg-white rounded-3xl max-w-3xl w-full max-h-[90vh] overflow-y-auto shadow-xl relative"
               onClick={(e) => e.stopPropagation()}
             >
               <button
