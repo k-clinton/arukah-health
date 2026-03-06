@@ -135,7 +135,7 @@ export default function AboutUsPage() {
 
           {/* Core story text – centered with soft card-like container */}
           <div className="bg-white/80 backdrop-blur-sm rounded-3xl p-8 md:p-12 lg:p-16 shadow-xl border border-[#0f766e]/10 mb-16 md:mb-20">
-            <div className="prose prose-lg md:prose-xl lg:prose-2xl max-w-none text-gray-800 leading-relaxed space-y-8 text-center md:text-left font-medium">
+            <div className="prose prose-lg md:prose-xl lg:prose-2xl max-w-none text-black leading-relaxed space-y-8 text-center md:text-left font-medium">
               <p>
                 Our roots come from the understanding that nurturing
                 neuro-diverse children and those with milestone delays can feel
@@ -169,16 +169,15 @@ export default function AboutUsPage() {
                 deserves to be seen, celebrated, honored, and supported on their
                 unique journey.
               </p>
+              <p>
+                Every Smile and Every Breakthrough reminds us why this work
+                matters. We celebrate progress in all its forms — big or small —
+                knowing that strength is built not only in muscles but also in
+                spirit.
+              </p>
 
               {/* Focal quote – standout block */}
               <blockquote className="my-12 py-8 px-6 md:px-12 border-l-4 border-[#0f766e] bg-gradient-to-r from-[#FFB347]/5 to-transparent rounded-r-2xl italic text-xl md:text-2xl text-[#0f766e] font-serif font-medium">
-                Every Smile and Every Breakthrough reminds us why this work
-                matters.
-                <br />
-                We celebrate progress in all its forms — big or small — knowing
-                that strength is built not only in muscles but also in spirit.
-                <br />
-                <br />
                 <span className="text-[#0A0504] font-bold not-italic">
                   This is where Recovery is Redefined!
                   <br />
