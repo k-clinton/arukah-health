@@ -49,7 +49,7 @@ export default function Hero() {
 
             <Link
               href="/about-us"
-              className="inline-block bg-[#F7E7CE] hover:bg-[#0f766e] hover:text-white text-black font-bold py-4 px-10 sm:py-5 sm:px-12 md:px-14 rounded-full text-lg sm:text-xl shadow-lg transform hover:scale-105 transition duration-300"
+              className="inline-block bg-[#F7E7CE] hover:bg-[#0f766e] hover:text-white text-black font-bold py-4 px-10 sm:py-5 sm:px-12 md:px-14 rounded-full text-lg sm:text-xl shadow-xl transform hover:scale-105 transition duration-300"
             >
               KNOW MORE →
             </Link>
@@ -86,7 +86,7 @@ export default function Hero() {
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.5, duration: 0.8 }}
-              className="absolute bottom-[-40px] right-4 md:right-[-20px] lg:right-[-40px] z-30 bg-white/95 backdrop-blur-md rounded-2xl p-6 shadow-2xl border border-[#0f766e]/20 max-w-xs hover:scale-105 transition-transform duration-300"
+              className="absolute bottom-[-40px] right-4 md:right-[-20px] lg:right-[-40px] z-30 bg-white/95 backdrop-blur-md rounded-2xl p-6 shadow-xl border border-[#0f766e]/20 max-w-xs hover:scale-105 transition-transform duration-300"
             >
               <p className="text-sm md:text-base font-medium text-black leading-relaxed">
                 <strong className="text-[#0f766e]"></strong>
