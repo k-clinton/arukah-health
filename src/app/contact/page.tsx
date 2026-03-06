@@ -117,7 +117,7 @@ export default function ContactPage() {
                   value={name}
                   onChange={(e) => setName(e.target.value)}
                   placeholder="Your Full Name"
-                  className="w-full text-black px-5 py-4 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-700 focus:outline-none transition"
+                  className="w-full text-black px-5 py-4 border border-gray-300 rounded-lg focus:ring-2 focus:[#0f766e] focus:outline-none transition"
                 />
                 <input
                   type="email"
@@ -125,7 +125,7 @@ export default function ContactPage() {
                   value={email}
                   onChange={(e) => setEmail(e.target.value)}
                   placeholder="info@arukahhealth.co.ke"
-                  className="w-full text-black px-5 py-4 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-700 focus:outline-none transition"
+                  className="w-full text-black px-5 py-4 border border-gray-300 rounded-lg focus:ring-2 focus:[#0f766e] focus:outline-none transition"
                 />
                 <input
                   type="text"
@@ -133,7 +133,7 @@ export default function ContactPage() {
                   value={subject}
                   onChange={(e) => setSubject(e.target.value)}
                   placeholder="Subject"
-                  className="w-full text-black px-5 py-4 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-700 focus:outline-none transition"
+                  className="w-full text-black px-5 py-4 border border-gray-300 rounded-lg focus:ring-2 focus:[#0f766e] focus:outline-none transition"
                 />
                 <textarea
                   required
@@ -141,7 +141,7 @@ export default function ContactPage() {
                   value={message}
                   onChange={(e) => setMessage(e.target.value)}
                   placeholder="How can we support you today?"
-                  className="w-full text-black px-5 py-4 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-700 focus:outline-none transition resize-none"
+                  className="w-full text-black px-5 py-4 border border-gray-300 rounded-lg focus:ring-2 focus:[#0f766e] focus:outline-none transition resize-none"
                 />
 
                 <button
