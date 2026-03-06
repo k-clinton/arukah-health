@@ -9,7 +9,7 @@ export default function OurServicesSection() {
     {
       title: "Exercise Therapy",
       icon: Dumbbell,
-      color: "#0F766E", // teal/green
+      color: "#0F766E",
       description:
         "Personalized movement programs for children with neuro-developmental challenges and milestone delays.",
       href: "/exercise-therapy",
@@ -19,7 +19,7 @@ export default function OurServicesSection() {
     {
       title: "Education & Training",
       icon: GraduationCap,
-      color: "#F7E7CE", // warm orange
+      color: "#0F766E",
       description:
         "Capacity-building sessions for caregivers, parents, teachers, and communities.",
       href: "/education-and-training",
@@ -47,9 +47,7 @@ export default function OurServicesSection() {
               viewport={{ once: true }}
               transition={{ duration: 0.7, delay: index * 0.2 }}
               className={`group relative rounded-3xl overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-4 ${
-                index === 0
-                  ? "-mt-12 md:-mt-16 lg:-mt-20"
-                  : "mt-8 md:mt-12 lg:mt-16"
+                index === 0 ? "mt-8 " : "mt-8 "
               }`}
             >
               {/* Colored top line */}
