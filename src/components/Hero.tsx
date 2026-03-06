@@ -48,7 +48,7 @@ export default function Hero() {
             </p>
 
             <Link
-              href="/about"
+              href="/about-us"
               className="inline-block bg-[#F7E7CE] hover:bg-[#0f766e] hover:text-white text-black font-bold py-4 px-10 sm:py-5 sm:px-12 md:px-14 rounded-full text-lg sm:text-xl shadow-lg transform hover:scale-105 transition duration-300"
             >
               KNOW MORE →
@@ -91,8 +91,8 @@ export default function Hero() {
               <p className="text-sm md:text-base font-medium text-black leading-relaxed">
                 <strong className="text-[#0f766e]"></strong>
                 <br />
-                Redefining recovery, reclaiming milestones, reshaping beliefs,
-                and transforming lives through the power of Exercise.
+                Redefining Recovery, Reclaiming Milestones, Reshaping Beliefs,
+                and Transforming Lives Through the Power of Exercise.
               </p>
               <Link
                 href="/contact"
