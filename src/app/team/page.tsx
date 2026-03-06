@@ -202,7 +202,7 @@ export default function TeamSection() {
                 </div>
 
                 <div
-                  className="prose prose-lg max-w-none text-gray-800 leading-relaxed"
+                  className="prose prose-lg max-w-none text-black font-medium leading-relaxed"
                   dangerouslySetInnerHTML={{ __html: selectedMember.bio }}
                 />
               </div>
