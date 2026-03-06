@@ -134,8 +134,22 @@ export default function AboutUsPage() {
           </h2>
 
           {/* Core story text – centered with soft card-like container */}
-          <div className="bg-white/80 backdrop-blur-sm rounded-3xl p-8 md:p-12 lg:p-16 shadow-xl border border-[#0f766e]/10 mb-16 md:mb-20">
-            <div className="prose prose-lg md:prose-xl lg:prose-2xl max-w-none text-black leading-relaxed space-y-8 text-center md:text-left font-medium">
+          <div className="relative bg-white/70 backdrop-blur-md rounded-3xl p-8 md:p-12 lg:p-16 shadow-xl border border-[#0f766e]/20 mb-16 md:mb-20 overflow-hidden">
+            {/* Background Image */}
+            <div className="absolute inset-0 z-0">
+              <Image
+                src="/images/move bg3.jpg"
+                alt="Subtle background – soft movement or nature theme"
+                fill
+                className="object-cover object-center brightness-100 contrast-100"
+                priority={false} // can be true if this is above the fold
+              />
+              {/* Overlay to ensure text readability */}
+              {/* <div className="absolute inset-0 bg-gradient-to-br from-white/70 via-white/60 to-white/70" />*/}
+            </div>
+
+            {/* Content – elevated above background */}
+            <div className="relative z-10 prose prose-lg md:prose-xl lg:prose-2xl max-w-none text-black leading-relaxed space-y-8 text-center md:text-left font-medium">
               <p>
                 Our roots come from the understanding that nurturing
                 neuro-diverse children and those with milestone delays can feel
@@ -169,6 +183,7 @@ export default function AboutUsPage() {
                 deserves to be seen, celebrated, honored, and supported on their
                 unique journey.
               </p>
+
               <p>
                 Every Smile and Every Breakthrough reminds us why this work
                 matters. We celebrate progress in all its forms — big or small —
@@ -177,7 +192,7 @@ export default function AboutUsPage() {
               </p>
 
               {/* Focal quote – standout block */}
-              <blockquote className="my-12 py-8 px-6 md:px-12 border-l-4 border-[#0f766e] bg-gradient-to-r from-[#FFB347]/5 to-transparent rounded-r-2xl italic text-xl md:text-2xl text-[#0f766e] font-serif font-medium">
+              <blockquote className="my-12 py-8 px-6 md:px-12 border-l-4 border-[#0f766e] bg-white/60 backdrop-blur-sm rounded-r-2xl italic text-xl md:text-2xl text-[#0f766e] font-serif font-medium">
                 <span className="text-[#0A0504] font-bold not-italic">
                   This is where Recovery is Redefined!
                   <br />
@@ -231,7 +246,7 @@ export default function AboutUsPage() {
             whileInView="visible"
             viewport={{ once: true }}
             variants={fadeInUp}
-            className="bg-white rounded-2xl p-10 shadow-lg border-2 border-[#F7E7CE]"
+            className="bg-white rounded-2xl p-10 shadow-xl border-2 border-[#F7E7CE]"
           >
             <h3 className="text-3xl font-serif font-bold text-[#0F766E] mb-6">
               Our Vision
@@ -248,7 +263,7 @@ export default function AboutUsPage() {
             whileInView="visible"
             viewport={{ once: true }}
             variants={fadeInUp}
-            className="bg-white rounded-2xl p-10 shadow-lg border-2 border-[#F7E7CE]"
+            className="bg-white rounded-2xl p-10 shadow-xl border-2 border-[#F7E7CE]"
           >
             <h3 className="text-3xl font-serif font-bold text-[#0F766E] mb-6">
               Our Mission
@@ -321,7 +336,7 @@ export default function AboutUsPage() {
                 whileInView="visible"
                 viewport={{ once: true }}
                 variants={fadeInUp}
-                className="bg-white rounded-2xl p-8 shadow-md border-2 border-[#F7E7CE] text-center"
+                className="bg-white rounded-2xl p-8 shadow-xl border-2 border-[#F7E7CE] text-center"
               >
                 <h3 className="text-2xl font-serif font-bold text-[#0F766E] mb-4">
                   {value.title}
