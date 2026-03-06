@@ -145,7 +145,7 @@ export default function TeamSection() {
 
         {/* CTA */}
         <div className="text-center mt-12 md:mt-16">
-          <p className="font-medium text-black mb-6">
+          <p className="text-2xl md:text-2xl font-serif font-bold text-[#0f766e] mb-6">
             Building Brighter Futures Through Exercise.
           </p>
           <Link
