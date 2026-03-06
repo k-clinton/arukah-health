@@ -31,13 +31,14 @@ We work in collaboration with pediatricians, neurologists, physiotherapists, occ
         "Meaningful, measurable goals to ensure longevity and long term progress.",
       imageUrl: "/images/goals4.jpg",
       details: `
-Our programs are designed to achieve measurable, functional outcomes that are monitored, tracked and adjusted to maximize long term developmental potential. Through evidence based exercise therapy and interdisciplinary collaboration, families can expect:
-<br><br>
-<strong>• Improved mobility and motor function</strong>: targeted interventions to enhance gait, balance, coordination, and overall physical capacity.<br>
-<strong>• Greater independence in daily activities</strong>: skill development that supports self care, feeding, dressing, and participation in age appropriate routines.<br>
-<strong>• Reduced risk of secondary complications</strong>: proactive strategies to minimize musculoskeletal issues such as contractures, postural deformities, and activity limitations.<br>
-<strong>• Enhanced participation in school and play</strong>: integration of therapeutic activities that promote inclusion, social engagement, and cognitive development within educational and recreational settings.
-      `.trim(),
+Our programs are designed to achieve measurable, functional outcomes that are monitored, tracked and adjusted to maximize long term developmental potential. Parents can expect:
+<br>
+<strong>• Improved mobility and motor function</strong>: Enhanced gait, balance, coordination, and overall physical capacity.<br>
+<strong>• Greater independence in daily activities</strong> such as feeding, dressing, walking and participation in age appropriate routines.<br>
+<strong>• Reduced risk of secondary musculoskeletal complications</strong> such as contractures, postural deformities, and activity limitations.<br>
+<strong>• Cognitive development, social engagement and enhanced participation</strong> within educational and recreational settings.
+
+`.trim(),
     },
     {
       title: "Family & Caregiver Involvement",
@@ -45,15 +46,15 @@ Our programs are designed to achieve measurable, functional outcomes that are mo
       shortDesc:
         "Partnership with families, caregivers, and communities to ensure progress continues outside the clinic.",
       imageUrl: "/images/caregiver3.jpg",
-      details: `
-Our model of care recognizes parents and caregivers as essential partners in the therapeutic journey. We provide tools, training, and encouragement so that progress continues beyond the clinic and into everyday life. Families can expect:
-<br><br>
-<strong>• Practical training and home strategies</strong>: equipping caregivers with exercises and routines that reinforce therapy goals in daily settings.<br>
-<strong>• Confidence and empowerment</strong>: building caregiver skills to reduce anxiety and foster a supportive environment for the child.<br>
+      details:
+        `We recognize parents and caregivers as essential partners in the therapy journey. We provide tools, training, and encouragement so that progress continues beyond the clinic and into everyday life. Families can expect:
+  <br>
+<strong>• Home strategies</strong> that equip caregivers with exercises and routines that reinforce therapy goals in daily settings.<br>
+<strong>• Practical training and empowerment</strong> that builds caregiver skills to reduce anxiety and foster a supportive environment for the child.<br>
 <strong>• Consistency across environments</strong>: ensuring therapeutic practices are carried over into home, school, and community life.<br>
-<strong>• Strengthened family bonds</strong>: encouraging shared activities that promote connection, resilience, and joy in movement.<br>
-<strong>• Collaborative decision making</strong>: involving caregivers in treatment planning to align therapy with family priorities and values.
-      `.trim(),
+<strong>• Inclusive exercise activities</strong>  that promote connection, resilience, and strengthen family bonds.<br>
+<strong>• Collaborative decision making</strong> that involve caregivers in treatment planning to align therapy with family priorities and values.
+`.trim(),
     },
     {
       title: "Safety & Individualization",
@@ -61,14 +62,14 @@ Our model of care recognizes parents and caregivers as essential partners in the
       shortDesc:
         "Safe, supportive environments coupled with customized plans for effective, age appropriate progress.",
       imageUrl: "/images/safety24.jpg",
-      details: `
-Our interventions are delivered within a supervised, safe, and supportive environment, ensuring that every child’s medical profile and developmental needs are fully considered. Each program is individually tailored through comprehensive assessment of neurological status, functional capacity, and co existing medical conditions. This process allows us to:
-<br><br>
+      details:
+        `Therapy sessions are delivered within a supervised, safe, and supportive environment, ensuring that every child’s medical profile and developmental needs are fully considered. Each program is individually tailored through comprehensive assessment of neurological status, functional capacity, and co existing medical conditions. This process allows us to:
+ <br>
 <strong>• Customize therapy plans</strong> to align with each child’s medical history, current health status, and developmental stage.<br>
 <strong>• Implement risk mitigation strategies</strong> to safeguard against injury, fatigue, or secondary complications during therapy.<br>
 <strong>• Adapt activities and intensity levels</strong> to ensure interventions remain both effective and age appropriate.<br>
 <strong>• Provide continuous monitoring and adjustment</strong>, guided by interdisciplinary input, to maintain clinical safety and optimize outcomes.
-      `.trim(),
+`.trim(),
     },
   ];
 
@@ -98,9 +99,8 @@ Our interventions are delivered within a supervised, safe, and supportive enviro
       <section className="py-20 px-6 bg-gradient-to-b from-white to-blue-50/30">
         <div className="max-w-5xl mx-auto text-center">
           <p className=" text-black leading-relaxed font-medium">
-            Grounded in clinical research and guided by compassion, our model of
-            care brings together expertise and personalization to meet each
-            child’s unique needs.
+            Our care framework is built on four pillars that shape how we
+            support children in exercise therapy.
           </p>
         </div>
       </section>
@@ -115,7 +115,7 @@ Our interventions are delivered within a supervised, safe, and supportive enviro
           {pillars.map((pillar, index) => (
             <div
               key={pillar.title}
-              className="bg-white rounded-3xl text-[#0f766e] shadow-lg hover:shadow-2xl transition-all  duration-300 border-2 border-[#F7E7CE] flex flex-col hover:scale-105 relative min-h-[480px] overflow-hidden hover:border-[#0f766e]  "
+              className="bg-white rounded-3xl text-[#0f766e] shadow-lg hover:shadow-xl transition-all  duration-300 border-2 border-[#F7E7CE] flex flex-col hover:scale-105 relative min-h-[480px] overflow-hidden hover:border-[#F7E7CE]  "
             >
               {/* Full-width top image */}
               <div className="relative h-88 w-full">
@@ -141,7 +141,7 @@ Our interventions are delivered within a supervised, safe, and supportive enviro
 
                 <button
                   onClick={() => setSelectedPillar(index)}
-                  className="mt-auto inline-block px-8 py-3 rounded-full bg-[#F7E7CE] text-black font-semibold text-base shadow-md hover:shadow-lg hover:from-blue-600 hover:to-[#4793FF] transform hover:scale-105 transition-all duration-300"
+                  className="mt-auto inline-block px-8 py-3 rounded-full bg-[#F7E7CE] text-black font-semibold text-base shadow-xl hover:shadow-lg hover:from-blue-600 hover:to-[#4793FF] transform hover:scale-105 transition-all duration-300"
                 >
                   Learn More →
                 </button>
