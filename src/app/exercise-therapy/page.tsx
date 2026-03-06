@@ -174,19 +174,19 @@ export default function ExerciseTherapy() {
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
             {[
               {
-                imageUrl: "/images/muscle.jpg",
+                imageUrl: "/images/muscular strenghth.jpg",
                 title: "Muscular Strength & Endurance",
                 desc: "Building postural stability, gait support, and sustained activity tolerance.",
                 theme: "orange",
               },
               {
-                imageUrl: "/images/balance.jpg",
+                imageUrl: "/images/balance and cordination.jpg",
                 title: "Balance & Coordination",
                 desc: "Reducing fall risk and growing motor confidence.",
                 theme: "blue",
               },
               {
-                imageUrl: "/images/flexibility.jpg",
+                imageUrl: "/images/flexibility and mobility.jpg",
                 title: "Flexibility & Mobility",
                 desc: "Minimizing contractures and expanding range of motion.",
                 theme: "orange",
@@ -306,7 +306,7 @@ export default function ExerciseTherapy() {
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div className="relative rounded-3xl border-2 border-[#F7E7CE] overflow-hidden shadow-2xl">
               <Image
-                src="/images/hiking.jpg"
+                src="/images/hiking 2d.jpg"
                 alt="Child hiking with support in nature"
                 width={1200}
                 height={800}
@@ -351,7 +351,7 @@ export default function ExerciseTherapy() {
             </div>
             <div className="relative rounded-3xl border-2 border-[#F7E7CE] overflow-hidden shadow-2xl order-1 lg:order-2">
               <Image
-                src="/images/biking.jpg"
+                src="/images/cycling 2d.jpg"
                 alt="Child in structured play-based exercise session"
                 width={1200}
                 height={800}
@@ -367,7 +367,7 @@ export default function ExerciseTherapy() {
             </h3>
             <Link
               href="/contact"
-              className="inline-block bg-[#F7E7CE] hover:bg-[#0f766e] text-black font-bold py-5 px-12 rounded-full text-xl shadow-xl transform hover:scale-105 transition duration-300"
+              className="inline-block bg-[#F7E7CE] hover:bg-[#0f766e] hover:text-white text-black font-bold py-5 px-12 rounded-full text-xl shadow-xl transform hover:scale-105 transition duration-300"
             >
               Get Started Today →
             </Link>
