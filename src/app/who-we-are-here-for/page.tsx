@@ -35,7 +35,7 @@ export default function WhoWeAreHereFor() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.4, delay: index * 0.05 }}
-              className="bg-[#F7E7CE] border-1 border-[#F7E7CE] rounded-md p-6 shadow-sm"
+              className="bg-[#F7E7CE] border-1 border-[#F7E7CE] rounded-md p-6 shadow-xl"
             >
               <h3 className="font-serif text-lg md:text-xl font-semibold text-[#0f766e] mb-4">
                 {section.title}
@@ -79,7 +79,7 @@ export default function WhoWeAreHereFor() {
               </div>
 
               {/* Image on right (desktop) / below (mobile) */}
-              <div className="order-1 lg:order-2 relative rounded-3xl overflow-hidden shadow-2xl">
+              <div className="order-1 lg:order-2 relative rounded-3xl overflow-hidden shadow-xl">
                 <Image
                   src="/images/care1.jpg"
                   alt="Child smiling while reaching new movement milestone"
