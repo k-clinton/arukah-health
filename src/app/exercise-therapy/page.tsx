@@ -28,7 +28,7 @@ function Carousel({ images }: { images: string[] }) {
   }, [images.length]);
 
   return (
-    <div className="relative w-full h-full overflow-hidden rounded-3xl shadow-2xl">
+    <div className="relative w-full h-full overflow-hidden rounded-3xl shadow-xl">
       <AnimatePresence mode="wait">
         <motion.div
           key={currentIndex}
@@ -204,7 +204,7 @@ export default function ExerciseTherapy() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ delay: i * 0.1 }}
-                className={`group bg-[#F7E7CE] rounded-2xl overflow-hidden shadow-lg transition-all duration-300 border-2 ${
+                className={`group bg-[#F7E7CE] rounded-2xl overflow-hidden shadow-xl transition-all duration-300 border-2 ${
                   item.theme === "orange"
                     ? "border-[#F7E7CE] hover:[#F7E7CE] "
                     : "border-[#F7E7CE] hover:[#F7E7CE] "
@@ -246,7 +246,7 @@ export default function ExerciseTherapy() {
 
           {/* Block 1 */}
           <div className="grid lg:grid-cols-2 gap-12 items-center">
-            <div className="relative rounded-3xl overflow-hidden border-2 border-[#F7E7CE] shadow-2xl">
+            <div className="relative rounded-3xl overflow-hidden border-2 border-[#F7E7CE] shadow-xl">
               <Image
                 src="/images/structured.png"
                 alt="Child enjoying water-based exercise therapy"
@@ -291,7 +291,7 @@ export default function ExerciseTherapy() {
                 regulation.
               </p>
             </div>
-            <div className="relative rounded-3xl overflow-hidden border-2 border-[#F7E7CE] shadow-2xl order-1 lg:order-2">
+            <div className="relative rounded-3xl overflow-hidden border-2 border-[#F7E7CE] shadow-xl order-1 lg:order-2">
               <Image
                 src="/images/swimming55.jpg"
                 alt="Child guided swimming session"
@@ -304,7 +304,7 @@ export default function ExerciseTherapy() {
 
           {/* Block 3 */}
           <div className="grid lg:grid-cols-2 gap-12 items-center">
-            <div className="relative rounded-3xl border-2 border-[#F7E7CE] overflow-hidden shadow-2xl">
+            <div className="relative rounded-3xl border-2 border-[#F7E7CE] overflow-hidden shadow-xl">
               <Image
                 src="/images/hiking 2d.jpg"
                 alt="Child hiking with support in nature"
@@ -349,7 +349,7 @@ export default function ExerciseTherapy() {
                 through active exploration in open, grounding spaces.
               </p>
             </div>
-            <div className="relative rounded-3xl border-2 border-[#F7E7CE] overflow-hidden shadow-2xl order-1 lg:order-2">
+            <div className="relative rounded-3xl border-2 border-[#F7E7CE] overflow-hidden shadow-xl order-1 lg:order-2">
               <Image
                 src="/images/cycling 2d.jpg"
                 alt="Child in structured play-based exercise session"
