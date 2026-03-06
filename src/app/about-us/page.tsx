@@ -2,6 +2,7 @@
 
 import { motion } from "framer-motion";
 import Image from "next/image";
+import Link from "next/link";
 
 const fadeInUp = {
   hidden: { opacity: 0, y: 40 },
@@ -119,6 +120,87 @@ export default function AboutUsPage() {
       </section>
 
       {/* SECTION 4: FEATURE – Childlike Background */}
+      <section className="relative py-20 md:py-32 px-6 bg-gradient-to-b from-white via-blue-50/30 to-white overflow-hidden">
+        {/* Subtle background decorative elements */}
+        <div className="absolute inset-0 pointer-events-none">
+          <div className="absolute top-0 left-0 w-64 h-64 md:w-96 md:h-96 bg-[#0f766e]/5 rounded-full blur-3xl -translate-x-1/3 -translate-y-1/3" />
+          <div className="absolute bottom-0 right-0 w-80 h-80 md:w-128 md:h-128 bg-[#FFB347]/5 rounded-full blur-3xl translate-x-1/3 translate-y-1/3" />
+        </div>
+
+        <div className="relative max-w-5xl mx-auto">
+          {/* Main heading */}
+          <h2 className="text-4xl md:text-5xl  lg:text-6xl font-serif font-extrabold text-center text-[#0f766e] mb-12 md:mb-16 tracking-tight">
+            Our Foundation
+          </h2>
+
+          {/* Core story text – centered with soft card-like container */}
+          <div className="bg-white/80 backdrop-blur-sm rounded-3xl p-8 md:p-12 lg:p-16 shadow-xl border border-[#0f766e]/10 mb-16 md:mb-20">
+            <div className="prose prose-lg md:prose-xl lg:prose-2xl max-w-none text-gray-800 leading-relaxed space-y-8 text-center md:text-left font-medium">
+              <p>
+                Our roots come from the understanding that nurturing
+                neuro-diverse children and those with milestone delays can feel
+                like walking through seasons of uncertainty, burnout, pain, and
+                quiet resilience. Complexities such as impaired motor control,
+                reduced strength, balance deficits, and altered proprioception
+                affect a child’s independence, making care quite intricate and
+                demanding. Yet it is within these very challenges that the need
+                for a space of joy, purpose, and renewal becomes clear.
+              </p>
+
+              <p>
+                Arukah Health was founded with a deep passion for helping
+                neuro-diverse children and those with milestone delays discover
+                their potential through joyful, purposeful exercise. With years
+                of clinical experience in pediatric therapy and a heart for
+                families navigating uncertainty, Ivy — our founder — created a
+                space where science, compassion, and hope converge. A space
+                built on the belief that <strong>exercise is medicine</strong> —
+                where movement becomes a joyful and intentional pathway to
+                building the core dimensions of physical function that enhance
+                independence and resilience.
+              </p>
+
+              <p>
+                At Arukah, exercise is more than biomechanics — it’s a language
+                of healing, play, and growth. Every stretch, step, and breath is
+                an opportunity to restore what challenges may have hindered and
+                to open new pathways of strength, confidence, and joy. Each of
+                these moments of growth affirms our belief that every child
+                deserves to be seen, celebrated, honored, and supported on their
+                unique journey.
+              </p>
+
+              {/* Focal quote – standout block */}
+              <blockquote className="my-12 py-8 px-6 md:px-12 border-l-4 border-[#0f766e] bg-gradient-to-r from-[#FFB347]/5 to-transparent rounded-r-2xl italic text-xl md:text-2xl text-[#0f766e] font-serif font-medium">
+                Every Smile and Every Breakthrough reminds us why this work
+                matters.
+                <br />
+                We celebrate progress in all its forms — big or small — knowing
+                that strength is built not only in muscles but also in spirit.
+                <br />
+                <br />
+                <span className="text-[#0A0504] font-bold not-italic">
+                  This is where Recovery is Redefined!
+                  <br />
+                  This is Home!
+                  <br />
+                  This is Arukah Health!
+                </span>
+              </blockquote>
+            </div>
+          </div>
+
+          {/* Optional subtle CTA or closing line */}
+          <div className="text-center">
+            <Link
+              href="/contact"
+              className="inline-block bg-[#F7E7CE] hover:bg-[#0a5c54] hover:text-white text-black font-bold py-4 px-10 rounded-full text-lg shadow-lg transform hover:scale-105 transition duration-300"
+            >
+              Join the Arukah Family →
+            </Link>
+          </div>
+        </div>
+      </section>
 
       <section className="bg-[#F7E7CE]  py-20 text-center">
         <div className="max-w-4xl mx-auto px-6">
