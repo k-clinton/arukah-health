@@ -34,7 +34,7 @@ export default function OurServicesSection() {
       <div className="absolute inset-x-0 -top-16 h-32 bg-gradient-to-b from-transparent to-white pointer-events-none" />
 
       <div className="max-w-7xl mx-auto relative">
-        <h2 className="text-4xl md:text-5xl font-serif font-bold text-center text-[#0F766E] mb-16 md:mb-32">
+        <h2 className="text-4xl md:text-5xl font-serif font-bold text-center text-[#0F766E] mb-10 md:mb-25">
           Our Services
         </h2>
 
