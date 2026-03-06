@@ -40,10 +40,9 @@ const HeroExtro = () => {
       {/* Content Container */}
       <div className="relative z-10 text-center max-w-4xl px-6 py-12 md:px-12 md:py-20">
         <h1 className="text-4xl md:text-4xl font-bold text-white mb-4 leading-tight">
-          Nurturing{" "}
-          <span className="text-[#FFB347]  inline-block">Progress,</span>{" "}
+          Nurturing <span className="text-black  inline-block">Progress,</span>{" "}
           Inspiring{" "}
-          <span className="text-[#FFB347]  inline-block">Possibilities</span>
+          <span className="text-black  inline-block">Possibilities</span>
         </h1>
 
         <p className="font-medium  text-white mb-8 max-w-2xl mx-auto">
