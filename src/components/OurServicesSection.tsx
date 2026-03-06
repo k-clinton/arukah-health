@@ -46,7 +46,7 @@ export default function OurServicesSection() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.7, delay: index * 0.2 }}
-              className={`group relative rounded-3xl overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-4 ${
+              className={`group relative rounded-3xl overflow-hidden shadow-xl hover:shadow-xl transition-all duration-500 transform hover:-translate-y-4 ${
                 index === 0 ? "mt-8 " : "mt-8 "
               }`}
             >
@@ -61,7 +61,7 @@ export default function OurServicesSection() {
               >
                 {/* Icon */}
                 <div
-                  className="w-20 h-20 md:w-24 md:h-24 rounded-full flex items-center justify-center mb-6 shadow-lg"
+                  className="w-20 h-20 md:w-24 md:h-24 rounded-full flex items-center justify-center mb-6 shadow-xl"
                   style={{ backgroundColor: `${service.color}15` }}
                 >
                   <service.icon size={40} className="text-gray-800" />
@@ -80,7 +80,7 @@ export default function OurServicesSection() {
                 {/* Button */}
                 <Link
                   href={service.href}
-                  className="inline-flex items-center gap-2 px-8 py-4 rounded-full bg-[#F7E7CE] text-black font-semibold shadow-md hover:bg-[#0f766e] hover:text-white hover:shadow-lg transition-all duration-300 transform hover:scale-105"
+                  className="inline-flex items-center gap-2 px-8 py-4 rounded-full bg-[#F7E7CE] text-black font-semibold shadow-xl hover:bg-[#0f766e] hover:text-white hover:shadow-xl transition-all duration-300 transform hover:scale-105"
                 >
                   Explore More
                   <span aria-hidden="true">→</span>
