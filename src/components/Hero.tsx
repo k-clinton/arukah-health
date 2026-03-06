@@ -88,11 +88,11 @@ export default function Hero() {
               transition={{ delay: 0.5, duration: 0.8 }}
               className="absolute bottom-[-40px] right-4 md:right-[-20px] lg:right-[-40px] z-30 bg-white/95 backdrop-blur-md rounded-2xl p-6 shadow-2xl border border-[#0f766e]/20 max-w-xs hover:scale-105 transition-transform duration-300"
             >
-              <p className="text-sm md:text-base font-medium text-gray-800 leading-relaxed">
+              <p className="text-sm md:text-base font-medium text-black leading-relaxed">
                 <strong className="text-[#0f766e]"></strong>
                 <br />
                 Redefining recovery, reclaiming milestones, reshaping beliefs,
-                and transforming lives through the power of movement.
+                and transforming lives through the power of Exercise.
               </p>
               <Link
                 href="/contact"
