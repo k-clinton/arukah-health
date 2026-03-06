@@ -116,7 +116,7 @@ export default function EducationAndTraining() {
                 </div>
 
                 {/* Main centered image */}
-                <div className="relative z-10 rounded-3xl overflow-hidden shadow-2xl border-4 border-white/80">
+                <div className="relative z-10 rounded-3xl overflow-hidden shadow-xl border-4 border-white/80">
                   <Image
                     src="/images/P1180403.JPG"
                     alt="Centered hero moment – joyful child or family in movement"
@@ -139,7 +139,7 @@ export default function EducationAndTraining() {
           <div className="space-y-24">
             {/* Block 1: Image left / Content right */}
             <div className="grid lg:grid-cols-2 gap-12 items-center">
-              <div className="relative rounded-3xl overflow-hidden shadow-2xl">
+              <div className="relative rounded-3xl overflow-hidden shadow-xl">
                 <Image
                   src="/images/edu11.jpg"
                   alt="Group of parents learning inclusive movement strategies"
@@ -177,7 +177,7 @@ export default function EducationAndTraining() {
                   and exercise with more ease, safety, and joy.
                 </p>
               </div>
-              <div className="relative rounded-3xl overflow-hidden shadow-2xl order-1 lg:order-2">
+              <div className="relative rounded-3xl overflow-hidden shadow-xl order-1 lg:order-2">
                 <Image
                   src="/images/edu22.jpg"
                   alt=""
@@ -190,7 +190,7 @@ export default function EducationAndTraining() {
 
             {/* Block 3: Image left / Content right */}
             <div className="grid lg:grid-cols-2 gap-12 items-center">
-              <div className="relative rounded-3xl overflow-hidden shadow-2xl">
+              <div className="relative rounded-3xl overflow-hidden shadow-xl">
                 <Image
                   src="/images/edu33.jpg"
                   alt=""
