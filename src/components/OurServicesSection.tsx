@@ -82,7 +82,7 @@ export default function OurServicesSection() {
                   href={service.href}
                   className="inline-flex items-center gap-2 px-8 py-4 rounded-full bg-[#F7E7CE] text-black font-semibold shadow-md hover:bg-[#0f766e] hover:text-white hover:shadow-lg transition-all duration-300 transform hover:scale-105"
                 >
-                  Explore {service.title}
+                  Explore More
                   <span aria-hidden="true">→</span>
                 </Link>
               </div>
