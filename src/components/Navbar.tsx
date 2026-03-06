@@ -92,14 +92,14 @@ export default function Navbar() {
     <nav className="fixed top-0 left-0 right-0 z-50 bg-white shadow-sm">
       {/* Top Bar */}
       <div className="bg-white text-[#0f766e]">
-        <div className="max-w-7xl mx-auto px-4">
+        <div className="max-w-7xl mx-auto px-2">
           <div className="flex items-center h-12">
-            <Link href="/" className="flex  items-center gap-3">
+            <Link href="/" className="flex  items-center gap-1">
               <Image
                 src="/images/logo.png"
                 alt="Arukah Health Logo"
-                width={40}
-                height={40}
+                width={50}
+                height={50}
               />
               <span className=" text-3xl font-bold">ARUKAH HEALTH</span>
             </Link>
