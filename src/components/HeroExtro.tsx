@@ -52,7 +52,7 @@ const HeroExtro = () => {
 
         <Link
           href="/contact"
-          className="inline-flex items-center justify-center gap-2 bg-white hover:from-yellow-500 hover:to-orange-600 text-gray-900 font-bold text-xl md:text-2xl py-4 px-10 rounded-full shadow-2xl hover:scale-105 transform transition-all duration-300 hover:shadow-yellow-300/50 border-4 border-white/30"
+          className="inline-flex items-center justify-center gap-2 bg-[#f7e7ce] hover:from-yellow-500 hover:to-orange-600 text-gray-900 font-bold text-xl md:text-2xl py-4 px-10 rounded-full shadow-2xl hover:scale-105 transform transition-all duration-300 hover:shadow-yellow-300/50 border-4 border-white/30"
         >
           <span className="text-black">Begin the Journey</span>
         </Link>
