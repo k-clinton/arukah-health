@@ -70,7 +70,7 @@ const Footer = () => {
                 "Home",
                 "About Us",
                 "Exercise Therapy",
-                "Education and Training",
+                "Education-and-Training",
                 "Team",
                 "Contact",
               ].map((link) => (
