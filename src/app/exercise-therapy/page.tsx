@@ -241,57 +241,67 @@ export default function ExerciseTherapy() {
       <section className="py-20 px-6">
         <div className="max-w-7xl mx-auto space-y-24">
           <h3 className="text-3xl md:text-4xl font-serif font-bold text-center text-[#0f766e] mb-12">
-            Activities in Our programs{" "}
+            Activities in Our programs
           </h3>
 
-          {/* Block 1 */}
-          <div className="grid lg:grid-cols-2 gap-12 items-center">
-            <div className="relative rounded-3xl overflow-hidden border-2 border-[#F7E7CE] shadow-xl">
+          {/* Block 1: Structured & Play-Based Exercise */}
+          <div className="space-y-8 lg:space-y-0 lg:grid lg:grid-cols-2 lg:gap-12 lg:items-center">
+            {/* Text first on mobile */}
+            <div className="order-1 lg:order-2">
+              <h2 className="text-2xl md:text-3xl font-serif font-bold text-[#0f766e] mb-6 text-center lg:text-left">
+                Structured & Play-Based Exercise
+              </h2>
+              <div className="prose prose-lg text-black mb-6 font-medium leading-relaxed space-y-6 text-center lg:text-left">
+                <p>
+                  Playful, organized workouts and games that build motor skills,
+                  strength, coordination and confidence in a safe, motivating
+                  environment.
+                </p>
+                <p>
+                  They utilize specialized equipment, controlled environments
+                  and curated soundscapes to support precise movement, focused
+                  engagement, neuromuscular re-education, and emotional
+                  regulation.
+                </p>
+              </div>
+            </div>
+
+            {/* Image second on mobile */}
+            <div className="relative rounded-3xl overflow-hidden border-2 border-[#F7E7CE] shadow-xl order-2 lg:order-1">
               <Image
                 src="/images/structured.png"
-                alt="Child enjoying water-based exercise therapy"
+                alt="Child enjoying structured and play-based exercise therapy"
                 width={1000}
                 height={600}
                 className="w-full h-auto object-cover"
               />
             </div>
-            <div>
-              <h2 className="text-2xl md:text-2xl font-serif font-bold text-[#0f766e] mb-6">
-                Structured & Play-Based Exercise
-              </h2>
-              <p className="prose prose-lg text-black mb-6 font-medium  leading-relaxed space-y-6">
-                Playful, organized workouts and games that build motor skills,
-                strength, coordination and confidence in a safe, motivating
-                environment.{" "}
-              </p>
-              <p className="prose prose-lg text-black  font-medium  leading-relaxed space-y-6">
-                They utilize specialized equipment, controlled environments and
-                curated soundscapes to support precise movement, focused
-                engagement, neuromuscular re-education, and emotional
-                regulation.
-              </p>
-            </div>
           </div>
 
-          {/* Block 2 */}
-          <div className="grid lg:grid-cols-2 gap-12 items-center">
-            <div className="order-2 lg:order-1">
-              <h2 className="text-2xl md:text-2xl font-serif font-bold text-[#0f766e] mb-6">
+          {/* Block 2: Swimming */}
+          <div className="space-y-8 lg:space-y-0 lg:grid lg:grid-cols-2 lg:gap-12 lg:items-center">
+            {/* Text first on mobile */}
+            <div className="order-1 lg:order-1">
+              <h2 className="text-2xl md:text-3xl font-serif font-bold text-[#0f766e] mb-6 text-center lg:text-left">
                 Swimming
               </h2>
-              <p className=" text-black leading-relaxed mb-6 font-medium">
-                Joyful, structured sessions in the water that build motor
-                skills, strength, coordination, resilience and confidence while
-                fostering safety and enjoyment.
-              </p>
-              <p className=" text-black leading-relaxed mb-6 font-medium">
-                They incorporate specialized techniques, adaptive equipment, and
-                sensory-aware approaches to foster skill development, sustained
-                attention, motor re-patterning, and a calming sense of
-                regulation.
-              </p>
+              <div className="prose prose-lg text-black mb-6 font-medium leading-relaxed space-y-6 text-center lg:text-left">
+                <p>
+                  Joyful, structured sessions in the water that build motor
+                  skills, strength, coordination, resilience and confidence
+                  while fostering safety and enjoyment.
+                </p>
+                <p>
+                  They incorporate specialized techniques, adaptive equipment,
+                  and sensory-aware approaches to foster skill development,
+                  sustained attention, motor re-patterning, and a calming sense
+                  of regulation.
+                </p>
+              </div>
             </div>
-            <div className="relative rounded-3xl overflow-hidden border-2 border-[#F7E7CE] shadow-xl order-1 lg:order-2">
+
+            {/* Image second on mobile */}
+            <div className="relative rounded-3xl overflow-hidden border-2 border-[#F7E7CE] shadow-xl order-2 lg:order-2">
               <Image
                 src="/images/swimming55.jpg"
                 alt="Child guided swimming session"
@@ -302,9 +312,29 @@ export default function ExerciseTherapy() {
             </div>
           </div>
 
-          {/* Block 3 */}
-          <div className="grid lg:grid-cols-2 gap-12 items-center">
-            <div className="relative rounded-3xl border-2 border-[#F7E7CE] overflow-hidden shadow-xl">
+          {/* Block 3: Hiking */}
+          <div className="space-y-8 lg:space-y-0 lg:grid lg:grid-cols-2 lg:gap-12 lg:items-center">
+            {/* Text first on mobile */}
+            <div className="order-1 lg:order-2">
+              <h2 className="text-2xl md:text-3xl font-serif font-bold text-[#0f766e] mb-6 text-center lg:text-left">
+                Hiking
+              </h2>
+              <div className="prose prose-lg text-black mb-6 font-medium leading-relaxed space-y-6 text-center lg:text-left">
+                <p>
+                  Fun, guided, outdoor experiences that build balance, stamina,
+                  resilience, and a love for active living.
+                </p>
+                <p>
+                  They utilize varied terrain, fresh air and sensory-rich
+                  stimuli and adaptive strategies to promote dynamic movement,
+                  proprioceptive awareness, cardiovascular health, functional
+                  recovery and emotional regulation.
+                </p>
+              </div>
+            </div>
+
+            {/* Image second on mobile */}
+            <div className="relative rounded-3xl border-2 border-[#F7E7CE] overflow-hidden shadow-xl order-2 lg:order-1">
               <Image
                 src="/images/hiking 2d.jpg"
                 alt="Child hiking with support in nature"
@@ -313,43 +343,33 @@ export default function ExerciseTherapy() {
                 className="w-full h-auto object-cover"
               />
             </div>
-            <div>
-              <h2 className="text-2xl md:text-2xl font-serif font-bold text-[#0f766e] mb-6">
-                Hiking
-              </h2>
-              <p className=" text-black leading-relaxed mb-6 font-medium">
-                Fun, guided, outdoor experiences that build balance, stamina,
-                resilience, and a love for active living.{" "}
-              </p>
-              <p className=" text-black leading-relaxed mb-6 font-medium">
-                They utilize varied terrain, fresh air and sensory-rich stimuli
-                and adaptive strategies to promote dynamic movement,
-                proprioceptive awareness, cardiovascular health, functional
-                recovery and emotional regulation.
-              </p>
-            </div>
           </div>
 
-          {/* Block 4 */}
-          <div className="grid lg:grid-cols-2 gap-12 items-center">
-            <div className="order-2 lg:order-1">
-              <h2 className="text-2xl md:text-2xl font-serif font-bold text-[#0f766e] mb-6">
+          {/* Block 4: Cycling */}
+          <div className="space-y-8 lg:space-y-0 lg:grid lg:grid-cols-2 lg:gap-12 lg:items-center">
+            {/* Text first on mobile */}
+            <div className="order-1 lg:order-1">
+              <h2 className="text-2xl md:text-3xl font-serif font-bold text-[#0f766e] mb-6 text-center lg:text-left">
                 Cycling
               </h2>
-              <p className=" text-black leading-relaxed mb-6 font-medium">
-                Supported and guided biking experiences in open-air, nature-rich
-                environments, that enhance balance, endurance, independence and
-                overall physical function.{" "}
-              </p>
-              <p className=" text-black leading-relaxed mb-6 font-medium">
-                They incorporate varied terrain, adaptive techniques and
-                sensory-aware approaches to strengthen lower limbs, improve
-                cardiovascular fitness, support gait training and promote
-                cognitive engagement, motor planning and emotional resilience
-                through active exploration in open, grounding spaces.
-              </p>
+              <div className="prose prose-lg text-black mb-6 font-medium leading-relaxed space-y-6 text-center lg:text-left">
+                <p>
+                  Supported and guided biking experiences in open-air,
+                  nature-rich environments, that enhance balance, endurance,
+                  independence and overall physical function.
+                </p>
+                <p>
+                  They incorporate varied terrain, adaptive techniques and
+                  sensory-aware approaches to strengthen lower limbs, improve
+                  cardiovascular fitness, support gait training and promote
+                  cognitive engagement, motor planning and emotional resilience
+                  through active exploration in open, grounding spaces.
+                </p>
+              </div>
             </div>
-            <div className="relative rounded-3xl border-2 border-[#F7E7CE] overflow-hidden shadow-xl order-1 lg:order-2">
+
+            {/* Image second on mobile */}
+            <div className="relative rounded-3xl border-2 border-[#F7E7CE] overflow-hidden shadow-xl order-2 lg:order-2">
               <Image
                 src="/images/cycling 2d.jpg"
                 alt="Child in structured play-based exercise session"
@@ -362,7 +382,7 @@ export default function ExerciseTherapy() {
 
           {/* Final CTA */}
           <div className="text-center mt-20">
-            <h3 className="text-2xl md:text-2xl font-serif font-bold text-[#0f766e] mb-6">
+            <h3 className="text-2xl md:text-3xl font-serif font-bold text-[#0f766e] mb-6">
               Exercise Is Medicine
             </h3>
             <Link
