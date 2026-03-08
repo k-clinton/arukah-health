@@ -1,5 +1,6 @@
-// src/app/education-and-training/page.tsx
+"use client";
 
+import { motion } from "framer-motion";
 import {
   BookOpen,
   Users,
@@ -14,30 +15,54 @@ export default function EducationAndTraining() {
   return (
     <main className=" bg-white">
       <div className="pt-27 pb-24 ">
-        <section className="relative  min-h-[60vh] md:min-h-[70vh] flex items-center justify-center">
-          {/* Background Image */}
-          <div className="absolute inset-0">
-            <Image
-              src="/images/IMG_9516.JPG"
-              alt="Education and training background – joyful learning moment"
-              fill
-              className="object-cover brightness-[0.95] care"
-              priority
-            />
-            {/* Dark overlay for text contrast */}
-            <div className="absolute inset-0 bg-black/45" />
-          </div>
+        <section className="relative mb-15 pb-15 mt-11 min-h-[60vh] md:min-h-[70vh] flex items-center justify-center bg-white overflow-hidden">
+          <div className="relative z-10 max-w-7xl mx-auto px-6 lg:px-8 w-full">
+            <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
+              {/* Left: Title */}
+              <div className="text-left order-1">
+                <h1 className="text-5xl sm:text-6xl md:text-6xl lg:text-6xl font-serif font-extrabold text-[#0f766e] leading-tight ">
+                  Education <br className="hidden sm:block" />
+                  and Training
+                </h1>
 
-          {/* Content centered on top */}
-          <div className="relative z-10 text-center px-6 max-w-5xl">
-            <h1 className="text-5xl sm:text-6xl md:text-7xl font-serif font-extrabold text-white drop-shadow-2xl mb-6 md:mb-8">
-              Education and Training
-            </h1>
+                {/* Optional tagline (feel free to remove or customize) */}
+                <p className="mt-6 text-xl md:text-2xl text-black font-medium max-w-xl">
+                  Training sessions designed to build capacity and increase
+                  knowledge among individuals, caregivers, parents, families and
+                  communities.
+                </p>
+              </div>
+
+              {/* Right: Decorative floating image */}
+              <div className="relative order-2 flex justify-center lg:justify-end mt-12 lg:mt-0">
+                <motion.div
+                  initial={{ opacity: 0, y: 80, rotate: 0 }}
+                  animate={{ opacity: 1, y: 0, rotate: 0 }}
+                  whileHover={{ scale: 1.06, rotate: 0, y: -20 }}
+                  transition={{ duration: 1.4, ease: "easeOut" }}
+                  className="relative w-[90%] max-w-md lg:max-w-xl -mr-8 lg:-mr-16"
+                >
+                  {/* Floating image – clean, no border/frame */}
+                  <div className="relative rounded-3xl overflow-hidden shadow-xl">
+                    <Image
+                      src="/images/edut3.jpg"
+                      alt="Joyful learning and training moment"
+                      width={1200}
+                      height={900}
+                      className="w-full h-auto object-cover"
+                      priority
+                    />
+                  </div>
+
+                  {/* Soft decorative glow accents behind the image */}
+                  <div className="absolute -bottom-16 -right-16 w-64 h-64 md:w-96 md:h-96 bg-[#0f766e]/10 rounded-full blur-3xl -z-10" />
+                  <div className="absolute -top-12 -left-12 w-40 h-40 md:w-64 md:h-64 bg-[#FFB347]/10 rounded-full blur-3xl -z-10" />
+                </motion.div>
+              </div>
+            </div>
           </div>
         </section>
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
-          {/* Hero / Intro */}
-
           {/* Core Message */}
           <div className="max-w-5xl mt-10 mx-auto  mb-20">
             <p className=" font-medium   text-[#0A0504]  leading-relaxed">
