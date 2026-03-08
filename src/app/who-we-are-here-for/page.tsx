@@ -7,7 +7,7 @@ export default function WhoWeAreHereFor() {
   return (
     <section className="bg-white mt-20 ">
       {/* Hero / Carousel Section */}
-      <section className="relative mb-20 pt-15 mt-29 md:mt-25 min-h-[60vh] md:min-h-[70vh] flex items-center justify-center bg-white overflow-hidden">
+      <section className="relative mb-20 pb-15 pt-15 mt-29 md:mt-25 min-h-[60vh] md:min-h-[70vh] flex items-center justify-center bg-white overflow-hidden">
         <div className="relative z-10 max-w-7xl items-center mx-auto px-6 lg:px-8 w-full">
           <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
             {/* Left: Title */}
