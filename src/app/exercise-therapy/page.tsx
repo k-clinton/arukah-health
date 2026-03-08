@@ -101,16 +101,10 @@ export default function ExerciseTherapy() {
             {/* Left: Title */}
             <div className="text-left order-1">
               <h1 className="text-5xl sm:text-6xl md:text-6xl lg:text-6xl font-serif font-extrabold text-[#0f766e] leading-tight ">
-                Exercise <br className="hidden sm:block" />
-                Therapy
+                Exercise Therapy
               </h1>
 
               {/* Optional tagline */}
-              <p className="mt-6 text-xl md:text-xl text-black font-medium max-w-xl">
-                Personalized exercise programs designed to build strength,
-                confidence, and joy for children with neuro-developmental
-                challenges.
-              </p>
             </div>
 
             {/* Right: Decorative floating image */}
@@ -123,9 +117,9 @@ export default function ExerciseTherapy() {
                 className="relative w-[90%] max-w-md lg:max-w-xl -mr-8 lg:-mr-16"
               >
                 {/* Floating image with soft shadow */}
-                <div className="relative rounded-3xl overflow-hidden shadow-xl">
+                <div className="relative rounded-3xl pb-10 overflow-hidden shadow-xl">
                   <Image
-                    src="/images/icon6.png" // ← replace with your decorative image
+                    src="/images/exer.jpg" // ← replace with your decorative image
                     alt="Joyful child floating in playful movement therapy"
                     width={1200}
                     height={900}
