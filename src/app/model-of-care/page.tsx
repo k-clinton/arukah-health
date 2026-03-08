@@ -76,22 +76,45 @@ Our programs are designed to achieve measurable, functional outcomes that are mo
   return (
     <main className="min-h-screen bg-white">
       {/* Hero Section with Background Image */}
-      <section className="relative min-h-[70vh] md:min-h-[70vh] flex mt-19 items-center justify-center">
-        <div className="absolute pt-10 inset-0">
-          <Image
-            src="/images/IMG_9647.jpg"
-            alt="Child and family in joyful, supportive movement environment"
-            fill
-            className="object-cover brightness-[0.75] object-top "
-            priority
-          />
-          <div className="absolute inset-0 bg-black/40" />
-        </div>
+      <section className="relative mb-15 pt-15 mt-29 md:mt-25 min-h-[60vh] md:min-h-[70vh] flex items-center justify-center bg-white overflow-hidden">
+        <div className="relative z-10 max-w-7xl items-center mx-auto px-6 lg:px-8 w-full">
+          <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
+            {/* Left: Title */}
+            <div className="text-left order-1">
+              <h1 className="text-5xl text-center sm:text-6xl md:text-6xl lg:text-6xl font-serif font-extrabold text-[#0f766e] leading-tight ">
+                Our Model of Care
+              </h1>
 
-        <div className="relative z-10 text-center px-6 max-w-5xl">
-          <h1 className="text-5xl sm:text-6xl md:text-7xl font-serif font-extrabold text-white drop-shadow-2xl mb-6 md:mb-8">
-            Our Model of Care
-          </h1>
+              {/* Optional tagline (feel free to remove or customize) */}
+            </div>
+
+            {/* Right: Decorative floating image */}
+            <div className="relative order-2 flex justify-center lg:justify-end mt-12 lg:mt-0">
+              <motion.div
+                initial={{ opacity: 0, y: 80, rotate: 0 }}
+                animate={{ opacity: 1, y: 0, rotate: 0 }}
+                whileHover={{ scale: 1.06, rotate: 0, y: -20 }}
+                transition={{ duration: 1.4, ease: "easeOut" }}
+                className="relative w-[90%] max-w-md lg:max-w-xl -mr-8 lg:-mr-16"
+              >
+                {/* Floating image – clean, no border/frame */}
+                <div className="relative rounded-3xl overflow-hidden shadow-xl">
+                  <Image
+                    src="/images/care44.jpg"
+                    alt="Joyful learning and training moment"
+                    width={1200}
+                    height={900}
+                    className="w-full h-auto object-cover"
+                    priority
+                  />
+                </div>
+
+                {/* Soft decorative glow accents behind the image */}
+                <div className="absolute -bottom-16 -right-16 w-64 h-64 md:w-96 md:h-96 bg-[#0f766e]/10 rounded-full blur-3xl -z-10" />
+                <div className="absolute -top-12 -left-12 w-40 h-40 md:w-64 md:h-64 bg-[#FFB347]/10 rounded-full blur-3xl -z-10" />
+              </motion.div>
+            </div>
+          </div>
         </div>
       </section>
 
