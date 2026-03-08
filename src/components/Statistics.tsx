@@ -56,15 +56,15 @@ export default function Statistics() {
     >
       {/* Decorative floating image – top right */}
       <motion.div
-        className="pointer-events-none absolute top-8 right-8 z-0  sm:block"
+        className="pointer-events-none absolute top-4 right-0 z-0  sm:block"
         animate={{ y: [0, -12, 0] }}
         transition={{ duration: 6, repeat: Infinity, ease: "easeInOut" }}
       >
         <Image
           src="/images/real impact.png"
           alt=""
-          width={240}
-          height={240}
+          width={140}
+          height={140}
           className="opacity-100 rotate-6"
         />
       </motion.div>
