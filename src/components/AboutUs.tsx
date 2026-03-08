@@ -143,7 +143,7 @@ export default function AboutUs() {
                   }}
                   className={`w-full py-3 px-6 rounded-full font-semibold text-black transition-all duration-300 hover:scale-105 hover:shadow-xl ${
                     pillar.color === "orange"
-                      ? "bg-[#0f766e] hover:bg-[#0f766e]"
+                      ? "bg-[#F7E7CE] hover:bg-[#F7E7CE]"
                       : "bg-[#F7E7CE] hover:bg-[#F7E7CE]"
                   }`}
                 >
