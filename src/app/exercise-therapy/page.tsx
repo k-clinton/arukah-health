@@ -95,22 +95,51 @@ export default function ExerciseTherapy() {
   return (
     <main className="min-h-screen bg-white">
       {/* Hero Section with Background Image */}
-      <section className="relative min-h-[70vh] md:min-h-[80vh] flex items-center justify-center">
-        <div className="absolute inset-0">
-          <Image
-            src="/images/IMG_9696.jpg"
-            alt="Joyful child in movement therapy environment"
-            fill
-            className="object-cover brightness-[0.75]"
-            priority
-          />
-          <div className="absolute inset-0 bg-black/40" />
-        </div>
+      <section className="relative mt-40 md:mt-30  min-h-[70vh] md:min-h-[80vh] flex items-center justify-center bg-white overflow-hidden">
+        <div className="relative z-10 max-w-7xl mx-auto px-6 lg:px-8 w-full">
+          <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
+            {/* Left: Title */}
+            <div className="text-left order-1">
+              <h1 className="text-5xl sm:text-6xl md:text-6xl lg:text-6xl font-serif font-extrabold text-[#0f766e] leading-tight ">
+                Exercise <br className="hidden sm:block" />
+                Therapy
+              </h1>
 
-        <div className="relative z-10 text-center px-6 max-w-5xl">
-          <h1 className="text-5xl sm:text-6xl md:text-7xl font-serif font-extrabold text-white drop-shadow-2xl mb-6 md:mb-8">
-            Exercise Therapy
-          </h1>
+              {/* Optional tagline */}
+              <p className="mt-6 text-xl md:text-xl text-black font-medium max-w-xl">
+                Personalized exercise programs designed to build strength,
+                confidence, and joy for children with neuro-developmental
+                challenges.
+              </p>
+            </div>
+
+            {/* Right: Decorative floating image */}
+            <div className="relative order-2 lg:order-2 flex justify-center lg:justify-end mt-12 lg:mt-0">
+              <motion.div
+                initial={{ opacity: 0, y: 60, rotate: -6 }}
+                animate={{ opacity: 1, y: 0, rotate: -3 }}
+                whileHover={{ scale: 1.05, rotate: 0, y: -10 }}
+                transition={{ duration: 1.2, ease: "easeOut" }}
+                className="relative w-[90%] max-w-md lg:max-w-xl -mr-8 lg:-mr-16"
+              >
+                {/* Floating image with soft shadow */}
+                <div className="relative rounded-3xl overflow-hidden shadow-xl">
+                  <Image
+                    src="/images/icon6.png" // ← replace with your decorative image
+                    alt="Joyful child floating in playful movement therapy"
+                    width={1200}
+                    height={900}
+                    className="w-full h-auto object-cover"
+                    priority
+                  />
+                </div>
+
+                {/* Extra decorative accent (soft glow / blur orb) */}
+                <div className="absolute -bottom-12 -right-12 w-48 h-48 md:w-72 md:h-72 bg-[#0f766e]/10 rounded-full blur-3xl -z-10" />
+                <div className="absolute -top-8 -left-8 w-32 h-32 md:w-48 md:h-48 bg-[#FFB347]/10 rounded-full blur-3xl -z-10" />
+              </motion.div>
+            </div>
+          </div>
         </div>
       </section>
 
@@ -127,7 +156,7 @@ export default function ExerciseTherapy() {
           {/* First paragraph + carousel on right */}
           <div className="grid lg:grid-cols-2 gap-10 lg:gap-16 items-center">
             <div className="order-2 lg:order-1 text-center lg:text-left">
-              <p className="prose prose-lg text-gray-700   font-medium  leading-relaxed space-y-6">
+              <p className="prose prose-lg text-black   font-medium  leading-relaxed space-y-6">
                 We apply exercise as a cornerstone for improving health,
                 restoring function, and supporting recovery. Our programs use
                 structured, medically guided exercise, tailored to a child’s
@@ -151,7 +180,7 @@ export default function ExerciseTherapy() {
             </div>
 
             <div className="text-center lg:text-left">
-              <p className="prose prose-lg text-gray-700   font-medium  leading-relaxed space-y-6">
+              <p className="prose prose-lg text-black   font-medium  leading-relaxed space-y-6">
                 Our programs are evidence-based, drawing from research in motor
                 learning, pediatric rehabilitation, and functional exercise
                 science. Rooted in this foundation, the programs are designed to
