@@ -15,22 +15,16 @@ export default function EducationAndTraining() {
   return (
     <main className=" bg-white">
       <div className="pt-27 pb-24 ">
-        <section className="relative mb-15 pb-15 mt-11 min-h-[60vh] md:min-h-[70vh] flex items-center justify-center bg-white overflow-hidden">
+        <section className="relative mb-19 pb-15 mt-11 min-h-[60vh] md:min-h-[70vh] flex items-center justify-center bg-white overflow-hidden">
           <div className="relative z-10 max-w-7xl mx-auto px-6 lg:px-8 w-full">
             <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
               {/* Left: Title */}
               <div className="text-left order-1">
                 <h1 className="text-5xl sm:text-6xl md:text-6xl lg:text-6xl font-serif font-extrabold text-[#0f766e] leading-tight ">
-                  Education <br className="hidden sm:block" />
-                  and Training
+                  Education and Training
                 </h1>
 
                 {/* Optional tagline (feel free to remove or customize) */}
-                <p className="mt-6 text-xl md:text-2xl text-black font-medium max-w-xl">
-                  Training sessions designed to build capacity and increase
-                  knowledge among individuals, caregivers, parents, families and
-                  communities.
-                </p>
               </div>
 
               {/* Right: Decorative floating image */}
