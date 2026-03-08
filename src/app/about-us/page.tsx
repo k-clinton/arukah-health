@@ -138,7 +138,7 @@ export default function AboutUsPage() {
             {/* Background Image */}
             <div className="absolute inset-0 z-0">
               <Image
-                src="/images/move bg3.jpg"
+                src="/images/move4.jpg"
                 alt="Subtle background – soft movement or nature theme"
                 fill
                 className="object-cover object-center brightness-100 contrast-100"
@@ -149,7 +149,7 @@ export default function AboutUsPage() {
             </div>
 
             {/* Content – elevated above background */}
-            <div className="relative z-10 prose prose-lg md:prose-xl lg:prose-2xl max-w-none text-black leading-relaxed space-y-8 text-center md:text-left font-medium">
+            <div className="relative z-10 prose prose-lg bg-white/60 backdrop-blur-sm p-6 md:p-8 lg:p-12 rounded-l-2xl rounded-r-2xl md:prose-xl lg:prose-2xl max-w-none text-black leading-relaxed space-y-8 text-center md:text-left font-medium">
               <p>
                 Our roots come from the understanding that nurturing
                 neuro-diverse children and those with milestone delays can feel
@@ -192,16 +192,16 @@ export default function AboutUsPage() {
               </p>
 
               {/* Focal quote – standout block */}
-              <blockquote className="my-12 py-8 px-6 md:px-12 border-l-4 border-[#0f766e] bg-white/60 backdrop-blur-sm rounded-r-2xl italic text-xl md:text-2xl text-[#0f766e] font-serif font-medium">
-                <span className="text-[#0A0504] font-bold not-italic">
-                  This is where Recovery is Redefined!
-                  <br />
-                  This is Home!
-                  <br />
-                  This is Arukah Health!
-                </span>
-              </blockquote>
             </div>
+            <blockquote className="my-12 py-8 px-6 md:px-12 border-l-4 border-[#0f766e] bg-white/60 backdrop-blur-sm rounded-r-2xl italic text-xl md:text-2xl text-[#0f766e] font-serif font-medium">
+              <span className="text-[#0A0504] font-bold not-italic">
+                This is where Recovery is Redefined!
+                <br />
+                This is Home!
+                <br />
+                This is Arukah Health!
+              </span>
+            </blockquote>
           </div>
 
           {/* Optional subtle CTA or closing line */}
