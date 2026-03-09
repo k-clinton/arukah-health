@@ -5,9 +5,9 @@ import { motion, AnimatePresence } from "framer-motion";
 import Image from "next/image";
 import Link from "next/link";
 const carouselImages = [
-  "/images/edut3.jpg",
-  "/images/training-2.jpg",
-  "/images/training-3.jpg",
+  "/images/model1.png",
+  "/images/model2.png",
+  "/images/model3.png",
 ];
 
 export default function ModelOfCare() {
@@ -95,9 +95,9 @@ Our programs are designed to achieve measurable, functional outcomes that are mo
         <div className="relative z-10 max-w-7xl mx-auto px-6 lg:px-8 w-full">
           <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
             {/* Left: Title – always visible */}
-            <div className="text-left">
+            <div className="text-center md:text-left">
               <h1 className="text-4xl sm:text-4xl md:text-5xl lg:text-5xl font-serif font-extrabold text-[#0f766e] leading-tight ">
-                Exercise Therapy
+                Our Model of Care
               </h1>
 
               {/* Optional tagline – visible on all sizes */}

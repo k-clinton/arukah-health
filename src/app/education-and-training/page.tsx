@@ -6,9 +6,9 @@ import Image from "next/image";
 import Link from "next/link";
 import { useState, useEffect } from "react";
 const carouselImages = [
-  "/images/exo1.png",
-  "/images/exo2.png",
-  "public/images/exo3.png",
+  "/images/edu33.jpg",
+  "/images/educa2.png",
+  "/images/educa3.png",
 ];
 
 export default function EducationAndTraining() {

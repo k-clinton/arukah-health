@@ -14,34 +14,10 @@ export default function AboutUsPage() {
     <div className="pt-2 pb-24 mt-20">
       {/* SECTION 1: HERO / Our Story */}
       <section className="max-w-7xl mx-auto px-6 lg:px-8 py-20">
-        {/* First block: Image top on mobile, text left + image right on desktop */}
-        <div className="grid lg:grid-cols-2 gap-10 lg:gap-16 items-center mb-16 lg:mb-20">
-          {/* Image – comes FIRST on mobile */}
-          <motion.div
-            initial="hidden"
-            whileInView="visible"
-            viewport={{ once: true }}
-            variants={fadeInUp}
-            className="order-1 lg:order-2 rounded-2xl overflow-hidden shadow-xl"
-          >
-            <Image
-              src="/images/IMG_2491.jpg"
-              alt="Therapist and child sharing a joyful high-five moment in therapy"
-              width={2160}
-              height={1216}
-              className="w-full h-auto object-cover"
-              priority
-            />
-          </motion.div>
-
-          {/* Text – comes SECOND on mobile */}
-          <motion.div
-            initial="hidden"
-            whileInView="visible"
-            viewport={{ once: true }}
-            variants={fadeInUp}
-            className="order-2 lg:order-1 text-center lg:text-left"
-          >
+        {/* Block 1 – Mobile: two paragraphs → image */}
+        <div className="space-y-10 lg:space-y-0 lg:grid lg:grid-cols-2 lg:gap-16 lg:items-center mb-16 lg:mb-20">
+          {/* Text – first on mobile */}
+          <div className="order-1 lg:order-1 text-center lg:text-left">
             <h1 className="text-4xl md:text-5xl font-serif font-bold text-[#0F766E] mb-8">
               About Us
             </h1>
@@ -52,9 +28,9 @@ export default function AboutUsPage() {
                 movement. We specialize in exercise treatments for neuro-diverse
                 children and those with milestone delays, helping them grow
                 stronger, confident, and independent. Our programs are designed
-                to nurture core aspects of physical functions — strength,
-                balance, coordination, flexibility, and endurance — while also
-                fostering resilience, play, and emotional well-being.
+                to nurture core physical functions — strength, balance,
+                coordination, flexibility, and endurance — while also fostering
+                resilience, play, and emotional well-being.
               </p>
               <p className="text-justify md:text-left">
                 At Arukah Health, we believe Exercise is Medicine, and we use it
@@ -66,37 +42,32 @@ export default function AboutUsPage() {
                 way and honoring progress in all its forms.
               </p>
             </div>
+          </div>
+
+          {/* First image – second on mobile */}
+          <motion.div
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true }}
+            variants={fadeInUp}
+            className="order-2 lg:order-2 rounded-2xl overflow-hidden shadow-xl"
+          >
+            <Image
+              src="/images/IMG_2491.jpg"
+              alt="Therapist and child sharing a joyful high-five moment in therapy"
+              width={2160}
+              height={1216}
+              className="w-full h-auto object-cover"
+              priority
+            />
           </motion.div>
         </div>
 
-        {/* Second block: Image top on mobile, image left + text right on desktop */}
-        <div className="grid lg:grid-cols-2 gap-10 lg:gap-16 items-center">
-          {/* Image – comes FIRST on mobile */}
-          <motion.div
-            initial="hidden"
-            whileInView="visible"
-            viewport={{ once: true }}
-            variants={fadeInUp}
-            className="order-1 lg:order-1 rounded-2xl overflow-hidden shadow-xl"
-          >
-            <Image
-              src="/images/IMG_9544.jpg"
-              alt="Another meaningful moment at Arukah Health"
-              width={2560}
-              height={1707}
-              className="w-full h-auto object-cover"
-            />
-          </motion.div>
-
-          {/* Text – comes SECOND on mobile */}
-          <motion.div
-            initial="hidden"
-            whileInView="visible"
-            viewport={{ once: true }}
-            variants={fadeInUp}
-            className="order-2 lg:order-2"
-          >
-            <div className="prose prose-lg text-[#0A0504] font-medium leading-relaxed space-y-6">
+        {/* Block 2 – Mobile: two paragraphs → image */}
+        <div className="space-y-10 lg:space-y-0 lg:grid lg:grid-cols-2 lg:gap-16 lg:items-center">
+          {/* Second text – third on mobile */}
+          <div className="order-1 lg:order-2">
+            <div className="prose prose-lg text-[#0A0504] font-medium leading-relaxed space-y-6 text-center lg:text-left">
               <p>
                 Alongside children, families who walk through our doors find
                 more than therapy; they find a community. We partner with them
@@ -115,6 +86,23 @@ export default function AboutUsPage() {
                 every child and family we serve!
               </p>
             </div>
+          </div>
+
+          {/* Second image – fourth on mobile */}
+          <motion.div
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true }}
+            variants={fadeInUp}
+            className="order-2 lg:order-1 rounded-2xl overflow-hidden shadow-xl"
+          >
+            <Image
+              src="/images/IMG_9544.jpg"
+              alt="Another meaningful moment at Arukah Health"
+              width={2560}
+              height={1707}
+              className="w-full h-auto object-cover"
+            />
           </motion.div>
         </div>
       </section>
@@ -137,13 +125,6 @@ export default function AboutUsPage() {
           <div className="relative bg-white/70 backdrop-blur-md rounded-3xl p-8 md:p-12 lg:p-16 shadow-xl border border-[#0f766e]/20 mb-16 md:mb-20 overflow-hidden">
             {/* Background Image */}
             <div className="absolute inset-0 z-0">
-              <Image
-                src="/images/move4.jpg"
-                alt="Subtle background – soft movement or nature theme"
-                fill
-                className="object-cover object-center brightness-100 contrast-100"
-                priority={false} // can be true if this is above the fold
-              />
               {/* Overlay to ensure text readability */}
               {/* <div className="absolute inset-0 bg-gradient-to-br from-white/70 via-white/60 to-white/70" />*/}
             </div>
@@ -194,7 +175,7 @@ export default function AboutUsPage() {
               {/* Focal quote – standout block */}
             </div>
             <blockquote className="my-12 py-8 px-6 md:px-12 border-l-4 border-[#0f766e] bg-white/60 backdrop-blur-sm rounded-r-2xl italic text-xl md:text-2xl text-[#0f766e] font-serif font-medium">
-              <span className="text-[#0A0504] font-bold not-italic">
+              <span className="text-[#0f766e] font-bold not-italic">
                 This is where Recovery is Redefined!
                 <br />
                 This is Home!
