@@ -1,57 +1,74 @@
 "use client";
 
-import { motion } from "framer-motion";
-import {
-  BookOpen,
-  Users,
-  HeartHandshake,
-  Baby,
-  ShieldCheck,
-} from "lucide-react";
+import { AnimatePresence, motion } from "framer-motion";
+
 import Image from "next/image";
 import Link from "next/link";
+import { useState, useEffect } from "react";
+const carouselImages = [
+  "/images/exo1.png",
+  "/images/exo2.png",
+  "public/images/exo3.png",
+];
 
 export default function EducationAndTraining() {
+  const [currentIndex, setCurrentIndex] = useState(0);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentIndex((prev) => (prev + 1) % carouselImages.length);
+    }, 5000); // change speed here (5000 = 5 seconds)
+
+    return () => clearInterval(interval);
+  }, []);
   return (
     <main className=" bg-white">
       <div className="pt-27 pb-24 ">
-        <section className="relative mb-19 pb-15 mt-11 min-h-[60vh] md:min-h-[70vh] flex items-center justify-center bg-white overflow-hidden">
+        <section className="relative min-h-[60vh] md:min-h-[70vh] flex items-center justify-center bg-white overflow-hidden">
           <div className="relative z-10 max-w-7xl mx-auto px-6 lg:px-8 w-full">
             <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
-              {/* Left: Title */}
-              <div className="text-left order-1">
-                <h1 className="text-5xl text-center sm:text-6xl md:text-6xl lg:text-6xl font-serif font-extrabold text-[#0f766e] leading-tight ">
+              {/* Left: Title – always visible */}
+              <div className="text-left">
+                <h1 className="text-4xl sm:text-4xl md:text-5xl lg:text-5xl font-serif font-extrabold text-[#0f766e] leading-tight ">
                   Education and Training
                 </h1>
 
-                {/* Optional tagline (feel free to remove or customize) */}
+                {/* Optional tagline – visible on all sizes */}
               </div>
 
-              {/* Right: Decorative floating image */}
-              <div className="relative order-2 flex justify-center lg:justify-end mt-12 lg:mt-0">
-                <motion.div
-                  initial={{ opacity: 0, y: 80, rotate: 0 }}
-                  animate={{ opacity: 1, y: 0, rotate: 0 }}
-                  whileHover={{ scale: 1.06, rotate: 0, y: -20 }}
-                  transition={{ duration: 1.4, ease: "easeOut" }}
-                  className="relative w-[90%] max-w-md lg:max-w-xl -mr-8 lg:-mr-16"
-                >
-                  {/* Floating image – clean, no border/frame */}
-                  <div className="relative rounded-3xl overflow-hidden shadow-xl">
-                    <Image
-                      src="/images/edut3.jpg"
-                      alt="Joyful learning and training moment"
-                      width={1200}
-                      height={900}
-                      className="w-full h-auto object-cover"
-                      priority
-                    />
-                  </div>
+              {/* Right: Carousel – HIDDEN on mobile (below lg), visible only on desktop */}
+              <div className="relative hidden lg:flex lg:justify-center lg:items-center mt-12 lg:mt-0">
+                <div className="relative w-full max-w-xl flex justify-center items-center">
+                  {/* Carousel container – fixed height, centered content */}
+                  <div className="relative w-full max-w-lg aspect-[4/5] flex items-center justify-center overflow-hidden ">
+                    <AnimatePresence mode="wait">
+                      {carouselImages.map(
+                        (src, index) =>
+                          index === currentIndex && (
+                            <motion.div
+                              key={index}
+                              initial={{ y: "100%", opacity: 0, scale: 0.95 }}
+                              animate={{ y: 0, opacity: 1, scale: 1 }}
+                              exit={{ y: "-100%", opacity: 0, scale: 0.95 }}
+                              transition={{ duration: 0.9, ease: "easeInOut" }}
+                              className="relative w-full max-w-lg flex items-center justify-center"
+                            >
+                              <Image
+                                src={src}
+                                alt={`Training carousel image ${index + 1}`}
+                                width={800}
+                                height={1000}
+                                className="w-auto max-h-full object-contain rounded-3xl"
+                                priority={index === 0}
+                              />
+                            </motion.div>
+                          ),
+                      )}
+                    </AnimatePresence>
 
-                  {/* Soft decorative glow accents behind the image */}
-                  <div className="absolute -bottom-16 -right-16 w-64 h-64 md:w-96 md:h-96 bg-[#0f766e]/10 rounded-full blur-3xl -z-10" />
-                  <div className="absolute -top-12 -left-12 w-40 h-40 md:w-64 md:h-64 bg-[#FFB347]/10 rounded-full blur-3xl -z-10" />
-                </motion.div>
+                    {/* Navigation dots – subtle */}
+                  </div>
+                </div>
               </div>
             </div>
           </div>
@@ -74,6 +91,33 @@ export default function EducationAndTraining() {
               developmental progress.
             </p>
           </div>
+          <section className="py-6 pb-20 md:py-24 px-6 bg-gradient-to-b from-white to-blue-50/30">
+            <div className="max-w-7xl mx-auto">
+              {/* Optional heading – remove if you want pure image section */}
+
+              {/* Centered image container */}
+              <div className="relative mx-auto max-w-4xl">
+                {/* Subtle decorative ring / glow behind the image */}
+                <div className="absolute inset-0 flex items-center justify-center">
+                  <div className="w-[90%] md:w-[85%] aspect-square rounded-full bg-gradient-to-r from-[#4793FF]/10 via-[#FFB347]/20 to-[#4793FF]/10 blur-3xl opacity-70" />
+                </div>
+
+                {/* Main centered image */}
+                <div className="relative z-10 rounded-3xl overflow-hidden shadow-xl border-4 border-white/80">
+                  <Image
+                    src="/images/P1180403.JPG"
+                    alt="Centered hero moment – joyful child or family in movement"
+                    width={1200}
+                    height={1200}
+                    className="w-full h-auto object-contain"
+                    priority
+                  />
+                </div>
+
+                {/* Optional subtle caption or call-to-action below image */}
+              </div>
+            </div>
+          </section>
 
           {/* Two Specialties – Cards with Icons */}
           <h2 className="text-3xl md:text-4xl font-serif text-center font-bold text-[#0f766e] mb-6">
@@ -122,34 +166,6 @@ export default function EducationAndTraining() {
               </div>
             ))}
           </div>
-
-          <section className="py-6 pb-20 md:py-24 px-6 bg-gradient-to-b from-white to-blue-50/30">
-            <div className="max-w-7xl mx-auto">
-              {/* Optional heading – remove if you want pure image section */}
-
-              {/* Centered image container */}
-              <div className="relative mx-auto max-w-4xl">
-                {/* Subtle decorative ring / glow behind the image */}
-                <div className="absolute inset-0 flex items-center justify-center">
-                  <div className="w-[90%] md:w-[85%] aspect-square rounded-full bg-gradient-to-r from-[#4793FF]/10 via-[#FFB347]/20 to-[#4793FF]/10 blur-3xl opacity-70" />
-                </div>
-
-                {/* Main centered image */}
-                <div className="relative z-10 rounded-3xl overflow-hidden shadow-xl border-4 border-white/80">
-                  <Image
-                    src="/images/P1180403.JPG"
-                    alt="Centered hero moment – joyful child or family in movement"
-                    width={1200}
-                    height={1200}
-                    className="w-full h-auto object-contain"
-                    priority
-                  />
-                </div>
-
-                {/* Optional subtle caption or call-to-action below image */}
-              </div>
-            </div>
-          </section>
 
           {/* Alternating Image + Content Blocks */}
           <h2 className="text-3xl md:text-4xl font-serif text-center font-bold text-[#0f766e] mb-6">
