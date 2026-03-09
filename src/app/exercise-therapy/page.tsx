@@ -15,9 +15,9 @@ import Image from "next/image";
 import Link from "next/link";
 import { motion, AnimatePresence } from "framer-motion";
 const carouselImages = [
-  "/images/edut3.jpg",
-  "/images/training-2.jpg",
-  "/images/training-3.jpg",
+  "/images/exo1.png",
+  "/images/exo2.png",
+  "/images/exo3.png",
 ];
 
 // Reusable Carousel Component
@@ -107,14 +107,14 @@ export default function ExerciseTherapy() {
   }, []);
 
   return (
-    <main className="min-h-screen bg-white">
+    <main className="min-h-screen mt-30 bg-white">
       {/* Hero Section with Background Image */}
-      <section className="relative min-h-[60vh] md:min-h-[70vh] flex items-center justify-center bg-white overflow-hidden">
+      <section className="relative min-h-[40vh] md:min-h-[70vh] flex items-center justify-center bg-white overflow-hidden">
         <div className="relative z-10 max-w-7xl mx-auto px-6 lg:px-8 w-full">
           <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
             {/* Left: Title – always visible */}
-            <div className="text-left">
-              <h1 className="text-4xl sm:text-4xl md:text-5xl lg:text-5xl font-serif font-extrabold text-[#0f766e] leading-tight ">
+            <div className="text-center md:text-center">
+              <h1 className="text-4xl sm:text-4xl md:text-5xl lg:text-5xl sm:text-center font-serif font-extrabold text-[#0f766e] leading-tight ">
                 Exercise Therapy
               </h1>
 
@@ -143,7 +143,7 @@ export default function ExerciseTherapy() {
                               alt={`Training carousel image ${index + 1}`}
                               width={800}
                               height={1000}
-                              className="w-auto max-h-full object-contain rounded-3xl"
+                              className="w-auto max-h-full object-cover rounded-3xl"
                               priority={index === 0}
                             />
                           </motion.div>
@@ -169,10 +169,11 @@ export default function ExerciseTherapy() {
       {/* Core Philosophy – Our Programs with carousels */}
       <section className="py-16 md:py-20 px-6 bg-gradient-to-b from-white to-blue-50/30">
         <div className="max-w-7xl mx-auto space-y-16 md:space-y-24">
-          {/* First paragraph + carousel on right */}
-          <div className="grid lg:grid-cols-2 gap-10 lg:gap-16 items-center">
-            <div className="order-2 lg:order-1 text-center lg:text-left">
-              <p className="prose prose-lg text-black   font-medium  leading-relaxed space-y-6">
+          {/* Block 1 – Mobile: paragraph → carousel */}
+          <div className="space-y-10 lg:space-y-0 lg:grid lg:grid-cols-2 lg:gap-16 lg:items-center">
+            {/* First paragraph – first on mobile */}
+            <div className="order-1 lg:order-1 text-center lg:text-left">
+              <p className="prose prose-lg text-black font-medium leading-relaxed space-y-6">
                 We apply exercise as a cornerstone for improving health,
                 restoring function, and supporting recovery. Our programs use
                 structured, medically guided exercise, tailored to a child’s
@@ -182,27 +183,28 @@ export default function ExerciseTherapy() {
               </p>
             </div>
 
-            {/* Carousel on right */}
-            <div className="order-1 lg:order-2 relative rounded-3xl overflow-hidden shadow-2xl h-64 md:h-96">
+            {/* First carousel – second on mobile */}
+            <div className="order-2 lg:order-2 relative rounded-3xl overflow-hidden shadow-2xl h-64 md:h-96">
               <Carousel images={leftCarouselImages} />
             </div>
           </div>
 
-          {/* Second paragraph + carousel on left */}
-          <div className="grid lg:grid-cols-2 gap-10 lg:gap-16 items-center">
-            {/* Carousel on left */}
-            <div className="relative rounded-3xl overflow-hidden shadow-2xl h-64 md:h-96">
-              <Carousel images={rightCarouselImages} />
-            </div>
-
-            <div className="text-center lg:text-left">
-              <p className="prose prose-lg text-black   font-medium  leading-relaxed space-y-6">
+          {/* Block 2 – Mobile: paragraph → carousel */}
+          <div className="space-y-10 lg:space-y-0 lg:grid lg:grid-cols-2 lg:gap-16 lg:items-center">
+            {/* Second paragraph – third on mobile */}
+            <div className="order-1 lg:order-2 text-center lg:text-left">
+              <p className="prose prose-lg text-black font-medium leading-relaxed space-y-6">
                 Our programs are evidence-based, drawing from research in motor
                 learning, pediatric rehabilitation, and functional exercise
                 science. Rooted in this foundation, the programs are designed to
                 be fun, engaging, and supportive of each child’s unique journey
-                in movement and physical development.{" "}
+                in movement and physical development.
               </p>
+            </div>
+
+            {/* Second carousel – fourth on mobile */}
+            <div className="order-2 lg:order-1 relative rounded-3xl overflow-hidden shadow-2xl h-64 md:h-96">
+              <Carousel images={rightCarouselImages} />
             </div>
           </div>
         </div>

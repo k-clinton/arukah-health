@@ -5,8 +5,8 @@ import { AnimatePresence, motion } from "framer-motion";
 import { useEffect, useState } from "react";
 const carouselImages = [
   "/images/edut3.jpg",
-  "/images/training-2.jpg",
-  "/images/training-3.jpg",
+  "/images/challnge45.png",
+  "/images/challenge3.png",
 ];
 
 export default function WhoWeAreHereFor() {
@@ -28,7 +28,7 @@ export default function WhoWeAreHereFor() {
             {/* Left: Title – always visible */}
             <div className="text-left">
               <h1 className="text-4xl sm:text-4xl md:text-5xl lg:text-5xl font-serif font-extrabold text-[#0f766e] leading-tight ">
-                Exercise Therapy
+                Challenges We Address
               </h1>
 
               {/* Optional tagline – visible on all sizes */}
@@ -117,12 +117,15 @@ export default function WhoWeAreHereFor() {
                   potential. We don’t limit our care to a diagnosis—we meet each
                   child where they are, focusing on the everyday difficulties
                   parents often notice, and helping them grow stronger, more
-                  confident, and more independent. Our therapies are carefully
-                  tailored to meet every stage of development, offering
-                  age-appropriate, engaging, and effective activities that
-                  nurture physical, cognitive, and emotional growth, ensuring
-                  that each child’s journey is supported with care, creativity,
-                  and clinical expertise.
+                  confident, and more independent.
+                </p>
+                <br></br>
+                <p className=" text-black text-left font-montserrat leading-relaxed max-w-4xl mx-auto lg:mx-0">
+                  Our therapies are carefully tailored to meet every stage of
+                  development, offering age-appropriate, engaging, and effective
+                  activities that nurture physical, cognitive, and emotional
+                  growth, ensuring that each child’s journey is supported with
+                  care, creativity, and clinical expertise.
                 </p>
               </div>
 
