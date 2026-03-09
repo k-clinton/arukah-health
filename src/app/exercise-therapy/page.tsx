@@ -14,6 +14,11 @@ import {
 import Image from "next/image";
 import Link from "next/link";
 import { motion, AnimatePresence } from "framer-motion";
+const carouselImages = [
+  "/images/edut3.jpg",
+  "/images/training-2.jpg",
+  "/images/training-3.jpg",
+];
 
 // Reusable Carousel Component
 function Carousel({ images }: { images: string[] }) {
@@ -91,47 +96,64 @@ export default function ExerciseTherapy() {
     "/images/IMG_9642 (1).jpg",
     "/images/IMG_9761 (1).jpg",
   ];
+  const [currentIndex, setCurrentIndex] = useState(0);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentIndex((prev) => (prev + 1) % carouselImages.length);
+    }, 5000); // change speed here (5000 = 5 seconds)
+
+    return () => clearInterval(interval);
+  }, []);
 
   return (
     <main className="min-h-screen bg-white">
       {/* Hero Section with Background Image */}
-      <section className="relative mt-40 md:mt-30  min-h-[70vh] md:min-h-[80vh] flex items-center justify-center bg-white overflow-hidden">
+      <section className="relative min-h-[60vh] md:min-h-[70vh] flex items-center justify-center bg-white overflow-hidden">
         <div className="relative z-10 max-w-7xl mx-auto px-6 lg:px-8 w-full">
           <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
-            {/* Left: Title */}
-            <div className="text-left order-1">
-              <h1 className="text-5xl text-center sm:text-5xl md:text-6xl lg:text-6xl font-serif font-extrabold text-[#0f766e] leading-tight ">
+            {/* Left: Title – always visible */}
+            <div className="text-left">
+              <h1 className="text-4xl sm:text-4xl md:text-5xl lg:text-5xl font-serif font-extrabold text-[#0f766e] leading-tight ">
                 Exercise Therapy
               </h1>
 
-              {/* Optional tagline */}
+              {/* Optional tagline – visible on all sizes */}
             </div>
 
-            {/* Right: Decorative floating image */}
-            <div className="relative order-2 lg:order-2 flex justify-center lg:justify-end mt-12 lg:mt-0">
-              <motion.div
-                initial={{ opacity: 0, y: 60, rotate: -6 }}
-                animate={{ opacity: 1, y: 0, rotate: -3 }}
-                whileHover={{ scale: 1.05, rotate: 0, y: -10 }}
-                transition={{ duration: 1.2, ease: "easeOut" }}
-                className="relative w-[90%] max-w-md lg:max-w-xl -mr-8 lg:-mr-16"
-              >
-                {/* Floating image with soft shadow */}
-                <div className="relative rounded-3xl pb-10 overflow-hidden shadow-xl">
-                  <Image
-                    src="/images/exer.jpg" // ← replace with your decorative image
-                    alt="Joyful child floating in playful movement therapy"
-                    width={1200}
-                    height={900}
-                    className="w-full h-auto object-cover"
-                    priority
-                  />
-                </div>
+            {/* Right: Carousel – HIDDEN on mobile (below lg), visible only on desktop */}
+            <div className="relative hidden lg:flex lg:justify-center lg:items-center mt-12 lg:mt-0">
+              <div className="relative w-full max-w-xl flex justify-center items-center">
+                {/* Carousel container – fixed height, centered content */}
+                <div className="relative w-full max-w-lg aspect-[4/5] flex items-center justify-center overflow-hidden ">
+                  <AnimatePresence mode="wait">
+                    {carouselImages.map(
+                      (src, index) =>
+                        index === currentIndex && (
+                          <motion.div
+                            key={index}
+                            initial={{ y: "100%", opacity: 0, scale: 0.95 }}
+                            animate={{ y: 0, opacity: 1, scale: 1 }}
+                            exit={{ y: "-100%", opacity: 0, scale: 0.95 }}
+                            transition={{ duration: 0.9, ease: "easeInOut" }}
+                            className="relative w-full max-w-lg flex items-center justify-center"
+                          >
+                            <Image
+                              src={src}
+                              alt={`Training carousel image ${index + 1}`}
+                              width={800}
+                              height={1000}
+                              className="w-auto max-h-full object-contain rounded-3xl"
+                              priority={index === 0}
+                            />
+                          </motion.div>
+                        ),
+                    )}
+                  </AnimatePresence>
 
-                {/* Extra decorative accent (soft glow / blur orb) */}
-                <div className="absolute -bottom-12 -right-12 w-48 h-48 md:w-72 md:h-72 bg-[#0f766e]/10 rounded-full blur-3xl -z-10" />
-                <div className="absolute -top-8 -left-8 w-32 h-32 md:w-48 md:h-48 bg-[#FFB347]/10 rounded-full blur-3xl -z-10" />
-              </motion.div>
+                  {/* Navigation dots – subtle */}
+                </div>
+              </div>
             </div>
           </div>
         </div>
