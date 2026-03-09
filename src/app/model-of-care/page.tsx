@@ -89,9 +89,9 @@ Our programs are designed to achieve measurable, functional outcomes that are mo
   ];
 
   return (
-    <main className="min-h-screen bg-white">
+    <main className="min-h-screen mt-20 bg-white">
       {/* Hero Section with Background Image */}
-      <section className="relative min-h-[60vh] md:min-h-[70vh] flex items-center justify-center bg-white overflow-hidden">
+      <section className="relative min-h-[60vh] md:min-h-[80vh] flex items-center justify-center bg-white overflow-hidden">
         <div className="relative z-10 max-w-7xl mx-auto px-6 lg:px-8 w-full">
           <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
             {/* Left: Title – always visible */}
