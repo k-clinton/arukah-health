@@ -22,7 +22,7 @@ export default function AboutUsPage() {
               About Us
             </h1>
             <div className="prose prose-lg text-[#0A0504] font-medium leading-relaxed space-y-6">
-              <p className="text-left md:text-left">
+              <p className="text-justify md:text-left">
                 Arukah Health is a pediatric exercise therapy center dedicated
                 to enhancing capabilities, growth and development through
                 movement. We specialize in exercise treatments for neuro-diverse
@@ -32,7 +32,7 @@ export default function AboutUsPage() {
                 coordination, flexibility, and endurance — while also fostering
                 resilience, play, and emotional well-being.
               </p>
-              <p className="text-center md:text-left">
+              <p className="text-justify md:text-left">
                 At Arukah Health, we believe Exercise is Medicine, and we use it
                 to open new pathways of growth, healing, and possibility!
                 Through exercise, we create a space where children feel seen and
@@ -67,7 +67,7 @@ export default function AboutUsPage() {
         <div className="space-y-10 lg:space-y-0 lg:grid lg:grid-cols-2 lg:gap-16 lg:items-center">
           {/* Second text – third on mobile */}
           <div className="order-1 lg:order-2">
-            <div className="prose prose-lg text-[#0A0504] font-medium leading-relaxed space-y-6 text-left lg:text-left">
+            <div className="prose prose-lg text-[#0A0504] font-medium leading-relaxed space-y-6 text-justify lg:text-left">
               <p>
                 Alongside children, families who walk through our doors find
                 more than therapy; they find a community. We partner with them
@@ -158,7 +158,7 @@ export default function AboutUsPage() {
             </div>
 
             {/* Content – elevated above background */}
-            <div className="relative z-10 prose prose-lg  p-6 md:p-8 lg:p-12 rounded-l-2xl rounded-r-2xl md:prose-xl lg:prose-2xl max-w-none text-black leading-relaxed space-y-8 text-left md:text-left font-medium">
+            <div className="relative z-10 prose prose-lg  p-6 md:p-8 lg:p-12 rounded-l-2xl rounded-r-2xl md:prose-xl lg:prose-2xl max-w-none text-black leading-relaxed space-y-8 text- md:text-left font-medium">
               <p>
                 Our roots come from the understanding that nurturing
                 neuro-diverse children and those with milestone delays can feel
