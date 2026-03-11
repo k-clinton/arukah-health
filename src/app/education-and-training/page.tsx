@@ -6,7 +6,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { useState, useEffect } from "react";
 const carouselImages = [
-  "/images/edu33.jpg",
+  "/images/education and training 3.jpg",
   "/images/educa2.png",
   "/images/educa3.png",
 ];
