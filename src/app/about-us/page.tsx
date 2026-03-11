@@ -116,11 +116,11 @@ export default function AboutUsPage() {
           transition={{ duration: 6, repeat: Infinity, ease: "easeInOut" }}
         >
           <Image
-            src="/images/icon12.png"
+            src="/images/foundatiom.png"
             alt=""
             width={120}
             height={120}
-            className="opacity-90 -rotate-6"
+            className="opacity-90 -rotate-360"
           />
         </motion.div>
 
@@ -131,7 +131,7 @@ export default function AboutUsPage() {
           transition={{ duration: 7, repeat: Infinity, ease: "easeInOut" }}
         >
           <Image
-            src="/images/icon12.png"
+            src="/images/foundatiom.png"
             alt=""
             width={160}
             height={160}
