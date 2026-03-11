@@ -56,15 +56,15 @@ export default function Statistics() {
     >
       {/* Decorative floating image – top right */}
       <motion.div
-        className="pointer-events-none absolute top-4 right-0 z-0  hidden md:block"
+        className="pointer-events-none absolute top-4 right-3 z-0  hidden md:block"
         animate={{ y: [0, -12, 0] }}
         transition={{ duration: 6, repeat: Infinity, ease: "easeInOut" }}
       >
         <Image
           src="/images/real impact.png"
           alt=""
-          width={100}
-          height={100}
+          width={140}
+          height={140}
           className="opacity-100 rotate-6"
         />
       </motion.div>
@@ -75,7 +75,7 @@ export default function Statistics() {
           initial={{ opacity: 0, y: 50 }}
           animate={inView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.8 }}
-          className="text-4xl md:text-4xl font-serif font-bold mt-10 md:mt-0  text-[#0f766e] drop-shadow-md  mb-8"
+          className="text-4xl md:text-4xl font-serif font-bold md:mt-0  text-[#0f766e] drop-shadow-md  mb-8"
         >
           Real Impact, Real Joy
         </motion.h2>
