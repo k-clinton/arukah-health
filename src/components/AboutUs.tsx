@@ -53,7 +53,7 @@ Our specialists blend clinical expertise with emotional intelligence—creating 
 
 <strong>Consistent Guidance and Support</strong> 
 From onboarding, we walk alongside each child—offering steady encouragement, clear communication, and therapeutic continuity.`,
-    imageUrl: "/images/real impact 2.png",
+    imageUrl: "/images/child center.png",
     color: "blue",
   },
   {
@@ -67,7 +67,7 @@ We offer adaptable scheduling to accommodate diverse lifestyles, school routines
 
 <strong>Multi-disciplinary Wellness Approach</strong>
 We work with a multi-disciplinary team of experts—from neurologists and pediatricians to speech therapists, occupational therapists and nutritionists —to deliver personalized care that addresses the child’s neurological, physical, and emotional needs—treating the whole child, not just the isolated motor or functional challenges.`,
-    imageUrl: "/images/real impact 3.png",
+    imageUrl: "/images/holistic wellness2.png",
     color: "orange",
   },
 ];
