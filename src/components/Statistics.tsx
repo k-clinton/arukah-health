@@ -56,7 +56,7 @@ export default function Statistics() {
     >
       {/* Decorative floating image – top right */}
       <motion.div
-        className="pointer-events-none absolute top-4 right-0 z-0  sm:block"
+        className="pointer-events-none absolute top-4 right-0 z-0  hidden md:block"
         animate={{ y: [0, -12, 0] }}
         transition={{ duration: 6, repeat: Infinity, ease: "easeInOut" }}
       >
@@ -87,7 +87,7 @@ export default function Statistics() {
               initial={{ opacity: 0, y: 60, scale: 0.92 }}
               animate={inView ? { opacity: 1, y: 0, scale: 1 } : {}}
               transition={{ duration: 0.7, delay: index * 0.12 }}
-              className="bg-white/90 backdrop-blur-md rounded-3xl p-8 md:p-10 shadow-xl   transition-all duration-300 hover:scale-105"
+              className="bg-white/90 backdrop-blur-md rounded-3xl p-8 md:p-10 shadow-md border-2 border-[#f7e7ce]   transition-all duration-300 hover:scale-105"
             >
               <div className="text-4xl md:text-4xl font-black text-[#0A0A04] mb-3">
                 {inView ? (
