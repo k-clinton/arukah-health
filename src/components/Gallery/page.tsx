@@ -33,10 +33,6 @@ const images = [
     src: "/images/IMG_9909 (1).jpg",
     alt: "",
   },
-  {
-    src: "/images/IMG_9857.jpg",
-    alt: "",
-  },
 ];
 
 export default function FamilyOvalGallery() {
