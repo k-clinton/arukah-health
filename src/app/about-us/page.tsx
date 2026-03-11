@@ -67,7 +67,7 @@ export default function AboutUsPage() {
         <div className="space-y-10 lg:space-y-0 lg:grid lg:grid-cols-2 lg:gap-16 lg:items-center">
           {/* Second text – third on mobile */}
           <div className="order-1 lg:order-2">
-            <div className="prose prose-lg text-[#0A0504] font-medium leading-relaxed space-y-6 text-center lg:text-left">
+            <div className="prose prose-lg text-[#0A0504] font-medium leading-relaxed space-y-6 text-justify lg:text-left">
               <p>
                 Alongside children, families who walk through our doors find
                 more than therapy; they find a community. We partner with them
@@ -110,6 +110,34 @@ export default function AboutUsPage() {
       {/* SECTION 4: FEATURE – Childlike Background */}
       <section className="relative py-20 md:py-32 px-6 bg-gradient-to-b from-white via-blue-50/30 to-white overflow-hidden">
         {/* Subtle background decorative elements */}
+        <motion.div
+          className="pointer-events-none absolute right-10 top-10 md:top-10 md:left-8 z-0  md:block"
+          animate={{ y: [0, -12, 0] }}
+          transition={{ duration: 6, repeat: Infinity, ease: "easeInOut" }}
+        >
+          <Image
+            src="/images/icon12.png"
+            alt=""
+            width={120}
+            height={120}
+            className="opacity-90 -rotate-6"
+          />
+        </motion.div>
+
+        {/* Decorative Image – Right */}
+        <motion.div
+          className="pointer-events-none absolute bottom-10 right-8 z-0 hidden md:block"
+          animate={{ y: [0, -12, 0] }}
+          transition={{ duration: 7, repeat: Infinity, ease: "easeInOut" }}
+        >
+          <Image
+            src="/images/icon12.png"
+            alt=""
+            width={160}
+            height={160}
+            className="opacity-90 rotate-6"
+          />
+        </motion.div>
         <div className="absolute inset-0 pointer-events-none">
           <div className="absolute top-0 left-0 w-64 h-64 md:w-96 md:h-96 bg-[#0f766e]/5 rounded-full blur-3xl -translate-x-1/3 -translate-y-1/3" />
           <div className="absolute bottom-0 right-0 w-80 h-80 md:w-128 md:h-128 bg-[#FFB347]/5 rounded-full blur-3xl translate-x-1/3 translate-y-1/3" />
@@ -122,7 +150,7 @@ export default function AboutUsPage() {
           </h2>
 
           {/* Core story text – centered with soft card-like container */}
-          <div className="relative bg-white/70 backdrop-blur-md rounded-3xl p-8 md:p-12 lg:p-16 shadow-xl border border-[#0f766e]/20 mb-16 md:mb-20 overflow-hidden">
+          <div className="relative bg-[#F7E7CE]  rounded-3xl p-8 md:p-12 lg:p-16 shadow-xl border border-[#0f766e]/20 mb-16 md:mb-20 overflow-hidden">
             {/* Background Image */}
             <div className="absolute inset-0 z-0">
               {/* Overlay to ensure text readability */}
@@ -130,7 +158,7 @@ export default function AboutUsPage() {
             </div>
 
             {/* Content – elevated above background */}
-            <div className="relative z-10 prose prose-lg bg-white/60 backdrop-blur-sm p-6 md:p-8 lg:p-12 rounded-l-2xl rounded-r-2xl md:prose-xl lg:prose-2xl max-w-none text-black leading-relaxed space-y-8 text-center md:text-left font-medium">
+            <div className="relative z-10 prose prose-lg  p-6 md:p-8 lg:p-12 rounded-l-2xl rounded-r-2xl md:prose-xl lg:prose-2xl max-w-none text-black leading-relaxed space-y-8 text-justify md:text-left font-medium">
               <p>
                 Our roots come from the understanding that nurturing
                 neuro-diverse children and those with milestone delays can feel
@@ -174,7 +202,7 @@ export default function AboutUsPage() {
 
               {/* Focal quote – standout block */}
             </div>
-            <blockquote className="my-12 py-8 px-6 md:px-12 border-l-4 border-[#0f766e] bg-white/60 backdrop-blur-sm rounded-r-2xl italic text-xl md:text-2xl text-[#0f766e] font-serif font-medium">
+            <blockquote className="my-12 py-8 px-6 md:px-12 border-l-4 border-[#0f766e] rounded-r-2xl italic  text-[#0f766e] font-serif font-medium">
               <span className="text-[#0f766e] font-bold not-italic">
                 This is where Recovery is Redefined!
                 <br />
@@ -221,7 +249,7 @@ export default function AboutUsPage() {
         {/* Decorative images – top left & top right */}
 
         {/* Main Content – unchanged */}
-        <div className="grid md:grid-cols-2 gap-12 relative z-10">
+        <div className="grid md:grid-cols-2 text-center gap-12 relative z-10">
           <motion.div
             initial="hidden"
             whileInView="visible"
@@ -232,7 +260,7 @@ export default function AboutUsPage() {
             <h3 className="text-3xl font-serif font-bold text-[#0F766E] mb-6">
               Our Vision
             </h3>
-            <p className=" font-medium text-[#0A0504] leading-relaxed">
+            <p className=" font-medium  text-[#0A0504] leading-relaxed">
               To redefine recovery through exercise — transforming lives,
               nurturing resilience, and unlocking endless possibilities for
               every child.
@@ -260,7 +288,7 @@ export default function AboutUsPage() {
       </section>
 
       {/* SECTION 6: CORE VALUES */}
-      <section className="relative bg-gray-50 py-20 overflow-hidden">
+      <section className="relative bg-gray-50 py-32 pb-20 overflow-hidden">
         {/* Decorative Images */}
         <Image
           src="/images/pd3.jpg"
@@ -277,6 +305,13 @@ export default function AboutUsPage() {
           height={140}
           className="pointer-events-none hidden md:block absolute top-6 right-6 opacity-70 z-0"
         />
+        <Image
+          src="/images/pd3.jpg"
+          alt=""
+          width={140}
+          height={140}
+          className="pointer-events-none  md:hidden absolute bottom-7 right-6 opacity-70 z-100"
+        />
 
         {/* Content */}
         <div className="relative z-10 max-w-7xl mx-auto px-6 lg:px-8">
@@ -284,7 +319,7 @@ export default function AboutUsPage() {
             Our Core Values
           </h2>
 
-          <div className="grid md:grid-cols-3 gap-10">
+          <div className="grid md:grid-cols-3 mb-20 gap-10">
             {[
               {
                 title: "Teamwork & Collaboration",
@@ -317,7 +352,7 @@ export default function AboutUsPage() {
                 whileInView="visible"
                 viewport={{ once: true }}
                 variants={fadeInUp}
-                className="bg-white rounded-2xl p-8 shadow-xl border-2 border-[#F7E7CE] text-center"
+                className="bg-white rounded-2xl  p-8 shadow-xl border-2 border-[#F7E7CE] text-center"
               >
                 <h3 className="text-2xl font-serif font-bold text-[#0F766E] mb-4">
                   {value.title}
@@ -328,8 +363,6 @@ export default function AboutUsPage() {
           </div>
         </div>
       </section>
-
-      {/* FINAL SECTION: CLOSING MESSAGE */}
     </div>
   );
 }
