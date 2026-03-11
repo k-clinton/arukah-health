@@ -186,7 +186,7 @@ export default function AboutUs() {
                   className={`text-4xl mb-[-30px] font-bold  ${
                     selectedPillar.color === "orange"
                       ? "text-[#0f766e]"
-                      : "text-black"
+                      : "text-[#0f766e]"
                   }`}
                 >
                   {selectedPillar.title}
