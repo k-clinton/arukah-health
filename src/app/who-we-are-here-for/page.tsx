@@ -4,7 +4,7 @@ import Image from "next/image";
 import { AnimatePresence, motion } from "framer-motion";
 import { useEffect, useState } from "react";
 const carouselImages = [
-  "/images/use.jpg",
+  "/images/use1.png",
   "/images/use4.jpg",
   "/images/use3.jpg",
 ];
