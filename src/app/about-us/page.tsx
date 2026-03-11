@@ -111,7 +111,7 @@ export default function AboutUsPage() {
       <section className="relative py-20 md:py-32 px-6 bg-gradient-to-b from-white via-blue-50/30 to-white overflow-hidden">
         {/* Subtle background decorative elements */}
         <motion.div
-          className="pointer-events-none absolute right-12 top-25 md:top-10 md:left-8 z-0  md:block"
+          className="pointer-events-none absolute left-12 top-25  md:top-10 md:left-8 z-0  md:block"
           animate={{ y: [0, -12, 0] }}
           transition={{ duration: 6, repeat: Infinity, ease: "easeInOut" }}
         >
@@ -120,7 +120,7 @@ export default function AboutUsPage() {
             alt=""
             width={100}
             height={100}
-            className="opacity-90 -rotate-360"
+            className="opacity-90 transform -scale-x-100 -rotate-360"
           />
         </motion.div>
 
