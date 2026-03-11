@@ -6,8 +6,8 @@ import Image from "next/image";
 import Link from "next/link";
 const carouselImages = [
   "/images/model1.png",
-  "/images/model2.png",
-  "/images/model3.png",
+  "/images/model of care 3.jpg",
+  "/images/model_of_care_1-removebg-preview.png",
 ];
 
 export default function ModelOfCare() {

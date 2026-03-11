@@ -4,9 +4,9 @@ import Image from "next/image";
 import { AnimatePresence, motion } from "framer-motion";
 import { useEffect, useState } from "react";
 const carouselImages = [
-  "/images/edut3.jpg",
-  "/images/challnge45.png",
-  "/images/challenge3.png",
+  "/images/use.jpg",
+  "/images/use4.jpg",
+  "/images/use3.jpg",
 ];
 
 export default function WhoWeAreHereFor() {
