@@ -32,7 +32,7 @@ export default function AboutUsPage() {
                 coordination, flexibility, and endurance — while also fostering
                 resilience, play, and emotional well-being.
               </p>
-              <p className="text-justify md:text-left">
+              <p className="text-center md:text-left">
                 At Arukah Health, we believe Exercise is Medicine, and we use it
                 to open new pathways of growth, healing, and possibility!
                 Through exercise, we create a space where children feel seen and
