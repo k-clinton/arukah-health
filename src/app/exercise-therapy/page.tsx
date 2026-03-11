@@ -143,7 +143,7 @@ export default function ExerciseTherapy() {
                               alt={`Training carousel image ${index + 1}`}
                               width={800}
                               height={1000}
-                              className="w-auto max-h-full object-cover rounded-3xl"
+                              className="w-auto max-h-1/2 object-cover rounded-3xl"
                               priority={index === 0}
                             />
                           </motion.div>
@@ -179,7 +179,8 @@ export default function ExerciseTherapy() {
                 structured, medically guided exercise, tailored to a child’s
                 specific needs, abilities, and goals. Exercises are chosen to
                 correct impairments, strengthen muscles, improve flexibility,
-                build endurance, enhance balance and maintain overall well-being
+                build endurance, enhance balance and maintain overall
+                well-being.
               </p>
             </div>
 
