@@ -79,7 +79,7 @@ export default function AboutUs() {
     <section className="py-20 px-6 bg-[#F7E7CE] from-blue-50 to-orange-50">
       <div className="max-w-7xl mx-auto">
         <h2 className="text-4xl text-center font-serif mb-6 font-bold text-[#0f766e] drop-shadow-xl">
-          What You’ll Love About Us
+          Our Promise
         </h2>
 
         <div className="grid md:grid-cols-3 gap-8">
@@ -108,7 +108,9 @@ export default function AboutUs() {
               <div className="p-8 flex flex-col flex-grow">
                 <h3
                   className={`text-xl font-serif font-bold mb-4 ${
-                    pillar.color === "orange" ? "text-[#0f766e]" : "text-black"
+                    pillar.color === "orange"
+                      ? "text-[#0f766e]"
+                      : "text-[#0f766e]"
                   }`}
                 >
                   {pillar.title}
@@ -125,7 +127,7 @@ export default function AboutUs() {
                         className={`mr-3 font-medium ${
                           pillar.color === "orange"
                             ? "text-[#0f766e]"
-                            : "text-black"
+                            : "text-[#0f766e]"
                         }`}
                       >
                         ✦
