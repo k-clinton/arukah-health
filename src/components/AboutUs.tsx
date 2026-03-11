@@ -30,7 +30,7 @@ Our exercise plans are guided by the latest research and informed by real-time d
 <strong>Custom-Tailored Treatments</strong>  
 Every exercise plan is uniquely designed to accommodate a child's physical needs, emotional & sensory comfort, and personal goals—no one-size-fits-all care here. 
 
-<strong>Ongoing Progress Monitoring & Evaluation</strong><br>  
+<strong>Ongoing Progress Monitoring & Evaluation</strong> 
 We track each child's journey with regular assessments and feedback loops—ensuring care remains responsive, measurable, and goal-driven.`,
     imageUrl: "/images/homepage1.jpg",
     color: "orange",
