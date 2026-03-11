@@ -204,11 +204,8 @@ export default function AboutUsPage() {
             </div>
             <blockquote className="my-12 py-8 px-6 md:px-12 border-l-4 border-[#0f766e] rounded-r-2xl italic  text-[#0f766e] font-serif font-medium">
               <span className="text-[#0f766e] font-bold not-italic">
-                This is where Recovery is Redefined!
-                <br />
-                This is Home!
-                <br />
-                This is Arukah Health!
+                This is where Recovery is Redefined! This is Home! This is
+                Arukah Health!
               </span>
             </blockquote>
           </div>
@@ -310,7 +307,7 @@ export default function AboutUsPage() {
           alt=""
           width={140}
           height={140}
-          className="pointer-events-none  md:hidden absolute bottom-7 right-6 opacity-70 z-100"
+          className="pointer-events-none  md:hidden absolute bottom-7 right-6 opacity-70 z-0"
         />
 
         {/* Content */}
