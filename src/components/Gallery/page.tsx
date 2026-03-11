@@ -22,15 +22,7 @@ const images = [
     alt: "Happy family portrait",
   },
   {
-    src: "/images/IMG_9573 (2).jpg",
-    alt: "",
-  },
-  {
     src: "/images/IMG_9659.jpg",
-    alt: "",
-  },
-  {
-    src: "/images/IMG_9909 (1).jpg",
     alt: "",
   },
 ];
