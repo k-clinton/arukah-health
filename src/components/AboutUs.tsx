@@ -15,7 +15,7 @@ interface Pillar {
 
 const pillars: Pillar[] = [
   {
-    title: "Research-Informed, Personalized Care",
+    title: "Research-Based, Personalized Care",
     shortDesc: "Rooted In:",
     bullets: [
       "Scientific and Data-Driven Practice",
