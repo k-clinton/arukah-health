@@ -232,9 +232,9 @@ export default function AboutUsPage() {
             className="space-y-8"
           >
             <h2 className="text-3xl md:text-4xl font-serif font-bold text-[#0F766E] mb-4">
-              Thank you for being part of this story.
+              Thank you for being part of this story!
             </h2>
-            <p className="text-xl text-[#0A0504] font-medium leading-relaxed">
+            <p className="md:text-xl text-[#0A0504] font-medium leading-relaxed">
               Whether you’re here to learn, move, teach, or heal, You Belong!
             </p>
           </motion.div>
