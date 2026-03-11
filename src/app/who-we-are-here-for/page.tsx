@@ -22,7 +22,7 @@ export default function WhoWeAreHereFor() {
   return (
     <section className="bg-white mt-20 ">
       {/* Hero / Carousel Section */}
-      <section className="relative min-h-[60vh] md:min-h-[70vh] flex items-center justify-center bg-white overflow-hidden">
+      <section className="relative  min-h-[20vh] md:min-h-[70vh] flex items-center justify-center  overflow-hidden">
         <div className="relative z-10 max-w-7xl mx-auto px-6 lg:px-8 w-full">
           <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
             {/* Left: Title – always visible */}
@@ -74,7 +74,7 @@ export default function WhoWeAreHereFor() {
 
       {/* Content */}
 
-      <div className="max-w-7xl mx-auto px-6 mt-24">
+      <div className="max-w-7xl mx-auto px-6 mt- md:mt-24">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {sections.map((section, index) => (
             <motion.div
@@ -111,7 +111,7 @@ export default function WhoWeAreHereFor() {
             {/* First paragraph + image on right */}
             <div className="grid lg:grid-cols-2 gap-10 lg:gap-16 items-center">
               <div className="order-2 lg:order-1 text-center lg:text-left">
-                <p className=" text-black text-left font-montserrat leading-relaxed max-w-4xl mx-auto lg:mx-0">
+                <p className=" text-black  font-montserrat text-justify leading-relaxed max-w-4xl mx-auto lg:mx-0">
                   We believe in addressing challenges early so that each child
                   has the best opportunity to grow, thrive, and reach their full
                   potential. We don’t limit our care to a diagnosis—we meet each
@@ -120,7 +120,7 @@ export default function WhoWeAreHereFor() {
                   confident, and more independent.
                 </p>
                 <br></br>
-                <p className=" text-black text-left font-montserrat leading-relaxed max-w-4xl mx-auto lg:mx-0">
+                <p className=" text-black text-justify font-montserrat leading-relaxed max-w-4xl mx-auto lg:mx-0">
                   Our therapies are carefully tailored to meet every stage of
                   development, offering age-appropriate, engaging, and effective
                   activities that nurture physical, cognitive, and emotional
