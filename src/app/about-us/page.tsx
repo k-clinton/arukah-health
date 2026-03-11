@@ -158,7 +158,7 @@ export default function AboutUsPage() {
             </div>
 
             {/* Content – elevated above background */}
-            <div className="relative z-10 prose prose-lg  p-6 md:p-8 lg:p-12 rounded-l-2xl rounded-r-2xl md:prose-xl lg:prose-2xl max-w-none text-black leading-relaxed space-y-8 text-center md:text-left font-medium">
+            <div className="relative z-10 prose prose-lg  p-6 md:p-8 lg:p-12 rounded-l-2xl rounded-r-2xl md:prose-xl lg:prose-2xl max-w-none text-black leading-relaxed space-y-8 text-left md:text-left font-medium">
               <p>
                 Our roots come from the understanding that nurturing
                 neuro-diverse children and those with milestone delays can feel
