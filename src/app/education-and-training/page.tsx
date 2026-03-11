@@ -24,7 +24,7 @@ export default function EducationAndTraining() {
   return (
     <main className=" bg-white">
       <div className="pt-27 pb-24 ">
-        <section className="relative min-h-[60vh] md:min-h-[70vh] flex items-center justify-center bg-white overflow-hidden">
+        <section className="relative mt-16 min-h-[10vh] md:min-h-[70vh] flex items-center md:mt-0 justify-center overflow-hidden">
           <div className="relative z-10 max-w-7xl mx-auto px-6 lg:px-8 w-full">
             <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
               {/* Left: Title – always visible */}
@@ -76,7 +76,7 @@ export default function EducationAndTraining() {
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
           {/* Core Message */}
           <div className="max-w-5xl mt-10 mx-auto  mb-20">
-            <p className=" font-medium   text-[#0A0504]  leading-relaxed">
+            <p className=" font-medium text-justify  text-[#0A0504]  leading-relaxed">
               We offer education and training programs designed to equip
               parents, caregivers, and communities with the knowledge, skills,
               tools and exercise strategies needed to understand and support
@@ -159,7 +159,7 @@ export default function EducationAndTraining() {
                   <h3 className="text-2xl md:text-2xl font-serif font-bold text-[#0f766e] mb-5">
                     {specialty.title}
                   </h3>
-                  <p className="text-[#0A0504]  font-medium leading-relaxed flex-grow">
+                  <p className="text-[#0A0504] text-justify  font-medium leading-relaxed flex-grow">
                     {specialty.desc}
                   </p>
                 </div>
@@ -184,10 +184,10 @@ export default function EducationAndTraining() {
                 />
               </div>
               <div>
-                <h2 className="text-2xl md:text-2xl font-serif font-bold text-[#0f766e] mb-6">
+                <h2 className="text-2xl md:text-2xl text-center font-serif font-bold text-[#0f766e] mb-6">
                   Lasting Progress
                 </h2>
-                <p className="font-medium text-[#0A0504]  leading-relaxed">
+                <p className="font-medium text-justify text-[#0A0504]  leading-relaxed">
                   Parents and caregivers are the most important members of the
                   team. Training equips them with practical tools, confidence,
                   and strategies to support their child&apos;s development at
@@ -200,10 +200,10 @@ export default function EducationAndTraining() {
             {/* Block 2: Content left / Image right */}
             <div className="grid lg:grid-cols-2 gap-12 items-center">
               <div className="order-2 lg:order-1">
-                <h2 className="text-2xl md:text-2xl font-serif font-bold text-[#0f766e] mb-6">
+                <h2 className="text-2xl md:text-2xl text-center font-serif font-bold text-[#0f766e] mb-6">
                   Strong Foundation for Safe Exercise
                 </h2>
-                <p className=" font-medium text-[#0A0504]  leading-relaxed">
+                <p className=" font-medium text-justify text-[#0A0504]  leading-relaxed">
                   Body awareness, motor planning, and postural stability &
                   control form the foundation of healthy movement and exercise.
                   Training equips individuals with simple, effective techniques
@@ -235,10 +235,10 @@ export default function EducationAndTraining() {
                 />
               </div>
               <div>
-                <h2 className="text-2xl  font-serif font-bold text-[#0f766e] mb-6">
+                <h2 className="text-2xl text-center  font-serif font-bold text-[#0f766e] mb-6">
                   Creation of Inclusive Spaces
                 </h2>
-                <p className=" font-medium text-[#0A0504]  leading-relaxed">
+                <p className="text-justify font-medium text-[#0A0504]  leading-relaxed">
                   Inclusive environments ensure that every child can
                   participate, grow, and thrive in movement. Training equip
                   teachers, community leaders, and support networks with the
