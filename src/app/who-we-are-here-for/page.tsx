@@ -5,8 +5,8 @@ import { AnimatePresence, motion } from "framer-motion";
 import { useEffect, useState } from "react";
 const carouselImages = [
   "/images/use1.png",
-  "/images/use4.jpg",
-  "/images/use3.jpg",
+  "/images/use33.png",
+  "/images/use44.png",
 ];
 
 export default function WhoWeAreHereFor() {
