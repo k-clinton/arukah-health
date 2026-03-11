@@ -116,7 +116,7 @@ export default function AboutUsPage() {
           transition={{ duration: 6, repeat: Infinity, ease: "easeInOut" }}
         >
           <Image
-            src="/images/foundatiom.png"
+            src="/images/founde2.png"
             alt=""
             width={100}
             height={100}
@@ -131,7 +131,7 @@ export default function AboutUsPage() {
           transition={{ duration: 7, repeat: Infinity, ease: "easeInOut" }}
         >
           <Image
-            src="/images/foundatiom.png"
+            src="/images/founde2.png"
             alt=""
             width={160}
             height={160}
