@@ -109,7 +109,7 @@ export default function ExerciseTherapy() {
   return (
     <main className="min-h-screen mt-30 bg-white">
       {/* Hero Section with Background Image */}
-      <section className="relative min-h-[40vh] md:min-h-[70vh] flex items-center justify-center bg-white overflow-hidden">
+      <section className="relative min-h-[20vh] md:min-h-[70vh] flex items-center justify-center bg-white overflow-hidden">
         <div className="relative z-10 max-w-7xl mx-auto px-6 lg:px-8 w-full">
           <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
             {/* Left: Title – always visible */}
@@ -160,20 +160,20 @@ export default function ExerciseTherapy() {
       </section>
 
       {/* Intro Paragraph Section */}
-      <section className="py-16 md:py-20 px-6 bg-white">
+      <section className="  md:py-20 px-6 bg-white">
         <div className="max-w-5xl mx-auto text-center">
           <p className="text-lg md:text-xl text-gray-700 leading-relaxed"></p>
         </div>
       </section>
 
       {/* Core Philosophy – Our Programs with carousels */}
-      <section className="py-16 md:py-20 px-6 bg-gradient-to-b from-white to-blue-50/30">
+      <section className=" md:py-20 mt-1 px-6 bg-gradient-to-b from-white to-blue-50/30">
         <div className="max-w-7xl mx-auto space-y-16 md:space-y-24">
           {/* Block 1 – Mobile: paragraph → carousel */}
           <div className="space-y-10 lg:space-y-0 lg:grid lg:grid-cols-2 lg:gap-16 lg:items-center">
             {/* First paragraph – first on mobile */}
             <div className="order-1 lg:order-1 text-center lg:text-left">
-              <p className="prose prose-lg text-black font-medium leading-relaxed space-y-6">
+              <p className="prose text-justify prose-lg text-black font-medium leading-relaxed space-y-6">
                 We apply exercise as a cornerstone for improving health,
                 restoring function, and supporting recovery. Our programs use
                 structured, medically guided exercise, tailored to a child’s
@@ -193,7 +193,7 @@ export default function ExerciseTherapy() {
           <div className="space-y-10 lg:space-y-0 lg:grid lg:grid-cols-2 lg:gap-16 lg:items-center">
             {/* Second paragraph – third on mobile */}
             <div className="order-1 lg:order-2 text-center lg:text-left">
-              <p className="prose prose-lg text-black font-medium leading-relaxed space-y-6">
+              <p className="prose text-justify prose-lg text-black font-medium leading-relaxed space-y-6">
                 Our programs are evidence-based, drawing from research in motor
                 learning, pediatric rehabilitation, and functional exercise
                 science. Rooted in this foundation, the programs are designed to
@@ -298,7 +298,7 @@ export default function ExerciseTherapy() {
               <h2 className="text-2xl md:text-3xl font-serif font-bold text-[#0f766e] mb-6 text-center lg:text-left">
                 Structured & Play-Based Exercise
               </h2>
-              <div className="prose prose-lg text-black mb-6 font-medium leading-relaxed space-y-6 text-center lg:text-left">
+              <div className="prose text-justify prose-lg text-black mb-6 font-medium leading-relaxed space-y-6 text-center lg:text-left">
                 <p>
                   Playful, organized workouts and games that build motor skills,
                   strength, coordination and confidence in a safe, motivating
@@ -332,7 +332,7 @@ export default function ExerciseTherapy() {
               <h2 className="text-2xl md:text-3xl font-serif font-bold text-[#0f766e] mb-6 text-center lg:text-left">
                 Swimming
               </h2>
-              <div className="prose prose-lg text-black mb-6 font-medium leading-relaxed space-y-6 text-center lg:text-left">
+              <div className="prose text-justify prose-lg text-black mb-6 font-medium leading-relaxed space-y-6 text-center lg:text-left">
                 <p>
                   Joyful, structured sessions in the water that build motor
                   skills, strength, coordination, resilience and confidence
@@ -366,7 +366,7 @@ export default function ExerciseTherapy() {
               <h2 className="text-2xl md:text-3xl font-serif font-bold text-[#0f766e] mb-6 text-center lg:text-left">
                 Hiking
               </h2>
-              <div className="prose prose-lg text-black mb-6 font-medium leading-relaxed space-y-6 text-center lg:text-left">
+              <div className="prose text-justify prose-lg text-black mb-6 font-medium leading-relaxed space-y-6 text-center lg:text-left">
                 <p>
                   Fun, guided, outdoor experiences that build balance, stamina,
                   resilience, and a love for active living.
@@ -399,7 +399,7 @@ export default function ExerciseTherapy() {
               <h2 className="text-2xl md:text-3xl font-serif font-bold text-[#0f766e] mb-6 text-center lg:text-left">
                 Cycling
               </h2>
-              <div className="prose prose-lg text-black mb-6 font-medium leading-relaxed space-y-6 text-center lg:text-left">
+              <div className="prose text-justify prose-lg text-black mb-6 font-medium leading-relaxed space-y-6 text-center lg:text-left">
                 <p>
                   Supported and guided biking experiences in open-air,
                   nature-rich environments, that enhance balance, endurance,
