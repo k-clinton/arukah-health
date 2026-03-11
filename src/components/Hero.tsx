@@ -9,7 +9,7 @@ import { useState, useEffect } from "react";
 const carouselImages = [
   "/images/secc1.png",
   "/images/secc2.png",
-  "/images/secc4.png",
+  "/images/home3.png",
 ];
 
 export default function Hero() {
