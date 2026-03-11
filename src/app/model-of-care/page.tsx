@@ -91,12 +91,12 @@ Our programs are designed to achieve measurable, functional outcomes that are mo
   return (
     <main className="min-h-screen mt-20 bg-white">
       {/* Hero Section with Background Image */}
-      <section className="relative min-h-[60vh] md:min-h-[80vh] flex items-center justify-center bg-white overflow-hidden">
+      <section className="relative min-h-[20vh] md:min-h-[80vh] flex items-center justify-center bg-white overflow-hidden">
         <div className="relative z-10 max-w-7xl mx-auto px-6 lg:px-8 w-full">
           <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
             {/* Left: Title – always visible */}
             <div className="text-center md:text-left">
-              <h1 className="text-4xl sm:text-4xl md:text-5xl lg:text-5xl font-serif font-extrabold text-[#0f766e] leading-tight ">
+              <h1 className="text-4xl sm:text-4xl md:text-5xl lg:text-5xl font-serif mt-12 md:mt-0 font-extrabold text-[#0f766e] leading-tight ">
                 Our Model of Care
               </h1>
 
@@ -142,7 +142,7 @@ Our programs are designed to achieve measurable, functional outcomes that are mo
       </section>
 
       {/* Core Philosophy Paragraph */}
-      <section className="py-20 px-6 bg-gradient-to-b from-white to-blue-50/30">
+      <section className=" px-6 bg-gradient-to-b from-white to-blue-50/30">
         <div className="max-w-5xl mx-auto text-center">
           <p className=" text-black leading-relaxed font-medium">
             Our care framework is built on four pillars that shape how we
@@ -231,7 +231,7 @@ Our programs are designed to achieve measurable, functional outcomes that are mo
                 </div>
 
                 <div
-                  className="prose prose-lg max-w-none text-black leading-relaxed"
+                  className="prose prose-lg max-w-none text-black text-justify leading-relaxed"
                   dangerouslySetInnerHTML={{
                     __html: pillars[selectedPillar].details,
                   }}
