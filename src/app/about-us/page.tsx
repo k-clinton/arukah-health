@@ -203,9 +203,14 @@ export default function AboutUsPage() {
               {/* Focal quote – standout block */}
             </div>
             <blockquote className="my-12 py-8 px-6 md:px-12 border-l-4 border-[#0f766e] rounded-r-2xl italic  text-[#0f766e] font-serif font-medium">
-              <span className="text-[#0f766e] font-bold not-italic">
+              <span className="hidden md:block text-[#0f766e] font-bold not-italic">
                 This is where Recovery is Redefined! This is Home! This is
                 Arukah Health!
+              </span>
+              <span className="text-[#0f766e] font-bold not-italic md:hidden">
+                {" "}
+                This is where Recovery is Redefined!<br></br>This is Home!{" "}
+                <br></br> This is Arukah Health!
               </span>
             </blockquote>
           </div>
