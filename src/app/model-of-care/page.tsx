@@ -66,7 +66,7 @@ Our programs are designed to achieve measurable, functional outcomes that are mo
   <br>
 <strong>• Home strategies</strong> that equip caregivers with exercises and routines that reinforce therapy goals in daily settings.<br>
 <strong>• Practical training and empowerment</strong> that builds caregiver skills to reduce anxiety and foster a supportive environment for the child.<br>
-<strong>• Consistency across environments</strong>: ensuring therapeutic practices are carried over into home, school, and community life.<br>
+<strong>• Consistency across environments</strong>ensuring therapeutic practices are carried over into home, school, and community life.<br>
 <strong>• Inclusive exercise activities</strong>  that promote connection, resilience, and strengthen family bonds.<br>
 <strong>• Collaborative decision making</strong> that involve caregivers in treatment planning to align therapy with family priorities and values.
 `.trim(),
@@ -231,7 +231,7 @@ Our programs are designed to achieve measurable, functional outcomes that are mo
                 </div>
 
                 <div
-                  className="prose prose-lg max-w-none text-black text-justify leading-relaxed"
+                  className="prose prose-lg max-w-none text-black text-left leading-relaxed"
                   dangerouslySetInnerHTML={{
                     __html: pillars[selectedPillar].details,
                   }}
