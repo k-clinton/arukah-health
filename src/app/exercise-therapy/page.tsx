@@ -16,7 +16,7 @@ import Link from "next/link";
 import { motion, AnimatePresence } from "framer-motion";
 const carouselImages = [
   "/images/education and training 2.jpg",
-  "/images/exo2.png",
+  "/images/challenge94.png",
   "/images/exo3.png",
 ];
 
