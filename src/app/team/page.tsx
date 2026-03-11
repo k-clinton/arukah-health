@@ -35,7 +35,7 @@ As CEO of Arukah Health, she leads with heart and clinical insight—transformin
 
 A trusted collaborator with the Ministry of Education and USAID, Mr. Kabata has spent over a decade advancing soft skills education across Kenya. His coaching in swimming and athletics has empowered students to compete at national and regional levels, with several securing international sports scholarships, particularly in the USA.<br><br>
 
-Beyond the classroom and pool, Mr. Kabata is a passionate advocate for community health and fitness. He leads a women's wellness group that meets thrice weekly and founded the Saturday Tea Zone Challenge, a nature-based hiking initiative promoting physical and mental well-being in Tigoni. His love for nature and belief in its healing power inspire regular nature walks, where he sensitizes participants to the therapeutic unity between humanity and the natural world.<br><br>
+Beyond the classroom and pool, Mr. Kabata is a passionate advocate for community health and fitness. He leads a women's wellness group that meets thrice weekly and founded the Saturday Tea Zone Challenge, a nature-based hiking initiative promoting physical and mental well-being in Tigoni. His love for nature and belief in its healing power inspires regular nature walks, where he sensitizes participants to the therapeutic unity between humanity and the natural world.<br><br>
 
 Mr. Kabata is also a writer and thought leader, currently finalizing publications on life issues and personal growth. He advocates for whole-person education, challenging traditional exam-centric models and promoting learning as a dynamic, life-wide experience.<br><br>
 
