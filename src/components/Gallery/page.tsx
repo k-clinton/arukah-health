@@ -22,7 +22,7 @@ const images = [
     alt: "Happy family portrait",
   },
   {
-    src: "/images/IMG_9659.jpg",
+    src: "/images/IMG_2412.JPG",
     alt: "",
   },
 ];
@@ -48,7 +48,7 @@ export default function FamilyOvalGallery() {
     <section className="w-full bg-[#F7E7CE] py-16 md:py-24">
       <div className="mx-auto max-w-7xl px-6">
         <h2 className="text-3xl md:text-4xl font-serif font-bold text-center text-[#0F766E] mb-10 md:mb-16">
-          Moments of <span className="text-black">Joy</span> & Connection
+          Joyful Connections
         </h2>
 
         {/* Carousel Container – smaller size */}
