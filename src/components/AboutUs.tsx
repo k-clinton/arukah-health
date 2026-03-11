@@ -32,7 +32,7 @@ Every exercise plan is uniquely designed to accommodate a child's physical needs
 
 <strong>Ongoing Progress Monitoring & Evaluation</strong><br>  
 We track each child's journey with regular assessments and feedback loops—ensuring care remains responsive, measurable, and goal-driven.`,
-    imageUrl: "/images/olym2.jpg",
+    imageUrl: "/images/homepage1.jpg",
     color: "orange",
   },
   {
