@@ -299,7 +299,7 @@ export default function ExerciseTherapy() {
               <h2 className="text-2xl md:text-3xl font-serif font-bold text-[#0f766e] mb-6 text-center lg:text-left">
                 Structured & Play-Based Exercise
               </h2>
-              <div className="prose text-justify prose-lg text-black mb-6 font-medium leading-relaxed space-y-6 text-center lg:text-left">
+              <div className="prose text-left prose-lg text-black mb-6 font-medium leading-relaxed space-y-6 text-center lg:text-left">
                 <p>
                   Playful, organized workouts and games that build motor skills,
                   strength, coordination and confidence in a safe, motivating
@@ -333,7 +333,7 @@ export default function ExerciseTherapy() {
               <h2 className="text-2xl md:text-3xl font-serif font-bold text-[#0f766e] mb-6 text-center lg:text-left">
                 Swimming
               </h2>
-              <div className="prose text-justify prose-lg text-black mb-6 font-medium leading-relaxed space-y-6 text-center lg:text-left">
+              <div className="prose text-left prose-lg text-black mb-6 font-medium leading-relaxed space-y-6 text-center lg:text-left">
                 <p>
                   Joyful, structured sessions in the water that build motor
                   skills, strength, coordination, resilience and confidence
