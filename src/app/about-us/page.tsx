@@ -177,7 +177,7 @@ export default function AboutUsPage() {
                 of clinical experience in pediatric therapy and a heart for
                 families navigating uncertainty, Ivy — our founder — created a
                 space where science, compassion, and hope converge. A space
-                built on the belief that <strong>exercise is medicine</strong> —
+                built on the belief that <strong>Exercise is Medicine</strong> —
                 where movement becomes a joyful and intentional pathway to
                 building the core dimensions of physical function that enhance
                 independence and resilience.
