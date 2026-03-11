@@ -118,8 +118,8 @@ export default function AboutUsPage() {
           <Image
             src="/images/founde2.png"
             alt=""
-            width={100}
-            height={100}
+            width={160}
+            height={160}
             className="opacity-90 transform -scale-x-100 -rotate-360"
           />
         </motion.div>
@@ -314,7 +314,7 @@ export default function AboutUsPage() {
         />
 
         {/* Content */}
-        <div className="relative z-10 max-w-7xl mx-auto px-6 lg:px-8">
+        <div className="relative z-10 mt-10 max-w-7xl mx-auto px-6 mt-10 lg:px-8">
           <h2 className="text-4xl md:text-5xl font-serif font-bold text-center text-[#0F766E] mb-16">
             Our Core Values
           </h2>
@@ -352,7 +352,7 @@ export default function AboutUsPage() {
                 whileInView="visible"
                 viewport={{ once: true }}
                 variants={fadeInUp}
-                className="bg-white rounded-2xl  p-8 shadow-xl border-2 border-[#F7E7CE] text-center"
+                className="bg-white rounded-2xl  p-8 mb-6 shadow-xl border-2 border-[#F7E7CE] text-center"
               >
                 <h3 className="text-2xl font-serif font-bold text-[#0F766E] mb-4">
                   {value.title}
