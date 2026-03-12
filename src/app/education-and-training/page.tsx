@@ -28,7 +28,7 @@ export default function EducationAndTraining() {
           <div className="relative z-10 max-w-7xl mx-auto px-6 lg:px-8 w-full">
             <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
               {/* Left: Title – always visible */}
-              <div className="text-center md:text-left">
+              <div className="text-left md:text-left">
                 <h1 className="text-4xl  sm:text-3xl md:text-5xl lg:text-5xl font-serif font-extrabold text-[#0f766e] leading-tight ">
                   Education and Training
                 </h1>
@@ -125,7 +125,7 @@ export default function EducationAndTraining() {
           <div className="grid md:grid-cols-2 gap-10 mb-24">
             {[
               {
-                imageUrl: "/images/inclusive.jpg",
+                imageUrl: "/images/inclusive.png",
                 title: "Inclusive Movement Support",
                 desc: "A course designed to equip parents, caregivers, educators, and therapists with strategies to create safe, engaging, and adaptable exercise experiences. It covers principles of motor learning, sensory integration, environment adaptation, equipment modification and emotional regulation, ensuring that every child is accommodated to move and progress at their own pace.",
                 color: "#4793FF",
