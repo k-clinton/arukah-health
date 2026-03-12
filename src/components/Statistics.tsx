@@ -52,16 +52,29 @@ export default function Statistics() {
   return (
     <section
       ref={ref}
-      className="relative py-24 px-6 overflow-hidden bg-gray-50"
+      className="relative py-37 pb-42  md:py-24  px-6 overflow-hidden bg-gray-50"
     >
       {/* Decorative floating image – top right */}
       <motion.div
-        className="pointer-events-none absolute top-4 right-3 z-0  hidden md:block"
+        className="pointer-events-none absolute top-4 right-3 md:top-4 md:right-3 z-0   md:block"
         animate={{ y: [0, -12, 0] }}
         transition={{ duration: 6, repeat: Infinity, ease: "easeInOut" }}
       >
         <Image
-          src="/images/real impact.png"
+          src="/images/floating11.png"
+          alt=""
+          width={140}
+          height={140}
+          className="opacity-100 rotate-6"
+        />
+      </motion.div>
+      <motion.div
+        className="pointer-events-none absolute bottom-4 left-3 md:top-4 md:right-3 z-0   md:block"
+        animate={{ y: [0, -12, 0] }}
+        transition={{ duration: 6, repeat: Infinity, ease: "easeInOut" }}
+      >
+        <Image
+          src="/images/floating11.png"
           alt=""
           width={140}
           height={140}
