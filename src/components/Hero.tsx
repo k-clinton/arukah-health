@@ -92,7 +92,7 @@ export default function Hero() {
                 <strong className="text-[#0f766e]"></strong>
                 <br />
                 Redefining Recovery, Reclaiming Milestones, Reshaping Beliefs,
-                and Transforming Lives Through the Power of Exercise.
+                and Transforming Lives Through the Power of Exercise!
               </p>
               <Link
                 href="/contact"

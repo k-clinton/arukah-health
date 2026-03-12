@@ -11,7 +11,7 @@ export default function OurServicesSection() {
       icon: Dumbbell,
       color: "#0F766E",
       description:
-        "Personalized movement programs for children with neuro-developmental challenges and milestone delays.",
+        "Personalized movement programs for neuro-diverse children and those with milestone delays.",
       href: "/exercise-therapy",
       bgGradient: "white",
       hoverGradient: "white",
