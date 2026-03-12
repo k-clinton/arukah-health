@@ -28,9 +28,9 @@ export default function AboutUsPage() {
                 movement. We specialize in exercise treatments for neuro-diverse
                 children and those with milestone delays, helping them grow
                 stronger, confident, and independent. Our programs are designed
-                to nurture core physical functions — strength, balance,
-                coordination, flexibility, and endurance — while also fostering
-                resilience, play, and emotional well-being.
+                to nurture core dimensions of physical function — strength,
+                balance, coordination, flexibility, and endurance — while also
+                fostering resilience, play, and emotional well-being.
               </p>
               <p className="text-justify md:text-left">
                 At Arukah Health, we believe Exercise is Medicine, and we use it

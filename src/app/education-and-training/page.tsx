@@ -98,7 +98,7 @@ export default function EducationAndTraining() {
                 src="/images/P1180403.JPG"
                 alt="Centered hero moment – joyful child or family in movement"
                 fill
-                className="object-cover object-center"
+                className="object-cover object-top object-center"
                 priority
               />
             </div>
@@ -107,12 +107,7 @@ export default function EducationAndTraining() {
             <div className="absolute inset-0 bg-gradient-to-t from-black/30 via-transparent to-black/10" />
 
             {/* Content (optional) – centered if you want text on top */}
-            <div className="relative z-10 flex items-center justify-center min-h-[60vh] md:min-h-[80vh] px-6">
-              {/* If you want a title or caption on top of the image */}
-              {/* <h2 className="text-5xl md:text-7xl font-serif font-extrabold text-white drop-shadow-2xl text-center">
-      Our Journey in Motion
-    </h2> */}
-            </div>
+            <div className="relative z-10 flex items-center justify-center min-h-[60vh] md:min-h-[80vh] px-6"></div>
           </section>
 
           {/* Two Specialties – Cards with Icons */}
