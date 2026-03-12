@@ -296,7 +296,7 @@ export default function ExerciseTherapy() {
           <div className="space-y-8 lg:space-y-0 lg:grid lg:grid-cols-2 lg:gap-12 lg:items-center">
             {/* Text first on mobile */}
             <div className="order-1 lg:order-2">
-              <h2 className="text-2xl md:text-3xl font-serif font-bold text-[#0f766e] mb-6 text-center lg:text-left">
+              <h2 className="text-2xl md:text-3xl font-serif font-bold text-[#0f766e] mb-6 text-left lg:text-left">
                 1. Structured & Play-Based Exercise
               </h2>
               <div className="prose text-left prose-lg text-black mb-6 font-medium leading-relaxed space-y-6 text-center lg:text-left">
@@ -330,7 +330,7 @@ export default function ExerciseTherapy() {
           <div className="space-y-8 lg:space-y-0 lg:grid lg:grid-cols-2 lg:gap-12 lg:items-center">
             {/* Text first on mobile */}
             <div className="order-1 lg:order-1">
-              <h2 className="text-2xl md:text-3xl font-serif font-bold text-[#0f766e] mb-6 text-center lg:text-left">
+              <h2 className="text-2xl md:text-3xl font-serif font-bold text-[#0f766e] mb-6 text-left lg:text-left">
                 2. Swimming
               </h2>
               <div className="prose text-left prose-lg text-black mb-6 font-medium leading-relaxed space-y-6 text-center lg:text-left">
@@ -364,7 +364,7 @@ export default function ExerciseTherapy() {
           <div className="space-y-8 lg:space-y-0 lg:grid lg:grid-cols-2 lg:gap-12 lg:items-center">
             {/* Text first on mobile */}
             <div className="order-1 lg:order-2">
-              <h2 className="text-2xl md:text-3xl font-serif font-bold text-[#0f766e] mb-6 text-center lg:text-left">
+              <h2 className="text-2xl md:text-3xl font-serif font-bold text-[#0f766e] mb-6 text-left lg:text-left">
                 3. Hiking
               </h2>
               <div className="prose text-justify prose-lg text-black mb-6 font-medium leading-relaxed space-y-6 text-center lg:text-left">
@@ -397,7 +397,7 @@ export default function ExerciseTherapy() {
           <div className="space-y-8 lg:space-y-0 lg:grid lg:grid-cols-2 lg:gap-12 lg:items-center">
             {/* Text first on mobile */}
             <div className="order-1 lg:order-1">
-              <h2 className="text-2xl md:text-3xl font-serif font-bold text-[#0f766e] mb-6 text-center lg:text-left">
+              <h2 className="text-2xl md:text-3xl font-serif font-bold text-[#0f766e] mb-6 text-left lg:text-left">
                 4. Cycling
               </h2>
               <div className="prose text-justify prose-lg text-black mb-6 font-medium leading-relaxed space-y-6 text-center lg:text-left">

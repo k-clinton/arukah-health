@@ -91,25 +91,33 @@ export default function EducationAndTraining() {
               developmental progress.
             </p>
           </div>
-          <section className="relative w-full min-h-[60vh] md:min-h-[80vh] overflow-hidden">
-            {/* Full-bleed background image – covers the whole section */}
-            <div className="absolute inset-0">
-              <Image
-                src="/images/P1180403.JPG"
-                alt="Centered hero moment – joyful child or family in movement"
-                fill
-                className="object-cover object-top object-center"
-                priority
-              />
+          <section className=" pb-20 md: bg-gradient-to-b from-white to-blue-50/30">
+            <div className="max-w-7xl mx-auto">
+              {/* Optional heading – remove if you want pure image section */}
+
+              {/* Centered image container */}
+              <div className="relative mx-auto max-w-4xl">
+                {/* Subtle decorative ring / glow behind the image */}
+                <div className="absolute inset-0 flex items-center justify-center">
+                  <div className="w-[100%] md:w-[100%] aspect-square rounded-full bg-gradient-to-r from-[#4793FF]/10 via-[#FFB347]/20 to-[#4793FF]/10 blur-3xl opacity-70" />
+                </div>
+
+                {/* Main centered image */}
+                <div className="relative z-10 rounded-3xl overflow-hidden shadow-xl border-4 border-white/80">
+                  <Image
+                    src="/images/P1180403.JPG"
+                    alt="Centered hero moment – joyful child or family in movement"
+                    width={1200}
+                    height={1200}
+                    className="w-full h-full object-contain"
+                    priority
+                  />
+                </div>
+
+                {/* Optional subtle caption or call-to-action below image */}
+              </div>
             </div>
-
-            {/* Optional subtle overlay if you want text readability or mood (remove if not needed) */}
-            <div className="absolute inset-0 bg-gradient-to-t from-black/30 via-transparent to-black/10" />
-
-            {/* Content (optional) – centered if you want text on top */}
-            <div className="relative z-10 flex items-center justify-center min-h-[60vh] md:min-h-[80vh] px-6"></div>
-          </section>
-
+          </section>{" "}
           {/* Two Specialties – Cards with Icons */}
           <h2 className="text-3xl md:text-4xl font-serif pt-20 text-center font-bold text-[#0f766e] mb-6">
             Core Courses{" "}
@@ -131,18 +139,17 @@ export default function EducationAndTraining() {
             ].map((specialty, i) => (
               <div
                 key={specialty.title}
-                className="bg-[#F7E7CE] rounded-2xl overflow-hidden shadow-xl border-2 border-[#F7E7CE] hover:shadow-2xl transition-all duration-300 flex flex-col"
+                className="bg-white rounded-2xl overflow-hidden shadow-xl border-2 border-[#F7E7CE] hover:shadow-2xl transition-all duration-300 flex flex-col"
               >
                 {/* Full-width image at top */}
-                <div className="relative h-48 w-full">
+                <div className="relative h-90 w-full">
                   <Image
                     src={specialty.imageUrl}
                     alt={specialty.title}
                     fill
-                    className="object-cover object-center transition-transform duration-500 hover:scale-110"
+                    className="object-contain object-center transition-transform duration-500 hover:scale-110"
                   />
                   {/* Subtle overlay gradient for polish */}
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent opacity-60" />
                 </div>
 
                 {/* Card content */}
@@ -157,7 +164,6 @@ export default function EducationAndTraining() {
               </div>
             ))}
           </div>
-
           {/* Alternating Image + Content Blocks */}
           <h2 className="text-3xl md:text-4xl font-serif text-center font-bold text-[#0f766e] mb-6">
             Why Education and Training?{" "}
