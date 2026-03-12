@@ -53,7 +53,7 @@ Our specialists blend clinical expertise with emotional intelligence—creating 
 
 <strong>Consistent Guidance and Support</strong> 
 From onboarding, we walk alongside each child—offering steady encouragement, clear communication, and therapeutic continuity.`,
-    imageUrl: "/images/wellness.png",
+    imageUrl: "/images/real final.jpg",
     color: "blue",
   },
   {
