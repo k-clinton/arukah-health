@@ -214,12 +214,6 @@ const Footer = () => {
         </div>
 
         {/* Emergency Notice */}
-        <div className="mt-6 bg-gradient-to-r from-blue-900/30 to-purple-900/30 rounded-lg p-4 text-center border border-blue-800/50">
-          <p className="text-blue-300 font-medium">
-            ⚕️ Emergency consultations available by phone • 24/7 support for
-            urgent cases
-          </p>
-        </div>
       </div>
     </footer>
   );

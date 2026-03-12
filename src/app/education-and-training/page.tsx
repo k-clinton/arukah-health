@@ -181,7 +181,7 @@ export default function EducationAndTraining() {
                 />
               </div>
               <div>
-                <h2 className="text-2xl md:text-2xl text-center font-serif font-bold text-[#0f766e] mb-6">
+                <h2 className="text-2xl md:text-2xl text-left font-serif font-bold text-[#0f766e] mb-6">
                   Lasting Progress
                 </h2>
                 <p className="font-medium text-justify text-[#0A0504]  leading-relaxed">
@@ -197,7 +197,7 @@ export default function EducationAndTraining() {
             {/* Block 2: Content left / Image right */}
             <div className="grid lg:grid-cols-2 gap-12 items-center">
               <div className="order-2 lg:order-1">
-                <h2 className="text-2xl md:text-2xl text-center font-serif font-bold text-[#0f766e] mb-6">
+                <h2 className="text-2xl md:text-2xl text-left font-serif font-bold text-[#0f766e] mb-6">
                   Strong Foundation for Safe Exercise
                 </h2>
                 <p className=" font-medium text-justify text-[#0A0504]  leading-relaxed">
@@ -232,7 +232,7 @@ export default function EducationAndTraining() {
                 />
               </div>
               <div>
-                <h2 className="text-2xl text-center  font-serif font-bold text-[#0f766e] mb-6">
+                <h2 className="text-2xl text-left  font-serif font-bold text-[#0f766e] mb-6">
                   Creation of Inclusive Spaces
                 </h2>
                 <p className="text-justify font-medium text-[#0A0504]  leading-relaxed">
