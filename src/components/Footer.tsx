@@ -159,7 +159,7 @@ const Footer = () => {
                     <div className="font-medium font-bold ">
                       Monday - Friday
                     </div>
-                    <div className="font-semibold">8:00 AM - 6:00 PM</div>
+                    <div className="font-semibold">8:00 AM - 5:00 PM</div>
                     <div className="font-medium   mt-2">Saturday</div>
                     <div className="font-semibold">9:00 AM - 1:00 PM</div>
                     <div className="font-medium mt-2">Public Holidays</div>
