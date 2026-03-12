@@ -108,7 +108,7 @@ export default function AboutUsPage() {
       </section>
 
       {/* SECTION 4: FEATURE – Childlike Background */}
-      <section className="relative py-20 md:py-32 px-6 bg-gradient-to-b from-white via-blue-50/30 to-white overflow-hidden">
+      <section className="relative py-35 md:py-32 px-6 bg-gradient-to-b from-white via-blue-50/30 to-white overflow-hidden">
         {/* Subtle background decorative elements */}
         <motion.div
           className="pointer-events-none absolute hidden left-12 top-25  md:top-10 md:left-8 z-0  md:block"
@@ -116,11 +116,37 @@ export default function AboutUsPage() {
           transition={{ duration: 6, repeat: Infinity, ease: "easeInOut" }}
         >
           <Image
-            src="/images/founde2.png"
+            src="/images/floating2.jpg"
             alt=""
             width={160}
             height={160}
             className="opacity-90 transform -scale-x-100 -rotate-360"
+          />
+        </motion.div>
+        <motion.div
+          className="pointer-events-none absolute  left-12 top-0  md:top-10 md:left-8 z-0  md:block"
+          animate={{ y: [0, -12, 0] }}
+          transition={{ duration: 6, repeat: Infinity, ease: "easeInOut" }}
+        >
+          <Image
+            src="/images/floating2.jpg"
+            alt=""
+            width={100}
+            height={100}
+            className="opacity-90 transform -scale-x-100 -rotate-360"
+          />
+        </motion.div>
+        <motion.div
+          className="pointer-events-none absolute  right-12 bottom-0  md:top-10 md:left-8 z-0  md:block"
+          animate={{ y: [0, -12, 0] }}
+          transition={{ duration: 6, repeat: Infinity, ease: "easeInOut" }}
+        >
+          <Image
+            src="/images/floating2.jpg"
+            alt=""
+            width={100}
+            height={100}
+            className="opacity-90  "
           />
         </motion.div>
 
@@ -131,7 +157,7 @@ export default function AboutUsPage() {
           transition={{ duration: 7, repeat: Infinity, ease: "easeInOut" }}
         >
           <Image
-            src="/images/founde2.png"
+            src="/images/floating2.jpg"
             alt=""
             width={160}
             height={160}
