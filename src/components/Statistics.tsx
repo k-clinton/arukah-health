@@ -52,32 +52,32 @@ export default function Statistics() {
   return (
     <section
       ref={ref}
-      className="relative py-37 pb-42  md:py-24  px-6 overflow-hidden bg-gray-50"
+      className="relative py-48 pb-44 md:py-24  px-6 overflow-hidden bg-gray-50"
     >
       {/* Decorative floating image – top right */}
       <motion.div
-        className="pointer-events-none absolute top-4 right-3 md:top-4 md:right-3 z-0   md:block"
+        className="pointer-events-none absolute top-4 left-[-74px] md:top-4 md:right-3 z-0   md:block"
         animate={{ y: [0, -12, 0] }}
         transition={{ duration: 6, repeat: Infinity, ease: "easeInOut" }}
       >
         <Image
-          src="/images/floating11.png"
+          src="/images/icon8.jpg"
           alt=""
-          width={140}
-          height={140}
+          width={200}
+          height={200}
           className="opacity-100 rotate-6"
         />
       </motion.div>
       <motion.div
-        className="pointer-events-none absolute bottom-4 left-3 md:top-4 md:right-3 z-0   md:block"
+        className="pointer-events-none absolute bottom-4 right-3 md:top-4 md:right-3 z-0   md:block"
         animate={{ y: [0, -12, 0] }}
         transition={{ duration: 6, repeat: Infinity, ease: "easeInOut" }}
       >
         <Image
-          src="/images/floating11.png"
+          src="/images/icon8.jpg"
           alt=""
-          width={140}
-          height={140}
+          width={200}
+          height={200}
           className="opacity-100 rotate-6"
         />
       </motion.div>
@@ -90,7 +90,7 @@ export default function Statistics() {
           transition={{ duration: 0.8 }}
           className="text-4xl md:text-4xl font-serif font-bold md:mt-0  text-[#0f766e] drop-shadow-md  mb-8"
         >
-          Real Impact, Real Joy
+          Why Us?
         </motion.h2>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 md:gap-10 mt-16">
