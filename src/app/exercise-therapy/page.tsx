@@ -185,7 +185,7 @@ export default function ExerciseTherapy() {
             </div>
 
             {/* First carousel – second on mobile */}
-            <div className="order-2 lg:order-2 relative rounded-3xl overflow-hidden shadow-2xl h-64 md:h-96">
+            <div className="order-2 lg:order-2 relative rounded-3xl overflow-hidden shadow-2xl h-64 md:h-76">
               <Carousel images={leftCarouselImages} />
             </div>
           </div>
@@ -204,7 +204,7 @@ export default function ExerciseTherapy() {
             </div>
 
             {/* Second carousel – fourth on mobile */}
-            <div className="order-2 lg:order-1 relative rounded-3xl overflow-hidden shadow-2xl h-64 md:h-96">
+            <div className="order-2 lg:order-1 relative rounded-3xl overflow-hidden w-auto shadow-2xl h-64 md:h-76">
               <Carousel images={rightCarouselImages} />
             </div>
           </div>
