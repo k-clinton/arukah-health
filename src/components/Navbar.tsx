@@ -101,7 +101,7 @@ export default function Navbar() {
                 width={40}
                 height={40}
               />
-              <span className=" text-3xl font-bold">ARUKAH HEALTH</span>
+              <span className=" text-4xl  font-bold">ARUKAH HEALTH</span>
             </Link>
           </div>
         </div>
