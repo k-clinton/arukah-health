@@ -259,7 +259,7 @@ export default function ExerciseTherapy() {
                 } hover:scale-105 hover:shadow-xl flex flex-col`}
               >
                 {/* Full-width image at top */}
-                <div className="relative h-48 w-full">
+                <div className="relative h-70 md:h-58 w-full">
                   <Image
                     src={item.imageUrl}
                     alt={item.title}
@@ -297,7 +297,7 @@ export default function ExerciseTherapy() {
             {/* Text first on mobile */}
             <div className="order-1 lg:order-2">
               <h2 className="text-2xl md:text-3xl font-serif font-bold text-[#0f766e] mb-6 text-center lg:text-left">
-                Structured & Play-Based Exercise
+                1. Structured & Play-Based Exercise
               </h2>
               <div className="prose text-left prose-lg text-black mb-6 font-medium leading-relaxed space-y-6 text-center lg:text-left">
                 <p>
@@ -331,7 +331,7 @@ export default function ExerciseTherapy() {
             {/* Text first on mobile */}
             <div className="order-1 lg:order-1">
               <h2 className="text-2xl md:text-3xl font-serif font-bold text-[#0f766e] mb-6 text-center lg:text-left">
-                Swimming
+                2. Swimming
               </h2>
               <div className="prose text-left prose-lg text-black mb-6 font-medium leading-relaxed space-y-6 text-center lg:text-left">
                 <p>
@@ -365,7 +365,7 @@ export default function ExerciseTherapy() {
             {/* Text first on mobile */}
             <div className="order-1 lg:order-2">
               <h2 className="text-2xl md:text-3xl font-serif font-bold text-[#0f766e] mb-6 text-center lg:text-left">
-                Hiking
+                3. Hiking
               </h2>
               <div className="prose text-justify prose-lg text-black mb-6 font-medium leading-relaxed space-y-6 text-center lg:text-left">
                 <p>
@@ -398,7 +398,7 @@ export default function ExerciseTherapy() {
             {/* Text first on mobile */}
             <div className="order-1 lg:order-1">
               <h2 className="text-2xl md:text-3xl font-serif font-bold text-[#0f766e] mb-6 text-center lg:text-left">
-                Cycling
+                4. Cycling
               </h2>
               <div className="prose text-justify prose-lg text-black mb-6 font-medium leading-relaxed space-y-6 text-center lg:text-left">
                 <p>
