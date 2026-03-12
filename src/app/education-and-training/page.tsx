@@ -29,7 +29,7 @@ export default function EducationAndTraining() {
             <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
               {/* Left: Title – always visible */}
               <div className="text-left md:text-left">
-                <h1 className="text-4xl  sm:text-3xl md:text-5xl lg:text-5xl font-serif font-extrabold text-[#0f766e] leading-tight ">
+                <h1 className="text-4xl  sm:text-3xl md:text-5xl lg:text-5xl font-serif font-extrabold text-[#0f766e]  ">
                   Education and Training
                 </h1>
 
