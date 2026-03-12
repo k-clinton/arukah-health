@@ -91,36 +91,32 @@ export default function EducationAndTraining() {
               developmental progress.
             </p>
           </div>
-          <section className="py-6 pb-20 md:py-24 px-6 bg-gradient-to-b from-white to-blue-50/30">
-            <div className="max-w-7xl mx-auto">
-              {/* Optional heading – remove if you want pure image section */}
+          <section className="relative w-full min-h-[60vh] md:min-h-[80vh] overflow-hidden">
+            {/* Full-bleed background image – covers the whole section */}
+            <div className="absolute inset-0">
+              <Image
+                src="/images/P1180403.JPG"
+                alt="Centered hero moment – joyful child or family in movement"
+                fill
+                className="object-cover object-center"
+                priority
+              />
+            </div>
 
-              {/* Centered image container */}
-              <div className="relative mx-auto max-w-4xl">
-                {/* Subtle decorative ring / glow behind the image */}
-                <div className="absolute inset-0 flex items-center justify-center">
-                  <div className="w-[90%] md:w-[85%] aspect-square rounded-full bg-gradient-to-r from-[#4793FF]/10 via-[#FFB347]/20 to-[#4793FF]/10 blur-3xl opacity-70" />
-                </div>
+            {/* Optional subtle overlay if you want text readability or mood (remove if not needed) */}
+            <div className="absolute inset-0 bg-gradient-to-t from-black/30 via-transparent to-black/10" />
 
-                {/* Main centered image */}
-                <div className="relative z-10 rounded-3xl overflow-hidden shadow-xl border-4 border-white/80">
-                  <Image
-                    src="/images/P1180403.JPG"
-                    alt="Centered hero moment – joyful child or family in movement"
-                    width={1200}
-                    height={1200}
-                    className="w-full h-auto object-contain"
-                    priority
-                  />
-                </div>
-
-                {/* Optional subtle caption or call-to-action below image */}
-              </div>
+            {/* Content (optional) – centered if you want text on top */}
+            <div className="relative z-10 flex items-center justify-center min-h-[60vh] md:min-h-[80vh] px-6">
+              {/* If you want a title or caption on top of the image */}
+              {/* <h2 className="text-5xl md:text-7xl font-serif font-extrabold text-white drop-shadow-2xl text-center">
+      Our Journey in Motion
+    </h2> */}
             </div>
           </section>
 
           {/* Two Specialties – Cards with Icons */}
-          <h2 className="text-3xl md:text-4xl font-serif text-center font-bold text-[#0f766e] mb-6">
+          <h2 className="text-3xl md:text-4xl font-serif pt-20 text-center font-bold text-[#0f766e] mb-6">
             Core Courses{" "}
           </h2>
           <div className="grid md:grid-cols-2 gap-10 mb-24">
