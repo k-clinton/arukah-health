@@ -124,7 +124,7 @@ export default function AboutUsPage() {
           />
         </motion.div>
         <motion.div
-          className="pointer-events-none absolute  left-12 top-0  md:top-10 md:left-8 z-0  md:block"
+          className="pointer-events-none absolute  left-12 top-0  md:top-10 md:left-8  z-0  md:hidden"
           animate={{ y: [0, -12, 0] }}
           transition={{ duration: 6, repeat: Infinity, ease: "easeInOut" }}
         >
@@ -137,7 +137,7 @@ export default function AboutUsPage() {
           />
         </motion.div>
         <motion.div
-          className="pointer-events-none absolute  right-12 bottom-0  md:top-10 md:left-8 z-0  md:block"
+          className="pointer-events-none absolute  right-12 bottom-0  md:top-10 md:left-8 z-0  md:hidden"
           animate={{ y: [0, -12, 0] }}
           transition={{ duration: 6, repeat: Infinity, ease: "easeInOut" }}
         >
