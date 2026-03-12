@@ -95,7 +95,7 @@ export default function ContactPage() {
             Get in Touch
           </h1>
           <p className="mt-4 font-medium text-[black]  ">
-            We&apos;re here to Support. Connect with Us to Explore our Programs
+            We&apos;re here to Support. Connect with Us to Explore Our Programs
             and Resources.{" "}
           </p>
         </div>
