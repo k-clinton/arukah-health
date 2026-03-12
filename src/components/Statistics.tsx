@@ -90,7 +90,7 @@ export default function Statistics() {
           transition={{ duration: 0.8 }}
           className="text-4xl md:text-4xl font-serif font-bold md:mt-0  text-[#0f766e] drop-shadow-md  mb-8"
         >
-          Why Us?
+          Why Arukah?
         </motion.h2>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 md:gap-10 mt-16">
