@@ -8,6 +8,10 @@ const nextConfig: NextConfig = {
   turbopack: {
     root: __dirname,
   },
+  images: {
+    unoptimized: true,          // ← add this
+    // remotePatterns: [...],   // if you have any
+  },
 };
 
 export default nextConfig;
