@@ -31,6 +31,12 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
+      <head>
+        <meta
+          name="google-site-verification"
+          content="HgF4B_FpghPaKHq4kpqiHquZlFcxaK4CgpxjdvMsz-w"
+        />
+      </head>
       <body className={`${dmSans.variable} ${inriaSerif.variable} antialiased`}>
         <Navbar />
         {children}
