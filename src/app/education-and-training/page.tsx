@@ -24,7 +24,7 @@ export default function EducationAndTraining() {
   return (
     <main className=" bg-white">
       <div className="pt-27 pb-24 ">
-        <section className="relative mt-10 min-h-[7vh] md:min-h-[70vh] flex items-center md:mt-0 justify-center overflow-hidden">
+        <section className="relative mt-10 min-h-[7vh] pb-6 md:min-h-[70vh] flex items-center md:mt-0 justify-center overflow-hidden">
           <div className="relative z-10 max-w-7xl mx-auto px-6 lg:px-8 w-full">
             <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
               {/* Left: Title – always visible */}
